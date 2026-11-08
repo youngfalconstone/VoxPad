@@ -17,7 +17,7 @@ jobs:
         run: dotnet build VoxPad.sln -c Release --nologo
       - name: Test
         # Real-cable integration tests skip themselves when VB-CABLE is absent (it is, on hosted runners).
-        run: dotnet test tests/VoxPad.Tests -c Release --no-build --nologo --logger "trx;LogFileName=results.trx"
+        run: dotnet test tests/VoxPad.Tests -c Release --nologo --logger "trx;LogFileName=results.trx"
       - uses: actions/upload-artifact@v4
         if: always()
         with:

@@ -1,0 +1,446 @@
+<Window x:Class="VoxPad.App.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:s="clr-namespace:VoxPad.App.Services"
+        xmlns:c="clr-namespace:VoxPad.App.Controls"
+        xmlns:vm="clr-namespace:VoxPad.App.ViewModels"
+        xmlns:core="clr-namespace:VoxPad.Core.Models;assembly=VoxPad.Core"
+        Style="{StaticResource ThemedWindow}"
+        Title="{Binding WindowTitle}" MinWidth="700" MinHeight="420" AllowDrop="True"
+        Icon="pack://application:,,,/VoxPad;component/Assets/voxpad.ico">
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolToVis"/>
+        <Style x:Key="StatusIndicator" TargetType="Border">
+            <Setter Property="Padding" Value="6,1"/>
+            <Setter Property="Margin" Value="2,0"/>
+            <Setter Property="CornerRadius" Value="3"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource Theme.Border}"/>
+            <Setter Property="Background" Value="{DynamicResource Theme.PanelBackground}"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+        <ContextMenu x:Key="SoundContextMenu">
+            <MenuItem Header="{s:Str Play}" Command="{Binding PlayCommand}" FontWeight="Bold"/>
+            <MenuItem Header="{s:Str PlayOnSpeakers}" Command="{Binding PlaySpeakersCommand}"/>
+            <MenuItem Header="{s:Str PlayOnMic}" Command="{Binding PlayMicCommand}"/>
+            <Separator/>
+            <MenuItem Header="{s:Str EditFile}" Command="{Binding EditFileCommand}"/>
+            <MenuItem Header="{s:Str SetHotkey}" Command="{Binding SetHotkeyCommand}"/>
+            <MenuItem Header="{s:Str RemoveHotkey}" Command="{Binding RemoveHotkeyCommand}"/>
+            <MenuItem Header="{s:Str SetColor}" Command="{Binding SetColorCommand}"/>
+            <MenuItem Header="{s:Str MoveToCategory}" x:Name="MoveToCategoryMenu"/>
+            <MenuItem Header="{s:Str RemoveFromCategory}" Command="{Binding RemoveFromCategoryCommand}"/>
+            <Separator/>
+            <MenuItem Header="{s:Str Copy}" Command="{Binding CopyCommand}" InputGestureText="Ctrl+C"/>
+            <MenuItem Header="{s:Str Cut}" Command="{Binding CutCommand}" InputGestureText="Ctrl+X"/>
+            <MenuItem Header="{s:Str Paste}" Command="{Binding PasteCommand}" InputGestureText="Ctrl+V"/>
+            <MenuItem Header="{s:Str Remove}" Command="{Binding RemoveCommand}" InputGestureText="Del"/>
+            <Separator/>
+            <MenuItem Header="{s:Str ResetPlayCount}" Command="{Binding ResetPlayCountCommand}"/>
+            <MenuItem Header="{s:Str SelectInExplorer}" Command="{Binding SelectInExplorerCommand}"/>
+        </ContextMenu>
+        <ContextMenu x:Key="CategoryContextMenu">
+            <MenuItem Header="{s:Str AddCategory}" Command="{Binding AddCategoryCommand}"/>
+            <MenuItem Header="{s:Str AddSubcategory}" Command="{Binding AddCategoryCommand}" CommandParameter="{Binding PlacementTarget.SelectedItem, RelativeSource={RelativeSource AncestorType=ContextMenu}}"/>
+            <MenuItem Header="{s:Str RenameCategory}" Command="{Binding RenameCategoryCommand}"/>
+            <MenuItem Header="{s:Str RemoveCategory}" Command="{Binding RemoveCategoryCommand}"/>
+            <Separator/>
+            <MenuItem Header="{s:Str PlayRandom}" Command="{Binding PlayRandomCommand}"/>
+            <MenuItem Header="{s:Str SetRandomHotkey}" Command="{Binding CategoryHotkeyCommand}"/>
+            <MenuItem Header="{s:Str SetColor}" Command="{Binding CategoryColorCommand}"/>
+            <MenuItem Header="{s:Str HideCategory}" Command="{Binding HideCategoryCommand}"/>
+        </ContextMenu>
+        <HierarchicalDataTemplate DataType="{x:Type vm:CategoryViewModel}" ItemsSource="{Binding Children}">
+            <StackPanel Orientation="Horizontal" Margin="0,1">
+                <Border Width="{Binding IconSize, RelativeSource={RelativeSource AncestorType=Window}}" Height="{Binding IconSize, RelativeSource={RelativeSource AncestorType=Window}}"
+                        CornerRadius="2" Margin="0,0,5,0" Background="{DynamicResource Theme.Accent}">
+                    <Border.Style>
+                        <Style TargetType="Border">
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding ColorBrush, Converter={x:Static vm:Converters.IsNotNull}}" Value="True">
+                                    <Setter Property="Background" Value="{Binding ColorBrush}"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Border.Style>
+                </Border>
+                <TextBlock Text="{Binding Name}" VerticalAlignment="Center">
+                    <TextBlock.Style>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="Foreground" Value="{DynamicResource Theme.Foreground}"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding IsHidden}" Value="True"><Setter Property="Foreground" Value="{DynamicResource Theme.SecondaryForeground}"/><Setter Property="FontStyle" Value="Italic"/></DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBlock.Style>
+                </TextBlock>
+                <TextBlock Text="{Binding Count, StringFormat=' ({0})'}" Foreground="{DynamicResource Theme.SecondaryForeground}" VerticalAlignment="Center"/>
+                <TextBlock Text="{Binding RandomHotkeyText, StringFormat='  [{0}]'}" Foreground="{DynamicResource Theme.SecondaryForeground}" VerticalAlignment="Center" Visibility="{Binding RandomHotkeyText, Converter={x:Static vm:Converters.NonEmptyToVisible}}"/>
+            </StackPanel>
+        </HierarchicalDataTemplate>
+    </Window.Resources>
+    <Window.InputBindings>
+        <KeyBinding Key="R" Modifiers="Ctrl" Command="{Binding RecorderCommand}"/>
+        <KeyBinding Key="T" Modifiers="Ctrl" Command="{Binding TtsCommand}"/>
+        <KeyBinding Key="Z" Modifiers="Ctrl" Command="{Binding UndoCommand}"/>
+        <KeyBinding Key="Y" Modifiers="Ctrl" Command="{Binding RedoCommand}"/>
+        <KeyBinding Key="N" Modifiers="Ctrl" Command="{Binding NewListCommand}"/>
+        <KeyBinding Key="O" Modifiers="Ctrl" Command="{Binding LoadListCommand}"/>
+        <KeyBinding Key="S" Modifiers="Ctrl" Command="{Binding SaveListCommand}"/>
+        <KeyBinding Key="P" Modifiers="Ctrl" Command="{Binding PreferencesCommand}"/>
+        <KeyBinding Key="F1" Command="{Binding ManualCommand}"/>
+    </Window.InputBindings>
+    <DockPanel>
+        <!-- ================= Menu ================= -->
+        <Menu DockPanel.Dock="Top" x:Name="MainMenu">
+            <MenuItem Header="{s:Str File}">
+                <MenuItem Header="{s:Str NewList}" Command="{Binding NewListCommand}" InputGestureText="Ctrl+N"/>
+                <MenuItem Header="{s:Str LoadList}" Command="{Binding LoadListCommand}" InputGestureText="Ctrl+O"/>
+                <MenuItem Header="{s:Str SaveList}" Command="{Binding SaveListCommand}" InputGestureText="Ctrl+S"/>
+                <MenuItem Header="{s:Str SaveListAs}" Command="{Binding SaveListAsCommand}"/>
+                <MenuItem Header="{s:Str RecentLists}" x:Name="RecentMenu"/>
+                <MenuItem Header="{s:Str RestoreList}" Command="{Binding RestoreListCommand}"/>
+                <Separator/>
+                <MenuItem Header="{s:Str AddFiles}" Command="{Binding AddFilesCommand}"/>
+                <MenuItem Header="{s:Str AddFolder}" Command="{Binding AddFolderCommand}"/>
+                <MenuItem Header="{s:Str WebImport}" Command="{Binding WebImportCommand}"/>
+                <Separator/>
+                <MenuItem Header="{s:Str Export}">
+                    <MenuItem Header="{s:Str ExportSoundFiles}" Command="{Binding ExportSoundFilesCommand}"/>
+                    <MenuItem Header="{s:Str ExportPreferences}" Command="{Binding ExportPreferencesCommand}"/>
+                    <MenuItem Header="{s:Str ImportPreferences}" Command="{Binding ImportPreferencesCommand}"/>
+                </MenuItem>
+                <MenuItem Header="{s:Str Statistics}" Command="{Binding StatsCommand}"/>
+                <MenuItem Header="{s:Str Preferences}" Command="{Binding PreferencesCommand}" InputGestureText="Ctrl+P"/>
+                <Separator/>
+                <MenuItem Header="{s:Str Exit}" Command="{Binding ExitCommand}"/>
+            </MenuItem>
+            <MenuItem Header="{s:Str Edit}">
+                <MenuItem Header="{s:Str SelectAll}" Command="{Binding SelectAllCommand}" InputGestureText="Ctrl+A"/>
+                <MenuItem Header="{s:Str Remove}" Command="{Binding RemoveCommand}" InputGestureText="Del"/>
+                <MenuItem Header="{s:Str Copy}" Command="{Binding CopyCommand}" InputGestureText="Ctrl+C"/>
+                <MenuItem Header="{s:Str Cut}" Command="{Binding CutCommand}" InputGestureText="Ctrl+X"/>
+                <MenuItem Header="{s:Str Paste}" Command="{Binding PasteCommand}" InputGestureText="Ctrl+V"/>
+                <MenuItem Header="{s:Str MoveUp}" Command="{Binding MoveUpCommand}" InputGestureText="Alt+Up"/>
+                <MenuItem Header="{s:Str MoveDown}" Command="{Binding MoveDownCommand}" InputGestureText="Alt+Down"/>
+                <Separator/>
+                <MenuItem Header="{s:Str Undo}" Command="{Binding UndoCommand}" InputGestureText="Ctrl+Z"/>
+                <MenuItem Header="{s:Str Redo}" Command="{Binding RedoCommand}" InputGestureText="Ctrl+Y"/>
+                <Separator/>
+                <MenuItem Header="{s:Str EditFile}" Command="{Binding EditFileCommand}"/>
+                <MenuItem Header="{s:Str SetHotkey}" Command="{Binding SetHotkeyCommand}"/>
+                <MenuItem Header="{s:Str RemoveHotkey}" Command="{Binding RemoveHotkeyCommand}"/>
+                <MenuItem Header="{s:Str SetColor}" Command="{Binding SetColorCommand}"/>
+                <MenuItem Header="{s:Str PlayRandom}" Command="{Binding PlayRandomCommand}"/>
+                <MenuItem Header="{s:Str ResetPlayCount}" Command="{Binding ResetPlayCountCommand}"/>
+                <MenuItem Header="{s:Str ResetAllPlayCounts}" Command="{Binding ResetAllPlayCountsCommand}"/>
+                <MenuItem Header="{s:Str SelectInExplorer}" Command="{Binding SelectInExplorerCommand}"/>
+            </MenuItem>
+            <MenuItem Header="{s:Str PlayMenu}">
+                <MenuItem Header="{s:Str Play}" Command="{Binding PlayCommand}" InputGestureText="Enter"/>
+                <MenuItem Header="{s:Str PlayOnSpeakers}" Command="{Binding PlaySpeakersCommand}"/>
+                <MenuItem Header="{s:Str PlayOnMic}" Command="{Binding PlayMicCommand}"/>
+                <MenuItem Header="{s:Str PauseResume}" Command="{Binding PauseCommand}"/>
+                <MenuItem Header="{s:Str Stop}" Command="{Binding StopCommand}"/>
+                <MenuItem Header="{s:Str Previous}" Command="{Binding PreviousCommand}"/>
+                <MenuItem Header="{s:Str Next}" Command="{Binding NextCommand}"/>
+                <Separator/>
+                <MenuItem Header="{s:Str Repeat}" IsCheckable="True" IsChecked="{Binding Repeat}"/>
+                <MenuItem Header="{s:Str Continue}" IsCheckable="True" IsChecked="{Binding Continue}"/>
+                <MenuItem Header="{s:Str AutoStop}" IsCheckable="True" IsChecked="{Binding AutoStop}"/>
+                <MenuItem Header="{s:Str PlayModeMenu}">
+                    <MenuItem Header="{s:Str PlayMode_Both}" Command="{Binding SetPlayModeCommand}" CommandParameter="Both"/>
+                    <MenuItem Header="{s:Str PlayMode_Mic}" Command="{Binding SetPlayModeCommand}" CommandParameter="MicrophoneOnly"/>
+                    <MenuItem Header="{s:Str PlayMode_Speakers}" Command="{Binding SetPlayModeCommand}" CommandParameter="SpeakersOnly"/>
+                </MenuItem>
+                <Separator/>
+                <MenuItem Header="{s:Str Recorder}" Command="{Binding RecorderCommand}" InputGestureText="Ctrl+R"/>
+                <MenuItem Header="{s:Str TextToSpeech}" Command="{Binding TtsCommand}" InputGestureText="Ctrl+T"/>
+            </MenuItem>
+            <MenuItem Header="{s:Str Window}">
+                <MenuItem Header="{s:Str Categories}" IsCheckable="True" x:Name="ShowCategoriesMenu" Click="PanelToggle_Click"/>
+                <MenuItem Header="{s:Str Hotbar}" IsCheckable="True" x:Name="ShowHotbarMenu" Click="PanelToggle_Click"/>
+                <MenuItem Header="{s:Str Toolbar}" IsCheckable="True" x:Name="ShowToolbarMenu" Click="PanelToggle_Click"/>
+                <MenuItem Header="{s:Str StatusBar}" IsCheckable="True" x:Name="ShowStatusBarMenu" Click="PanelToggle_Click"/>
+                <MenuItem Header="{s:Str ShowHiddenCategories}" IsCheckable="True" x:Name="ShowHiddenMenu" Click="PanelToggle_Click"/>
+                <Separator/>
+                <MenuItem Header="{s:Str CategoryIconSize}">
+                    <MenuItem Header="{s:Str Small}" Click="IconSize_Click" Tag="0"/>
+                    <MenuItem Header="{s:Str Medium}" Click="IconSize_Click" Tag="1"/>
+                    <MenuItem Header="{s:Str Large}" Click="IconSize_Click" Tag="2"/>
+                    <MenuItem Header="{s:Str ExtraLarge}" Click="IconSize_Click" Tag="3"/>
+                </MenuItem>
+                <MenuItem Header="{s:Str Columns}" x:Name="ColumnsMenu"/>
+                <MenuItem Header="{s:Str HotbarSize}" Click="HotbarSize_Click"/>
+                <Separator/>
+                <MenuItem Header="{s:Str HotkeyOverview}" Command="{Binding HotkeyOverviewCommand}"/>
+                <MenuItem Header="{s:Str MinimizeToTray}" Click="MinimizeToTray_Click"/>
+            </MenuItem>
+            <MenuItem Header="{s:Str Help}">
+                <MenuItem Header="{s:Str Manual}" Command="{Binding ManualCommand}" InputGestureText="F1"/>
+                <MenuItem Header="{s:Str Troubleshooting}" Command="{Binding TroubleshootingCommand}"/>
+                <MenuItem Header="{s:Str AutoKeysTroubleshooting}" Command="{Binding AutoKeysTroubleshootingCommand}"/>
+                <Separator/>
+                <MenuItem Header="{s:Str CheckForUpdates}" Command="{Binding CheckUpdateCommand}"/>
+                <MenuItem Header="{s:Str About}" Command="{Binding AboutCommand}"/>
+            </MenuItem>
+        </Menu>
+
+        <!-- ================= Toolbar ================= -->
+        <Border DockPanel.Dock="Top" x:Name="ToolbarPanel" Padding="4,3" BorderBrush="{DynamicResource Theme.Border}" BorderThickness="0,0,0,1">
+            <DockPanel>
+                <StackPanel Orientation="Horizontal" DockPanel.Dock="Left">
+                    <Button x:Name="TbPlay" Style="{StaticResource ToolButton}" Command="{Binding PlayCommand}" ToolTip="{s:Str Play}" Content="▶"/>
+                    <Button x:Name="TbPlaySpeakers" Style="{StaticResource ToolButton}" Command="{Binding PlaySpeakersCommand}" ToolTip="{s:Str PlayOnSpeakers}" Content="▶🔊"/>
+                    <Button x:Name="TbPlayMic" Style="{StaticResource ToolButton}" Command="{Binding PlayMicCommand}" ToolTip="{s:Str PlayOnMic}" Content="▶🎤"/>
+                    <Button x:Name="TbPause" Style="{StaticResource ToolButton}" Command="{Binding PauseCommand}" ToolTip="{s:Str PauseResume}" Content="⏸"/>
+                    <Button x:Name="TbStop" Style="{StaticResource ToolButton}" Command="{Binding StopCommand}" ToolTip="{s:Str Stop}" Content="⏹"/>
+                    <Button x:Name="TbPrevious" Style="{StaticResource ToolButton}" Command="{Binding PreviousCommand}" ToolTip="{s:Str Previous}" Content="⏮"/>
+                    <Button x:Name="TbNext" Style="{StaticResource ToolButton}" Command="{Binding NextCommand}" ToolTip="{s:Str Next}" Content="⏭"/>
+                    <Border x:Name="TbTimer" Margin="8,0,4,0" VerticalAlignment="Center" ToolTip="{s:Str TimerTip}" MouseLeftButtonDown="Timer_MouseDown" Background="Transparent">
+                        <TextBlock Text="{Binding ElapsedText}" FontFamily="Consolas" FontSize="13" MinWidth="90"/>
+                    </Border>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" DockPanel.Dock="Right">
+                    <Border x:Name="TbVolume" VerticalAlignment="Center">
+                        <StackPanel Orientation="Horizontal">
+                            <Button Style="{StaticResource ToolButton}" Click="Mute_Click" ToolTip="{s:Str SpeakerVolumeTip}" x:Name="MuteButton" Content="🔊"/>
+                            <Slider Width="90" Minimum="0" Maximum="1" Value="{Binding SpeakerVolume}" VerticalAlignment="Center" ToolTip="{s:Str SpeakerVolumeTip}" IsMoveToPointEnabled="True"/>
+                        </StackPanel>
+                    </Border>
+                    <Border x:Name="TbMicLevel" VerticalAlignment="Center" Margin="8,0,0,0">
+                        <StackPanel Orientation="Horizontal">
+                            <Button Style="{StaticResource ToolButton}" Click="MicMeter_Click" ToolTip="{s:Str MicMeterTip}" Content="🎤"/>
+                            <c:LevelMeter Width="90" Height="12" Level="{Binding MicLevel}" Background="{DynamicResource Theme.MeterBackground}" VerticalAlignment="Center" ToolTip="{s:Str MicMeterTip}"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+                <Border x:Name="TbSeek" Margin="6,0" VerticalAlignment="Center">
+                    <c:SeekBar x:Name="Seek" Height="16" Value="{Binding SeekFraction, Mode=OneWay}" IsMic="{Binding IsSeekMic}"
+                               MicBrush="{DynamicResource Theme.SeekMic}" SpeakerBrush="{DynamicResource Theme.SeekSpeakers}" TrackBrush="{DynamicResource Theme.MeterBackground}"
+                               ToolTip="{s:Str SeekTip}"/>
+                </Border>
+            </DockPanel>
+        </Border>
+
+        <!-- ================= Status bar ================= -->
+        <StatusBar DockPanel.Dock="Bottom" x:Name="StatusPanel">
+            <StatusBarItem>
+                <TextBlock Text="{Binding StatusText}" x:Name="StatusTextBlock" TextTrimming="CharacterEllipsis">
+                    <TextBlock.Style>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="Foreground" Value="{DynamicResource Theme.Foreground}"/>
+                            <Style.Triggers><DataTrigger Binding="{Binding StatusIsWarning}" Value="True"><Setter Property="Foreground" Value="{DynamicResource Theme.Bad}"/></DataTrigger></Style.Triggers>
+                        </Style>
+                    </TextBlock.Style>
+                </TextBlock>
+            </StatusBarItem>
+            <StatusBarItem HorizontalAlignment="Right">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="{Binding TrialText}" Foreground="{DynamicResource Theme.Warn}" Margin="0,0,8,0" VerticalAlignment="Center" Visibility="{Binding IsTrial, Converter={StaticResource BoolToVis}}"/>
+                    <Ellipse Width="9" Height="9" Margin="2,0,6,0" VerticalAlignment="Center" ToolTip="{Binding RoutingText}">
+                        <Ellipse.Style>
+                            <Style TargetType="Ellipse">
+                                <Setter Property="Fill" Value="{DynamicResource Theme.Bad}"/>
+                                <Style.Triggers><DataTrigger Binding="{Binding RoutingGood}" Value="True"><Setter Property="Fill" Value="{DynamicResource Theme.Good}"/></DataTrigger></Style.Triggers>
+                            </Style>
+                        </Ellipse.Style>
+                    </Ellipse>
+                    <Border Style="{StaticResource StatusIndicator}" MouseLeftButtonDown="PlayModeIndicator_Click" ToolTip="{s:Str PlayModeTip}">
+                        <TextBlock Text="{Binding PlayModeText}"/>
+                    </Border>
+                    <Border Style="{StaticResource StatusIndicator}" MouseLeftButtonDown="HotkeysIndicator_Click" ToolTip="{s:Str HotkeysTip}">
+                        <Border.ContextMenu>
+                            <ContextMenu>
+                                <MenuItem Header="{s:Str PassHotkeys}" IsCheckable="True" IsChecked="{Binding PassHotkeys}"/>
+                                <MenuItem Header="{s:Str HotkeyOverview}" Command="{Binding HotkeyOverviewCommand}"/>
+                            </ContextMenu>
+                        </Border.ContextMenu>
+                        <TextBlock Text="{s:Str Hotkeys}">
+                            <TextBlock.Style>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="Foreground" Value="{DynamicResource Theme.SecondaryForeground}"/>
+                                    <Setter Property="TextDecorations" Value="Strikethrough"/>
+                                    <Style.Triggers><DataTrigger Binding="{Binding HotkeysEnabled}" Value="True"><Setter Property="Foreground" Value="{DynamicResource Theme.Foreground}"/><Setter Property="TextDecorations" Value="{x:Null}"/></DataTrigger></Style.Triggers>
+                                </Style>
+                            </TextBlock.Style>
+                        </TextBlock>
+                    </Border>
+                    <Border Style="{StaticResource StatusIndicator}" MouseLeftButtonDown="AutoKeysIndicator_Click" ToolTip="{s:Str AutoKeysTip}">
+                        <Border.ContextMenu>
+                            <ContextMenu>
+                                <MenuItem Header="{s:Str Troubleshooting}" Command="{Binding AutoKeysTroubleshootingCommand}"/>
+                            </ContextMenu>
+                        </Border.ContextMenu>
+                        <TextBlock Text="{s:Str AutoKeys}">
+                            <TextBlock.Style>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="Foreground" Value="{DynamicResource Theme.SecondaryForeground}"/>
+                                    <Setter Property="TextDecorations" Value="Strikethrough"/>
+                                    <Style.Triggers><DataTrigger Binding="{Binding AutoKeysEnabled}" Value="True"><Setter Property="Foreground" Value="{DynamicResource Theme.Foreground}"/><Setter Property="TextDecorations" Value="{x:Null}"/></DataTrigger></Style.Triggers>
+                                </Style>
+                            </TextBlock.Style>
+                        </TextBlock>
+                    </Border>
+                    <Border Style="{StaticResource StatusIndicator}" MouseLeftButtonDown="RepeatIndicator_Click" ToolTip="{s:Str RepeatTip}">
+                        <TextBlock Text="{s:Str Repeat}">
+                            <TextBlock.Style>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="Foreground" Value="{DynamicResource Theme.SecondaryForeground}"/>
+                                    <Style.Triggers><DataTrigger Binding="{Binding Repeat}" Value="True"><Setter Property="Foreground" Value="{DynamicResource Theme.Foreground}"/><Setter Property="FontWeight" Value="Bold"/></DataTrigger></Style.Triggers>
+                                </Style>
+                            </TextBlock.Style>
+                        </TextBlock>
+                    </Border>
+                    <Border Style="{StaticResource StatusIndicator}" MouseLeftButtonDown="ContinueIndicator_Click" ToolTip="{s:Str ContinueTip}">
+                        <TextBlock Text="{s:Str Continue}">
+                            <TextBlock.Style>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="Foreground" Value="{DynamicResource Theme.SecondaryForeground}"/>
+                                    <Style.Triggers><DataTrigger Binding="{Binding Continue}" Value="True"><Setter Property="Foreground" Value="{DynamicResource Theme.Foreground}"/><Setter Property="FontWeight" Value="Bold"/></DataTrigger></Style.Triggers>
+                                </Style>
+                            </TextBlock.Style>
+                        </TextBlock>
+                    </Border>
+                </StackPanel>
+            </StatusBarItem>
+        </StatusBar>
+
+        <!-- ================= Hotbar ================= -->
+        <Border DockPanel.Dock="Bottom" x:Name="HotbarPanel" BorderBrush="{DynamicResource Theme.Border}" BorderThickness="0,1,0,0" Background="{DynamicResource Theme.WindowBackground}">
+            <DockPanel Margin="4" LastChildFill="True">
+                <StackPanel DockPanel.Dock="Right" Margin="4,0,0,0" VerticalAlignment="Center">
+                    <Button Content="▲" Command="{Binding HotbarPrevPageCommand}" Padding="6,1" ToolTip="{s:Str PreviousPage}"/>
+                    <TextBlock Text="{Binding Hotbar.PageText}" HorizontalAlignment="Center" Margin="0,3" Foreground="{DynamicResource Theme.SecondaryForeground}"/>
+                    <Button Content="▼" Command="{Binding HotbarNextPageCommand}" Padding="6,1" ToolTip="{s:Str NextPage}"/>
+                </StackPanel>
+                <ItemsControl ItemsSource="{Binding Hotbar.Tiles}" x:Name="HotbarItems" Height="{Binding HotbarHeight, RelativeSource={RelativeSource AncestorType=Window}}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate><UniformGrid Columns="{Binding Hotbar.Columns}" Rows="{Binding Hotbar.Rows}"/></ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate DataType="{x:Type vm:HotbarTileViewModel}">
+                            <Border Margin="2" CornerRadius="4" BorderThickness="1" BorderBrush="{DynamicResource Theme.Border}" AllowDrop="True"
+                                    MouseLeftButtonDown="Tile_MouseLeftButtonDown" MouseMove="Tile_MouseMove" MouseRightButtonUp="Tile_MouseRightButtonUp"
+                                    Drop="Tile_Drop" DragOver="Tile_DragOver" Cursor="Hand" ToolTip="{Binding Label}">
+                                <Border.Style>
+                                    <Style TargetType="Border">
+                                        <Setter Property="Background" Value="{DynamicResource Theme.TileBackground}"/>
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding HasColor}" Value="True"><Setter Property="Background" Value="{Binding ColorBrush}"/></DataTrigger>
+                                            <DataTrigger Binding="{Binding IsPlaying}" Value="True"><Setter Property="BorderBrush" Value="{DynamicResource Theme.Accent}"/><Setter Property="BorderThickness" Value="2"/></DataTrigger>
+                                            <DataTrigger Binding="{Binding IsEmpty}" Value="True"><Setter Property="Opacity" Value="0.5"/></DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Border.Style>
+                                <Grid Margin="4,2">
+                                    <TextBlock Text="{Binding Label}" TextTrimming="CharacterEllipsis" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Center" FontSize="11" MaxHeight="40">
+                                        <TextBlock.Style>
+                                            <Style TargetType="TextBlock">
+                                                <Setter Property="Foreground" Value="{DynamicResource Theme.Foreground}"/>
+                                                <Style.Triggers><DataTrigger Binding="{Binding IsMissing}" Value="True"><Setter Property="TextDecorations" Value="Strikethrough"/></DataTrigger></Style.Triggers>
+                                            </Style>
+                                        </TextBlock.Style>
+                                    </TextBlock>
+                                    <TextBlock Text="{Binding HotkeyText}" FontSize="9" VerticalAlignment="Bottom" HorizontalAlignment="Right" Foreground="{DynamicResource Theme.SecondaryForeground}"/>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </DockPanel>
+        </Border>
+
+        <!-- ================= Categories + list ================= -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200" x:Name="CategoriesColumn" MinWidth="0"/>
+                <ColumnDefinition Width="4" x:Name="SplitterColumn"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <DockPanel Grid.Column="0" x:Name="CategoriesPanel" Background="{DynamicResource Theme.PanelBackground}">
+                <Border DockPanel.Dock="Bottom" BorderBrush="{DynamicResource Theme.Border}" BorderThickness="0,1,0,0" Padding="6,4">
+                    <StackPanel>
+                        <TextBlock Text="{Binding CategoryInfo}" TextWrapping="Wrap" Foreground="{DynamicResource Theme.SecondaryForeground}" FontSize="11"/>
+                        <CheckBox Content="{s:Str HideCategory}" x:Name="HideCategoryCheck" Click="HideCategoryCheck_Click" Margin="0,4,0,0"
+                                  IsEnabled="{Binding IsAllSoundsSelected, Converter={x:Static vm:Converters.Invert}}"/>
+                    </StackPanel>
+                </Border>
+                <TreeView x:Name="CategoryTree" ItemsSource="{Binding CategoryRoots}" BorderThickness="0" AllowDrop="True"
+                          SelectedItemChanged="CategoryTree_SelectedItemChanged" ContextMenu="{StaticResource CategoryContextMenu}"
+                          PreviewMouseLeftButtonDown="CategoryTree_PreviewMouseLeftButtonDown" MouseMove="CategoryTree_MouseMove"
+                          Drop="CategoryTree_Drop" DragOver="CategoryTree_DragOver" PreviewMouseRightButtonDown="CategoryTree_PreviewMouseRightButtonDown">
+                    <TreeView.ItemContainerStyle>
+                        <Style TargetType="TreeViewItem" BasedOn="{StaticResource {x:Type TreeViewItem}}">
+                            <Setter Property="IsExpanded" Value="{Binding IsExpanded, Mode=TwoWay}"/>
+                            <Setter Property="IsSelected" Value="{Binding IsSelected, Mode=TwoWay}"/>
+                            <Setter Property="Foreground" Value="{DynamicResource Theme.Foreground}"/>
+                            <Setter Property="Visibility" Value="Visible"/>
+                            <Style.Triggers>
+                                <MultiDataTrigger>
+                                    <MultiDataTrigger.Conditions>
+                                        <Condition Binding="{Binding IsHidden}" Value="True"/>
+                                        <Condition Binding="{Binding ShowHiddenCategories, RelativeSource={RelativeSource AncestorType=Window}}" Value="False"/>
+                                    </MultiDataTrigger.Conditions>
+                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                </MultiDataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TreeView.ItemContainerStyle>
+                </TreeView>
+            </DockPanel>
+            <GridSplitter Grid.Column="1" x:Name="CategoriesSplitter" Width="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            <DockPanel Grid.Column="2">
+                <Border DockPanel.Dock="Top" Padding="4,3">
+                    <DockPanel>
+                        <TextBlock Text="🔍" DockPanel.Dock="Left" VerticalAlignment="Center" Margin="2,0,4,0"/>
+                        <TextBox x:Name="SearchBox" Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}" PreviewKeyDown="SearchBox_PreviewKeyDown" ToolTip="{s:Str SearchTip}"/>
+                    </DockPanel>
+                </Border>
+                <ListView x:Name="SoundList" ItemsSource="{Binding SoundsView}" SelectionMode="Extended" AllowDrop="True"
+                          BorderThickness="0" ContextMenu="{StaticResource SoundContextMenu}" VirtualizingPanel.IsVirtualizing="True" VirtualizingPanel.VirtualizationMode="Recycling"
+                          SelectionChanged="SoundList_SelectionChanged" PreviewMouseLeftButtonDown="SoundList_PreviewMouseLeftButtonDown" MouseMove="SoundList_MouseMove"
+                          MouseDoubleClick="SoundList_MouseDoubleClick" PreviewKeyDown="SoundList_PreviewKeyDown" PreviewTextInput="SoundList_PreviewTextInput"
+                          Drop="SoundList_Drop" DragOver="SoundList_DragOver" ContextMenuOpening="SoundList_ContextMenuOpening"
+                          GridViewColumnHeader.Click="ColumnHeader_Click">
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="ListViewItem" BasedOn="{StaticResource {x:Type ListViewItem}}">
+                            <Setter Property="Foreground" Value="{DynamicResource Theme.Foreground}"/>
+                            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                            <Style.Triggers>
+                                <Trigger Property="ItemsControl.AlternationIndex" Value="1"><Setter Property="Background" Value="{DynamicResource Theme.ListAlternate}"/></Trigger>
+                                <DataTrigger Binding="{Binding IsMissing}" Value="True"><Setter Property="Foreground" Value="{DynamicResource Theme.MissingForeground}"/><Setter Property="TextBlock.TextDecorations" Value="Strikethrough"/></DataTrigger>
+                                <DataTrigger Binding="{Binding IsPlaying}" Value="True"><Setter Property="FontWeight" Value="Bold"/></DataTrigger>
+                                <Trigger Property="IsSelected" Value="True"><Setter Property="Background" Value="{DynamicResource Theme.Selection}"/></Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </ListView.ItemContainerStyle>
+                    <ListView.View>
+                        <GridView AllowsColumnReorder="True" x:Name="SoundGrid">
+                            <GridView.ColumnHeaderContextMenu>
+                                <ContextMenu x:Name="HeaderMenu"/>
+                            </GridView.ColumnHeaderContextMenu>
+                            <GridViewColumn Header="#" Width="40" x:Name="ColIndex">
+                                <GridViewColumn.CellTemplate><DataTemplate><TextBlock Text="{Binding Index}" TextAlignment="Right"/></DataTemplate></GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                            <GridViewColumn Header="{s:Str ColTag}" Width="320" x:Name="ColTag">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Border Width="10" Height="10" CornerRadius="2" Margin="0,0,6,0" Background="{Binding ColorBrush}" Visibility="{Binding HasColor, Converter={StaticResource BoolToVis}}" VerticalAlignment="Center"/>
+                                            <TextBlock Text="{Binding Tag}" TextTrimming="CharacterEllipsis" VerticalAlignment="Center"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                            <GridViewColumn Header="{s:Str ColDuration}" Width="70" x:Name="ColDuration" DisplayMemberBinding="{Binding DurationText}"/>
+                            <GridViewColumn Header="{s:Str ColHotkey}" Width="110" x:Name="ColHotkey" DisplayMemberBinding="{Binding HotkeyText}"/>
+                            <GridViewColumn Header="{s:Str ColPlayCount}" Width="70" x:Name="ColPlayCount" DisplayMemberBinding="{Binding PlayCount}"/>
+                            <GridViewColumn Header="{s:Str ColLastPlayed}" Width="130" x:Name="ColLastPlayed" DisplayMemberBinding="{Binding LastPlayedText}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </DockPanel>
+        </Grid>
+    </DockPanel>
+</Window>

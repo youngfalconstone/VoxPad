@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <!-- WinForms is only used for the tray NotifyIcon; its implicit global usings would clash with WPF, so usings are explicit (GlobalUsings.cs). -->
+    <ImplicitUsings>disable</ImplicitUsings>
+    <RootNamespace>VoxPad.App</RootNamespace>
+    <AssemblyName>VoxPad</AssemblyName>
+    <ApplicationIcon>Assets\voxpad.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <StartupObject>VoxPad.App.Program</StartupObject>
+    <RuntimeIdentifiers>win-x64;win-arm64</RuntimeIdentifiers>
+    <SelfContained>false</SelfContained>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <NeutralLanguage>en</NeutralLanguage>
+    <InvariantGlobalization>false</InvariantGlobalization>
+    <UseSystemResourceKeys>false</UseSystemResourceKeys>
+    <AutoreleasePoolSupport>false</AutoreleasePoolSupport>
+    <EnableUnsafeBinaryFormatterSerialization>false</EnableUnsafeBinaryFormatterSerialization>
+    <EventSourceSupport>false</EventSourceSupport>
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VoxPad.Core\VoxPad.Core.csproj" />
+    <ProjectReference Include="..\VoxPad.Audio\VoxPad.Audio.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\voxpad.ico" />
+    <None Include="Assets\portable.txt.template" />
+  </ItemGroup>
+</Project>

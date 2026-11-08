@@ -1,0 +1,167 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- Implicit styles that map the standard controls onto the theme brushes. Kept deliberately light: templates stay stock. -->
+    <Style TargetType="Window" x:Key="ThemedWindow">
+        <Setter Property="Background" Value="{DynamicResource Theme.WindowBackground}"/>
+        <Setter Property="Foreground" Value="{DynamicResource Theme.Foreground}"/>
+        <Setter Property="FontSize" Value="12"/>
+        <Setter Property="UseLayoutRounding" Value="True"/>
+        <Setter Property="TextOptions.TextFormattingMode" Value="Display"/>
+    </Style>
+    <Style TargetType="TextBlock">
+        <Setter Property="Foreground" Value="{DynamicResource Theme.Foreground}"/>
+    </Style>
+    <Style TargetType="Label">
+        <Setter Property="Foreground" Value="{DynamicResource Theme.Foreground}"/>
+        <Setter Property="Padding" Value="2"/>
+    </Style>
+    <Style TargetType="Menu">
+        <Setter Property="Background" Value="{DynamicResource Theme.WindowBackground}"/>
+        <Setter Property="Foreground" Value="{DynamicResource Theme.Foreground}"/>
+    </Style>
+    <Style TargetType="ContextMenu">
+        <Setter Property="Background" Value="{DynamicResource Theme.PanelBackground}"/>
+        <Setter Property="Foreground" Value="{DynamicResource Theme.Foreground}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource Theme.Border}"/>
+    </Style>
+    <Style TargetType="MenuItem">
+        <Setter Property="Foreground" Value="{DynamicResource Theme.Foreground}"/>
+    </Style>
+    <Style TargetType="Separator">
+        <Setter Property="Background" Value="{DynamicResource Theme.Border}"/>
+    </Style>
+    <Style TargetType="Button">
+        <Setter Property="Background" Value="{DynamicResource Theme.ControlBackground}"/>
+        <Setter Property="Foreground" Value="{DynamicResource Theme.Foreground}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource Theme.Border}"/>
+        <Setter Property="Padding" Value="8,3"/>
+        <Setter Property="MinHeight" Value="24"/>
+    </Style>
+    <Style TargetType="ToggleButton">
+        <Setter Property="Background" Value="{DynamicResource Theme.ControlBackground}"/>
+        <Setter Property="Foreground" Value="{DynamicResource Theme.Foreground}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource Theme.Border}"/>
+    </Style>
+    <Style TargetType="TextBox">
+        <Setter Property="Background" Value="{DynamicResource Theme.ControlBackground}"/>
+        <Setter Property="Foreground" Value="{DynamicResource Theme.Foreground}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource Theme.Border}"/>
+        <Setter Property="CaretBrush" Value="{DynamicResource Theme.Foreground}"/>
+        <Setter Property="Padding" Value="3,2"/>
+    </Style>
+    <Style TargetType="PasswordBox">
+        <Setter Property="Background" Value="{DynamicResource Theme.ControlBackground}"/>
+        <Setter Property="Foreground" Value="{DynamicResource Theme.Foreground}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource Theme.Border}"/>
+    </Style>
+    <Style TargetType="CheckBox">
+        <Setter Property="Foreground" Value="{DynamicResource Theme.Foreground}"/>
+        <Setter Property="Margin" Value="0,3"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+    </Style>
+    <Style TargetType="RadioButton">
+        <Setter Property="Foreground" Value="{DynamicResource Theme.Foreground}"/>
+        <Setter Property="Margin" Value="0,3"/>
+    </Style>
+    <Style TargetType="ComboBox">
+        <Setter Property="Foreground" Value="{DynamicResource Theme.Foreground}"/>
+        <Setter Property="MinHeight" Value="24"/>
+    </Style>
+    <Style TargetType="ListView">
+        <Setter Property="Background" Value="{DynamicResource Theme.PanelBackground}"/>
+        <Setter Property="Foreground" Value="{DynamicResource Theme.Foreground}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource Theme.Border}"/>
+        <Setter Property="AlternationCount" Value="2"/>
+    </Style>
+    <Style TargetType="ListBox">
+        <Setter Property="Background" Value="{DynamicResource Theme.PanelBackground}"/>
+        <Setter Property="Foreground" Value="{DynamicResource Theme.Foreground}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource Theme.Border}"/>
+    </Style>
+    <Style TargetType="GridViewColumnHeader">
+        <Setter Property="Background" Value="{DynamicResource Theme.HeaderBackground}"/>
+        <Setter Property="Foreground" Value="{DynamicResource Theme.Foreground}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource Theme.Border}"/>
+        <Setter Property="Padding" Value="6,3"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+    </Style>
+    <Style TargetType="TreeView">
+        <Setter Property="Background" Value="{DynamicResource Theme.PanelBackground}"/>
+        <Setter Property="Foreground" Value="{DynamicResource Theme.Foreground}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource Theme.Border}"/>
+    </Style>
+    <Style TargetType="TreeViewItem">
+        <Style.Resources>
+            <!-- The stock template paints selection with the system highlight; point those keys at the theme. -->
+            <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="{DynamicResource Theme.SelectionColor}"/>
+            <SolidColorBrush x:Key="{x:Static SystemColors.HighlightTextBrushKey}" Color="{DynamicResource Theme.ForegroundColor}"/>
+            <SolidColorBrush x:Key="{x:Static SystemColors.InactiveSelectionHighlightBrushKey}" Color="{DynamicResource Theme.HoverColor}"/>
+            <SolidColorBrush x:Key="{x:Static SystemColors.InactiveSelectionHighlightTextBrushKey}" Color="{DynamicResource Theme.ForegroundColor}"/>
+        </Style.Resources>
+        <Setter Property="Foreground" Value="{DynamicResource Theme.Foreground}"/>
+    </Style>
+    <Style TargetType="ListViewItem">
+        <Style.Resources>
+            <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="{DynamicResource Theme.SelectionColor}"/>
+            <SolidColorBrush x:Key="{x:Static SystemColors.HighlightTextBrushKey}" Color="{DynamicResource Theme.ForegroundColor}"/>
+            <SolidColorBrush x:Key="{x:Static SystemColors.InactiveSelectionHighlightBrushKey}" Color="{DynamicResource Theme.HoverColor}"/>
+            <SolidColorBrush x:Key="{x:Static SystemColors.InactiveSelectionHighlightTextBrushKey}" Color="{DynamicResource Theme.ForegroundColor}"/>
+        </Style.Resources>
+    </Style>
+    <Style TargetType="StatusBar">
+        <Setter Property="Background" Value="{DynamicResource Theme.StatusBackground}"/>
+        <Setter Property="Foreground" Value="{DynamicResource Theme.Foreground}"/>
+    </Style>
+    <Style TargetType="ToolBar">
+        <Setter Property="Background" Value="{DynamicResource Theme.WindowBackground}"/>
+    </Style>
+    <Style TargetType="ToolBarTray">
+        <Setter Property="Background" Value="{DynamicResource Theme.WindowBackground}"/>
+    </Style>
+    <Style TargetType="GroupBox">
+        <Setter Property="Foreground" Value="{DynamicResource Theme.Foreground}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource Theme.Border}"/>
+        <Setter Property="Padding" Value="6"/>
+        <Setter Property="Margin" Value="0,4"/>
+    </Style>
+    <Style TargetType="TabControl">
+        <Setter Property="Background" Value="{DynamicResource Theme.WindowBackground}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource Theme.Border}"/>
+    </Style>
+    <Style TargetType="TabItem">
+        <Setter Property="Foreground" Value="{DynamicResource Theme.Foreground}"/>
+        <Setter Property="Padding" Value="10,4"/>
+    </Style>
+    <Style TargetType="GridSplitter">
+        <Setter Property="Background" Value="{DynamicResource Theme.Border}"/>
+    </Style>
+    <Style TargetType="Slider">
+        <Setter Property="Foreground" Value="{DynamicResource Theme.Accent}"/>
+    </Style>
+    <Style TargetType="ProgressBar">
+        <Setter Property="Foreground" Value="{DynamicResource Theme.Accent}"/>
+        <Setter Property="Background" Value="{DynamicResource Theme.MeterBackground}"/>
+    </Style>
+    <Style TargetType="ScrollViewer">
+        <Setter Property="Background" Value="Transparent"/>
+    </Style>
+
+    <!-- Toolbar icon buttons -->
+    <Style TargetType="Button" x:Key="ToolButton" BasedOn="{StaticResource {x:Type Button}}">
+        <Setter Property="MinWidth" Value="30"/>
+        <Setter Property="Margin" Value="1,0"/>
+        <Setter Property="Padding" Value="4,2"/>
+        <Setter Property="FontFamily" Value="Segoe UI Symbol, Segoe UI Emoji, Segoe UI"/>
+        <Setter Property="FontSize" Value="14"/>
+    </Style>
+    <Style TargetType="TextBlock" x:Key="Hint">
+        <Setter Property="Foreground" Value="{DynamicResource Theme.SecondaryForeground}"/>
+        <Setter Property="TextWrapping" Value="Wrap"/>
+        <Setter Property="Margin" Value="0,2,0,6"/>
+    </Style>
+    <Style TargetType="TextBlock" x:Key="Heading">
+        <Setter Property="FontWeight" Value="SemiBold"/>
+        <Setter Property="FontSize" Value="13"/>
+        <Setter Property="Margin" Value="0,8,0,4"/>
+    </Style>
+</ResourceDictionary>

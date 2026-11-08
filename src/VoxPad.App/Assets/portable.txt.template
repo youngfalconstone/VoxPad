@@ -1,0 +1,2 @@
+Rename this file to "portable.txt" (next to VoxPad.exe) to enable portable mode.
+In portable mode preferences, sound lists, backups, cache, logs and crash dumps are kept in the "Data" folder beside the executable instead of %APPDATA%\VoxPad and %ProgramData%\VoxPad.

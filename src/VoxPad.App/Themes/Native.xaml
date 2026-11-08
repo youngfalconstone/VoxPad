@@ -1,0 +1,28 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- Native: system colours, so high-contrast schemes and screen-reader users get the Windows look. -->
+    <SolidColorBrush x:Key="Theme.WindowBackground" Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+    <SolidColorBrush x:Key="Theme.PanelBackground" Color="{DynamicResource {x:Static SystemColors.WindowColorKey}}"/>
+    <SolidColorBrush x:Key="Theme.ControlBackground" Color="{DynamicResource {x:Static SystemColors.WindowColorKey}}"/>
+    <SolidColorBrush x:Key="Theme.Foreground" Color="{DynamicResource {x:Static SystemColors.WindowTextColorKey}}"/>
+    <SolidColorBrush x:Key="Theme.SecondaryForeground" Color="{DynamicResource {x:Static SystemColors.GrayTextColorKey}}"/>
+    <SolidColorBrush x:Key="Theme.Border" Color="{DynamicResource {x:Static SystemColors.ActiveBorderColorKey}}"/>
+    <SolidColorBrush x:Key="Theme.Accent" Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
+    <SolidColorBrush x:Key="Theme.AccentForeground" Color="{DynamicResource {x:Static SystemColors.HighlightTextColorKey}}"/>
+    <SolidColorBrush x:Key="Theme.Selection" Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
+    <SolidColorBrush x:Key="Theme.Hover" Color="{DynamicResource {x:Static SystemColors.ControlLightColorKey}}"/>
+    <SolidColorBrush x:Key="Theme.ListAlternate" Color="{DynamicResource {x:Static SystemColors.WindowColorKey}}"/>
+    <SolidColorBrush x:Key="Theme.HeaderBackground" Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+    <SolidColorBrush x:Key="Theme.StatusBackground" Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+    <SolidColorBrush x:Key="Theme.SeekMic" Color="#D9342B"/>
+    <SolidColorBrush x:Key="Theme.SeekSpeakers" Color="#2B6DD9"/>
+    <SolidColorBrush x:Key="Theme.MissingForeground" Color="{DynamicResource {x:Static SystemColors.GrayTextColorKey}}"/>
+    <SolidColorBrush x:Key="Theme.Good" Color="#2E8B57"/>
+    <SolidColorBrush x:Key="Theme.Bad" Color="#D9342B"/>
+    <SolidColorBrush x:Key="Theme.Warn" Color="#C58A00"/>
+    <SolidColorBrush x:Key="Theme.TileBackground" Color="{DynamicResource {x:Static SystemColors.ControlLightColorKey}}"/>
+    <SolidColorBrush x:Key="Theme.MeterBackground" Color="{DynamicResource {x:Static SystemColors.ControlDarkColorKey}}"/>
+    <Color x:Key="Theme.ForegroundColor">{DynamicResource {x:Static SystemColors.HighlightTextColorKey}}</Color>
+    <Color x:Key="Theme.SelectionColor">{DynamicResource {x:Static SystemColors.HighlightColorKey}}</Color>
+    <Color x:Key="Theme.HoverColor">{DynamicResource {x:Static SystemColors.ControlLightColorKey}}</Color>
+</ResourceDictionary>

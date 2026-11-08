@@ -1,0 +1,34 @@
+<Project Sdk="WixToolset.Sdk/5.0.2">
+  <!--
+    MSI built with WiX v5 (SDK-style, no separate install). See docs/building.md: publish the app first, then build this
+    project with PublishDir pointing at the publish folder (build.ps1 does both).
+    Per-machine install (UAC) into Program Files; the app itself runs unelevated.
+  -->
+  <PropertyGroup>
+    <OutputType>Package</OutputType>
+    <OutputName>VoxPad-$(Version)-$(Platform)</OutputName>
+    <Platform Condition="'$(Platform)' == ''">x64</Platform>
+    <Platforms>x64;ARM64</Platforms>
+    <InstallerPlatform>$(Platform)</InstallerPlatform>
+    <PublishDir Condition="'$(PublishDir)' == ''">..\artifacts\publish\win-x64</PublishDir>
+    <DefineConstants>PublishDir=$(PublishDir);Version=$(Version)</DefineConstants>
+    <DefineConstants Condition="'$(SelfContained)' == 'true'">$(DefineConstants);SELFCONTAINED=1</DefineConstants>
+    <SuppressIces>ICE61</SuppressIces>
+    <OutputPath>..\artifacts\installer\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="WixToolset.UI.wixext" Version="5.0.2" />
+    <PackageReference Include="WixToolset.Util.wixext" Version="5.0.2" />
+    <PackageReference Include="WixToolset.Heat" Version="5.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <HarvestDirectory Include="$(PublishDir)">
+      <ComponentGroupName>PublishedFiles</ComponentGroupName>
+      <DirectoryRefId>INSTALLFOLDER</DirectoryRefId>
+      <SuppressRootDirectory>true</SuppressRootDirectory>
+      <SuppressRegistry>true</SuppressRegistry>
+      <SuppressCom>true</SuppressCom>
+      <PreprocessorVariable>PublishDir</PreprocessorVariable>
+    </HarvestDirectory>
+  </ItemGroup>
+</Project>

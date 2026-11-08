@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+  <!-- Menus -->
+  <data name="File" xml:space="preserve"><value>_Файл</value></data>
+  <data name="NewList" xml:space="preserve"><value>_Новый список звуков</value></data>
+  <data name="LoadList" xml:space="preserve"><value>_Загрузить список звуков…</value></data>
+  <data name="SaveList" xml:space="preserve"><value>_Сохранить список звуков</value></data>
+  <data name="SaveListAs" xml:space="preserve"><value>Сохранить список звуков _как…</value></data>
+  <data name="RecentLists" xml:space="preserve"><value>_Недавние списки звуков</value></data>
+  <data name="RestoreList" xml:space="preserve"><value>Восстановить список звуков…</value></data>
+  <data name="AddFiles" xml:space="preserve"><value>Добавить звуковые файлы…</value></data>
+  <data name="AddFolder" xml:space="preserve"><value>Добавить папку…</value></data>
+  <data name="WebImport" xml:space="preserve"><value>Импорт из Интернета…</value></data>
+  <data name="Export" xml:space="preserve"><value>_Экспорт</value></data>
+  <data name="ExportSoundFiles" xml:space="preserve"><value>Звуковые файлы…</value></data>
+  <data name="ExportPreferences" xml:space="preserve"><value>Настройки…</value></data>
+  <data name="ImportPreferences" xml:space="preserve"><value>Импорт настроек…</value></data>
+  <data name="Statistics" xml:space="preserve"><value>Статистика…</value></data>
+  <data name="Preferences" xml:space="preserve"><value>_Настройки…</value></data>
+  <data name="Exit" xml:space="preserve"><value>В_ыход</value></data>
+  <data name="Edit" xml:space="preserve"><value>_Правка</value></data>
+  <data name="SelectAll" xml:space="preserve"><value>Выделить все</value></data>
+  <data name="Remove" xml:space="preserve"><value>Удалить</value></data>
+  <data name="Copy" xml:space="preserve"><value>Копировать</value></data>
+  <data name="Cut" xml:space="preserve"><value>Вырезать</value></data>
+  <data name="Paste" xml:space="preserve"><value>Вставить</value></data>
+  <data name="MoveUp" xml:space="preserve"><value>Переместить вверх</value></data>
+  <data name="MoveDown" xml:space="preserve"><value>Переместить вниз</value></data>
+  <data name="Undo" xml:space="preserve"><value>Отменить</value></data>
+  <data name="Redo" xml:space="preserve"><value>Повторить</value></data>
+  <data name="EditFile" xml:space="preserve"><value>Редактировать файл…</value></data>
+  <data name="SetHotkey" xml:space="preserve"><value>Назначить горячую клавишу…</value></data>
+  <data name="RemoveHotkey" xml:space="preserve"><value>Удалить горячую клавишу</value></data>
+  <data name="SetColor" xml:space="preserve"><value>Цвет…</value></data>
+  <data name="PlayRandom" xml:space="preserve"><value>Воспроизвести случайный</value></data>
+  <data name="ResetPlayCount" xml:space="preserve"><value>Сбросить счетчик воспроизведений</value></data>
+  <data name="ResetAllPlayCounts" xml:space="preserve"><value>Сбросить все счетчики воспроизведений</value></data>
+  <data name="SelectInExplorer" xml:space="preserve"><value>Показать в проводнике</value></data>
+  <data name="PlayMenu" xml:space="preserve"><value>_Воспроизведение</value></data>
+  <data name="Play" xml:space="preserve"><value>Воспроизвести</value></data>
+  <data name="PlayOnSpeakers" xml:space="preserve"><value>Воспроизвести в динамики</value></data>
+  <data name="PlayOnMic" xml:space="preserve"><value>Воспроизвести в микрофон</value></data>
+  <data name="PauseResume" xml:space="preserve"><value>Пауза / продолжить</value></data>
+  <data name="Stop" xml:space="preserve"><value>Стоп</value></data>
+  <data name="Previous" xml:space="preserve"><value>Предыдущий</value></data>
+  <data name="Next" xml:space="preserve"><value>Следующий</value></data>
+  <data name="Repeat" xml:space="preserve"><value>Повтор</value></data>
+  <data name="Continue" xml:space="preserve"><value>Продолжение</value></data>
+  <data name="AutoStop" xml:space="preserve"><value>Автостоп (звуки по горячим клавишам игнорируют Повтор/Продолжение)</value></data>
+  <data name="PlayModeMenu" xml:space="preserve"><value>Режим воспроизведения</value></data>
+  <data name="PlayMode_Both" xml:space="preserve"><value>Динамики + микрофон</value></data>
+  <data name="PlayMode_Mic" xml:space="preserve"><value>Только микрофон</value></data>
+  <data name="PlayMode_Speakers" xml:space="preserve"><value>Только динамики</value></data>
+  <data name="Recorder" xml:space="preserve"><value>Запись…</value></data>
+  <data name="TextToSpeech" xml:space="preserve"><value>Преобразование текста в речь…</value></data>
+  <data name="Window" xml:space="preserve"><value>_Окно</value></data>
+  <data name="Categories" xml:space="preserve"><value>Панель категорий</value></data>
+  <data name="Hotbar" xml:space="preserve"><value>Панель быстрого доступа</value></data>
+  <data name="Toolbar" xml:space="preserve"><value>Панель воспроизведения</value></data>
+  <data name="StatusBar" xml:space="preserve"><value>Строка состояния</value></data>
+  <data name="ShowHiddenCategories" xml:space="preserve"><value>Показывать скрытые категории</value></data>
+  <data name="CategoryIconSize" xml:space="preserve"><value>Размер значков категорий</value></data>
+  <data name="Small" xml:space="preserve"><value>Маленькие</value></data>
+  <data name="Medium" xml:space="preserve"><value>Средние</value></data>
+  <data name="Large" xml:space="preserve"><value>Крупные</value></data>
+  <data name="ExtraLarge" xml:space="preserve"><value>Очень крупные</value></data>
+  <data name="Columns" xml:space="preserve"><value>Столбцы</value></data>
+  <data name="HotbarSize" xml:space="preserve"><value>Размер панели быстрого доступа…</value></data>
+  <data name="HotkeyOverview" xml:space="preserve"><value>Обзор горячих клавиш…</value></data>
+  <data name="MinimizeToTray" xml:space="preserve"><value>Свернуть в область уведомлений</value></data>
+  <data name="Help" xml:space="preserve"><value>_Справка</value></data>
+  <data name="Manual" xml:space="preserve"><value>Руководство</value></data>
+  <data name="Troubleshooting" xml:space="preserve"><value>Устранение неполадок…</value></data>
+  <data name="AutoKeysTroubleshooting" xml:space="preserve"><value>Устранение неполадок Auto Keys…</value></data>
+  <data name="CheckForUpdates" xml:space="preserve"><value>Проверить обновления…</value></data>
+  <data name="Register" xml:space="preserve"><value>Регистрация…</value></data>
+  <data name="About" xml:space="preserve"><value>О программе VoxPad</value></data>
+
+  <!-- Toolbar / status bar -->
+  <data name="TimerTip" xml:space="preserve"><value>Прошло / всего. Двойной щелчок — перейти к воспроизводимому звуку.</value></data>
+  <data name="SpeakerVolumeTip" xml:space="preserve"><value>Громкость динамиков (только ваша копия; связана с микшером громкости Windows)</value></data>
+  <data name="MicMeterTip" xml:space="preserve"><value>Уровень микрофона. Щелкните значок, чтобы измерить уровень голоса.</value></data>
+  <data name="SeekTip" xml:space="preserve"><value>Красный = слышат другие (микрофон), синий = только динамики</value></data>
+  <data name="PlayModeTip" xml:space="preserve"><value>Режим воспроизведения – щелкните для переключения</value></data>
+  <data name="HotkeysTip" xml:space="preserve"><value>Горячие клавиши – двойной щелчок переключает, правый щелчок открывает параметры</value></data>
+  <data name="PassHotkeys" xml:space="preserve"><value>Передавать горячие клавиши активному приложению</value></data>
+  <data name="Hotkeys" xml:space="preserve"><value>Горячие клавиши</value></data>
+  <data name="AutoKeysTip" xml:space="preserve"><value>Auto Keys – двойной щелчок переключает, правый щелчок открывает устранение неполадок</value></data>
+  <data name="AutoKeys" xml:space="preserve"><value>Auto Keys</value></data>
+  <data name="RepeatTip" xml:space="preserve"><value>Повторять текущий звук – щелкните для переключения</value></data>
+  <data name="ContinueTip" xml:space="preserve"><value>Продолжать следующим звуком – щелкните для переключения</value></data>
+  <data name="PreviousPage" xml:space="preserve"><value>Предыдущая страница (Ctrl+PgUp)</value></data>
+  <data name="NextPage" xml:space="preserve"><value>Следующая страница (Ctrl+PgDn)</value></data>
+  <data name="HideCategory" xml:space="preserve"><value>Скрыть категорию</value></data>
+  <data name="SearchTip" xml:space="preserve"><value>Введите текст для фильтра · Enter перебирает совпадения · Ctrl+Enter воспроизводит · Esc очищает</value></data>
+  <data name="ColTag" xml:space="preserve"><value>Тег</value></data>
+  <data name="ColDuration" xml:space="preserve"><value>Длительность</value></data>
+  <data name="ColHotkey" xml:space="preserve"><value>Горячая клавиша</value></data>
+  <data name="ColPlayCount" xml:space="preserve"><value>Воспроизведений</value></data>
+  <data name="ColLastPlayed" xml:space="preserve"><value>Последнее воспроизведение</value></data>
+  <data name="ColIndex" xml:space="preserve"><value>#</value></data>
+  <data name="MoveToCategory" xml:space="preserve"><value>Переместить в категорию</value></data>
+  <data name="RemoveFromCategory" xml:space="preserve"><value>Удалить из этой категории</value></data>
+  <data name="AddCategory" xml:space="preserve"><value>Добавить категорию…</value></data>
+  <data name="AddSubcategory" xml:space="preserve"><value>Добавить подкатегорию…</value></data>
+  <data name="RenameCategory" xml:space="preserve"><value>Переименовать…</value></data>
+  <data name="RemoveCategory" xml:space="preserve"><value>Удалить категорию</value></data>
+  <data name="SetRandomHotkey" xml:space="preserve"><value>Назначить горячую клавишу «случайный звук»…</value></data>
+  <data name="AllSounds" xml:space="preserve"><value>Все звуки</value></data>
+  <data name="UntitledList" xml:space="preserve"><value>Без имени</value></data>
+  <data name="Trial" xml:space="preserve"><value>Пробная версия</value></data>
+  <data name="TrialStatus" xml:space="preserve"><value>Пробная версия: не более {0} звуков, осталось {1} воспроизведений в микрофон за этот запуск</value></data>
+
+  <!-- Status messages -->
+  <data name="PlayModeSet" xml:space="preserve"><value>Режим воспроизведения: {0}</value></data>
+  <data name="HotkeysOn" xml:space="preserve"><value>Горячие клавиши включены</value></data>
+  <data name="HotkeysOff" xml:space="preserve"><value>Горячие клавиши отключены</value></data>
+  <data name="AutoKeysOn" xml:space="preserve"><value>Auto Keys включены</value></data>
+  <data name="AutoKeysOff" xml:space="preserve"><value>Auto Keys отключены</value></data>
+  <data name="Playing" xml:space="preserve"><value>Воспроизводится '{0}' → {1}</value></data>
+  <data name="TrialPlayLimit" xml:space="preserve"><value>Пробная версия: достигнут лимит в 10 воспроизведений в микрофон за запуск. Зарегистрируйтесь, чтобы снять ограничение.</value></data>
+  <data name="TrialSoundLimit" xml:space="preserve"><value>Пробная версия: список может содержать не более {0} звуков. Зарегистрируйтесь, чтобы снять ограничение.</value></data>
+  <data name="NothingToPlay" xml:space="preserve"><value>Нечего воспроизводить</value></data>
+  <data name="DevicesChanged" xml:space="preserve"><value>Аудиоустройства изменились; маршрутизация применена заново.</value></data>
+  <data name="MissingFiles" xml:space="preserve"><value>В списке отсутствует файлов: {0} (выделены серым).</value></data>
+  <data name="CategoryInfo" xml:space="preserve"><value>{0}: звуков: {1}, всего {2}</value></data>
+  <data name="Copied" xml:space="preserve"><value>Скопировано звуков: {0}</value></data>
+  <data name="CutStatus" xml:space="preserve"><value>Вырезано звуков: {0}</value></data>
+  <data name="Importing" xml:space="preserve"><value>Чтение файлов: {0}…</value></data>
+  <data name="Imported" xml:space="preserve"><value>Добавлено звуков: {0}</value></data>
+  <data name="NoAudioFiles" xml:space="preserve"><value>Поддерживаемые аудиофайлы не найдены</value></data>
+  <data name="ConfirmRemove" xml:space="preserve"><value>Удалить из списка звуков: {0}? Аудиофайлы не будут удалены.</value></data>
+  <data name="Removed" xml:space="preserve"><value>Удалено звуков: {0}</value></data>
+  <data name="HotkeyFor" xml:space="preserve"><value>Горячая клавиша для '{0}'</value></data>
+  <data name="RandomHotkeyFor" xml:space="preserve"><value>Горячая клавиша «случайный звук» для '{0}'</value></data>
+  <data name="BareMouseNotAllowed" xml:space="preserve"><value>Для левой и правой кнопок мыши нужна клавиша-модификатор (например, Ctrl+щелчок).</value></data>
+  <data name="ReservedHotkey" xml:space="preserve"><value>{0} зарезервирована для специальной горячей клавиши '{1}'.</value></data>
+  <data name="HotkeyRemoved" xml:space="preserve"><value>Горячая клавиша удалена у '{0}'</value></data>
+  <data name="HotkeySet" xml:space="preserve"><value>{0} → '{1}'</value></data>
+  <data name="ConfirmResetPlayCount" xml:space="preserve"><value>Сбросить счетчик воспроизведений для звуков: {0}?</value></data>
+  <data name="ConfirmResetAll" xml:space="preserve"><value>Сбросить счетчики воспроизведений всех звуков и общий счетчик списка?</value></data>
+  <data name="FileMissing" xml:space="preserve"><value>Файл не найден: {0}</value></data>
+  <data name="ConfirmRemoveCategory" xml:space="preserve"><value>Удалить категорию '{0}' (и ее подкатегории)? Звуки останутся в списке.</value></data>
+  <data name="CategoryName" xml:space="preserve"><value>Имя:</value></data>
+  <data name="NewCategory" xml:space="preserve"><value>Новая категория</value></data>
+  <data name="AddedToCategory" xml:space="preserve"><value>Звуков: {0} → '{1}'</value></data>
+  <data name="ReorderWhileSorted" xml:space="preserve"><value>Снимите сортировку (щелкните заголовок столбца еще раз), чтобы менять порядок вручную.</value></data>
+  <data name="UnsavedTitle" xml:space="preserve"><value>Несохраненные изменения</value></data>
+  <data name="UnsavedText" xml:space="preserve"><value>В списке звуков есть несохраненные изменения. Отменить их?</value></data>
+  <data name="NewListCreated" xml:space="preserve"><value>Новый список звуков</value></data>
+  <data name="ListLoaded" xml:space="preserve"><value>Загружено: {0}</value></data>
+  <data name="ListLoadFailed" xml:space="preserve"><value>Не удалось загрузить список звуков: {0}</value></data>
+  <data name="ListSaved" xml:space="preserve"><value>Сохранено: {0}</value></data>
+  <data name="Exported" xml:space="preserve"><value>Экспортировано файлов: {0}, с ошибкой: {1} → {2}</value></data>
+  <data name="PrefsExported" xml:space="preserve"><value>Настройки экспортированы в {0}</value></data>
+  <data name="PrefsImportedRestart" xml:space="preserve"><value>Настройки импортированы. Перезапустите VoxPad, чтобы применить их.</value></data>
+  <data name="NoSoundAtNumber" xml:space="preserve"><value>Нет звука с номером {0}</value></data>
+  <data name="ElevatedWarning" xml:space="preserve"><value>VoxPad запущен от имени администратора: перетаскивание из проводника работать не будет (Windows блокирует перетаскивание в окна с повышенными правами).</value></data>
+  <data name="UnexpectedError" xml:space="preserve"><value>Произошла непредвиденная ошибка.</value></data>
+  <data name="DumpWritten" xml:space="preserve"><value>Подробности записаны в</value></data>
+  <data name="TrayHint" xml:space="preserve"><value>VoxPad продолжает работать в области уведомлений. Дважды щелкните значок, чтобы восстановить окно.</value></data>
+  <data name="Tray_Show" xml:space="preserve"><value>Показать VoxPad</value></data>
+  <data name="ConfirmQuitPlaying" xml:space="preserve"><value>Воспроизводится звук. Все равно выйти?</value></data>
+  <data name="SaveBeforeExit" xml:space="preserve"><value>Сохранить изменения в списке звуков перед выходом?</value></data>
+  <data name="MicAccessDenied" xml:space="preserve"><value>Windows блокирует доступ классических приложений к микрофону, поэтому VoxPad не может читать ваш микрофон.
+
+Решение: Параметры &gt; Конфиденциальность и защита &gt; Микрофон &gt; включите «Доступ к микрофону» и «Разрешить классическим приложениям доступ к микрофону», затем нажмите «Обновить» в Настройки &gt; Устройства.</value></data>
+  <data name="OpenSettingsQuestion" xml:space="preserve"><value>Открыть параметры конфиденциальности сейчас?</value></data>
+  <data name="AccessDenied" xml:space="preserve"><value>Доступ запрещен</value></data>
+  <data name="RemoveFromHotbar" xml:space="preserve"><value>Удалить с панели быстрого доступа</value></data>
+  <data name="EmptyTileHint" xml:space="preserve"><value>Перетащите звук сюда</value></data>
+  <data name="PrefsSaved" xml:space="preserve"><value>Настройки сохранены</value></data>
+  <data name="LanguageRestart" xml:space="preserve"><value>Язык изменится после перезапуска VoxPad.</value></data>
+
+  <!-- Dialogs -->
+  <data name="OK" xml:space="preserve"><value>ОК</value></data>
+  <data name="Cancel" xml:space="preserve"><value>Отмена</value></data>
+  <data name="Apply" xml:space="preserve"><value>Применить</value></data>
+  <data name="Close" xml:space="preserve"><value>Закрыть</value></data>
+  <data name="Clear" xml:space="preserve"><value>Очистить</value></data>
+  <data name="None" xml:space="preserve"><value>(нет)</value></data>
+  <data name="HotkeyCapturePrompt" xml:space="preserve"><value>Нажмите клавишу или сочетание клавиш. Кнопки мыши Mid, 4 и 5 тоже работают (левой/правой нужен модификатор). Enter сохраняет, Delete или Backspace очищает, Esc отменяет.</value></data>
+  <data name="HexColor" xml:space="preserve"><value>Hex:</value></data>
+  <data name="NoColor" xml:space="preserve"><value>Без цвета</value></data>
+  <data name="Rows" xml:space="preserve"><value>Строки:</value></data>
+  <data name="Pages" xml:space="preserve"><value>Страницы:</value></data>
+  <data name="HotbarSizeHint" xml:space="preserve"><value>Горячие клавиши общие для всех страниц. Плитки за пределами новой сетки будут удалены.</value></data>
+  <data name="Type" xml:space="preserve"><value>Тип</value></data>
+  <data name="Target" xml:space="preserve"><value>Цель</value></data>
+  <data name="Sound" xml:space="preserve"><value>Звук</value></data>
+  <data name="CategoryRandom" xml:space="preserve"><value>Случайный звук в категории</value></data>
+  <data name="Special" xml:space="preserve"><value>Специальные</value></data>
+  <data name="Numpad" xml:space="preserve"><value>Цифровая клавиатура</value></data>
+  <data name="NumpadDesc" xml:space="preserve"><value>Воспроизведение по номеру в текущей категории</value></data>
+  <data name="Index" xml:space="preserve"><value>Индекс</value></data>
+  <data name="IndexDesc" xml:space="preserve"><value>Воспроизведение по номеру строки в «Все звуки»</value></data>
+  <data name="HotkeyOverviewHint" xml:space="preserve"><value>Горячие клавиши {0}; передача приложению {1}.</value></data>
+  <data name="Enabled" xml:space="preserve"><value>включены</value></data>
+  <data name="Disabled" xml:space="preserve"><value>отключены</value></data>
+  <data name="On" xml:space="preserve"><value>вкл.</value></data>
+  <data name="Off" xml:space="preserve"><value>выкл.</value></data>
+  <data name="Version" xml:space="preserve"><value>Версия</value></data>
+  <data name="TrialEdition" xml:space="preserve"><value>Пробная версия – не более 10 звуков, 10 воспроизведений в микрофон за запуск</value></data>
+  <data name="LicensedTo" xml:space="preserve"><value>Лицензия выдана: {0} (выпуск {1})</value></data>
+  <data name="AboutText" xml:space="preserve"><value>Саундборд для Windows, направляющий звуки в ваш микрофон. Аудиодвижок: NAudio, NVorbis, Concentus, TagLib#. Виртуальный микрофон через VB-CABLE / Voicemeeter.</value></data>
+  <data name="DataFolder" xml:space="preserve"><value>Данные</value></data>
+  <data name="LogFolder" xml:space="preserve"><value>Журналы</value></data>
+  <data name="OpenDataFolder" xml:space="preserve"><value>Открыть папку данных</value></data>
+  <data name="HideLicenseeName" xml:space="preserve"><value>Скрыть мое имя (режим стримера)</value></data>
+  <data name="RemoveLicense" xml:space="preserve"><value>Удалить лицензию</value></data>
+  <data name="ConfirmRemoveLicense" xml:space="preserve"><value>Удалить лицензию с этого ПК?</value></data>
+  <data name="RegisterPrompt" xml:space="preserve"><value>Введите имя и серийный номер из письма о покупке. Серийный номер проверяется офлайн и сохраняется в license.dat.</value></data>
+  <data name="Name" xml:space="preserve"><value>Имя:</value></data>
+  <data name="Serial" xml:space="preserve"><value>Серийный номер:</value></data>
+  <data name="RegisteredThanks" xml:space="preserve"><value>Спасибо! VoxPad зарегистрирован.</value></data>
+  <data name="SerialInvalid" xml:space="preserve"><value>Серийный номер не соответствует имени. Проверьте опечатки (I/1 и O/0 взаимозаменяемы).</value></data>
+  <data name="AllTimePlays" xml:space="preserve"><value>Воспроизведений в микрофон за все время</value></data>
+  <data name="ListPlays" xml:space="preserve"><value>Воспроизведений в этом списке</value></data>
+  <data name="SoundsInList" xml:space="preserve"><value>Звуков в списке</value></data>
+  <data name="Launches" xml:space="preserve"><value>Запусков</value></data>
+  <data name="Since" xml:space="preserve"><value>С</value></data>
+  <data name="TopSounds" xml:space="preserve"><value>Самые популярные</value></data>
+  <data name="ResetAllTime" xml:space="preserve"><value>Сбросить общий счетчик</value></data>
+  <data name="ConfirmResetAllTime" xml:space="preserve"><value>Сбросить общий счетчик за все время?</value></data>
+  <data name="WebImportPrompt" xml:space="preserve"><value>Вставьте прямую ссылку на аудиофайл (mp3, ogg, wav…). Файл будет скачан в папку музыки VoxPad и добавлен в список.</value></data>
+  <data name="FileNameOptional" xml:space="preserve"><value>Имя файла (необязательно):</value></data>
+  <data name="Import" xml:space="preserve"><value>Импорт</value></data>
+  <data name="Downloading" xml:space="preserve"><value>Скачивание…</value></data>
+  <data name="UnsupportedFormat" xml:space="preserve"><value>Неподдерживаемый аудиоформат</value></data>
+  <data name="RestorePrompt" xml:space="preserve"><value>Ежедневные резервные копии создаются при запуске. Восстановление заменяет текущий список (его можно вернуть, загрузив сохраненный список).</value></data>
+  <data name="OpenBackupFolder" xml:space="preserve"><value>Открыть папку</value></data>
+  <data name="Restore" xml:space="preserve"><value>Восстановить</value></data>
+  <data name="ConfirmRestore" xml:space="preserve"><value>Восстановить резервную копию от {0}?</value></data>
+  <data name="Restored" xml:space="preserve"><value>Восстановлена резервная копия от {0}</value></data>
+  <data name="Checking" xml:space="preserve"><value>Проверка…</value></data>
+  <data name="DownloadInstall" xml:space="preserve"><value>Скачать и установить</value></data>
+  <data name="PackageVerified" xml:space="preserve"><value>Пакет проверен. Сейчас запустится установщик; VoxPad закроется.</value></data>
+  <data name="VoiceMeasurement" xml:space="preserve"><value>Измерение голоса</value></data>
+  <data name="VoiceMeasurePrompt" xml:space="preserve"><value>Говорите в микрофон обычным голосом около 8 секунд. Измеренная громкость станет целью нормализации, чтобы звуки соответствовали вашему голосу (хороший результат — выше 74 dB).</value></data>
+  <data name="CurrentTarget" xml:space="preserve"><value>Текущая цель</value></data>
+  <data name="DefaultNotMeasured" xml:space="preserve"><value>по умолчанию, не измерено</value></data>
+  <data name="Start" xml:space="preserve"><value>Начать</value></data>
+  <data name="UseAsTarget" xml:space="preserve"><value>Использовать как цель</value></data>
+  <data name="Measuring" xml:space="preserve"><value>Измерение</value></data>
+  <data name="NothingMeasured" xml:space="preserve"><value>Ничего не измерено – микрофон отключен или выбрано не то устройство?</value></data>
+  <data name="Result" xml:space="preserve"><value>Результат</value></data>
+  <data name="TooQuiet" xml:space="preserve"><value>очень тихо – увеличьте уровень микрофона в Windows</value></data>
+  <data name="BelowTarget" xml:space="preserve"><value>ниже 74 dB; стоит повысить уровень микрофона</value></data>
+  <data name="TargetSet" xml:space="preserve"><value>Цель нормализации установлена: {0:F1} dB</value></data>
+  <data name="Routing" xml:space="preserve"><value>Маршрутизация</value></data>
+  <data name="TroubleChecklist" xml:space="preserve"><value>Контрольный список:
+• Установите VB-CABLE (бесплатно) и нажмите «Обновить» в Настройки &gt; Устройства.
+• В Discord/Teams/игре выберите 'CABLE Output' как микрофон и отключите там подавление шума / эхоподавление.
+• Оставьте ваш настоящий микрофон отмеченным в столбце «Использовать», чтобы ваш голос подмешивался.
+• Конфиденциальность Windows: разрешите классическим приложениям доступ к микрофону.
+• Горячие клавиши не работают в игре? Запустите VoxPad с теми же правами, что и игру.</value></data>
+  <data name="DiagnosticReport" xml:space="preserve"><value>Диагностический отчет</value></data>
+  <data name="DiagnosticHint" xml:space="preserve"><value>Создает zip-архив с журналом, списком устройств, состоянием маршрутизации и настройками (только идентификаторы устройств, без данных лицензии), который можно приложить к сообщению об ошибке.</value></data>
+  <data name="CreateReport" xml:space="preserve"><value>Создать отчет</value></data>
+  <data name="OpenDevices" xml:space="preserve"><value>Устройства…</value></data>
+  <data name="AutoKeysTroubleHint" xml:space="preserve"><value>Auto Keys нажимают вашу клавишу push-to-talk, когда звук начинает играть в микрофон. Последняя оценка показывает, почему каждая запись сработала или нет. Воспроизведите звук, затем откройте это окно снова для повторной проверки.</value></data>
+  <data name="MicPlayMode" xml:space="preserve"><value>режим воспроизведения в микрофон</value></data>
+  <data name="NotMicPlayMode" xml:space="preserve"><value>НЕ режим воспроизведения в микрофон – Auto Keys не срабатывают</value></data>
+  <data name="Entries" xml:space="preserve"><value>Записи</value></data>
+  <data name="ForegroundNow" xml:space="preserve"><value>Активное приложение сейчас</value></data>
+  <data name="NoEvaluationYet" xml:space="preserve"><value>В этом сеансе еще не воспроизводился ни один звук.</value></data>
+  <data name="LastEvaluation" xml:space="preserve"><value>Последняя оценка</value></data>
+  <data name="OpenAutoKeysPrefs" xml:space="preserve"><value>Настройки Auto Keys…</value></data>
+
+  <!-- TTS / recorder / editor -->
+  <data name="Voice" xml:space="preserve"><value>Голос:</value></data>
+  <data name="Rate" xml:space="preserve"><value>Скорость</value></data>
+  <data name="PreviewSpeakers" xml:space="preserve"><value>Прослушать (Enter)</value></data>
+  <data name="SendToMic" xml:space="preserve"><value>В микрофон (Ctrl+Enter)</value></data>
+  <data name="SaveToList" xml:space="preserve"><value>Сохранить в список</value></data>
+  <data name="TtsHint" xml:space="preserve"><value>Enter = прослушать в динамиках · Ctrl+Enter = воспроизвести в микрофон · специальная горячая клавиша «Озвучить TTS» произносит этот текст.</value></data>
+  <data name="Source" xml:space="preserve"><value>Источник:</value></data>
+  <data name="Source_Speakers" xml:space="preserve"><value>Динамики (то, что вы слышите)</value></data>
+  <data name="Source_Mic" xml:space="preserve"><value>Микрофон</value></data>
+  <data name="Format" xml:space="preserve"><value>Формат:</value></data>
+  <data name="Insert" xml:space="preserve"><value>Вставка:</value></data>
+  <data name="InsertEnd" xml:space="preserve"><value>Добавить в конец списка</value></data>
+  <data name="InsertBeginning" xml:space="preserve"><value>Вставить в начало</value></data>
+  <data name="AutoNormalize" xml:space="preserve"><value>Автонормализация до</value></data>
+  <data name="DbHint" xml:space="preserve"><value>dB (89 ≈ −23 LUFS; выше 99 — клиппинг)</value></data>
+  <data name="TrimSilence" xml:space="preserve"><value>Обрезать тишину в начале и в конце</value></data>
+  <data name="MaxTime" xml:space="preserve"><value>Макс. время:</value></data>
+  <data name="MaxSecondsHint" xml:space="preserve"><value>секунд (0 = без ограничения; буферизуется без сжатия в %TEMP%)</value></data>
+  <data name="TargetDirectory" xml:space="preserve"><value>Папка:</value></data>
+  <data name="RecorderHotkeys" xml:space="preserve"><value>Специальные горячие клавиши: старт = {0}, стоп = {1}. Перед началом записи воспроизводится звук уведомления.</value></data>
+  <data name="NotSet" xml:space="preserve"><value>не задано</value></data>
+  <data name="StartRecording" xml:space="preserve"><value>Записать</value></data>
+  <data name="StopRecording" xml:space="preserve"><value>Стоп</value></data>
+  <data name="PlayLastTake" xml:space="preserve"><value>Воспроизвести последний дубль</value></data>
+  <data name="LastTake" xml:space="preserve"><value>Последний дубль</value></data>
+  <data name="MaxTimeReached" xml:space="preserve"><value>Достигнуто максимальное время записи.</value></data>
+  <data name="RecordingInProgress" xml:space="preserve"><value>Идет запись. Отменить ее?</value></data>
+  <data name="TargetTooLoud" xml:space="preserve"><value>Цель выше 99 dB приведет к клиппингу. Все равно продолжить?</value></data>
+  <data name="RecordingFrom" xml:space="preserve"><value>Запись с '{0}'…</value></data>
+  <data name="RecordingStarted" xml:space="preserve"><value>Запись начата</value></data>
+  <data name="NothingRecorded" xml:space="preserve"><value>Ничего не записано (тишина).</value></data>
+  <data name="RecordingSaved" xml:space="preserve"><value>Запись сохранена: {0}</value></data>
+  <data name="Editor" xml:space="preserve"><value>Редактор</value></data>
+  <data name="PlaySelection" xml:space="preserve"><value>Воспроизвести выделение</value></data>
+  <data name="Crop" xml:space="preserve"><value>Обрезать</value></data>
+  <data name="VolumeUp" xml:space="preserve"><value>Громк. +3 dB</value></data>
+  <data name="VolumeDown" xml:space="preserve"><value>Громк. −3 dB</value></data>
+  <data name="VolumeCustom" xml:space="preserve"><value>Громкость…</value></data>
+  <data name="NormalizeTo" xml:space="preserve"><value>Нормализовать…</value></data>
+  <data name="ZoomFit" xml:space="preserve"><value>По размеру</value></data>
+  <data name="ZoomSelection" xml:space="preserve"><value>Масштаб по выделению</value></data>
+  <data name="Save" xml:space="preserve"><value>Сохранить</value></data>
+  <data name="EditorHint" xml:space="preserve"><value>Перетащите для выделения · Shift+стрелки / Home / End расширяют · Ctrl+A все · Ctrl+D снять выделение · Del вырезает · Esc закрывает</value></data>
+  <data name="Attr_Size" xml:space="preserve"><value>Размер</value></data>
+  <data name="Attr_Format" xml:space="preserve"><value>Формат</value></data>
+  <data name="Attr_SampleRate" xml:space="preserve"><value>Частота дискретизации</value></data>
+  <data name="Attr_Duration" xml:space="preserve"><value>Длительность</value></data>
+  <data name="Attr_Channels" xml:space="preserve"><value>Каналы</value></data>
+  <data name="Attr_OriginalVolume" xml:space="preserve"><value>Исходная громкость</value></data>
+  <data name="LongFileWarning" xml:space="preserve"><value>Этот файл длиннее 10 минут. При редактировании весь файл хранится в памяти, а снимки для отмены умножают это; ожидайте высокого потребления памяти.</value></data>
+  <data name="CannotOpenFile" xml:space="preserve"><value>Не удалось открыть файл: {0}</value></data>
+  <data name="Modified" xml:space="preserve"><value>изменено</value></data>
+  <data name="Selection" xml:space="preserve"><value>Выделение</value></data>
+  <data name="NoSelection" xml:space="preserve"><value>Нет выделения (операции применяются ко всему файлу)</value></data>
+  <data name="GainPrompt" xml:space="preserve"><value>Усиление в dB (отрицательное = тише):</value></data>
+  <data name="NormalizePrompt" xml:space="preserve"><value>Цель в dB (89 ≈ −23 LUFS):</value></data>
+  <data name="EditorSaveQuestion" xml:space="preserve"><value>Сохранить отредактированный звук?</value></data>
+  <data name="EditorSaved" xml:space="preserve"><value>Сохранено: {0}</value></data>
+
+  <!-- Preferences -->
+  <data name="Tab_Devices" xml:space="preserve"><value>Устройства</value></data>
+  <data name="Tab_Audio" xml:space="preserve"><value>Аудио</value></data>
+  <data name="Tab_Hotkeys" xml:space="preserve"><value>Горячие клавиши</value></data>
+  <data name="Tab_Recorder" xml:space="preserve"><value>Запись</value></data>
+  <data name="Tab_Interface" xml:space="preserve"><value>Интерфейс</value></data>
+  <data name="Tab_Notifications" xml:space="preserve"><value>Уведомления</value></data>
+  <data name="Tab_Updates" xml:space="preserve"><value>Обновления</value></data>
+  <data name="SetupMode" xml:space="preserve"><value>Режим настройки</value></data>
+  <data name="SetupModeHint" xml:space="preserve"><value>У VoxPad нет собственного аудиодрайвера уровня ядра. Он выводит голос + звук в конечную точку воспроизведения виртуального кабеля; приложения затем записывают с конечной точки записи кабеля (например, 'CABLE Output'). Автовыбор пробует VB-CABLE, VB-CABLE A/B, Voicemeeter, выбранный вручную кабель и Stereo Mix в этом порядке.</value></data>
+  <data name="Refresh" xml:space="preserve"><value>Обновить</value></data>
+  <data name="Status" xml:space="preserve"><value>Состояние: </value></data>
+  <data name="Microphones" xml:space="preserve"><value>Микрофоны (отметьте «Использовать» для тех, что подмешивать в кабель)</value></data>
+  <data name="Use" xml:space="preserve"><value>Использовать</value></data>
+  <data name="DefaultComm" xml:space="preserve"><value> (по умолчанию для связи)</value></data>
+  <data name="NoMics" xml:space="preserve"><value>Устройства записи не найдены.</value></data>
+  <data name="NoMicsTickedHint" xml:space="preserve"><value>Ничего не отмечено = используется микрофон связи по умолчанию.</value></data>
+  <data name="VirtualCableEndpoint" xml:space="preserve"><value>Конечная точка воспроизведения виртуального кабеля (для «Другой виртуальный кабель»)</value></data>
+  <data name="AutoDetect" xml:space="preserve"><value>(автоопределение)</value></data>
+  <data name="SpeakerDevice" xml:space="preserve"><value>Динамики (ваша собственная копия звука)</value></data>
+  <data name="DefaultDevice" xml:space="preserve"><value>(по умолчанию Windows)</value></data>
+  <data name="RecorderMic" xml:space="preserve"><value>Микрофон для записи</value></data>
+  <data name="MicLatency" xml:space="preserve"><value>Задержка микрофона (ms):</value></data>
+  <data name="LatencyHint" xml:space="preserve"><value>Меньше = меньше задержка голоса, больше = меньше выпадений на медленных ПК. 30 ms — хорошее значение по умолчанию.</value></data>
+  <data name="OpenPrivacySettings" xml:space="preserve"><value>Доступ к микрофону запрещен – открыть параметры конфиденциальности Windows</value></data>
+  <data name="Normalization" xml:space="preserve"><value>Нормализация громкости (EBU R128, по каналам)</value></data>
+  <data name="Norm_Off" xml:space="preserve"><value>Выкл.</value></data>
+  <data name="Norm_Dynamic" xml:space="preserve"><value>Динамическая – анализ первых 6 с, уточнение во время воспроизведения (по умолчанию)</value></data>
+  <data name="Norm_Full" xml:space="preserve"><value>Весь файл – анализ всего файла перед воспроизведением (кэшируется)</value></data>
+  <data name="MeasureVoice" xml:space="preserve"><value>Измерить голос…</value></data>
+  <data name="NormHint" xml:space="preserve"><value>Звуки в микрофоне приводятся к уровню вашего голоса (измерьте его; хороший результат — выше 74 dB). Копия в динамиках не меняется – для себя используйте ползунок громкости динамиков.</value></data>
+  <data name="BlockVoice" xml:space="preserve"><value>Блокировать голос</value></data>
+  <data name="BlockVoiceCheck" xml:space="preserve"><value>Полностью заменять мой голос во время воспроизведения звука (вместо смешивания)</value></data>
+  <data name="VoiceActivation" xml:space="preserve"><value>Звук активации голосом</value></data>
+  <data name="VoiceActivationCheck" xml:space="preserve"><value>Воспроизводить короткий громкий сигнал в микрофон, чтобы приложения с голосовой активацией открыли шлюз</value></data>
+  <data name="CustomFile" xml:space="preserve"><value>Свой файл (пусто = тон 250 ms):</value></data>
+  <data name="Default" xml:space="preserve"><value>По умолчанию</value></data>
+  <data name="VoiceActivationHeadphones" xml:space="preserve"><value>Также воспроизводить этот сигнал в моих динамиках/наушниках</value></data>
+  <data name="Playback" xml:space="preserve"><value>Воспроизведение</value></data>
+  <data name="AllowResumeOtherMode" xml:space="preserve"><value>Разрешить продолжение в другом режиме воспроизведения (перезапуск с позиции паузы в новом режиме)</value></data>
+  <data name="General" xml:space="preserve"><value>Общие</value></data>
+  <data name="HotkeysEnabledCheck" xml:space="preserve"><value>Горячие клавиши включены</value></data>
+  <data name="PassHotkeysCheck" xml:space="preserve"><value>Передавать горячие клавиши активному приложению (по умолчанию выкл.: клавиша перехватывается)</value></data>
+  <data name="AutoStopCheck" xml:space="preserve"><value>Автостоп: звуки, запущенные горячей клавишей, игнорируют Повтор и Продолжение (по умолчанию вкл.)</value></data>
+  <data name="HotkeysGeneralHint" xml:space="preserve"><value>Назначьте горячую клавишу звуку правым щелчком или двойным щелчком по ячейке «Горячая клавиша». Отдельные клавиши, любые сочетания с Ctrl/Alt/Shift/Win и кнопки мыши Mid/4/5 работают глобально.</value></data>
+  <data name="SpecialHint" xml:space="preserve"><value>Специальные горячие клавиши зарезервированы: звук не может использовать ту же клавишу.</value></data>
+  <data name="NumpadHotkeys" xml:space="preserve"><value>Горячие клавиши цифровой клавиатуры</value></data>
+  <data name="NumpadEnabledCheck" xml:space="preserve"><value>Включено: удерживайте модификатор, наберите номер звука на цифровой клавиатуре, отпустите</value></data>
+  <data name="Modifier" xml:space="preserve"><value>Модификатор:</value></data>
+  <data name="NumpadHint" xml:space="preserve"><value>Номер — это столбец # текущей категории.</value></data>
+  <data name="IndexHotkeys" xml:space="preserve"><value>Горячие клавиши по индексу</value></data>
+  <data name="IndexEnabledCheck" xml:space="preserve"><value>Включено: удерживайте модификатор, наберите номер строки в верхнем ряду цифр, отпустите</value></data>
+  <data name="IndexHint" xml:space="preserve"><value>Индекс — это строка в скрытой категории «Все звуки», например Alt+1,2,3 воспроизводит строку 123.</value></data>
+  <data name="Advanced" xml:space="preserve"><value>Дополнительно</value></data>
+  <data name="AllowLeftRight" xml:space="preserve"><value>Различать левые/правые модификаторы (LCtrl и RCtrl — разные клавиши)</value></data>
+  <data name="SameHotkeysAllCategories" xml:space="preserve"><value>Одинаковые горячие клавиши во всех категориях (по строкам: горячая клавиша строки N воспроизводит строку N выбранной категории)</value></data>
+  <data name="JumpSeconds" xml:space="preserve"><value>Переход на ±N секунд:</value></data>
+  <data name="VolumeStep" xml:space="preserve"><value>Шаг громкости вверх/вниз (%):</value></data>
+  <data name="VolumeSet" xml:space="preserve"><value>Уровень для горячей клавиши «Установить громкость» (%):</value></data>
+  <data name="AutoKeysEnabledCheck" xml:space="preserve"><value>Auto Keys включены</value></data>
+  <data name="AutoKeysHint" xml:space="preserve"><value>Автоматический push-to-talk: когда звук начинает играть в микрофон, клавиша нажимается (удерживается на время звука или нажимается до и после). Срабатывает только в режимах воспроизведения в микрофон.</value></data>
+  <data name="NoKey" xml:space="preserve"><value>(нет клавиши)</value></data>
+  <data name="AutoKey" xml:space="preserve"><value>Auto Key</value></data>
+  <data name="OnlyIfHotkey" xml:space="preserve"><value>Только при запуске горячей клавишей</value></data>
+  <data name="PressHold" xml:space="preserve"><value>Нажать и удерживать на время звука</value></data>
+  <data name="PressBeforeAfter" xml:space="preserve"><value>Нажать до и после</value></data>
+  <data name="PressMode" xml:space="preserve"><value>Режим нажатия:</value></data>
+  <data name="Cond_Always" xml:space="preserve"><value>Всегда</value></data>
+  <data name="Cond_Fullscreen" xml:space="preserve"><value>Активное приложение в полноэкранном режиме (включая без рамки)</value></data>
+  <data name="Cond_Running" xml:space="preserve"><value>Запущено приложение из списка</value></data>
+  <data name="Cond_Foreground" xml:space="preserve"><value>Приложение из списка активно</value></data>
+  <data name="Condition" xml:space="preserve"><value>Условие:</value></data>
+  <data name="AppsTip" xml:space="preserve"><value>Имена процессов, по одному в строке, например discord.exe</value></data>
+  <data name="Apps" xml:space="preserve"><value>Список приложений:</value></data>
+  <data name="AddAutoKey" xml:space="preserve"><value>Добавить Auto Key</value></data>
+  <data name="RecorderFormatHint" xml:space="preserve"><value>Все преобразуется в стерео 48 kHz. Редактор также сохраняет в этом формате.</value></data>
+  <data name="TargetDb" xml:space="preserve"><value>Цель (dB, по умолчанию 89 ≈ −23 LU; &gt;99 — клиппинг):</value></data>
+  <data name="NotificationSound" xml:space="preserve"><value>Воспроизводить звук уведомления перед началом записи</value></data>
+  <data name="RecorderHotkeyHint" xml:space="preserve"><value>Горячие клавиши старта/остановки записи находятся на вкладке Горячие клавиши &gt; Специальные.</value></data>
+  <data name="Language" xml:space="preserve"><value>Язык:</value></data>
+  <data name="Style" xml:space="preserve"><value>Стиль:</value></data>
+  <data name="Theme_Light" xml:space="preserve"><value>Светлый</value></data>
+  <data name="Theme_Dark" xml:space="preserve"><value>Темный</value></data>
+  <data name="Theme_Native" xml:space="preserve"><value>Системный (Windows)</value></data>
+  <data name="NativeForced" xml:space="preserve"><value>Включен высокий контраст или средство чтения с экрана: используется системный стиль.</value></data>
+  <data name="ToolbarItems" xml:space="preserve"><value>Элементы панели инструментов</value></data>
+  <data name="Timer" xml:space="preserve"><value>Таймер дорожки</value></data>
+  <data name="SeekSlider" xml:space="preserve"><value>Ползунок позиции</value></data>
+  <data name="SpeakerVolume" xml:space="preserve"><value>Громкость динамиков</value></data>
+  <data name="MicLevelMeter" xml:space="preserve"><value>Индикатор уровня микрофона</value></data>
+  <data name="Behaviour" xml:space="preserve"><value>Поведение</value></data>
+  <data name="StartMinimized" xml:space="preserve"><value>Запускать свернутым</value></data>
+  <data name="MinimizeToTrayCheck" xml:space="preserve"><value>Сворачивать в область уведомлений</value></data>
+  <data name="CloseToTray" xml:space="preserve"><value>Закрытие окна сворачивает в область уведомлений вместо выхода</value></data>
+  <data name="DisableSorting" xml:space="preserve"><value>Отключить сортировку (заголовки столбцов не сортируют; только ручной порядок)</value></data>
+  <data name="Confirmations" xml:space="preserve"><value>Подтверждения</value></data>
+  <data name="ConfirmRemoveCheck" xml:space="preserve"><value>Подтверждать удаление звуков</value></data>
+  <data name="ConfirmResetCheck" xml:space="preserve"><value>Подтверждать сброс счетчиков воспроизведений</value></data>
+  <data name="ConfirmQuitCheck" xml:space="preserve"><value>Подтверждать выход во время воспроизведения звука</value></data>
+  <data name="NotifyMissing" xml:space="preserve"><value>Предупреждать об отсутствующих файлах при загрузке списка</value></data>
+  <data name="NotifyDevices" xml:space="preserve"><value>Сообщать об изменениях аудиоустройств в строке состояния</value></data>
+  <data name="NotifyTray" xml:space="preserve"><value>Показывать уведомление при сворачивании в область уведомлений</value></data>
+  <data name="NotifyRecording" xml:space="preserve"><value>Сообщение в строке состояния при начале записи</value></data>
+  <data name="NotifyTrial" xml:space="preserve"><value>Показывать окно при достижении лимита пробной версии</value></data>
+  <data name="NotifyUpdates" xml:space="preserve"><value>Показывать доступные обновления</value></data>
+  <data name="CheckInterval" xml:space="preserve"><value>Проверять обновления:</value></data>
+  <data name="Never" xml:space="preserve"><value>Никогда (по умолчанию)</value></data>
+  <data name="Daily" xml:space="preserve"><value>Ежедневно</value></data>
+  <data name="Weekly" xml:space="preserve"><value>Еженедельно</value></data>
+  <data name="ManifestUrl" xml:space="preserve"><value>URL манифеста:</value></data>
+  <data name="UpdateHint" xml:space="preserve"><value>Пакеты обновлений устанавливаются только после проверки подписи манифеста и хэша пакета по ключу, встроенному в VoxPad.</value></data>
+  <data name="LastCheck" xml:space="preserve"><value>Последняя проверка</value></data>
+  <data name="CheckNow" xml:space="preserve"><value>Проверить сейчас</value></data>
+
+  <!-- Special hotkey names -->
+  <data name="Special_Stop" xml:space="preserve"><value>Стоп</value></data>
+  <data name="Special_Start" xml:space="preserve"><value>Старт (воспроизвести выбранный / продолжить)</value></data>
+  <data name="Special_Pause" xml:space="preserve"><value>Пауза / продолжить</value></data>
+  <data name="Special_PlayPrevious" xml:space="preserve"><value>Воспроизвести предыдущий файл</value></data>
+  <data name="Special_PlayNext" xml:space="preserve"><value>Воспроизвести следующий файл</value></data>
+  <data name="Special_PlaySelected" xml:space="preserve"><value>Воспроизвести выбранный файл</value></data>
+  <data name="Special_PlayRandomInCategory" xml:space="preserve"><value>Воспроизвести случайный файл (текущая категория)</value></data>
+  <data name="Special_PlayRandomFromAll" xml:space="preserve"><value>Воспроизвести случайный файл (все звуки)</value></data>
+  <data name="Special_SelectPreviousFile" xml:space="preserve"><value>Выбрать предыдущий файл</value></data>
+  <data name="Special_SelectNextFile" xml:space="preserve"><value>Выбрать следующий файл</value></data>
+  <data name="Special_SelectPreviousCategory" xml:space="preserve"><value>Выбрать предыдущую категорию</value></data>
+  <data name="Special_SelectNextCategory" xml:space="preserve"><value>Выбрать следующую категорию</value></data>
+  <data name="Special_StartRecording" xml:space="preserve"><value>Начать запись</value></data>
+  <data name="Special_StopRecording" xml:space="preserve"><value>Остановить запись</value></data>
+  <data name="Special_JumpBackward" xml:space="preserve"><value>Перейти назад на N секунд</value></data>
+  <data name="Special_JumpForward" xml:space="preserve"><value>Перейти вперед на N секунд</value></data>
+  <data name="Special_SpeakerVolumeUp" xml:space="preserve"><value>Громкость динамиков +</value></data>
+  <data name="Special_SpeakerVolumeDown" xml:space="preserve"><value>Громкость динамиков −</value></data>
+  <data name="Special_SpeakerVolumeSet" xml:space="preserve"><value>Установить громкость динамиков</value></data>
+  <data name="Special_SpeakerVolumeMute" xml:space="preserve"><value>Выключить / включить звук динамиков</value></data>
+  <data name="Special_SetPlayModeBoth" xml:space="preserve"><value>Режим воспроизведения: динамики + микрофон</value></data>
+  <data name="Special_SetPlayModeMic" xml:space="preserve"><value>Режим воспроизведения: только микрофон</value></data>
+  <data name="Special_SetPlayModeSpeakers" xml:space="preserve"><value>Режим воспроизведения: только динамики</value></data>
+  <data name="Special_CyclePlayMode" xml:space="preserve"><value>Переключить режим воспроизведения</value></data>
+  <data name="Special_EnableHotkeys" xml:space="preserve"><value>Включить горячие клавиши</value></data>
+  <data name="Special_DisableHotkeys" xml:space="preserve"><value>Отключить горячие клавиши</value></data>
+  <data name="Special_ToggleHotkeys" xml:space="preserve"><value>Переключить горячие клавиши</value></data>
+  <data name="Special_EnableAutoKeys" xml:space="preserve"><value>Включить Auto Keys</value></data>
+  <data name="Special_DisableAutoKeys" xml:space="preserve"><value>Отключить Auto Keys</value></data>
+  <data name="Special_ToggleAutoKeys" xml:space="preserve"><value>Переключить Auto Keys</value></data>
+  <data name="Special_PlayTts" xml:space="preserve"><value>Озвучить текст TTS</value></data>
+</root>

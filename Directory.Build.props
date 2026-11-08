@@ -1,0 +1,23 @@
+<Project>
+  <PropertyGroup>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>12</LangVersion>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <Version>1.0.0</Version>
+    <Authors>VoxPad contributors</Authors>
+    <Product>VoxPad</Product>
+    <Copyright>Copyright © 2026 VoxPad contributors</Copyright>
+    <!-- Architecture follows the runtime identifier (win-x64 default, win-arm64); solution builds stay "Any CPU". -->
+    <PlatformTarget Condition="'$(RuntimeIdentifier)' == 'win-arm64' Or '$(Platform)' == 'ARM64'">ARM64</PlatformTarget>
+    <PlatformTarget Condition="'$(PlatformTarget)' == ''">x64</PlatformTarget>
+    <!-- Keep the footprint small: workstation, non-concurrent GC; no server GC. -->
+    <ServerGarbageCollection>false</ServerGarbageCollection>
+    <ConcurrentGarbageCollection>false</ConcurrentGarbageCollection>
+    <TieredPGO>true</TieredPGO>
+    <!-- Don't embed the build machine's folder paths in the binaries / embedded PDBs. -->
+    <PathMap>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)'))=/_/VoxPad/</PathMap>
+    <Deterministic>true</Deterministic>
+    <SatelliteResourceLanguages>en;de;fr;es;it;pt;pt-BR;nl;pl;ru;uk;tr;cs;hu;sv;da;fi;ja;ko;zh-Hans;zh-Hant</SatelliteResourceLanguages>
+  </PropertyGroup>
+</Project>

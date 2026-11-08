@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VoxPad – soundboard for your microphone</title>
+<meta name="description" content="VoxPad is a free Windows soundboard that plays sounds into your microphone for Discord, games and streams. Global hotkeys, Auto Keys push-to-talk, loudness normalisation, recorder, editor and text-to-speech.">
+<link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<style>
+  :root{
+    --bg:#f6f6f9;--panel:#ffffff;--fg:#1b1b24;--muted:#64647a;--line:#e3e3ec;
+    --accent:#5848c8;--accent-fg:#ffffff;--accent-2:#8c7cff;--good:#2e8b57;--shadow:0 10px 30px rgba(30,20,90,.10);
+  }
+  @media (prefers-color-scheme:dark){:root{--bg:#15151b;--panel:#1f1f27;--fg:#ededf3;--muted:#a0a0b4;--line:#33333f;--accent:#8c7cff;--accent-fg:#101018;--accent-2:#5848c8;--shadow:0 10px 30px rgba(0,0,0,.45)}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 "Segoe UI",system-ui,-apple-system,sans-serif}
+  a{color:var(--accent)}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+  header{padding:18px 0;display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:20px;text-decoration:none;color:var(--fg)}
+  .brand img{width:30px;height:30px}
+  nav a{margin-left:18px;text-decoration:none;color:var(--muted);font-weight:500}
+  nav a:hover{color:var(--fg)}
+  .hero{padding:56px 0 36px;text-align:center}
+  .hero h1{font-size:clamp(32px,6vw,54px);line-height:1.1;margin:0 0 14px;letter-spacing:-.02em}
+  .hero p.lead{font-size:clamp(17px,2.4vw,21px);color:var(--muted);max-width:720px;margin:0 auto 30px}
+  .cta{display:inline-flex;align-items:center;gap:12px;background:var(--accent);color:var(--accent-fg);text-decoration:none;font-weight:700;font-size:19px;padding:16px 30px;border-radius:14px;box-shadow:var(--shadow);transition:transform .08s ease,filter .15s}
+  .cta:hover{filter:brightness(1.06);transform:translateY(-1px)}
+  .cta svg{width:24px;height:24px;flex:none}
+  .cta small{display:block;font-weight:500;font-size:13px;opacity:.85}
+  .alt{margin-top:14px;color:var(--muted);font-size:14px}
+  .alt a{margin:0 6px}
+  .req{margin-top:22px;color:var(--muted);font-size:14px}
+  .shot{margin:40px auto 0;max-width:960px;border-radius:14px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);background:var(--panel)}
+  .shot img{display:block;width:100%;height:auto}
+  .shot img.dark{display:none}
+  @media (prefers-color-scheme:dark){.shot img.light{display:none}.shot img.dark{display:block}}
+  section{padding:48px 0}
+  h2{font-size:28px;margin:0 0 8px;letter-spacing:-.01em}
+  .sub{color:var(--muted);margin:0 0 26px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px}
+  .card h3{margin:0 0 6px;font-size:17px}
+  .card p{margin:0;color:var(--muted);font-size:15px}
+  .card .ic{width:34px;height:34px;border-radius:9px;background:color-mix(in srgb,var(--accent) 16%,transparent);display:grid;place-items:center;margin-bottom:12px;color:var(--accent)}
+  .steps{counter-reset:s;display:grid;gap:14px}
+  .step{display:grid;grid-template-columns:40px 1fr;gap:14px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}
+  .step::before{counter-increment:s;content:counter(s);width:34px;height:34px;border-radius:50%;background:var(--accent);color:var(--accent-fg);font-weight:700;display:grid;place-items:center}
+  .step p{margin:4px 0 0;color:var(--muted);font-size:15px}
+  code,kbd{background:color-mix(in srgb,var(--fg) 8%,transparent);padding:2px 6px;border-radius:6px;font-size:.92em}
+  .note{border-left:4px solid var(--accent);background:var(--panel);border-radius:0 12px 12px 0;padding:14px 18px;color:var(--muted);font-size:15px;margin-top:22px}
+  footer{padding:36px 0 50px;color:var(--muted);font-size:14px;border-top:1px solid var(--line);margin-top:20px}
+  footer a{color:var(--muted)}
+  .pill{display:inline-block;background:color-mix(in srgb,var(--good) 15%,transparent);color:var(--good);border-radius:999px;padding:3px 10px;font-size:13px;font-weight:600;margin-bottom:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand" href="#"><img src="img/logo.png" alt="" width="64" height="64">VoxPad</a>
+    <nav><a href="#features">Features</a><a href="#setup">Setup</a><a href="manual.html">Manual</a><a id="nav-gh" href="https://github.com/youngfalconstone/VoxPad">GitHub</a></nav>
+  </header>
+
+  <section class="hero">
+    <span class="pill">Free · Windows 10 / 11 · x64 &amp; ARM64</span>
+    <h1>Play sounds into your microphone.</h1>
+    <p class="lead">A lightweight soundboard for Discord, games and streams. Global hotkeys, automatic push-to-talk, loudness matched to your voice, a recorder, an editor and text-to-speech. Everything Soundpad does, open source.</p>
+    <a id="download" class="cta" href="https://github.com/youngfalconstone/VoxPad/releases/latest">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M4 19h16"/></svg>
+      <span>Download for Windows<small id="download-sub">Latest release · MSI installer (x64)</small></span>
+    </a>
+    <div class="alt" id="alt-links"><a href="https://github.com/youngfalconstone/VoxPad/releases/latest">ARM64 installer</a>·<a href="https://github.com/youngfalconstone/VoxPad/releases/latest">Portable zip</a>·<a href="https://github.com/youngfalconstone/VoxPad/releases">All releases</a></div>
+    <p class="req">Standalone app, nothing else to install. For the virtual microphone, add the free <a href="https://vb-audio.com/Cable/">VB-CABLE</a>.</p>
+    <div class="shot">
+      <img class="light" src="img/screenshot-light.png" alt="VoxPad main window, light theme: categories, sound list, hotbar and status bar">
+      <img class="dark" src="img/screenshot-dark.png" alt="VoxPad main window, dark theme">
+    </div>
+  </section>
+
+  <section id="features">
+    <h2>Everything you expect from a soundboard</h2>
+    <p class="sub">Designed feature-for-feature after Soundpad, so nothing is missing when you switch.</p>
+    <div class="grid">
+      <div class="card"><div class="ic">🎤</div><h3>Into the microphone</h3><p>Your voice and the sound are mixed into a virtual microphone. Pick it once in Discord, Teams or the game. <em>Block voice</em> replaces your voice entirely while a sound plays.</p></div>
+      <div class="card"><div class="ic">⌨️</div><h3>Global hotkeys</h3><p>Any key or combo, mouse buttons too, even inside fullscreen games. Numpad and index hotkeys play sounds by number. Pass-through or swallow, your choice.</p></div>
+      <div class="card"><div class="ic">🎮</div><h3>Auto Keys</h3><p>Automatic push-to-talk: VoxPad holds your PTT key for exactly the clip's duration, only when the game is in the foreground if you like.</p></div>
+      <div class="card"><div class="ic">📊</div><h3>Loudness that matches you</h3><p>EBU R128 normalisation per channel brings every clip to your measured voice level, so nobody gets blasted.</p></div>
+      <div class="card"><div class="ic">🗂️</div><h3>Categories &amp; hotbar</h3><p>Nested categories, colour-coded tiles on a paged hotbar, instant search, drag-and-drop import of whole folders. MP3, OGG, Opus, FLAC, M4A, WAV, WMA.</p></div>
+      <div class="card"><div class="ic">🎙️</div><h3>Record, edit, speak</h3><p>Capture what you hear or your mic, trim and normalise in the waveform editor, or type a line and let text-to-speech say it.</p></div>
+      <div class="card"><div class="ic">🔌</div><h3>Remote control</h3><p>A local API for Stream Deck and Touch Portal style plugins: play by index or name, stop, pause, play mode, list with colours.</p></div>
+      <div class="card"><div class="ic">💾</div><h3>Your lists, kept safe</h3><p>Autosave every five minutes, daily backups, one-click restore, export to a folder you can move to another PC. Imports Soundpad lists.</p></div>
+      <div class="card"><div class="ic">🌍</div><h3>Light, dark, 21 languages</h3><p>Themes that follow Windows, a native style for high contrast and screen readers, tray mode, portable mode.</p></div>
+    </div>
+  </section>
+
+  <section id="setup">
+    <h2>Up and running in three steps</h2>
+    <p class="sub">About five minutes, one reboot.</p>
+    <div class="steps">
+      <div class="step"><div><strong>Install VB-CABLE and reboot once.</strong><p>The free virtual cable from VB-Audio provides the virtual microphone. VoxPad will warn you if it is missing and restores your real speakers as the default device if the cable took over.</p></div></div>
+      <div class="step"><div><strong>Install VoxPad and check the Devices tab.</strong><p>Status should read <em>Good</em>. Tick <em>Use</em> on your real microphone so your voice is mixed in, then click the mic icon to measure your voice level.</p></div></div>
+      <div class="step"><div><strong>Select “CABLE Output” as the microphone in your app.</strong><p>In Discord also turn off noise suppression, echo cancellation and automatic gain control for that input. Drop some sounds in, set a hotkey, done.</p></div></div>
+    </div>
+    <div class="note"><strong>Honest note on how it works.</strong> Soundpad injects audio with a kernel driver; VoxPad does not ship a driver. It mixes your microphone and the sound into a virtual cable, and your apps must select that cable. Everything else, from hotkeys to normalisation, works the same. Details in the <a href="manual.html">manual</a>.</div>
+  </section>
+
+  <footer>
+    <div>VoxPad is open source (MIT) and not affiliated with Leppsoft or Soundpad. VB-CABLE is a product of VB-Audio Software.</div>
+    <div style="margin-top:6px"><a href="manual.html">Manual</a> · <a href="https://github.com/youngfalconstone/VoxPad">Source on GitHub</a> · <a href="https://github.com/youngfalconstone/VoxPad/issues">Report a problem</a></div>
+  </footer>
+</div>
+<script>
+// Resolve the latest release assets so the button points straight at the installer.
+(async () => {
+  const repo = "youngfalconstone/VoxPad";
+  try {
+    const r = await fetch(`https://api.github.com/repos/${repo}/releases/latest`, { headers: { Accept: "application/vnd.github+json" } });
+    if (!r.ok) return;
+    const rel = await r.json();
+    const find = re => (rel.assets || []).find(a => re.test(a.name));
+    const x64 = find(/x64\.msi$/i), arm = find(/arm64\.msi$/i), zipX = find(/win-x64.*\.zip$/i), zipA = find(/win-arm64.*\.zip$/i),
+          exeX = find(/win-x64\.exe$/i), exeA = find(/win-arm64\.exe$/i);
+    const isArm = /ARM64|aarch64/i.test(navigator.userAgent) || (navigator.userAgentData && navigator.userAgentData.architecture === "arm");
+    const primary = isArm && arm ? arm : x64;
+    if (primary) {
+      document.getElementById("download").href = primary.browser_download_url;
+      document.getElementById("download-sub").textContent = `${rel.tag_name} · MSI installer (${isArm && arm ? "ARM64" : "x64"}) · ${(primary.size / 1048576).toFixed(1)} MB`;
+    }
+    const alt = [];
+    if (arm && primary !== arm) alt.push(`<a href="${arm.browser_download_url}">ARM64 installer</a>`);
+    if (x64 && primary !== x64) alt.push(`<a href="${x64.browser_download_url}">x64 installer</a>`);
+    if (exeX) alt.push(`<a href="${exeX.browser_download_url}">Standalone .exe (x64)</a>`);
+    if (exeA) alt.push(`<a href="${exeA.browser_download_url}">Standalone .exe (ARM64)</a>`);
+    if (zipX) alt.push(`<a href="${zipX.browser_download_url}">Portable zip (x64)</a>`);
+    if (zipA) alt.push(`<a href="${zipA.browser_download_url}">Portable zip (ARM64)</a>`);
+    alt.push(`<a href="https://github.com/${repo}/releases">All releases</a>`);
+    document.getElementById("alt-links").innerHTML = alt.join("·");
+  } catch { /* keep the static links */ }
+})();
+</script>
+</body>
+</html>

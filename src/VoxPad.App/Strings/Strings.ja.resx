@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+  <!-- Menus -->
+  <data name="File" xml:space="preserve"><value>ファイル(_F)</value></data>
+  <data name="NewList" xml:space="preserve"><value>新しいサウンドリスト(_N)</value></data>
+  <data name="LoadList" xml:space="preserve"><value>サウンドリストを開く(_L)…</value></data>
+  <data name="SaveList" xml:space="preserve"><value>サウンドリストを保存(_S)</value></data>
+  <data name="SaveListAs" xml:space="preserve"><value>名前を付けてサウンドリストを保存(_A)…</value></data>
+  <data name="RecentLists" xml:space="preserve"><value>最近使ったサウンドリスト(_R)</value></data>
+  <data name="RestoreList" xml:space="preserve"><value>サウンドリストを復元…</value></data>
+  <data name="AddFiles" xml:space="preserve"><value>サウンドファイルを追加…</value></data>
+  <data name="AddFolder" xml:space="preserve"><value>フォルダーを追加…</value></data>
+  <data name="WebImport" xml:space="preserve"><value>Web からインポート…</value></data>
+  <data name="Export" xml:space="preserve"><value>エクスポート(_E)</value></data>
+  <data name="ExportSoundFiles" xml:space="preserve"><value>サウンドファイル…</value></data>
+  <data name="ExportPreferences" xml:space="preserve"><value>設定…</value></data>
+  <data name="ImportPreferences" xml:space="preserve"><value>設定をインポート…</value></data>
+  <data name="Statistics" xml:space="preserve"><value>統計…</value></data>
+  <data name="Preferences" xml:space="preserve"><value>設定(_P)…</value></data>
+  <data name="Exit" xml:space="preserve"><value>終了(_X)</value></data>
+  <data name="Edit" xml:space="preserve"><value>編集(_E)</value></data>
+  <data name="SelectAll" xml:space="preserve"><value>すべて選択</value></data>
+  <data name="Remove" xml:space="preserve"><value>削除</value></data>
+  <data name="Copy" xml:space="preserve"><value>コピー</value></data>
+  <data name="Cut" xml:space="preserve"><value>切り取り</value></data>
+  <data name="Paste" xml:space="preserve"><value>貼り付け</value></data>
+  <data name="MoveUp" xml:space="preserve"><value>上へ移動</value></data>
+  <data name="MoveDown" xml:space="preserve"><value>下へ移動</value></data>
+  <data name="Undo" xml:space="preserve"><value>元に戻す</value></data>
+  <data name="Redo" xml:space="preserve"><value>やり直し</value></data>
+  <data name="EditFile" xml:space="preserve"><value>ファイルを編集…</value></data>
+  <data name="SetHotkey" xml:space="preserve"><value>ホットキーを設定…</value></data>
+  <data name="RemoveHotkey" xml:space="preserve"><value>ホットキーを削除</value></data>
+  <data name="SetColor" xml:space="preserve"><value>色…</value></data>
+  <data name="PlayRandom" xml:space="preserve"><value>ランダム再生</value></data>
+  <data name="ResetPlayCount" xml:space="preserve"><value>再生回数をリセット</value></data>
+  <data name="ResetAllPlayCounts" xml:space="preserve"><value>すべての再生回数をリセット</value></data>
+  <data name="SelectInExplorer" xml:space="preserve"><value>エクスプローラーで表示</value></data>
+  <data name="PlayMenu" xml:space="preserve"><value>再生(_P)</value></data>
+  <data name="Play" xml:space="preserve"><value>再生</value></data>
+  <data name="PlayOnSpeakers" xml:space="preserve"><value>スピーカーで再生</value></data>
+  <data name="PlayOnMic" xml:space="preserve"><value>マイクで再生</value></data>
+  <data name="PauseResume" xml:space="preserve"><value>一時停止 / 再開</value></data>
+  <data name="Stop" xml:space="preserve"><value>停止</value></data>
+  <data name="Previous" xml:space="preserve"><value>前へ</value></data>
+  <data name="Next" xml:space="preserve"><value>次へ</value></data>
+  <data name="Repeat" xml:space="preserve"><value>リピート</value></data>
+  <data name="Continue" xml:space="preserve"><value>連続再生</value></data>
+  <data name="AutoStop" xml:space="preserve"><value>自動停止 (ホットキーのサウンドはリピート/連続再生を無視)</value></data>
+  <data name="PlayModeMenu" xml:space="preserve"><value>再生モード</value></data>
+  <data name="PlayMode_Both" xml:space="preserve"><value>スピーカー + マイク</value></data>
+  <data name="PlayMode_Mic" xml:space="preserve"><value>マイクのみ</value></data>
+  <data name="PlayMode_Speakers" xml:space="preserve"><value>スピーカーのみ</value></data>
+  <data name="Recorder" xml:space="preserve"><value>レコーダー…</value></data>
+  <data name="TextToSpeech" xml:space="preserve"><value>テキスト読み上げ…</value></data>
+  <data name="Window" xml:space="preserve"><value>ウィンドウ(_W)</value></data>
+  <data name="Categories" xml:space="preserve"><value>カテゴリ パネル</value></data>
+  <data name="Hotbar" xml:space="preserve"><value>ホットバー</value></data>
+  <data name="Toolbar" xml:space="preserve"><value>再生ツール バー</value></data>
+  <data name="StatusBar" xml:space="preserve"><value>ステータス バー</value></data>
+  <data name="ShowHiddenCategories" xml:space="preserve"><value>非表示のカテゴリを表示</value></data>
+  <data name="CategoryIconSize" xml:space="preserve"><value>カテゴリ アイコンのサイズ</value></data>
+  <data name="Small" xml:space="preserve"><value>小</value></data>
+  <data name="Medium" xml:space="preserve"><value>中</value></data>
+  <data name="Large" xml:space="preserve"><value>大</value></data>
+  <data name="ExtraLarge" xml:space="preserve"><value>特大</value></data>
+  <data name="Columns" xml:space="preserve"><value>列</value></data>
+  <data name="HotbarSize" xml:space="preserve"><value>ホットバーのサイズ…</value></data>
+  <data name="HotkeyOverview" xml:space="preserve"><value>ホットキー一覧…</value></data>
+  <data name="MinimizeToTray" xml:space="preserve"><value>通知領域に最小化</value></data>
+  <data name="Help" xml:space="preserve"><value>ヘルプ(_H)</value></data>
+  <data name="Manual" xml:space="preserve"><value>マニュアル</value></data>
+  <data name="Troubleshooting" xml:space="preserve"><value>トラブルシューティング…</value></data>
+  <data name="AutoKeysTroubleshooting" xml:space="preserve"><value>Auto Keys のトラブルシューティング…</value></data>
+  <data name="CheckForUpdates" xml:space="preserve"><value>更新プログラムの確認…</value></data>
+  <data name="Register" xml:space="preserve"><value>登録…</value></data>
+  <data name="About" xml:space="preserve"><value>VoxPad について</value></data>
+
+  <!-- Toolbar / status bar -->
+  <data name="TimerTip" xml:space="preserve"><value>経過 / 合計。ダブルクリックで再生中のサウンドへ移動します。</value></data>
+  <data name="SpeakerVolumeTip" xml:space="preserve"><value>スピーカー音量 (自分側のみ。Windows の音量ミキサーと連動)</value></data>
+  <data name="MicMeterTip" xml:space="preserve"><value>マイク レベル。アイコンをクリックすると声のレベルを測定します。</value></data>
+  <data name="SeekTip" xml:space="preserve"><value>赤 = 相手に聞こえる (マイク)、青 = スピーカーのみ</value></data>
+  <data name="PlayModeTip" xml:space="preserve"><value>再生モード – クリックで切り替え</value></data>
+  <data name="HotkeysTip" xml:space="preserve"><value>ホットキー – ダブルクリックで切り替え、右クリックでオプション</value></data>
+  <data name="PassHotkeys" xml:space="preserve"><value>ホットキーをアクティブなアプリにも渡す</value></data>
+  <data name="Hotkeys" xml:space="preserve"><value>ホットキー</value></data>
+  <data name="AutoKeysTip" xml:space="preserve"><value>Auto Keys – ダブルクリックで切り替え、右クリックでトラブルシューティング</value></data>
+  <data name="AutoKeys" xml:space="preserve"><value>Auto Keys</value></data>
+  <data name="RepeatTip" xml:space="preserve"><value>現在のサウンドをリピート – クリックで切り替え</value></data>
+  <data name="ContinueTip" xml:space="preserve"><value>次のサウンドへ続けて再生 – クリックで切り替え</value></data>
+  <data name="PreviousPage" xml:space="preserve"><value>前のページ (Ctrl+PgUp)</value></data>
+  <data name="NextPage" xml:space="preserve"><value>次のページ (Ctrl+PgDn)</value></data>
+  <data name="HideCategory" xml:space="preserve"><value>カテゴリを非表示</value></data>
+  <data name="SearchTip" xml:space="preserve"><value>入力で絞り込み · Enter で次の一致 · Ctrl+Enter で再生 · Esc でクリア</value></data>
+  <data name="ColTag" xml:space="preserve"><value>タグ</value></data>
+  <data name="ColDuration" xml:space="preserve"><value>長さ</value></data>
+  <data name="ColHotkey" xml:space="preserve"><value>ホットキー</value></data>
+  <data name="ColPlayCount" xml:space="preserve"><value>再生回数</value></data>
+  <data name="ColLastPlayed" xml:space="preserve"><value>最終再生日</value></data>
+  <data name="ColIndex" xml:space="preserve"><value>#</value></data>
+  <data name="MoveToCategory" xml:space="preserve"><value>カテゴリへ移動</value></data>
+  <data name="RemoveFromCategory" xml:space="preserve"><value>このカテゴリから削除</value></data>
+  <data name="AddCategory" xml:space="preserve"><value>カテゴリを追加…</value></data>
+  <data name="AddSubcategory" xml:space="preserve"><value>サブカテゴリを追加…</value></data>
+  <data name="RenameCategory" xml:space="preserve"><value>名前の変更…</value></data>
+  <data name="RemoveCategory" xml:space="preserve"><value>カテゴリを削除</value></data>
+  <data name="SetRandomHotkey" xml:space="preserve"><value>「ランダム再生」のホットキーを設定…</value></data>
+  <data name="AllSounds" xml:space="preserve"><value>すべてのサウンド</value></data>
+  <data name="UntitledList" xml:space="preserve"><value>無題</value></data>
+  <data name="Trial" xml:space="preserve"><value>試用版</value></data>
+  <data name="TrialStatus" xml:space="preserve"><value>試用版: 最大 {0} サウンド、今回の起動で残りマイク再生 {1} 回</value></data>
+
+  <!-- Status messages -->
+  <data name="PlayModeSet" xml:space="preserve"><value>再生モード: {0}</value></data>
+  <data name="HotkeysOn" xml:space="preserve"><value>ホットキーが有効です</value></data>
+  <data name="HotkeysOff" xml:space="preserve"><value>ホットキーが無効です</value></data>
+  <data name="AutoKeysOn" xml:space="preserve"><value>Auto Keys が有効です</value></data>
+  <data name="AutoKeysOff" xml:space="preserve"><value>Auto Keys が無効です</value></data>
+  <data name="Playing" xml:space="preserve"><value>再生中 '{0}' → {1}</value></data>
+  <data name="TrialPlayLimit" xml:space="preserve"><value>試用版: 起動ごとのマイク再生 10 回に達しました。登録すると制限が解除されます。</value></data>
+  <data name="TrialSoundLimit" xml:space="preserve"><value>試用版: リストに入れられるのは最大 {0} サウンドです。登録すると制限が解除されます。</value></data>
+  <data name="NothingToPlay" xml:space="preserve"><value>再生するものがありません</value></data>
+  <data name="DevicesChanged" xml:space="preserve"><value>オーディオ デバイスが変更されました。ルーティングを再適用しました。</value></data>
+  <data name="MissingFiles" xml:space="preserve"><value>リスト内の {0} 個のファイルが見つかりません (灰色表示)。</value></data>
+  <data name="CategoryInfo" xml:space="preserve"><value>{0}: {1} サウンド、合計 {2}</value></data>
+  <data name="Copied" xml:space="preserve"><value>{0} 個のサウンドをコピーしました</value></data>
+  <data name="CutStatus" xml:space="preserve"><value>{0} 個のサウンドを切り取りました</value></data>
+  <data name="Importing" xml:space="preserve"><value>{0} 個のファイルを読み込み中…</value></data>
+  <data name="Imported" xml:space="preserve"><value>{0} 個のサウンドを追加しました</value></data>
+  <data name="NoAudioFiles" xml:space="preserve"><value>対応するオーディオ ファイルが見つかりません</value></data>
+  <data name="ConfirmRemove" xml:space="preserve"><value>{0} 個のサウンドをリストから削除しますか? オーディオ ファイル自体は削除されません。</value></data>
+  <data name="Removed" xml:space="preserve"><value>{0} 個のサウンドを削除しました</value></data>
+  <data name="HotkeyFor" xml:space="preserve"><value>'{0}' のホットキー</value></data>
+  <data name="RandomHotkeyFor" xml:space="preserve"><value>'{0}' の「ランダム再生」ホットキー</value></data>
+  <data name="BareMouseNotAllowed" xml:space="preserve"><value>マウスの左右ボタンには修飾キーが必要です (例: Ctrl+クリック)。</value></data>
+  <data name="ReservedHotkey" xml:space="preserve"><value>{0} は特殊ホットキー '{1}' 用に予約されています。</value></data>
+  <data name="HotkeyRemoved" xml:space="preserve"><value>'{0}' のホットキーを削除しました</value></data>
+  <data name="HotkeySet" xml:space="preserve"><value>{0} → '{1}'</value></data>
+  <data name="ConfirmResetPlayCount" xml:space="preserve"><value>{0} 個のサウンドの再生回数をリセットしますか?</value></data>
+  <data name="ConfirmResetAll" xml:space="preserve"><value>すべてのサウンドの再生回数とリストの合計をリセットしますか?</value></data>
+  <data name="FileMissing" xml:space="preserve"><value>ファイルが見つかりません: {0}</value></data>
+  <data name="ConfirmRemoveCategory" xml:space="preserve"><value>カテゴリ '{0}' (とそのサブカテゴリ) を削除しますか? サウンドはリストに残ります。</value></data>
+  <data name="CategoryName" xml:space="preserve"><value>名前:</value></data>
+  <data name="NewCategory" xml:space="preserve"><value>新しいカテゴリ</value></data>
+  <data name="AddedToCategory" xml:space="preserve"><value>{0} 個のサウンド → '{1}'</value></data>
+  <data name="ReorderWhileSorted" xml:space="preserve"><value>手動で並べ替えるには、並べ替えを解除してください (列見出しをもう一度クリック)。</value></data>
+  <data name="UnsavedTitle" xml:space="preserve"><value>保存されていない変更</value></data>
+  <data name="UnsavedText" xml:space="preserve"><value>サウンドリストに保存されていない変更があります。破棄しますか?</value></data>
+  <data name="NewListCreated" xml:space="preserve"><value>新しいサウンドリスト</value></data>
+  <data name="ListLoaded" xml:space="preserve"><value>{0} を読み込みました</value></data>
+  <data name="ListLoadFailed" xml:space="preserve"><value>サウンドリストを読み込めませんでした: {0}</value></data>
+  <data name="ListSaved" xml:space="preserve"><value>{0} を保存しました</value></data>
+  <data name="Exported" xml:space="preserve"><value>{0} 個のファイルをエクスポート、{1} 個失敗 → {2}</value></data>
+  <data name="PrefsExported" xml:space="preserve"><value>設定を {0} にエクスポートしました</value></data>
+  <data name="PrefsImportedRestart" xml:space="preserve"><value>設定をインポートしました。適用するには VoxPad を再起動してください。</value></data>
+  <data name="NoSoundAtNumber" xml:space="preserve"><value>番号 {0} にサウンドはありません</value></data>
+  <data name="ElevatedWarning" xml:space="preserve"><value>VoxPad は管理者として実行されています: エクスプローラーからのドラッグ アンド ドロップは動作しません (Windows は昇格されたウィンドウへのドロップをブロックします)。</value></data>
+  <data name="UnexpectedError" xml:space="preserve"><value>予期しないエラーが発生しました。</value></data>
+  <data name="DumpWritten" xml:space="preserve"><value>詳細を次の場所に書き込みました:</value></data>
+  <data name="TrayHint" xml:space="preserve"><value>VoxPad は通知領域で実行を続けます。アイコンをダブルクリックすると復元されます。</value></data>
+  <data name="Tray_Show" xml:space="preserve"><value>VoxPad を表示</value></data>
+  <data name="ConfirmQuitPlaying" xml:space="preserve"><value>サウンドを再生中です。終了しますか?</value></data>
+  <data name="SaveBeforeExit" xml:space="preserve"><value>終了する前にサウンドリストの変更を保存しますか?</value></data>
+  <data name="MicAccessDenied" xml:space="preserve"><value>Windows がデスクトップ アプリのマイク アクセスをブロックしているため、VoxPad はマイクを読み取れません。
+
+対処: 設定 &gt; プライバシーとセキュリティ &gt; マイク &gt; 「マイクへのアクセス」と「デスクトップ アプリがマイクにアクセスできるようにする」をオンにし、設定 &gt; デバイスで「更新」を押してください。</value></data>
+  <data name="OpenSettingsQuestion" xml:space="preserve"><value>今すぐプライバシー設定を開きますか?</value></data>
+  <data name="AccessDenied" xml:space="preserve"><value>アクセスが拒否されました</value></data>
+  <data name="RemoveFromHotbar" xml:space="preserve"><value>ホットバーから削除</value></data>
+  <data name="EmptyTileHint" xml:space="preserve"><value>ここにサウンドをドラッグ</value></data>
+  <data name="PrefsSaved" xml:space="preserve"><value>設定を保存しました</value></data>
+  <data name="LanguageRestart" xml:space="preserve"><value>言語は VoxPad の再起動後に変更されます。</value></data>
+
+  <!-- Dialogs -->
+  <data name="OK" xml:space="preserve"><value>OK</value></data>
+  <data name="Cancel" xml:space="preserve"><value>キャンセル</value></data>
+  <data name="Apply" xml:space="preserve"><value>適用</value></data>
+  <data name="Close" xml:space="preserve"><value>閉じる</value></data>
+  <data name="Clear" xml:space="preserve"><value>クリア</value></data>
+  <data name="None" xml:space="preserve"><value>(なし)</value></data>
+  <data name="HotkeyCapturePrompt" xml:space="preserve"><value>キーまたはキーの組み合わせを押してください。マウスの中・4・5 ボタンも使えます (左右には修飾キーが必要)。Enter で保存、Delete または Backspace でクリア、Esc でキャンセル。</value></data>
+  <data name="HexColor" xml:space="preserve"><value>16 進:</value></data>
+  <data name="NoColor" xml:space="preserve"><value>色なし</value></data>
+  <data name="Rows" xml:space="preserve"><value>行:</value></data>
+  <data name="Pages" xml:space="preserve"><value>ページ:</value></data>
+  <data name="HotbarSizeHint" xml:space="preserve"><value>ホットキーはページ間で共有されます。新しいグリッドの外側のタイルは削除されます。</value></data>
+  <data name="Type" xml:space="preserve"><value>種類</value></data>
+  <data name="Target" xml:space="preserve"><value>対象</value></data>
+  <data name="Sound" xml:space="preserve"><value>サウンド</value></data>
+  <data name="CategoryRandom" xml:space="preserve"><value>カテゴリ内でランダム再生</value></data>
+  <data name="Special" xml:space="preserve"><value>特殊</value></data>
+  <data name="Numpad" xml:space="preserve"><value>テンキー</value></data>
+  <data name="NumpadDesc" xml:space="preserve"><value>現在のカテゴリの番号で再生</value></data>
+  <data name="Index" xml:space="preserve"><value>インデックス</value></data>
+  <data name="IndexDesc" xml:space="preserve"><value>「すべてのサウンド」の行番号で再生</value></data>
+  <data name="HotkeyOverviewHint" xml:space="preserve"><value>ホットキーは{0}、パススルーは{1}です。</value></data>
+  <data name="Enabled" xml:space="preserve"><value>有効</value></data>
+  <data name="Disabled" xml:space="preserve"><value>無効</value></data>
+  <data name="On" xml:space="preserve"><value>オン</value></data>
+  <data name="Off" xml:space="preserve"><value>オフ</value></data>
+  <data name="Version" xml:space="preserve"><value>バージョン</value></data>
+  <data name="TrialEdition" xml:space="preserve"><value>試用版 – 最大 10 サウンド、起動ごとにマイク再生 10 回</value></data>
+  <data name="LicensedTo" xml:space="preserve"><value>ライセンス所有者: {0} ({1} エディション)</value></data>
+  <data name="AboutText" xml:space="preserve"><value>サウンドをマイクに流す Windows 用サウンドボードです。オーディオ エンジン: NAudio、NVorbis、Concentus、TagLib#。仮想マイクは VB-CABLE / Voicemeeter を使用します。</value></data>
+  <data name="DataFolder" xml:space="preserve"><value>データ</value></data>
+  <data name="LogFolder" xml:space="preserve"><value>ログ</value></data>
+  <data name="OpenDataFolder" xml:space="preserve"><value>データ フォルダーを開く</value></data>
+  <data name="HideLicenseeName" xml:space="preserve"><value>名前を隠す (配信者モード)</value></data>
+  <data name="RemoveLicense" xml:space="preserve"><value>ライセンスを削除</value></data>
+  <data name="ConfirmRemoveLicense" xml:space="preserve"><value>この PC からライセンスを削除しますか?</value></data>
+  <data name="RegisterPrompt" xml:space="preserve"><value>購入時のメールに記載された名前とシリアルを入力してください。シリアルはオフラインで検証され、license.dat に保存されます。</value></data>
+  <data name="Name" xml:space="preserve"><value>名前:</value></data>
+  <data name="Serial" xml:space="preserve"><value>シリアル:</value></data>
+  <data name="RegisteredThanks" xml:space="preserve"><value>ありがとうございます! VoxPad が登録されました。</value></data>
+  <data name="SerialInvalid" xml:space="preserve"><value>シリアルが名前と一致しません。入力ミスがないか確認してください (I/1 と O/0 は区別されません)。</value></data>
+  <data name="AllTimePlays" xml:space="preserve"><value>マイク再生の累計</value></data>
+  <data name="ListPlays" xml:space="preserve"><value>このリストでの再生回数</value></data>
+  <data name="SoundsInList" xml:space="preserve"><value>リスト内のサウンド数</value></data>
+  <data name="Launches" xml:space="preserve"><value>起動回数</value></data>
+  <data name="Since" xml:space="preserve"><value>開始日</value></data>
+  <data name="TopSounds" xml:space="preserve"><value>よく再生されたサウンド</value></data>
+  <data name="ResetAllTime" xml:space="preserve"><value>累計をリセット</value></data>
+  <data name="ConfirmResetAllTime" xml:space="preserve"><value>累計をリセットしますか?</value></data>
+  <data name="WebImportPrompt" xml:space="preserve"><value>オーディオ ファイル (mp3、ogg、wav…) への直接リンクを貼り付けてください。ファイルは VoxPad の音楽フォルダーにダウンロードされ、リストに追加されます。</value></data>
+  <data name="FileNameOptional" xml:space="preserve"><value>ファイル名 (省略可):</value></data>
+  <data name="Import" xml:space="preserve"><value>インポート</value></data>
+  <data name="Downloading" xml:space="preserve"><value>ダウンロード中…</value></data>
+  <data name="UnsupportedFormat" xml:space="preserve"><value>サポートされていないオーディオ形式</value></data>
+  <data name="RestorePrompt" xml:space="preserve"><value>毎日のバックアップは起動時に作成されます。復元すると現在のリストが置き換わります (保存済みのリストを読み込めば元に戻せます)。</value></data>
+  <data name="OpenBackupFolder" xml:space="preserve"><value>フォルダーを開く</value></data>
+  <data name="Restore" xml:space="preserve"><value>復元</value></data>
+  <data name="ConfirmRestore" xml:space="preserve"><value>{0} のバックアップを復元しますか?</value></data>
+  <data name="Restored" xml:space="preserve"><value>{0} のバックアップを復元しました</value></data>
+  <data name="Checking" xml:space="preserve"><value>確認中…</value></data>
+  <data name="DownloadInstall" xml:space="preserve"><value>ダウンロードしてインストール</value></data>
+  <data name="PackageVerified" xml:space="preserve"><value>パッケージを検証しました。インストーラーが起動し、VoxPad は終了します。</value></data>
+  <data name="VoiceMeasurement" xml:space="preserve"><value>声の測定</value></data>
+  <data name="VoiceMeasurePrompt" xml:space="preserve"><value>マイクに向かって約 8 秒間普通に話してください。測定したラウドネスがノーマライズの目標値になり、サウンドの音量が声に合わせられます (74 dB 以上が目安です)。</value></data>
+  <data name="CurrentTarget" xml:space="preserve"><value>現在の目標値</value></data>
+  <data name="DefaultNotMeasured" xml:space="preserve"><value>既定値、未測定</value></data>
+  <data name="Start" xml:space="preserve"><value>開始</value></data>
+  <data name="UseAsTarget" xml:space="preserve"><value>目標値として使用</value></data>
+  <data name="Measuring" xml:space="preserve"><value>測定中</value></data>
+  <data name="NothingMeasured" xml:space="preserve"><value>何も測定されませんでした – マイクがミュートか、デバイスの選択が間違っていませんか?</value></data>
+  <data name="Result" xml:space="preserve"><value>結果</value></data>
+  <data name="TooQuiet" xml:space="preserve"><value>非常に小さい – Windows でマイクのレベルを上げてください</value></data>
+  <data name="BelowTarget" xml:space="preserve"><value>74 dB 未満です。マイクのレベルを上げることを検討してください</value></data>
+  <data name="TargetSet" xml:space="preserve"><value>ノーマライズの目標値を {0:F1} dB に設定しました</value></data>
+  <data name="Routing" xml:space="preserve"><value>ルーティング</value></data>
+  <data name="TroubleChecklist" xml:space="preserve"><value>チェックリスト:
+• VB-CABLE (無料) をインストールし、設定 &gt; デバイスで「更新」を押す。
+• Discord/Teams/ゲームでマイクに 'CABLE Output' を選び、そこでのノイズ抑制 / エコー キャンセルを無効にする。
+• 自分の声をミックスするため、実際のマイクの「使用」にチェックを入れたままにする。
+• Windows のプライバシー: デスクトップ アプリのマイク使用を許可する。
+• ゲーム内でホットキーが効かない? ゲームと同じ権限レベルで VoxPad を実行する。</value></data>
+  <data name="DiagnosticReport" xml:space="preserve"><value>診断レポート</value></data>
+  <data name="DiagnosticHint" xml:space="preserve"><value>ログ、デバイス一覧、ルーティング状態、設定 (デバイス ID のみ、ライセンス データなし) を含む zip を作成します。バグ報告に添付できます。</value></data>
+  <data name="CreateReport" xml:space="preserve"><value>レポートを作成</value></data>
+  <data name="OpenDevices" xml:space="preserve"><value>デバイス…</value></data>
+  <data name="AutoKeysTroubleHint" xml:space="preserve"><value>Auto Keys は、サウンドがマイクで再生開始されたときにプッシュ トゥ トークのキーを押します。最後の評価では、各エントリが動作した (しなかった) 理由を確認できます。サウンドを再生してから、このダイアログをもう一度開いて再確認してください。</value></data>
+  <data name="MicPlayMode" xml:space="preserve"><value>マイク再生モード</value></data>
+  <data name="NotMicPlayMode" xml:space="preserve"><value>マイク再生モードではありません – Auto Keys は動作しません</value></data>
+  <data name="Entries" xml:space="preserve"><value>エントリ</value></data>
+  <data name="ForegroundNow" xml:space="preserve"><value>現在の前面アプリ</value></data>
+  <data name="NoEvaluationYet" xml:space="preserve"><value>このセッションではまだサウンドが再生されていません。</value></data>
+  <data name="LastEvaluation" xml:space="preserve"><value>最後の評価</value></data>
+  <data name="OpenAutoKeysPrefs" xml:space="preserve"><value>Auto Keys の設定…</value></data>
+
+  <!-- TTS / recorder / editor -->
+  <data name="Voice" xml:space="preserve"><value>音声:</value></data>
+  <data name="Rate" xml:space="preserve"><value>速度</value></data>
+  <data name="PreviewSpeakers" xml:space="preserve"><value>プレビュー (Enter)</value></data>
+  <data name="SendToMic" xml:space="preserve"><value>マイクへ送る (Ctrl+Enter)</value></data>
+  <data name="SaveToList" xml:space="preserve"><value>リストに保存</value></data>
+  <data name="TtsHint" xml:space="preserve"><value>Enter = スピーカーでプレビュー · Ctrl+Enter = マイクで再生 · 特殊ホットキー「TTS を再生」でこのテキストを読み上げます。</value></data>
+  <data name="Source" xml:space="preserve"><value>ソース:</value></data>
+  <data name="Source_Speakers" xml:space="preserve"><value>スピーカー (聞こえている音)</value></data>
+  <data name="Source_Mic" xml:space="preserve"><value>マイク</value></data>
+  <data name="Format" xml:space="preserve"><value>形式:</value></data>
+  <data name="Insert" xml:space="preserve"><value>挿入:</value></data>
+  <data name="InsertEnd" xml:space="preserve"><value>リストの末尾に追加</value></data>
+  <data name="InsertBeginning" xml:space="preserve"><value>先頭に挿入</value></data>
+  <data name="AutoNormalize" xml:space="preserve"><value>自動ノーマライズ:</value></data>
+  <data name="DbHint" xml:space="preserve"><value>dB (89 ≈ −23 LUFS、99 超でクリップ)</value></data>
+  <data name="TrimSilence" xml:space="preserve"><value>先頭と末尾の無音をトリミング</value></data>
+  <data name="MaxTime" xml:space="preserve"><value>最大時間:</value></data>
+  <data name="MaxSecondsHint" xml:space="preserve"><value>秒 (0 = 無制限、非圧縮で %TEMP% にバッファー)</value></data>
+  <data name="TargetDirectory" xml:space="preserve"><value>フォルダー:</value></data>
+  <data name="RecorderHotkeys" xml:space="preserve"><value>特殊ホットキー: 開始 = {0}、停止 = {1}。録音開始前に通知音が鳴ります。</value></data>
+  <data name="NotSet" xml:space="preserve"><value>未設定</value></data>
+  <data name="StartRecording" xml:space="preserve"><value>録音</value></data>
+  <data name="StopRecording" xml:space="preserve"><value>停止</value></data>
+  <data name="PlayLastTake" xml:space="preserve"><value>最後の録音を再生</value></data>
+  <data name="LastTake" xml:space="preserve"><value>最後の録音</value></data>
+  <data name="MaxTimeReached" xml:space="preserve"><value>最大録音時間に達しました。</value></data>
+  <data name="RecordingInProgress" xml:space="preserve"><value>録音中です。破棄しますか?</value></data>
+  <data name="TargetTooLoud" xml:space="preserve"><value>99 dB を超える目標値はクリップします。続行しますか?</value></data>
+  <data name="RecordingFrom" xml:space="preserve"><value>'{0}' から録音中…</value></data>
+  <data name="RecordingStarted" xml:space="preserve"><value>録音を開始しました</value></data>
+  <data name="NothingRecorded" xml:space="preserve"><value>何も録音されませんでした (無音)。</value></data>
+  <data name="RecordingSaved" xml:space="preserve"><value>録音を保存しました: {0}</value></data>
+  <data name="Editor" xml:space="preserve"><value>エディター</value></data>
+  <data name="PlaySelection" xml:space="preserve"><value>選択範囲を再生</value></data>
+  <data name="Crop" xml:space="preserve"><value>切り出し</value></data>
+  <data name="VolumeUp" xml:space="preserve"><value>音量 +3 dB</value></data>
+  <data name="VolumeDown" xml:space="preserve"><value>音量 −3 dB</value></data>
+  <data name="VolumeCustom" xml:space="preserve"><value>音量…</value></data>
+  <data name="NormalizeTo" xml:space="preserve"><value>ノーマライズ…</value></data>
+  <data name="ZoomFit" xml:space="preserve"><value>全体表示</value></data>
+  <data name="ZoomSelection" xml:space="preserve"><value>選択範囲をズーム</value></data>
+  <data name="Save" xml:space="preserve"><value>保存</value></data>
+  <data name="EditorHint" xml:space="preserve"><value>ドラッグで選択 · Shift+矢印 / Home / End で拡張 · Ctrl+A ですべて · Ctrl+D で解除 · Del で切り取り · Esc で閉じる</value></data>
+  <data name="Attr_Size" xml:space="preserve"><value>サイズ</value></data>
+  <data name="Attr_Format" xml:space="preserve"><value>形式</value></data>
+  <data name="Attr_SampleRate" xml:space="preserve"><value>サンプル レート</value></data>
+  <data name="Attr_Duration" xml:space="preserve"><value>長さ</value></data>
+  <data name="Attr_Channels" xml:space="preserve"><value>チャンネル</value></data>
+  <data name="Attr_OriginalVolume" xml:space="preserve"><value>元の音量</value></data>
+  <data name="LongFileWarning" xml:space="preserve"><value>このファイルは 10 分を超えています。編集中はファイル全体がメモリに保持され、元に戻す用のスナップショットでさらに増えます。メモリ使用量が大きくなります。</value></data>
+  <data name="CannotOpenFile" xml:space="preserve"><value>ファイルを開けませんでした: {0}</value></data>
+  <data name="Modified" xml:space="preserve"><value>変更あり</value></data>
+  <data name="Selection" xml:space="preserve"><value>選択範囲</value></data>
+  <data name="NoSelection" xml:space="preserve"><value>選択なし (操作はファイル全体に適用)</value></data>
+  <data name="GainPrompt" xml:space="preserve"><value>ゲイン (dB、負の値 = 小さく):</value></data>
+  <data name="NormalizePrompt" xml:space="preserve"><value>目標値 (dB、89 ≈ −23 LUFS):</value></data>
+  <data name="EditorSaveQuestion" xml:space="preserve"><value>編集したオーディオを保存しますか?</value></data>
+  <data name="EditorSaved" xml:space="preserve"><value>{0} を保存しました</value></data>
+
+  <!-- Preferences -->
+  <data name="Tab_Devices" xml:space="preserve"><value>デバイス</value></data>
+  <data name="Tab_Audio" xml:space="preserve"><value>オーディオ</value></data>
+  <data name="Tab_Hotkeys" xml:space="preserve"><value>ホットキー</value></data>
+  <data name="Tab_Recorder" xml:space="preserve"><value>レコーダー</value></data>
+  <data name="Tab_Interface" xml:space="preserve"><value>インターフェイス</value></data>
+  <data name="Tab_Notifications" xml:space="preserve"><value>通知</value></data>
+  <data name="Tab_Updates" xml:space="preserve"><value>更新</value></data>
+  <data name="SetupMode" xml:space="preserve"><value>セットアップ モード</value></data>
+  <data name="SetupModeHint" xml:space="preserve"><value>VoxPad には独自のカーネル オーディオ ドライバーはありません。声 + サウンドを仮想ケーブルの再生エンドポイントに出力し、アプリ側はケーブルの録音エンドポイント (例: 'CABLE Output') から取り込みます。自動選択では VB-CABLE、VB-CABLE A/B、Voicemeeter、手動で選んだケーブル、Stereo Mix の順に試します。</value></data>
+  <data name="Refresh" xml:space="preserve"><value>更新</value></data>
+  <data name="Status" xml:space="preserve"><value>状態: </value></data>
+  <data name="Microphones" xml:space="preserve"><value>マイク (ケーブルにミックスするものに「使用」をチェック)</value></data>
+  <data name="Use" xml:space="preserve"><value>使用</value></data>
+  <data name="DefaultComm" xml:space="preserve"><value> (既定の通信デバイス)</value></data>
+  <data name="NoMics" xml:space="preserve"><value>録音デバイスが見つかりません。</value></data>
+  <data name="NoMicsTickedHint" xml:space="preserve"><value>何もチェックしない = 既定の通信用マイクを使用します。</value></data>
+  <data name="VirtualCableEndpoint" xml:space="preserve"><value>仮想ケーブルの再生エンドポイント (「その他の仮想ケーブル」用)</value></data>
+  <data name="AutoDetect" xml:space="preserve"><value>(自動検出)</value></data>
+  <data name="SpeakerDevice" xml:space="preserve"><value>スピーカー (自分用のサウンドのコピー)</value></data>
+  <data name="DefaultDevice" xml:space="preserve"><value>(Windows の既定)</value></data>
+  <data name="RecorderMic" xml:space="preserve"><value>レコーダー用のマイク</value></data>
+  <data name="MicLatency" xml:space="preserve"><value>マイクの遅延 (ms):</value></data>
+  <data name="LatencyHint" xml:space="preserve"><value>小さい = 声の遅延が少ない、大きい = 遅い PC でも音切れが少ない。既定値は 30 ms が適切です。</value></data>
+  <data name="OpenPrivacySettings" xml:space="preserve"><value>マイクへのアクセスが拒否されています – Windows のプライバシー設定を開く</value></data>
+  <data name="Normalization" xml:space="preserve"><value>音量ノーマライズ (EBU R128、チャンネルごと)</value></data>
+  <data name="Norm_Off" xml:space="preserve"><value>オフ</value></data>
+  <data name="Norm_Dynamic" xml:space="preserve"><value>動的 – 最初の 6 秒を分析し、再生中に補正 (既定)</value></data>
+  <data name="Norm_Full" xml:space="preserve"><value>ファイル全体 – 再生前にファイル全体を分析 (キャッシュ)</value></data>
+  <data name="MeasureVoice" xml:space="preserve"><value>声を測定…</value></data>
+  <data name="NormHint" xml:space="preserve"><value>マイクで再生するサウンドは声のレベルに合わせられます (測定してください。74 dB 以上が目安)。スピーカー側のコピーは変更されません – 自分用にはスピーカー音量スライダーを使ってください。</value></data>
+  <data name="BlockVoice" xml:space="preserve"><value>声をブロック</value></data>
+  <data name="BlockVoiceCheck" xml:space="preserve"><value>サウンド再生中は自分の声を完全に置き換える (ミックスしない)</value></data>
+  <data name="VoiceActivation" xml:space="preserve"><value>音声検出用サウンド</value></data>
+  <data name="VoiceActivationCheck" xml:space="preserve"><value>音声検出型アプリのゲートを開くため、短く大きなプリロール音をマイクで再生する</value></data>
+  <data name="CustomFile" xml:space="preserve"><value>カスタム ファイル (空 = 250 ms のトーン):</value></data>
+  <data name="Default" xml:space="preserve"><value>既定</value></data>
+  <data name="VoiceActivationHeadphones" xml:space="preserve"><value>プリロール音を自分のスピーカー/ヘッドホンでも再生する</value></data>
+  <data name="Playback" xml:space="preserve"><value>再生</value></data>
+  <data name="AllowResumeOtherMode" xml:space="preserve"><value>別の再生モードでの再開を許可 (一時停止位置から新しいモードで再開)</value></data>
+  <data name="General" xml:space="preserve"><value>全般</value></data>
+  <data name="HotkeysEnabledCheck" xml:space="preserve"><value>ホットキーを有効にする</value></data>
+  <data name="PassHotkeysCheck" xml:space="preserve"><value>ホットキーをアクティブなアプリにも渡す (既定はオフ: キーは吸収されます)</value></data>
+  <data name="AutoStopCheck" xml:space="preserve"><value>自動停止: ホットキーで開始したサウンドはリピートと連続再生を無視 (既定はオン)</value></data>
+  <data name="HotkeysGeneralHint" xml:space="preserve"><value>サウンドのホットキーは、右クリックするかホットキー セルをダブルクリックして設定します。単独キー、Ctrl/Alt/Shift/Win との任意の組み合わせ、マウスの中/4/5 ボタンがグローバルに動作します。</value></data>
+  <data name="SpecialHint" xml:space="preserve"><value>特殊ホットキーは予約されています: サウンドに同じキーは割り当てられません。</value></data>
+  <data name="NumpadHotkeys" xml:space="preserve"><value>テンキー ホットキー</value></data>
+  <data name="NumpadEnabledCheck" xml:space="preserve"><value>有効: 修飾キーを押したままテンキーでサウンドの番号を入力し、離す</value></data>
+  <data name="Modifier" xml:space="preserve"><value>修飾キー:</value></data>
+  <data name="NumpadHint" xml:space="preserve"><value>番号は現在のカテゴリの # 列です。</value></data>
+  <data name="IndexHotkeys" xml:space="preserve"><value>インデックス ホットキー</value></data>
+  <data name="IndexEnabledCheck" xml:space="preserve"><value>有効: 修飾キーを押したまま数字キー列で行番号を入力し、離す</value></data>
+  <data name="IndexHint" xml:space="preserve"><value>インデックスは非表示の「すべてのサウンド」カテゴリの行です。例: Alt+1,2,3 で行 123 を再生。</value></data>
+  <data name="Advanced" xml:space="preserve"><value>詳細</value></data>
+  <data name="AllowLeftRight" xml:space="preserve"><value>左右の修飾キーを区別する (LCtrl と RCtrl は別のキー)</value></data>
+  <data name="SameHotkeysAllCategories" xml:space="preserve"><value>すべてのカテゴリで同じホットキー (行ベース: 行 N のホットキーは選択中カテゴリの行 N を再生)</value></data>
+  <data name="JumpSeconds" xml:space="preserve"><value>±N 秒ジャンプ:</value></data>
+  <data name="VolumeStep" xml:space="preserve"><value>音量上下の刻み (%):</value></data>
+  <data name="VolumeSet" xml:space="preserve"><value>「音量を設定」ホットキーのレベル (%):</value></data>
+  <data name="AutoKeysEnabledCheck" xml:space="preserve"><value>Auto Keys を有効にする</value></data>
+  <data name="AutoKeysHint" xml:space="preserve"><value>自動プッシュ トゥ トーク: サウンドがマイクで再生開始されるとキーが押されます (サウンドの長さの間押し続けるか、前後に 1 回ずつ押す)。マイク再生モードでのみ動作します。</value></data>
+  <data name="NoKey" xml:space="preserve"><value>(キーなし)</value></data>
+  <data name="AutoKey" xml:space="preserve"><value>Auto Key</value></data>
+  <data name="OnlyIfHotkey" xml:space="preserve"><value>ホットキーで再生した場合のみ</value></data>
+  <data name="PressHold" xml:space="preserve"><value>サウンドの長さの間押し続ける</value></data>
+  <data name="PressBeforeAfter" xml:space="preserve"><value>前後に押す</value></data>
+  <data name="PressMode" xml:space="preserve"><value>押し方:</value></data>
+  <data name="Cond_Always" xml:space="preserve"><value>常に</value></data>
+  <data name="Cond_Fullscreen" xml:space="preserve"><value>前面アプリが全画面 (ボーダーレスを含む)</value></data>
+  <data name="Cond_Running" xml:space="preserve"><value>リスト内のアプリが実行中</value></data>
+  <data name="Cond_Foreground" xml:space="preserve"><value>リスト内のアプリが前面</value></data>
+  <data name="Condition" xml:space="preserve"><value>条件:</value></data>
+  <data name="AppsTip" xml:space="preserve"><value>プロセス名を 1 行に 1 つ、例: discord.exe</value></data>
+  <data name="Apps" xml:space="preserve"><value>アプリ一覧:</value></data>
+  <data name="AddAutoKey" xml:space="preserve"><value>Auto Key を追加</value></data>
+  <data name="RecorderFormatHint" xml:space="preserve"><value>すべてステレオ 48 kHz に変換されます。エディターもこの形式で保存します。</value></data>
+  <data name="TargetDb" xml:space="preserve"><value>目標値 (dB、既定 89 ≈ −23 LU、&gt;99 でクリップ):</value></data>
+  <data name="NotificationSound" xml:space="preserve"><value>録音開始前に通知音を鳴らす</value></data>
+  <data name="RecorderHotkeyHint" xml:space="preserve"><value>録音の開始/停止ホットキーは、ホットキー &gt; 特殊タブにあります。</value></data>
+  <data name="Language" xml:space="preserve"><value>言語:</value></data>
+  <data name="Style" xml:space="preserve"><value>スタイル:</value></data>
+  <data name="Theme_Light" xml:space="preserve"><value>ライト</value></data>
+  <data name="Theme_Dark" xml:space="preserve"><value>ダーク</value></data>
+  <data name="Theme_Native" xml:space="preserve"><value>ネイティブ (Windows)</value></data>
+  <data name="NativeForced" xml:space="preserve"><value>ハイ コントラストまたはスクリーン リーダーが有効です: ネイティブ スタイルを使用します。</value></data>
+  <data name="ToolbarItems" xml:space="preserve"><value>ツール バーの項目</value></data>
+  <data name="Timer" xml:space="preserve"><value>トラック タイマー</value></data>
+  <data name="SeekSlider" xml:space="preserve"><value>シーク スライダー</value></data>
+  <data name="SpeakerVolume" xml:space="preserve"><value>スピーカー音量</value></data>
+  <data name="MicLevelMeter" xml:space="preserve"><value>マイク レベル メーター</value></data>
+  <data name="Behaviour" xml:space="preserve"><value>動作</value></data>
+  <data name="StartMinimized" xml:space="preserve"><value>最小化した状態で起動</value></data>
+  <data name="MinimizeToTrayCheck" xml:space="preserve"><value>通知領域に最小化する</value></data>
+  <data name="CloseToTray" xml:space="preserve"><value>ウィンドウを閉じると終了せずに通知領域へ最小化する</value></data>
+  <data name="DisableSorting" xml:space="preserve"><value>並べ替えを無効にする (列見出しで並べ替えない、手動の順序のみ)</value></data>
+  <data name="Confirmations" xml:space="preserve"><value>確認</value></data>
+  <data name="ConfirmRemoveCheck" xml:space="preserve"><value>サウンドを削除する前に確認する</value></data>
+  <data name="ConfirmResetCheck" xml:space="preserve"><value>再生回数をリセットする前に確認する</value></data>
+  <data name="ConfirmQuitCheck" xml:space="preserve"><value>サウンド再生中の終了を確認する</value></data>
+  <data name="NotifyMissing" xml:space="preserve"><value>リスト読み込み時に見つからないファイルを警告する</value></data>
+  <data name="NotifyDevices" xml:space="preserve"><value>オーディオ デバイスの変更をステータス バーに表示する</value></data>
+  <data name="NotifyTray" xml:space="preserve"><value>通知領域へ最小化するときにバルーンを表示する</value></data>
+  <data name="NotifyRecording" xml:space="preserve"><value>録音開始時にステータス メッセージを表示する</value></data>
+  <data name="NotifyTrial" xml:space="preserve"><value>試用版の制限に達したらダイアログを表示する</value></data>
+  <data name="NotifyUpdates" xml:space="preserve"><value>利用可能な更新を表示する</value></data>
+  <data name="CheckInterval" xml:space="preserve"><value>更新の確認:</value></data>
+  <data name="Never" xml:space="preserve"><value>しない (既定)</value></data>
+  <data name="Daily" xml:space="preserve"><value>毎日</value></data>
+  <data name="Weekly" xml:space="preserve"><value>毎週</value></data>
+  <data name="ManifestUrl" xml:space="preserve"><value>マニフェスト URL:</value></data>
+  <data name="UpdateHint" xml:space="preserve"><value>更新パッケージは、マニフェストの署名とパッケージのハッシュが VoxPad に組み込まれたキーで検証できた場合にのみインストールされます。</value></data>
+  <data name="LastCheck" xml:space="preserve"><value>最終確認</value></data>
+  <data name="CheckNow" xml:space="preserve"><value>今すぐ確認</value></data>
+
+  <!-- Special hotkey names -->
+  <data name="Special_Stop" xml:space="preserve"><value>停止</value></data>
+  <data name="Special_Start" xml:space="preserve"><value>開始 (選択項目を再生 / 再開)</value></data>
+  <data name="Special_Pause" xml:space="preserve"><value>一時停止 / 再開</value></data>
+  <data name="Special_PlayPrevious" xml:space="preserve"><value>前のファイルを再生</value></data>
+  <data name="Special_PlayNext" xml:space="preserve"><value>次のファイルを再生</value></data>
+  <data name="Special_PlaySelected" xml:space="preserve"><value>選択したファイルを再生</value></data>
+  <data name="Special_PlayRandomInCategory" xml:space="preserve"><value>ランダムに再生 (現在のカテゴリ)</value></data>
+  <data name="Special_PlayRandomFromAll" xml:space="preserve"><value>ランダムに再生 (すべてのサウンド)</value></data>
+  <data name="Special_SelectPreviousFile" xml:space="preserve"><value>前のファイルを選択</value></data>
+  <data name="Special_SelectNextFile" xml:space="preserve"><value>次のファイルを選択</value></data>
+  <data name="Special_SelectPreviousCategory" xml:space="preserve"><value>前のカテゴリを選択</value></data>
+  <data name="Special_SelectNextCategory" xml:space="preserve"><value>次のカテゴリを選択</value></data>
+  <data name="Special_StartRecording" xml:space="preserve"><value>録音を開始</value></data>
+  <data name="Special_StopRecording" xml:space="preserve"><value>録音を停止</value></data>
+  <data name="Special_JumpBackward" xml:space="preserve"><value>N 秒戻る</value></data>
+  <data name="Special_JumpForward" xml:space="preserve"><value>N 秒進む</value></data>
+  <data name="Special_SpeakerVolumeUp" xml:space="preserve"><value>スピーカー音量を上げる</value></data>
+  <data name="Special_SpeakerVolumeDown" xml:space="preserve"><value>スピーカー音量を下げる</value></data>
+  <data name="Special_SpeakerVolumeSet" xml:space="preserve"><value>スピーカー音量を設定</value></data>
+  <data name="Special_SpeakerVolumeMute" xml:space="preserve"><value>スピーカーのミュート / 解除</value></data>
+  <data name="Special_SetPlayModeBoth" xml:space="preserve"><value>再生モード: スピーカー + マイク</value></data>
+  <data name="Special_SetPlayModeMic" xml:space="preserve"><value>再生モード: マイクのみ</value></data>
+  <data name="Special_SetPlayModeSpeakers" xml:space="preserve"><value>再生モード: スピーカーのみ</value></data>
+  <data name="Special_CyclePlayMode" xml:space="preserve"><value>再生モードを切り替え</value></data>
+  <data name="Special_EnableHotkeys" xml:space="preserve"><value>ホットキーを有効にする</value></data>
+  <data name="Special_DisableHotkeys" xml:space="preserve"><value>ホットキーを無効にする</value></data>
+  <data name="Special_ToggleHotkeys" xml:space="preserve"><value>ホットキーの切り替え</value></data>
+  <data name="Special_EnableAutoKeys" xml:space="preserve"><value>Auto Keys を有効にする</value></data>
+  <data name="Special_DisableAutoKeys" xml:space="preserve"><value>Auto Keys を無効にする</value></data>
+  <data name="Special_ToggleAutoKeys" xml:space="preserve"><value>Auto Keys の切り替え</value></data>
+  <data name="Special_PlayTts" xml:space="preserve"><value>テキスト読み上げのテキストを再生</value></data>
+</root>

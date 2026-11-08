@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+  <!-- Menus -->
+  <data name="File" xml:space="preserve"><value>_Soubor</value></data>
+  <data name="NewList" xml:space="preserve"><value>_Nový seznam zvuků</value></data>
+  <data name="LoadList" xml:space="preserve"><value>_Načíst seznam zvuků…</value></data>
+  <data name="SaveList" xml:space="preserve"><value>_Uložit seznam zvuků</value></data>
+  <data name="SaveListAs" xml:space="preserve"><value>Uložit seznam zvuků _jako…</value></data>
+  <data name="RecentLists" xml:space="preserve"><value>_Poslední seznamy zvuků</value></data>
+  <data name="RestoreList" xml:space="preserve"><value>Obnovit seznam zvuků…</value></data>
+  <data name="AddFiles" xml:space="preserve"><value>Přidat zvukové soubory…</value></data>
+  <data name="AddFolder" xml:space="preserve"><value>Přidat složku…</value></data>
+  <data name="WebImport" xml:space="preserve"><value>Importovat z webu…</value></data>
+  <data name="Export" xml:space="preserve"><value>_Exportovat</value></data>
+  <data name="ExportSoundFiles" xml:space="preserve"><value>Zvukové soubory…</value></data>
+  <data name="ExportPreferences" xml:space="preserve"><value>Předvolby…</value></data>
+  <data name="ImportPreferences" xml:space="preserve"><value>Importovat předvolby…</value></data>
+  <data name="Statistics" xml:space="preserve"><value>Statistiky…</value></data>
+  <data name="Preferences" xml:space="preserve"><value>_Předvolby…</value></data>
+  <data name="Exit" xml:space="preserve"><value>_Konec</value></data>
+  <data name="Edit" xml:space="preserve"><value>Úp_ravy</value></data>
+  <data name="SelectAll" xml:space="preserve"><value>Vybrat vše</value></data>
+  <data name="Remove" xml:space="preserve"><value>Odebrat</value></data>
+  <data name="Copy" xml:space="preserve"><value>Kopírovat</value></data>
+  <data name="Cut" xml:space="preserve"><value>Vyjmout</value></data>
+  <data name="Paste" xml:space="preserve"><value>Vložit</value></data>
+  <data name="MoveUp" xml:space="preserve"><value>Posunout nahoru</value></data>
+  <data name="MoveDown" xml:space="preserve"><value>Posunout dolů</value></data>
+  <data name="Undo" xml:space="preserve"><value>Zpět</value></data>
+  <data name="Redo" xml:space="preserve"><value>Znovu</value></data>
+  <data name="EditFile" xml:space="preserve"><value>Upravit soubor…</value></data>
+  <data name="SetHotkey" xml:space="preserve"><value>Nastavit klávesovou zkratku…</value></data>
+  <data name="RemoveHotkey" xml:space="preserve"><value>Odebrat klávesovou zkratku</value></data>
+  <data name="SetColor" xml:space="preserve"><value>Barva…</value></data>
+  <data name="PlayRandom" xml:space="preserve"><value>Přehrát náhodný</value></data>
+  <data name="ResetPlayCount" xml:space="preserve"><value>Vynulovat počet přehrání</value></data>
+  <data name="ResetAllPlayCounts" xml:space="preserve"><value>Vynulovat všechny počty přehrání</value></data>
+  <data name="SelectInExplorer" xml:space="preserve"><value>Zobrazit v Průzkumníku</value></data>
+  <data name="PlayMenu" xml:space="preserve"><value>_Přehrávání</value></data>
+  <data name="Play" xml:space="preserve"><value>Přehrát</value></data>
+  <data name="PlayOnSpeakers" xml:space="preserve"><value>Přehrát do reproduktorů</value></data>
+  <data name="PlayOnMic" xml:space="preserve"><value>Přehrát do mikrofonu</value></data>
+  <data name="PauseResume" xml:space="preserve"><value>Pozastavit / pokračovat</value></data>
+  <data name="Stop" xml:space="preserve"><value>Zastavit</value></data>
+  <data name="Previous" xml:space="preserve"><value>Předchozí</value></data>
+  <data name="Next" xml:space="preserve"><value>Další</value></data>
+  <data name="Repeat" xml:space="preserve"><value>Opakovat</value></data>
+  <data name="Continue" xml:space="preserve"><value>Pokračovat</value></data>
+  <data name="AutoStop" xml:space="preserve"><value>Automatické zastavení (zvuky spuštěné zkratkou ignorují Opakovat/Pokračovat)</value></data>
+  <data name="PlayModeMenu" xml:space="preserve"><value>Režim přehrávání</value></data>
+  <data name="PlayMode_Both" xml:space="preserve"><value>Reproduktory + mikrofon</value></data>
+  <data name="PlayMode_Mic" xml:space="preserve"><value>Pouze mikrofon</value></data>
+  <data name="PlayMode_Speakers" xml:space="preserve"><value>Pouze reproduktory</value></data>
+  <data name="Recorder" xml:space="preserve"><value>Záznam…</value></data>
+  <data name="TextToSpeech" xml:space="preserve"><value>Převod textu na řeč…</value></data>
+  <data name="Window" xml:space="preserve"><value>_Okno</value></data>
+  <data name="Categories" xml:space="preserve"><value>Panel kategorií</value></data>
+  <data name="Hotbar" xml:space="preserve"><value>Rychlý panel</value></data>
+  <data name="Toolbar" xml:space="preserve"><value>Panel přehrávání</value></data>
+  <data name="StatusBar" xml:space="preserve"><value>Stavový řádek</value></data>
+  <data name="ShowHiddenCategories" xml:space="preserve"><value>Zobrazit skryté kategorie</value></data>
+  <data name="CategoryIconSize" xml:space="preserve"><value>Velikost ikon kategorií</value></data>
+  <data name="Small" xml:space="preserve"><value>Malé</value></data>
+  <data name="Medium" xml:space="preserve"><value>Střední</value></data>
+  <data name="Large" xml:space="preserve"><value>Velké</value></data>
+  <data name="ExtraLarge" xml:space="preserve"><value>Velmi velké</value></data>
+  <data name="Columns" xml:space="preserve"><value>Sloupce</value></data>
+  <data name="HotbarSize" xml:space="preserve"><value>Velikost rychlého panelu…</value></data>
+  <data name="HotkeyOverview" xml:space="preserve"><value>Přehled klávesových zkratek…</value></data>
+  <data name="MinimizeToTray" xml:space="preserve"><value>Minimalizovat do oznamovací oblasti</value></data>
+  <data name="Help" xml:space="preserve"><value>Nápo_věda</value></data>
+  <data name="Manual" xml:space="preserve"><value>Příručka</value></data>
+  <data name="Troubleshooting" xml:space="preserve"><value>Řešení potíží…</value></data>
+  <data name="AutoKeysTroubleshooting" xml:space="preserve"><value>Řešení potíží s Auto Keys…</value></data>
+  <data name="CheckForUpdates" xml:space="preserve"><value>Zkontrolovat aktualizace…</value></data>
+  <data name="Register" xml:space="preserve"><value>Registrovat…</value></data>
+  <data name="About" xml:space="preserve"><value>O aplikaci VoxPad</value></data>
+
+  <!-- Toolbar / status bar -->
+  <data name="TimerTip" xml:space="preserve"><value>Uplynulo / celkem. Dvojitým kliknutím přejdete na přehrávaný zvuk.</value></data>
+  <data name="SpeakerVolumeTip" xml:space="preserve"><value>Hlasitost reproduktorů (pouze vaše kopie; svázáno se směšovačem hlasitosti Windows)</value></data>
+  <data name="MicMeterTip" xml:space="preserve"><value>Úroveň mikrofonu. Kliknutím na ikonu změříte úroveň svého hlasu.</value></data>
+  <data name="SeekTip" xml:space="preserve"><value>Červená = slyší ostatní (mikrofon), modrá = pouze reproduktory</value></data>
+  <data name="PlayModeTip" xml:space="preserve"><value>Režim přehrávání – kliknutím přepnete</value></data>
+  <data name="HotkeysTip" xml:space="preserve"><value>Klávesové zkratky – dvojité kliknutí přepne, pravé kliknutí zobrazí možnosti</value></data>
+  <data name="PassHotkeys" xml:space="preserve"><value>Předávat klávesové zkratky aktivní aplikaci</value></data>
+  <data name="Hotkeys" xml:space="preserve"><value>Klávesové zkratky</value></data>
+  <data name="AutoKeysTip" xml:space="preserve"><value>Auto Keys – dvojité kliknutí přepne, pravé kliknutí otevře řešení potíží</value></data>
+  <data name="AutoKeys" xml:space="preserve"><value>Auto Keys</value></data>
+  <data name="RepeatTip" xml:space="preserve"><value>Opakovat aktuální zvuk – kliknutím přepnete</value></data>
+  <data name="ContinueTip" xml:space="preserve"><value>Pokračovat dalším zvukem – kliknutím přepnete</value></data>
+  <data name="PreviousPage" xml:space="preserve"><value>Předchozí stránka (Ctrl+PgUp)</value></data>
+  <data name="NextPage" xml:space="preserve"><value>Další stránka (Ctrl+PgDn)</value></data>
+  <data name="HideCategory" xml:space="preserve"><value>Skrýt kategorii</value></data>
+  <data name="SearchTip" xml:space="preserve"><value>Psaním filtrujete · Enter prochází shody · Ctrl+Enter přehraje · Esc vymaže</value></data>
+  <data name="ColTag" xml:space="preserve"><value>Značka</value></data>
+  <data name="ColDuration" xml:space="preserve"><value>Délka</value></data>
+  <data name="ColHotkey" xml:space="preserve"><value>Zkratka</value></data>
+  <data name="ColPlayCount" xml:space="preserve"><value>Počet přehrání</value></data>
+  <data name="ColLastPlayed" xml:space="preserve"><value>Naposledy přehráno</value></data>
+  <data name="ColIndex" xml:space="preserve"><value>#</value></data>
+  <data name="MoveToCategory" xml:space="preserve"><value>Přesunout do kategorie</value></data>
+  <data name="RemoveFromCategory" xml:space="preserve"><value>Odebrat z této kategorie</value></data>
+  <data name="AddCategory" xml:space="preserve"><value>Přidat kategorii…</value></data>
+  <data name="AddSubcategory" xml:space="preserve"><value>Přidat podkategorii…</value></data>
+  <data name="RenameCategory" xml:space="preserve"><value>Přejmenovat…</value></data>
+  <data name="RemoveCategory" xml:space="preserve"><value>Odebrat kategorii</value></data>
+  <data name="SetRandomHotkey" xml:space="preserve"><value>Nastavit zkratku „přehrát náhodný“…</value></data>
+  <data name="AllSounds" xml:space="preserve"><value>Všechny zvuky</value></data>
+  <data name="UntitledList" xml:space="preserve"><value>Bez názvu</value></data>
+  <data name="Trial" xml:space="preserve"><value>Zkušební verze</value></data>
+  <data name="TrialStatus" xml:space="preserve"><value>Zkušební verze: max. {0} zvuků, zbývá {1} přehrání do mikrofonu v tomto spuštění</value></data>
+
+  <!-- Status messages -->
+  <data name="PlayModeSet" xml:space="preserve"><value>Režim přehrávání: {0}</value></data>
+  <data name="HotkeysOn" xml:space="preserve"><value>Klávesové zkratky povoleny</value></data>
+  <data name="HotkeysOff" xml:space="preserve"><value>Klávesové zkratky zakázány</value></data>
+  <data name="AutoKeysOn" xml:space="preserve"><value>Auto Keys povoleny</value></data>
+  <data name="AutoKeysOff" xml:space="preserve"><value>Auto Keys zakázány</value></data>
+  <data name="Playing" xml:space="preserve"><value>Přehrává se '{0}' → {1}</value></data>
+  <data name="TrialPlayLimit" xml:space="preserve"><value>Zkušební verze: dosaženo 10 přehrání do mikrofonu na jedno spuštění. Zaregistrujte se a limit zrušte.</value></data>
+  <data name="TrialSoundLimit" xml:space="preserve"><value>Zkušební verze: seznam může obsahovat nejvýše {0} zvuků. Zaregistrujte se a limit zrušte.</value></data>
+  <data name="NothingToPlay" xml:space="preserve"><value>Není co přehrát</value></data>
+  <data name="DevicesChanged" xml:space="preserve"><value>Zvuková zařízení se změnila; směrování bylo znovu použito.</value></data>
+  <data name="MissingFiles" xml:space="preserve"><value>V seznamu chybí {0} soubor(ů) (zobrazeny šedě).</value></data>
+  <data name="CategoryInfo" xml:space="preserve"><value>{0}: {1} zvuků, celkem {2}</value></data>
+  <data name="Copied" xml:space="preserve"><value>Zkopírováno zvuků: {0}</value></data>
+  <data name="CutStatus" xml:space="preserve"><value>Vyjmuto zvuků: {0}</value></data>
+  <data name="Importing" xml:space="preserve"><value>Načítání {0} souboru(ů)…</value></data>
+  <data name="Imported" xml:space="preserve"><value>Přidáno zvuků: {0}</value></data>
+  <data name="NoAudioFiles" xml:space="preserve"><value>Nebyly nalezeny žádné podporované zvukové soubory</value></data>
+  <data name="ConfirmRemove" xml:space="preserve"><value>Odebrat {0} zvuk(ů) ze seznamu? Zvukové soubory se nesmažou.</value></data>
+  <data name="Removed" xml:space="preserve"><value>Odebráno zvuků: {0}</value></data>
+  <data name="HotkeyFor" xml:space="preserve"><value>Klávesová zkratka pro '{0}'</value></data>
+  <data name="RandomHotkeyFor" xml:space="preserve"><value>Zkratka „přehrát náhodný“ pro '{0}'</value></data>
+  <data name="BareMouseNotAllowed" xml:space="preserve"><value>Levé a pravé tlačítko myši vyžaduje modifikátor (např. Ctrl+kliknutí).</value></data>
+  <data name="ReservedHotkey" xml:space="preserve"><value>{0} je vyhrazeno pro speciální zkratku '{1}'.</value></data>
+  <data name="HotkeyRemoved" xml:space="preserve"><value>Klávesová zkratka odebrána z '{0}'</value></data>
+  <data name="HotkeySet" xml:space="preserve"><value>{0} → '{1}'</value></data>
+  <data name="ConfirmResetPlayCount" xml:space="preserve"><value>Vynulovat počet přehrání u {0} zvuku(ů)?</value></data>
+  <data name="ConfirmResetAll" xml:space="preserve"><value>Vynulovat počet přehrání všech zvuků i celkový součet seznamu?</value></data>
+  <data name="FileMissing" xml:space="preserve"><value>Soubor nenalezen: {0}</value></data>
+  <data name="ConfirmRemoveCategory" xml:space="preserve"><value>Odebrat kategorii '{0}' (včetně podkategorií)? Zvuky zůstanou v seznamu.</value></data>
+  <data name="CategoryName" xml:space="preserve"><value>Název:</value></data>
+  <data name="NewCategory" xml:space="preserve"><value>Nová kategorie</value></data>
+  <data name="AddedToCategory" xml:space="preserve"><value>{0} zvuk(ů) → '{1}'</value></data>
+  <data name="ReorderWhileSorted" xml:space="preserve"><value>Pro ruční změnu pořadí zrušte řazení (znovu klikněte na záhlaví sloupce).</value></data>
+  <data name="UnsavedTitle" xml:space="preserve"><value>Neuložené změny</value></data>
+  <data name="UnsavedText" xml:space="preserve"><value>Seznam zvuků obsahuje neuložené změny. Zahodit je?</value></data>
+  <data name="NewListCreated" xml:space="preserve"><value>Nový seznam zvuků</value></data>
+  <data name="ListLoaded" xml:space="preserve"><value>Načteno: {0}</value></data>
+  <data name="ListLoadFailed" xml:space="preserve"><value>Seznam zvuků se nepodařilo načíst: {0}</value></data>
+  <data name="ListSaved" xml:space="preserve"><value>Uloženo: {0}</value></data>
+  <data name="Exported" xml:space="preserve"><value>Exportováno {0} souboru(ů), {1} selhalo → {2}</value></data>
+  <data name="PrefsExported" xml:space="preserve"><value>Předvolby exportovány do {0}</value></data>
+  <data name="PrefsImportedRestart" xml:space="preserve"><value>Předvolby importovány. Pro jejich použití restartujte VoxPad.</value></data>
+  <data name="NoSoundAtNumber" xml:space="preserve"><value>Žádný zvuk s číslem {0}</value></data>
+  <data name="ElevatedWarning" xml:space="preserve"><value>VoxPad běží jako správce: přetahování z Průzkumníka nebude fungovat (Windows blokuje přetažení do oken se zvýšenými oprávněními).</value></data>
+  <data name="UnexpectedError" xml:space="preserve"><value>Došlo k neočekávané chybě.</value></data>
+  <data name="DumpWritten" xml:space="preserve"><value>Podrobnosti byly zapsány do</value></data>
+  <data name="TrayHint" xml:space="preserve"><value>VoxPad běží dál v oznamovací oblasti. Dvojitým kliknutím na ikonu okno obnovíte.</value></data>
+  <data name="Tray_Show" xml:space="preserve"><value>Zobrazit VoxPad</value></data>
+  <data name="ConfirmQuitPlaying" xml:space="preserve"><value>Přehrává se zvuk. Přesto ukončit?</value></data>
+  <data name="SaveBeforeExit" xml:space="preserve"><value>Uložit změny v seznamu zvuků před ukončením?</value></data>
+  <data name="MicAccessDenied" xml:space="preserve"><value>Windows blokuje přístup desktopových aplikací k mikrofonu, takže VoxPad nemůže číst váš mikrofon.
+
+Řešení: Nastavení &gt; Ochrana osobních údajů a zabezpečení &gt; Mikrofon &gt; zapněte „Přístup k mikrofonu“ a „Povolit desktopovým aplikacím přístup k mikrofonu“, poté stiskněte Aktualizovat v Předvolby &gt; Zařízení.</value></data>
+  <data name="OpenSettingsQuestion" xml:space="preserve"><value>Otevřít nastavení ochrany osobních údajů nyní?</value></data>
+  <data name="AccessDenied" xml:space="preserve"><value>Přístup odepřen</value></data>
+  <data name="RemoveFromHotbar" xml:space="preserve"><value>Odebrat z rychlého panelu</value></data>
+  <data name="EmptyTileHint" xml:space="preserve"><value>Přetáhněte sem zvuk</value></data>
+  <data name="PrefsSaved" xml:space="preserve"><value>Předvolby uloženy</value></data>
+  <data name="LanguageRestart" xml:space="preserve"><value>Jazyk se změní po restartu aplikace VoxPad.</value></data>
+
+  <!-- Dialogs -->
+  <data name="OK" xml:space="preserve"><value>OK</value></data>
+  <data name="Cancel" xml:space="preserve"><value>Zrušit</value></data>
+  <data name="Apply" xml:space="preserve"><value>Použít</value></data>
+  <data name="Close" xml:space="preserve"><value>Zavřít</value></data>
+  <data name="Clear" xml:space="preserve"><value>Vymazat</value></data>
+  <data name="None" xml:space="preserve"><value>(žádná)</value></data>
+  <data name="HotkeyCapturePrompt" xml:space="preserve"><value>Stiskněte klávesu nebo kombinaci kláves. Fungují i tlačítka myši Mid, 4 a 5 (levé/pravé vyžaduje modifikátor). Enter uloží, Delete nebo Backspace vymaže, Esc zruší.</value></data>
+  <data name="HexColor" xml:space="preserve"><value>Hex:</value></data>
+  <data name="NoColor" xml:space="preserve"><value>Bez barvy</value></data>
+  <data name="Rows" xml:space="preserve"><value>Řádky:</value></data>
+  <data name="Pages" xml:space="preserve"><value>Stránky:</value></data>
+  <data name="HotbarSizeHint" xml:space="preserve"><value>Klávesové zkratky jsou společné pro všechny stránky. Dlaždice mimo novou mřížku budou odebrány.</value></data>
+  <data name="Type" xml:space="preserve"><value>Typ</value></data>
+  <data name="Target" xml:space="preserve"><value>Cíl</value></data>
+  <data name="Sound" xml:space="preserve"><value>Zvuk</value></data>
+  <data name="CategoryRandom" xml:space="preserve"><value>Přehrát náhodný v kategorii</value></data>
+  <data name="Special" xml:space="preserve"><value>Speciální</value></data>
+  <data name="Numpad" xml:space="preserve"><value>Numerická klávesnice</value></data>
+  <data name="NumpadDesc" xml:space="preserve"><value>Přehrát podle čísla v aktuální kategorii</value></data>
+  <data name="Index" xml:space="preserve"><value>Index</value></data>
+  <data name="IndexDesc" xml:space="preserve"><value>Přehrát podle indexu řádku ve Všech zvucích</value></data>
+  <data name="HotkeyOverviewHint" xml:space="preserve"><value>Klávesové zkratky jsou {0}; předávání je {1}.</value></data>
+  <data name="Enabled" xml:space="preserve"><value>povoleny</value></data>
+  <data name="Disabled" xml:space="preserve"><value>zakázány</value></data>
+  <data name="On" xml:space="preserve"><value>zapnuto</value></data>
+  <data name="Off" xml:space="preserve"><value>vypnuto</value></data>
+  <data name="Version" xml:space="preserve"><value>Verze</value></data>
+  <data name="TrialEdition" xml:space="preserve"><value>Zkušební verze – max. 10 zvuků, 10 přehrání do mikrofonu na spuštění</value></data>
+  <data name="LicensedTo" xml:space="preserve"><value>Licence pro: {0} (edice {1})</value></data>
+  <data name="AboutText" xml:space="preserve"><value>Soundboard pro Windows, který směruje zvuky do vašeho mikrofonu. Zvukový engine: NAudio, NVorbis, Concentus, TagLib#. Virtuální mikrofon přes VB-CABLE / Voicemeeter.</value></data>
+  <data name="DataFolder" xml:space="preserve"><value>Data</value></data>
+  <data name="LogFolder" xml:space="preserve"><value>Protokoly</value></data>
+  <data name="OpenDataFolder" xml:space="preserve"><value>Otevřít datovou složku</value></data>
+  <data name="HideLicenseeName" xml:space="preserve"><value>Skrýt mé jméno (režim streamera)</value></data>
+  <data name="RemoveLicense" xml:space="preserve"><value>Odebrat licenci</value></data>
+  <data name="ConfirmRemoveLicense" xml:space="preserve"><value>Odebrat licenci z tohoto počítače?</value></data>
+  <data name="RegisterPrompt" xml:space="preserve"><value>Zadejte jméno a sériové číslo z e-mailu o nákupu. Sériové číslo se ověřuje offline a ukládá do license.dat.</value></data>
+  <data name="Name" xml:space="preserve"><value>Jméno:</value></data>
+  <data name="Serial" xml:space="preserve"><value>Sériové číslo:</value></data>
+  <data name="RegisteredThanks" xml:space="preserve"><value>Děkujeme! VoxPad je nyní registrován.</value></data>
+  <data name="SerialInvalid" xml:space="preserve"><value>Sériové číslo neodpovídá jménu. Zkontrolujte překlepy (I/1 a O/0 jsou zaměnitelné).</value></data>
+  <data name="AllTimePlays" xml:space="preserve"><value>Přehrání do mikrofonu celkem</value></data>
+  <data name="ListPlays" xml:space="preserve"><value>Přehrání v tomto seznamu</value></data>
+  <data name="SoundsInList" xml:space="preserve"><value>Zvuků v seznamu</value></data>
+  <data name="Launches" xml:space="preserve"><value>Spuštění</value></data>
+  <data name="Since" xml:space="preserve"><value>Od</value></data>
+  <data name="TopSounds" xml:space="preserve"><value>Nejpřehrávanější</value></data>
+  <data name="ResetAllTime" xml:space="preserve"><value>Vynulovat celkový součet</value></data>
+  <data name="ConfirmResetAllTime" xml:space="preserve"><value>Vynulovat celkový součet za celou dobu?</value></data>
+  <data name="WebImportPrompt" xml:space="preserve"><value>Vložte přímý odkaz na zvukový soubor (mp3, ogg, wav…). Soubor se stáhne do hudební složky VoxPad a přidá do seznamu.</value></data>
+  <data name="FileNameOptional" xml:space="preserve"><value>Název souboru (volitelné):</value></data>
+  <data name="Import" xml:space="preserve"><value>Importovat</value></data>
+  <data name="Downloading" xml:space="preserve"><value>Stahování…</value></data>
+  <data name="UnsupportedFormat" xml:space="preserve"><value>Nepodporovaný zvukový formát</value></data>
+  <data name="RestorePrompt" xml:space="preserve"><value>Denní zálohy se vytvářejí při spuštění. Obnovení nahradí aktuální seznam (změnu lze vrátit načtením uloženého seznamu).</value></data>
+  <data name="OpenBackupFolder" xml:space="preserve"><value>Otevřít složku</value></data>
+  <data name="Restore" xml:space="preserve"><value>Obnovit</value></data>
+  <data name="ConfirmRestore" xml:space="preserve"><value>Obnovit zálohu z {0}?</value></data>
+  <data name="Restored" xml:space="preserve"><value>Obnovena záloha z {0}</value></data>
+  <data name="Checking" xml:space="preserve"><value>Kontrola…</value></data>
+  <data name="DownloadInstall" xml:space="preserve"><value>Stáhnout a nainstalovat</value></data>
+  <data name="PackageVerified" xml:space="preserve"><value>Balíček ověřen. Spustí se instalační program; VoxPad se nyní zavře.</value></data>
+  <data name="VoiceMeasurement" xml:space="preserve"><value>Měření hlasu</value></data>
+  <data name="VoiceMeasurePrompt" xml:space="preserve"><value>Mluvte do mikrofonu normálně asi 8 sekund. Naměřená hlasitost se stane cílem normalizace, aby zvuky odpovídaly vašemu hlasu (dobrý výsledek je nad 74 dB).</value></data>
+  <data name="CurrentTarget" xml:space="preserve"><value>Aktuální cíl</value></data>
+  <data name="DefaultNotMeasured" xml:space="preserve"><value>výchozí, neměřeno</value></data>
+  <data name="Start" xml:space="preserve"><value>Spustit</value></data>
+  <data name="UseAsTarget" xml:space="preserve"><value>Použít jako cíl</value></data>
+  <data name="Measuring" xml:space="preserve"><value>Měření</value></data>
+  <data name="NothingMeasured" xml:space="preserve"><value>Nic nenaměřeno – není mikrofon ztlumený nebo vybrané špatné zařízení?</value></data>
+  <data name="Result" xml:space="preserve"><value>Výsledek</value></data>
+  <data name="TooQuiet" xml:space="preserve"><value>velmi tiché – zvyšte úroveň mikrofonu ve Windows</value></data>
+  <data name="BelowTarget" xml:space="preserve"><value>pod 74 dB; zvažte vyšší úroveň mikrofonu</value></data>
+  <data name="TargetSet" xml:space="preserve"><value>Cíl normalizace nastaven na {0:F1} dB</value></data>
+  <data name="Routing" xml:space="preserve"><value>Směrování</value></data>
+  <data name="TroubleChecklist" xml:space="preserve"><value>Kontrolní seznam:
+• Nainstalujte VB-CABLE (zdarma) a stiskněte Aktualizovat v Předvolby &gt; Zařízení.
+• V Discordu/Teams/ve hře vyberte jako mikrofon 'CABLE Output' a vypněte tam potlačení šumu / ozvěny.
+• Nechte svůj skutečný mikrofon zaškrtnutý ve sloupci „Použít“, aby se přimíchával váš hlas.
+• Ochrana osobních údajů Windows: povolte desktopovým aplikacím používat mikrofon.
+• Zkratky ve hře nefungují? Spusťte VoxPad se stejnými oprávněními jako hru.</value></data>
+  <data name="DiagnosticReport" xml:space="preserve"><value>Diagnostická zpráva</value></data>
+  <data name="DiagnosticHint" xml:space="preserve"><value>Vytvoří zip s protokolem, seznamem zařízení, stavem směrování a předvolbami (pouze ID zařízení, bez licenčních dat), který můžete přiložit k hlášení chyby.</value></data>
+  <data name="CreateReport" xml:space="preserve"><value>Vytvořit zprávu</value></data>
+  <data name="OpenDevices" xml:space="preserve"><value>Zařízení…</value></data>
+  <data name="AutoKeysTroubleHint" xml:space="preserve"><value>Auto Keys stisknou vaši klávesu push-to-talk, když se do mikrofonu spustí zvuk. Poslední vyhodnocení ukazuje, proč se jednotlivé položky spustily nebo ne. Přehrajte zvuk a poté tento dialog znovu otevřete pro novou kontrolu.</value></data>
+  <data name="MicPlayMode" xml:space="preserve"><value>režim přehrávání do mikrofonu</value></data>
+  <data name="NotMicPlayMode" xml:space="preserve"><value>NENÍ režim přehrávání do mikrofonu – Auto Keys se nikdy nespustí</value></data>
+  <data name="Entries" xml:space="preserve"><value>Položky</value></data>
+  <data name="ForegroundNow" xml:space="preserve"><value>Aplikace v popředí nyní</value></data>
+  <data name="NoEvaluationYet" xml:space="preserve"><value>V této relaci zatím nebyl přehrán žádný zvuk.</value></data>
+  <data name="LastEvaluation" xml:space="preserve"><value>Poslední vyhodnocení</value></data>
+  <data name="OpenAutoKeysPrefs" xml:space="preserve"><value>Nastavení Auto Keys…</value></data>
+
+  <!-- TTS / recorder / editor -->
+  <data name="Voice" xml:space="preserve"><value>Hlas:</value></data>
+  <data name="Rate" xml:space="preserve"><value>Rychlost</value></data>
+  <data name="PreviewSpeakers" xml:space="preserve"><value>Náhled (Enter)</value></data>
+  <data name="SendToMic" xml:space="preserve"><value>Do mikrofonu (Ctrl+Enter)</value></data>
+  <data name="SaveToList" xml:space="preserve"><value>Uložit do seznamu</value></data>
+  <data name="TtsHint" xml:space="preserve"><value>Enter = náhled v reproduktorech · Ctrl+Enter = přehrát do mikrofonu · speciální zkratka „Přehrát TTS“ přečte tento text.</value></data>
+  <data name="Source" xml:space="preserve"><value>Zdroj:</value></data>
+  <data name="Source_Speakers" xml:space="preserve"><value>Reproduktory (to, co slyšíte)</value></data>
+  <data name="Source_Mic" xml:space="preserve"><value>Mikrofon</value></data>
+  <data name="Format" xml:space="preserve"><value>Formát:</value></data>
+  <data name="Insert" xml:space="preserve"><value>Vložit:</value></data>
+  <data name="InsertEnd" xml:space="preserve"><value>Přidat na konec seznamu</value></data>
+  <data name="InsertBeginning" xml:space="preserve"><value>Vložit na začátek</value></data>
+  <data name="AutoNormalize" xml:space="preserve"><value>Automaticky normalizovat na</value></data>
+  <data name="DbHint" xml:space="preserve"><value>dB (89 ≈ −23 LUFS; nad 99 dochází k ořezu)</value></data>
+  <data name="TrimSilence" xml:space="preserve"><value>Oříznout ticho na začátku a na konci</value></data>
+  <data name="MaxTime" xml:space="preserve"><value>Max. čas:</value></data>
+  <data name="MaxSecondsHint" xml:space="preserve"><value>sekund (0 = bez omezení; ukládá se nekomprimovaně do %TEMP%)</value></data>
+  <data name="TargetDirectory" xml:space="preserve"><value>Složka:</value></data>
+  <data name="RecorderHotkeys" xml:space="preserve"><value>Speciální zkratky: start = {0}, stop = {1}. Před začátkem záznamu se přehraje zvuk upozornění.</value></data>
+  <data name="NotSet" xml:space="preserve"><value>nenastaveno</value></data>
+  <data name="StartRecording" xml:space="preserve"><value>Nahrát</value></data>
+  <data name="StopRecording" xml:space="preserve"><value>Zastavit</value></data>
+  <data name="PlayLastTake" xml:space="preserve"><value>Přehrát poslední záznam</value></data>
+  <data name="LastTake" xml:space="preserve"><value>Poslední záznam</value></data>
+  <data name="MaxTimeReached" xml:space="preserve"><value>Dosažen maximální čas záznamu.</value></data>
+  <data name="RecordingInProgress" xml:space="preserve"><value>Probíhá záznam. Zahodit jej?</value></data>
+  <data name="TargetTooLoud" xml:space="preserve"><value>Cíl nad 99 dB způsobí ořez. Přesto pokračovat?</value></data>
+  <data name="RecordingFrom" xml:space="preserve"><value>Nahrávání z '{0}'…</value></data>
+  <data name="RecordingStarted" xml:space="preserve"><value>Záznam spuštěn</value></data>
+  <data name="NothingRecorded" xml:space="preserve"><value>Nic nebylo nahráno (ticho).</value></data>
+  <data name="RecordingSaved" xml:space="preserve"><value>Záznam uložen: {0}</value></data>
+  <data name="Editor" xml:space="preserve"><value>Editor</value></data>
+  <data name="PlaySelection" xml:space="preserve"><value>Přehrát výběr</value></data>
+  <data name="Crop" xml:space="preserve"><value>Oříznout</value></data>
+  <data name="VolumeUp" xml:space="preserve"><value>Hlas. +3 dB</value></data>
+  <data name="VolumeDown" xml:space="preserve"><value>Hlas. −3 dB</value></data>
+  <data name="VolumeCustom" xml:space="preserve"><value>Hlasitost…</value></data>
+  <data name="NormalizeTo" xml:space="preserve"><value>Normalizovat…</value></data>
+  <data name="ZoomFit" xml:space="preserve"><value>Přizpůsobit</value></data>
+  <data name="ZoomSelection" xml:space="preserve"><value>Přiblížit výběr</value></data>
+  <data name="Save" xml:space="preserve"><value>Uložit</value></data>
+  <data name="EditorHint" xml:space="preserve"><value>Tažením vyberete · Shift+šipky / Home / End rozšíří · Ctrl+A vše · Ctrl+D zruší výběr · Del vyjme · Esc zavře</value></data>
+  <data name="Attr_Size" xml:space="preserve"><value>Velikost</value></data>
+  <data name="Attr_Format" xml:space="preserve"><value>Formát</value></data>
+  <data name="Attr_SampleRate" xml:space="preserve"><value>Vzorkovací frekvence</value></data>
+  <data name="Attr_Duration" xml:space="preserve"><value>Délka</value></data>
+  <data name="Attr_Channels" xml:space="preserve"><value>Kanály</value></data>
+  <data name="Attr_OriginalVolume" xml:space="preserve"><value>Původní hlasitost</value></data>
+  <data name="LongFileWarning" xml:space="preserve"><value>Tento soubor je delší než 10 minut. Při úpravách je celý soubor v paměti a snímky pro funkci Zpět to násobí; počítejte s vysokou spotřebou paměti.</value></data>
+  <data name="CannotOpenFile" xml:space="preserve"><value>Soubor se nepodařilo otevřít: {0}</value></data>
+  <data name="Modified" xml:space="preserve"><value>změněno</value></data>
+  <data name="Selection" xml:space="preserve"><value>Výběr</value></data>
+  <data name="NoSelection" xml:space="preserve"><value>Žádný výběr (operace se použijí na celý soubor)</value></data>
+  <data name="GainPrompt" xml:space="preserve"><value>Zisk v dB (záporný = tišší):</value></data>
+  <data name="NormalizePrompt" xml:space="preserve"><value>Cíl v dB (89 ≈ −23 LUFS):</value></data>
+  <data name="EditorSaveQuestion" xml:space="preserve"><value>Uložit upravený zvuk?</value></data>
+  <data name="EditorSaved" xml:space="preserve"><value>Uloženo: {0}</value></data>
+
+  <!-- Preferences -->
+  <data name="Tab_Devices" xml:space="preserve"><value>Zařízení</value></data>
+  <data name="Tab_Audio" xml:space="preserve"><value>Zvuk</value></data>
+  <data name="Tab_Hotkeys" xml:space="preserve"><value>Klávesové zkratky</value></data>
+  <data name="Tab_Recorder" xml:space="preserve"><value>Záznam</value></data>
+  <data name="Tab_Interface" xml:space="preserve"><value>Rozhraní</value></data>
+  <data name="Tab_Notifications" xml:space="preserve"><value>Oznámení</value></data>
+  <data name="Tab_Updates" xml:space="preserve"><value>Aktualizace</value></data>
+  <data name="SetupMode" xml:space="preserve"><value>Režim nastavení</value></data>
+  <data name="SetupModeHint" xml:space="preserve"><value>VoxPad nemá vlastní zvukový ovladač jádra. Hlas + zvuk vykresluje do přehrávacího koncového bodu virtuálního kabelu; aplikace pak nahrávají z jeho záznamového koncového bodu (např. 'CABLE Output'). Automatický výběr zkouší v tomto pořadí VB-CABLE, VB-CABLE A/B, Voicemeeter, ručně zvolený kabel a Stereo Mix.</value></data>
+  <data name="Refresh" xml:space="preserve"><value>Aktualizovat</value></data>
+  <data name="Status" xml:space="preserve"><value>Stav: </value></data>
+  <data name="Microphones" xml:space="preserve"><value>Mikrofony (zaškrtněte „Použít“ u těch, které se mají přimíchat do kabelu)</value></data>
+  <data name="Use" xml:space="preserve"><value>Použít</value></data>
+  <data name="DefaultComm" xml:space="preserve"><value> (výchozí pro komunikaci)</value></data>
+  <data name="NoMics" xml:space="preserve"><value>Nebyla nalezena žádná záznamová zařízení.</value></data>
+  <data name="NoMicsTickedHint" xml:space="preserve"><value>Nic nezaškrtnuto = použije se výchozí komunikační mikrofon.</value></data>
+  <data name="VirtualCableEndpoint" xml:space="preserve"><value>Přehrávací koncový bod virtuálního kabelu (pro „Jiný virtuální kabel“)</value></data>
+  <data name="AutoDetect" xml:space="preserve"><value>(automaticky zjistit)</value></data>
+  <data name="SpeakerDevice" xml:space="preserve"><value>Reproduktory (vaše vlastní kopie zvuku)</value></data>
+  <data name="DefaultDevice" xml:space="preserve"><value>(výchozí ve Windows)</value></data>
+  <data name="RecorderMic" xml:space="preserve"><value>Mikrofon pro záznam</value></data>
+  <data name="MicLatency" xml:space="preserve"><value>Latence mikrofonu (ms):</value></data>
+  <data name="LatencyHint" xml:space="preserve"><value>Nižší = menší zpoždění hlasu, vyšší = méně výpadků na pomalých počítačích. 30 ms je dobrá výchozí hodnota.</value></data>
+  <data name="OpenPrivacySettings" xml:space="preserve"><value>Přístup k mikrofonu je odepřen – otevřít nastavení ochrany osobních údajů Windows</value></data>
+  <data name="Normalization" xml:space="preserve"><value>Normalizace hlasitosti (EBU R128, podle kanálů)</value></data>
+  <data name="Norm_Off" xml:space="preserve"><value>Vypnuto</value></data>
+  <data name="Norm_Dynamic" xml:space="preserve"><value>Dynamická – analyzovat prvních 6 s, upřesňovat během přehrávání (výchozí)</value></data>
+  <data name="Norm_Full" xml:space="preserve"><value>Celý soubor – analyzovat celý soubor před přehráním (do mezipaměti)</value></data>
+  <data name="MeasureVoice" xml:space="preserve"><value>Změřit hlas…</value></data>
+  <data name="NormHint" xml:space="preserve"><value>Zvuky v mikrofonu se srovnají na úroveň vašeho hlasu (změřte ji; dobrý výsledek je nad 74 dB). Kopie v reproduktorech se nemění – pro sebe použijte posuvník hlasitosti reproduktorů.</value></data>
+  <data name="BlockVoice" xml:space="preserve"><value>Blokovat hlas</value></data>
+  <data name="BlockVoiceCheck" xml:space="preserve"><value>Během přehrávání zvuku můj hlas zcela nahradit (místo míchání)</value></data>
+  <data name="VoiceActivation" xml:space="preserve"><value>Zvuk pro hlasovou aktivaci</value></data>
+  <data name="VoiceActivationCheck" xml:space="preserve"><value>Přehrát do mikrofonu krátký hlasitý úvod, aby aplikace s hlasovou aktivací otevřely bránu</value></data>
+  <data name="CustomFile" xml:space="preserve"><value>Vlastní soubor (prázdné = tón 250 ms):</value></data>
+  <data name="Default" xml:space="preserve"><value>Výchozí</value></data>
+  <data name="VoiceActivationHeadphones" xml:space="preserve"><value>Přehrát úvod i do mých reproduktorů/sluchátek</value></data>
+  <data name="Playback" xml:space="preserve"><value>Přehrávání</value></data>
+  <data name="AllowResumeOtherMode" xml:space="preserve"><value>Povolit pokračování v jiném režimu přehrávání (restart od pozastavené pozice v novém režimu)</value></data>
+  <data name="General" xml:space="preserve"><value>Obecné</value></data>
+  <data name="HotkeysEnabledCheck" xml:space="preserve"><value>Klávesové zkratky povoleny</value></data>
+  <data name="PassHotkeysCheck" xml:space="preserve"><value>Předávat zkratky aktivní aplikaci (výchozí vypnuto: klávesa se pohltí)</value></data>
+  <data name="AutoStopCheck" xml:space="preserve"><value>Automatické zastavení: zvuky spuštěné zkratkou ignorují Opakovat a Pokračovat (výchozí zapnuto)</value></data>
+  <data name="HotkeysGeneralHint" xml:space="preserve"><value>Zkratku zvuku nastavíte pravým kliknutím nebo dvojitým kliknutím na buňku Zkratka. Globálně fungují samostatné klávesy, libovolné kombinace s Ctrl/Alt/Shift/Win a tlačítka myši Mid/4/5.</value></data>
+  <data name="SpecialHint" xml:space="preserve"><value>Speciální zkratky jsou vyhrazeny: zvuk nemůže použít stejnou klávesu.</value></data>
+  <data name="NumpadHotkeys" xml:space="preserve"><value>Zkratky numerické klávesnice</value></data>
+  <data name="NumpadEnabledCheck" xml:space="preserve"><value>Povoleno: podržte modifikátor, zadejte číslo zvuku na numerické klávesnici, uvolněte</value></data>
+  <data name="Modifier" xml:space="preserve"><value>Modifikátor:</value></data>
+  <data name="NumpadHint" xml:space="preserve"><value>Číslo je sloupec # aktuální kategorie.</value></data>
+  <data name="IndexHotkeys" xml:space="preserve"><value>Indexové zkratky</value></data>
+  <data name="IndexEnabledCheck" xml:space="preserve"><value>Povoleno: podržte modifikátor, zadejte index řádku na číselné řadě, uvolněte</value></data>
+  <data name="IndexHint" xml:space="preserve"><value>Index je řádek ve skryté kategorii „Všechny zvuky“, např. Alt+1,2,3 přehraje řádek 123.</value></data>
+  <data name="Advanced" xml:space="preserve"><value>Upřesnit</value></data>
+  <data name="AllowLeftRight" xml:space="preserve"><value>Rozlišovat levé/pravé modifikátory (LCtrl a RCtrl jsou různé klávesy)</value></data>
+  <data name="SameHotkeysAllCategories" xml:space="preserve"><value>Stejné zkratky ve všech kategoriích (podle řádků: zkratka řádku N přehraje řádek N vybrané kategorie)</value></data>
+  <data name="JumpSeconds" xml:space="preserve"><value>Skok o ±N sekund:</value></data>
+  <data name="VolumeStep" xml:space="preserve"><value>Krok hlasitosti nahoru/dolů (%):</value></data>
+  <data name="VolumeSet" xml:space="preserve"><value>Úroveň pro zkratku „Nastavit hlasitost“ (%):</value></data>
+  <data name="AutoKeysEnabledCheck" xml:space="preserve"><value>Auto Keys povoleny</value></data>
+  <data name="AutoKeysHint" xml:space="preserve"><value>Automatické push-to-talk: když se do mikrofonu spustí zvuk, stiskne se klávesa (držená po dobu zvuku, nebo ťuknutá před a po). Spouští se pouze v režimech přehrávání do mikrofonu.</value></data>
+  <data name="NoKey" xml:space="preserve"><value>(žádná klávesa)</value></data>
+  <data name="AutoKey" xml:space="preserve"><value>Auto Key</value></data>
+  <data name="OnlyIfHotkey" xml:space="preserve"><value>Pouze při spuštění zkratkou</value></data>
+  <data name="PressHold" xml:space="preserve"><value>Stisknout a držet po dobu zvuku</value></data>
+  <data name="PressBeforeAfter" xml:space="preserve"><value>Stisknout před a po</value></data>
+  <data name="PressMode" xml:space="preserve"><value>Režim stisku:</value></data>
+  <data name="Cond_Always" xml:space="preserve"><value>Vždy</value></data>
+  <data name="Cond_Fullscreen" xml:space="preserve"><value>Aplikace v popředí je na celou obrazovku (včetně bez okrajů)</value></data>
+  <data name="Cond_Running" xml:space="preserve"><value>Běží aplikace ze seznamu</value></data>
+  <data name="Cond_Foreground" xml:space="preserve"><value>Aplikace ze seznamu je v popředí</value></data>
+  <data name="Condition" xml:space="preserve"><value>Podmínka:</value></data>
+  <data name="AppsTip" xml:space="preserve"><value>Názvy procesů, jeden na řádek, např. discord.exe</value></data>
+  <data name="Apps" xml:space="preserve"><value>Seznam aplikací:</value></data>
+  <data name="AddAutoKey" xml:space="preserve"><value>Přidat Auto Key</value></data>
+  <data name="RecorderFormatHint" xml:space="preserve"><value>Vše se převádí na stereo 48 kHz. Editor ukládá také v tomto formátu.</value></data>
+  <data name="TargetDb" xml:space="preserve"><value>Cíl (dB, výchozí 89 ≈ −23 LU; &gt;99 ořezává):</value></data>
+  <data name="NotificationSound" xml:space="preserve"><value>Před začátkem záznamu přehrát zvuk upozornění</value></data>
+  <data name="RecorderHotkeyHint" xml:space="preserve"><value>Zkratky pro spuštění/zastavení záznamu najdete na kartě Klávesové zkratky &gt; Speciální.</value></data>
+  <data name="Language" xml:space="preserve"><value>Jazyk:</value></data>
+  <data name="Style" xml:space="preserve"><value>Styl:</value></data>
+  <data name="Theme_Light" xml:space="preserve"><value>Světlý</value></data>
+  <data name="Theme_Dark" xml:space="preserve"><value>Tmavý</value></data>
+  <data name="Theme_Native" xml:space="preserve"><value>Nativní (Windows)</value></data>
+  <data name="NativeForced" xml:space="preserve"><value>Je aktivní vysoký kontrast nebo čtečka obrazovky: používá se nativní styl.</value></data>
+  <data name="ToolbarItems" xml:space="preserve"><value>Položky panelu nástrojů</value></data>
+  <data name="Timer" xml:space="preserve"><value>Časovač stopy</value></data>
+  <data name="SeekSlider" xml:space="preserve"><value>Posuvník pozice</value></data>
+  <data name="SpeakerVolume" xml:space="preserve"><value>Hlasitost reproduktorů</value></data>
+  <data name="MicLevelMeter" xml:space="preserve"><value>Indikátor úrovně mikrofonu</value></data>
+  <data name="Behaviour" xml:space="preserve"><value>Chování</value></data>
+  <data name="StartMinimized" xml:space="preserve"><value>Spouštět minimalizované</value></data>
+  <data name="MinimizeToTrayCheck" xml:space="preserve"><value>Minimalizovat do oznamovací oblasti</value></data>
+  <data name="CloseToTray" xml:space="preserve"><value>Zavření okna minimalizuje do oznamovací oblasti místo ukončení</value></data>
+  <data name="DisableSorting" xml:space="preserve"><value>Zakázat řazení (záhlaví sloupců nikdy neřadí; pouze ruční pořadí)</value></data>
+  <data name="Confirmations" xml:space="preserve"><value>Potvrzení</value></data>
+  <data name="ConfirmRemoveCheck" xml:space="preserve"><value>Potvrdit před odebráním zvuků</value></data>
+  <data name="ConfirmResetCheck" xml:space="preserve"><value>Potvrdit před vynulováním počtů přehrání</value></data>
+  <data name="ConfirmQuitCheck" xml:space="preserve"><value>Potvrdit ukončení během přehrávání zvuku</value></data>
+  <data name="NotifyMissing" xml:space="preserve"><value>Upozornit na chybějící soubory při načtení seznamu</value></data>
+  <data name="NotifyDevices" xml:space="preserve"><value>Hlásit změny zvukových zařízení ve stavovém řádku</value></data>
+  <data name="NotifyTray" xml:space="preserve"><value>Zobrazit bublinu při minimalizaci do oznamovací oblasti</value></data>
+  <data name="NotifyRecording" xml:space="preserve"><value>Stavová zpráva při spuštění záznamu</value></data>
+  <data name="NotifyTrial" xml:space="preserve"><value>Zobrazit dialog při dosažení limitu zkušební verze</value></data>
+  <data name="NotifyUpdates" xml:space="preserve"><value>Zobrazovat dostupné aktualizace</value></data>
+  <data name="CheckInterval" xml:space="preserve"><value>Kontrolovat aktualizace:</value></data>
+  <data name="Never" xml:space="preserve"><value>Nikdy (výchozí)</value></data>
+  <data name="Daily" xml:space="preserve"><value>Denně</value></data>
+  <data name="Weekly" xml:space="preserve"><value>Týdně</value></data>
+  <data name="ManifestUrl" xml:space="preserve"><value>URL manifestu:</value></data>
+  <data name="UpdateHint" xml:space="preserve"><value>Aktualizační balíčky se instalují pouze tehdy, když podpis manifestu a hash balíčku projdou ověřením klíčem zabudovaným ve VoxPad.</value></data>
+  <data name="LastCheck" xml:space="preserve"><value>Poslední kontrola</value></data>
+  <data name="CheckNow" xml:space="preserve"><value>Zkontrolovat nyní</value></data>
+
+  <!-- Special hotkey names -->
+  <data name="Special_Stop" xml:space="preserve"><value>Zastavit</value></data>
+  <data name="Special_Start" xml:space="preserve"><value>Spustit (přehrát vybraný / pokračovat)</value></data>
+  <data name="Special_Pause" xml:space="preserve"><value>Pozastavit / pokračovat</value></data>
+  <data name="Special_PlayPrevious" xml:space="preserve"><value>Přehrát předchozí soubor</value></data>
+  <data name="Special_PlayNext" xml:space="preserve"><value>Přehrát další soubor</value></data>
+  <data name="Special_PlaySelected" xml:space="preserve"><value>Přehrát vybraný soubor</value></data>
+  <data name="Special_PlayRandomInCategory" xml:space="preserve"><value>Přehrát náhodný soubor (aktuální kategorie)</value></data>
+  <data name="Special_PlayRandomFromAll" xml:space="preserve"><value>Přehrát náhodný soubor (všechny zvuky)</value></data>
+  <data name="Special_SelectPreviousFile" xml:space="preserve"><value>Vybrat předchozí soubor</value></data>
+  <data name="Special_SelectNextFile" xml:space="preserve"><value>Vybrat další soubor</value></data>
+  <data name="Special_SelectPreviousCategory" xml:space="preserve"><value>Vybrat předchozí kategorii</value></data>
+  <data name="Special_SelectNextCategory" xml:space="preserve"><value>Vybrat další kategorii</value></data>
+  <data name="Special_StartRecording" xml:space="preserve"><value>Spustit záznam</value></data>
+  <data name="Special_StopRecording" xml:space="preserve"><value>Zastavit záznam</value></data>
+  <data name="Special_JumpBackward" xml:space="preserve"><value>Skočit zpět o N sekund</value></data>
+  <data name="Special_JumpForward" xml:space="preserve"><value>Skočit vpřed o N sekund</value></data>
+  <data name="Special_SpeakerVolumeUp" xml:space="preserve"><value>Zvýšit hlasitost reproduktorů</value></data>
+  <data name="Special_SpeakerVolumeDown" xml:space="preserve"><value>Snížit hlasitost reproduktorů</value></data>
+  <data name="Special_SpeakerVolumeSet" xml:space="preserve"><value>Nastavit hlasitost reproduktorů</value></data>
+  <data name="Special_SpeakerVolumeMute" xml:space="preserve"><value>Ztlumit / zrušit ztlumení reproduktorů</value></data>
+  <data name="Special_SetPlayModeBoth" xml:space="preserve"><value>Režim přehrávání: reproduktory + mikrofon</value></data>
+  <data name="Special_SetPlayModeMic" xml:space="preserve"><value>Režim přehrávání: pouze mikrofon</value></data>
+  <data name="Special_SetPlayModeSpeakers" xml:space="preserve"><value>Režim přehrávání: pouze reproduktory</value></data>
+  <data name="Special_CyclePlayMode" xml:space="preserve"><value>Přepnout režim přehrávání</value></data>
+  <data name="Special_EnableHotkeys" xml:space="preserve"><value>Povolit klávesové zkratky</value></data>
+  <data name="Special_DisableHotkeys" xml:space="preserve"><value>Zakázat klávesové zkratky</value></data>
+  <data name="Special_ToggleHotkeys" xml:space="preserve"><value>Přepnout klávesové zkratky</value></data>
+  <data name="Special_EnableAutoKeys" xml:space="preserve"><value>Povolit Auto Keys</value></data>
+  <data name="Special_DisableAutoKeys" xml:space="preserve"><value>Zakázat Auto Keys</value></data>
+  <data name="Special_ToggleAutoKeys" xml:space="preserve"><value>Přepnout Auto Keys</value></data>
+  <data name="Special_PlayTts" xml:space="preserve"><value>Přehrát text převodu textu na řeč</value></data>
+</root>

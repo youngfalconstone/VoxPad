@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+  <!-- Menus -->
+  <data name="File" xml:space="preserve"><value>_Arkiv</value></data>
+  <data name="NewList" xml:space="preserve"><value>_Ny ljudlista</value></data>
+  <data name="LoadList" xml:space="preserve"><value>_Öppna ljudlista…</value></data>
+  <data name="SaveList" xml:space="preserve"><value>_Spara ljudlista</value></data>
+  <data name="SaveListAs" xml:space="preserve"><value>Spara ljudlista s_om…</value></data>
+  <data name="RecentLists" xml:space="preserve"><value>_Senaste ljudlistor</value></data>
+  <data name="RestoreList" xml:space="preserve"><value>Återställ ljudlista…</value></data>
+  <data name="AddFiles" xml:space="preserve"><value>Lägg till ljudfiler…</value></data>
+  <data name="AddFolder" xml:space="preserve"><value>Lägg till mapp…</value></data>
+  <data name="WebImport" xml:space="preserve"><value>Importera från webben…</value></data>
+  <data name="Export" xml:space="preserve"><value>_Exportera</value></data>
+  <data name="ExportSoundFiles" xml:space="preserve"><value>Ljudfiler…</value></data>
+  <data name="ExportPreferences" xml:space="preserve"><value>Inställningar…</value></data>
+  <data name="ImportPreferences" xml:space="preserve"><value>Importera inställningar…</value></data>
+  <data name="Statistics" xml:space="preserve"><value>Statistik…</value></data>
+  <data name="Preferences" xml:space="preserve"><value>_Inställningar…</value></data>
+  <data name="Exit" xml:space="preserve"><value>_Avsluta</value></data>
+  <data name="Edit" xml:space="preserve"><value>_Redigera</value></data>
+  <data name="SelectAll" xml:space="preserve"><value>Markera alla</value></data>
+  <data name="Remove" xml:space="preserve"><value>Ta bort</value></data>
+  <data name="Copy" xml:space="preserve"><value>Kopiera</value></data>
+  <data name="Cut" xml:space="preserve"><value>Klipp ut</value></data>
+  <data name="Paste" xml:space="preserve"><value>Klistra in</value></data>
+  <data name="MoveUp" xml:space="preserve"><value>Flytta upp</value></data>
+  <data name="MoveDown" xml:space="preserve"><value>Flytta ned</value></data>
+  <data name="Undo" xml:space="preserve"><value>Ångra</value></data>
+  <data name="Redo" xml:space="preserve"><value>Gör om</value></data>
+  <data name="EditFile" xml:space="preserve"><value>Redigera fil…</value></data>
+  <data name="SetHotkey" xml:space="preserve"><value>Ange snabbtangent…</value></data>
+  <data name="RemoveHotkey" xml:space="preserve"><value>Ta bort snabbtangent</value></data>
+  <data name="SetColor" xml:space="preserve"><value>Färg…</value></data>
+  <data name="PlayRandom" xml:space="preserve"><value>Spela slumpmässigt</value></data>
+  <data name="ResetPlayCount" xml:space="preserve"><value>Nollställ uppspelningsräknare</value></data>
+  <data name="ResetAllPlayCounts" xml:space="preserve"><value>Nollställ alla uppspelningsräknare</value></data>
+  <data name="SelectInExplorer" xml:space="preserve"><value>Visa i Utforskaren</value></data>
+  <data name="PlayMenu" xml:space="preserve"><value>_Uppspelning</value></data>
+  <data name="Play" xml:space="preserve"><value>Spela upp</value></data>
+  <data name="PlayOnSpeakers" xml:space="preserve"><value>Spela upp i högtalare</value></data>
+  <data name="PlayOnMic" xml:space="preserve"><value>Spela upp i mikrofon</value></data>
+  <data name="PauseResume" xml:space="preserve"><value>Pausa / fortsätt</value></data>
+  <data name="Stop" xml:space="preserve"><value>Stoppa</value></data>
+  <data name="Previous" xml:space="preserve"><value>Föregående</value></data>
+  <data name="Next" xml:space="preserve"><value>Nästa</value></data>
+  <data name="Repeat" xml:space="preserve"><value>Upprepa</value></data>
+  <data name="Continue" xml:space="preserve"><value>Fortsätt</value></data>
+  <data name="AutoStop" xml:space="preserve"><value>Autostopp (snabbtangentsljud ignorerar Upprepa/Fortsätt)</value></data>
+  <data name="PlayModeMenu" xml:space="preserve"><value>Uppspelningsläge</value></data>
+  <data name="PlayMode_Both" xml:space="preserve"><value>Högtalare + mikrofon</value></data>
+  <data name="PlayMode_Mic" xml:space="preserve"><value>Endast mikrofon</value></data>
+  <data name="PlayMode_Speakers" xml:space="preserve"><value>Endast högtalare</value></data>
+  <data name="Recorder" xml:space="preserve"><value>Inspelare…</value></data>
+  <data name="TextToSpeech" xml:space="preserve"><value>Text till tal…</value></data>
+  <data name="Window" xml:space="preserve"><value>_Fönster</value></data>
+  <data name="Categories" xml:space="preserve"><value>Kategoripanel</value></data>
+  <data name="Hotbar" xml:space="preserve"><value>Snabbfält</value></data>
+  <data name="Toolbar" xml:space="preserve"><value>Uppspelningsfält</value></data>
+  <data name="StatusBar" xml:space="preserve"><value>Statusfält</value></data>
+  <data name="ShowHiddenCategories" xml:space="preserve"><value>Visa dolda kategorier</value></data>
+  <data name="CategoryIconSize" xml:space="preserve"><value>Storlek på kategoriikoner</value></data>
+  <data name="Small" xml:space="preserve"><value>Små</value></data>
+  <data name="Medium" xml:space="preserve"><value>Medel</value></data>
+  <data name="Large" xml:space="preserve"><value>Stora</value></data>
+  <data name="ExtraLarge" xml:space="preserve"><value>Extra stora</value></data>
+  <data name="Columns" xml:space="preserve"><value>Kolumner</value></data>
+  <data name="HotbarSize" xml:space="preserve"><value>Snabbfältets storlek…</value></data>
+  <data name="HotkeyOverview" xml:space="preserve"><value>Översikt över snabbtangenter…</value></data>
+  <data name="MinimizeToTray" xml:space="preserve"><value>Minimera till meddelandefältet</value></data>
+  <data name="Help" xml:space="preserve"><value>_Hjälp</value></data>
+  <data name="Manual" xml:space="preserve"><value>Handbok</value></data>
+  <data name="Troubleshooting" xml:space="preserve"><value>Felsökning…</value></data>
+  <data name="AutoKeysTroubleshooting" xml:space="preserve"><value>Felsökning av Auto Keys…</value></data>
+  <data name="CheckForUpdates" xml:space="preserve"><value>Sök efter uppdateringar…</value></data>
+  <data name="Register" xml:space="preserve"><value>Registrera…</value></data>
+  <data name="About" xml:space="preserve"><value>Om VoxPad</value></data>
+
+  <!-- Toolbar / status bar -->
+  <data name="TimerTip" xml:space="preserve"><value>Förfluten tid / total. Dubbelklicka för att hoppa till ljudet som spelas.</value></data>
+  <data name="SpeakerVolumeTip" xml:space="preserve"><value>Högtalarvolym (endast din egen kopia; kopplad till Windows volymmixer)</value></data>
+  <data name="MicMeterTip" xml:space="preserve"><value>Mikrofonnivå. Klicka på ikonen för att mäta din röstnivå.</value></data>
+  <data name="SeekTip" xml:space="preserve"><value>Röd = andra hör det (mikrofon), blå = endast högtalare</value></data>
+  <data name="PlayModeTip" xml:space="preserve"><value>Uppspelningsläge – klicka för att växla</value></data>
+  <data name="HotkeysTip" xml:space="preserve"><value>Snabbtangenter – dubbelklicka för att slå på/av, högerklicka för alternativ</value></data>
+  <data name="PassHotkeys" xml:space="preserve"><value>Skicka snabbtangenter vidare till det aktiva programmet</value></data>
+  <data name="Hotkeys" xml:space="preserve"><value>Snabbtangenter</value></data>
+  <data name="AutoKeysTip" xml:space="preserve"><value>Auto Keys – dubbelklicka för att slå på/av, högerklicka för felsökning</value></data>
+  <data name="AutoKeys" xml:space="preserve"><value>Auto Keys</value></data>
+  <data name="RepeatTip" xml:space="preserve"><value>Upprepa aktuellt ljud – klicka för att slå på/av</value></data>
+  <data name="ContinueTip" xml:space="preserve"><value>Fortsätt med nästa ljud – klicka för att slå på/av</value></data>
+  <data name="PreviousPage" xml:space="preserve"><value>Föregående sida (Ctrl+PgUp)</value></data>
+  <data name="NextPage" xml:space="preserve"><value>Nästa sida (Ctrl+PgDn)</value></data>
+  <data name="HideCategory" xml:space="preserve"><value>Dölj kategori</value></data>
+  <data name="SearchTip" xml:space="preserve"><value>Skriv för att filtrera · Enter bläddrar bland träffar · Ctrl+Enter spelar upp · Esc rensar</value></data>
+  <data name="ColTag" xml:space="preserve"><value>Tagg</value></data>
+  <data name="ColDuration" xml:space="preserve"><value>Längd</value></data>
+  <data name="ColHotkey" xml:space="preserve"><value>Snabbtangent</value></data>
+  <data name="ColPlayCount" xml:space="preserve"><value>Antal uppspelningar</value></data>
+  <data name="ColLastPlayed" xml:space="preserve"><value>Senast spelad</value></data>
+  <data name="ColIndex" xml:space="preserve"><value>#</value></data>
+  <data name="MoveToCategory" xml:space="preserve"><value>Flytta till kategori</value></data>
+  <data name="RemoveFromCategory" xml:space="preserve"><value>Ta bort från denna kategori</value></data>
+  <data name="AddCategory" xml:space="preserve"><value>Lägg till kategori…</value></data>
+  <data name="AddSubcategory" xml:space="preserve"><value>Lägg till underkategori…</value></data>
+  <data name="RenameCategory" xml:space="preserve"><value>Byt namn…</value></data>
+  <data name="RemoveCategory" xml:space="preserve"><value>Ta bort kategori</value></data>
+  <data name="SetRandomHotkey" xml:space="preserve"><value>Ange snabbtangent för 'Spela slumpmässigt'…</value></data>
+  <data name="AllSounds" xml:space="preserve"><value>Alla ljud</value></data>
+  <data name="UntitledList" xml:space="preserve"><value>Namnlös</value></data>
+  <data name="Trial" xml:space="preserve"><value>Provversion</value></data>
+  <data name="TrialStatus" xml:space="preserve"><value>Provversion: max {0} ljud, {1} mikrofonuppspelningar kvar denna start</value></data>
+
+  <!-- Status messages -->
+  <data name="PlayModeSet" xml:space="preserve"><value>Uppspelningsläge: {0}</value></data>
+  <data name="HotkeysOn" xml:space="preserve"><value>Snabbtangenter aktiverade</value></data>
+  <data name="HotkeysOff" xml:space="preserve"><value>Snabbtangenter inaktiverade</value></data>
+  <data name="AutoKeysOn" xml:space="preserve"><value>Auto Keys aktiverade</value></data>
+  <data name="AutoKeysOff" xml:space="preserve"><value>Auto Keys inaktiverade</value></data>
+  <data name="Playing" xml:space="preserve"><value>Spelar '{0}' → {1}</value></data>
+  <data name="TrialPlayLimit" xml:space="preserve"><value>Provversion: gränsen på 10 mikrofonuppspelningar per start är nådd. Registrera för att ta bort gränsen.</value></data>
+  <data name="TrialSoundLimit" xml:space="preserve"><value>Provversion: listan kan innehålla högst {0} ljud. Registrera för att ta bort gränsen.</value></data>
+  <data name="NothingToPlay" xml:space="preserve"><value>Inget att spela upp</value></data>
+  <data name="DevicesChanged" xml:space="preserve"><value>Ljudenheterna ändrades; routningen tillämpades på nytt.</value></data>
+  <data name="MissingFiles" xml:space="preserve"><value>{0} fil(er) i listan saknas (nedtonade).</value></data>
+  <data name="CategoryInfo" xml:space="preserve"><value>{0}: {1} ljud, {2} totalt</value></data>
+  <data name="Copied" xml:space="preserve"><value>{0} ljud kopierade</value></data>
+  <data name="CutStatus" xml:space="preserve"><value>{0} ljud urklippta</value></data>
+  <data name="Importing" xml:space="preserve"><value>Läser {0} fil(er)…</value></data>
+  <data name="Imported" xml:space="preserve"><value>{0} ljud tillagda</value></data>
+  <data name="NoAudioFiles" xml:space="preserve"><value>Inga ljudfiler som stöds hittades</value></data>
+  <data name="ConfirmRemove" xml:space="preserve"><value>Ta bort {0} ljud från listan? Ljudfilerna raderas inte.</value></data>
+  <data name="Removed" xml:space="preserve"><value>{0} ljud borttagna</value></data>
+  <data name="HotkeyFor" xml:space="preserve"><value>Snabbtangent för '{0}'</value></data>
+  <data name="RandomHotkeyFor" xml:space="preserve"><value>Snabbtangent för 'Spela slumpmässigt' i '{0}'</value></data>
+  <data name="BareMouseNotAllowed" xml:space="preserve"><value>Vänster och höger musknapp kräver en modifierartangent (t.ex. Ctrl+klick).</value></data>
+  <data name="ReservedHotkey" xml:space="preserve"><value>{0} är reserverad för specialsnabbtangenten '{1}'.</value></data>
+  <data name="HotkeyRemoved" xml:space="preserve"><value>Snabbtangent borttagen från '{0}'</value></data>
+  <data name="HotkeySet" xml:space="preserve"><value>{0} → '{1}'</value></data>
+  <data name="ConfirmResetPlayCount" xml:space="preserve"><value>Nollställa uppspelningsräknaren för {0} ljud?</value></data>
+  <data name="ConfirmResetAll" xml:space="preserve"><value>Nollställa uppspelningsräknaren för alla ljud och listans totalsumma?</value></data>
+  <data name="FileMissing" xml:space="preserve"><value>Filen hittades inte: {0}</value></data>
+  <data name="ConfirmRemoveCategory" xml:space="preserve"><value>Ta bort kategorin '{0}' (och dess underkategorier)? Ljuden finns kvar i listan.</value></data>
+  <data name="CategoryName" xml:space="preserve"><value>Namn:</value></data>
+  <data name="NewCategory" xml:space="preserve"><value>Ny kategori</value></data>
+  <data name="AddedToCategory" xml:space="preserve"><value>{0} ljud → '{1}'</value></data>
+  <data name="ReorderWhileSorted" xml:space="preserve"><value>Ta bort sorteringen (klicka på kolumnrubriken igen) för att ändra ordning manuellt.</value></data>
+  <data name="UnsavedTitle" xml:space="preserve"><value>Osparade ändringar</value></data>
+  <data name="UnsavedText" xml:space="preserve"><value>Ljudlistan har osparade ändringar. Vill du förkasta dem?</value></data>
+  <data name="NewListCreated" xml:space="preserve"><value>Ny ljudlista</value></data>
+  <data name="ListLoaded" xml:space="preserve"><value>Läste in {0}</value></data>
+  <data name="ListLoadFailed" xml:space="preserve"><value>Ljudlistan kunde inte läsas in: {0}</value></data>
+  <data name="ListSaved" xml:space="preserve"><value>Sparade {0}</value></data>
+  <data name="Exported" xml:space="preserve"><value>Exporterade {0} fil(er), {1} misslyckades → {2}</value></data>
+  <data name="PrefsExported" xml:space="preserve"><value>Inställningar exporterade till {0}</value></data>
+  <data name="PrefsImportedRestart" xml:space="preserve"><value>Inställningar importerade. Starta om VoxPad för att tillämpa dem.</value></data>
+  <data name="NoSoundAtNumber" xml:space="preserve"><value>Inget ljud på nummer {0}</value></data>
+  <data name="ElevatedWarning" xml:space="preserve"><value>VoxPad körs som administratör: dra och släpp från Utforskaren fungerar inte (Windows blockerar släpp i upphöjda fönster).</value></data>
+  <data name="UnexpectedError" xml:space="preserve"><value>Ett oväntat fel uppstod.</value></data>
+  <data name="DumpWritten" xml:space="preserve"><value>Detaljer skrevs till</value></data>
+  <data name="TrayHint" xml:space="preserve"><value>VoxPad fortsätter köras i meddelandefältet. Dubbelklicka på ikonen för att återställa.</value></data>
+  <data name="Tray_Show" xml:space="preserve"><value>Visa VoxPad</value></data>
+  <data name="ConfirmQuitPlaying" xml:space="preserve"><value>Ett ljud spelas upp. Avsluta ändå?</value></data>
+  <data name="SaveBeforeExit" xml:space="preserve"><value>Spara ändringarna i ljudlistan innan du avslutar?</value></data>
+  <data name="MicAccessDenied" xml:space="preserve"><value>Windows blockerar mikrofonåtkomst för skrivbordsappar, så VoxPad kan inte läsa din mikrofon.
+
+Åtgärd: Inställningar &gt; Sekretess &amp; säkerhet &gt; Mikrofon &gt; aktivera "Mikrofonåtkomst" och "Låt skrivbordsappar komma åt mikrofonen" och tryck sedan på Uppdatera under Inställningar &gt; Enheter.</value></data>
+  <data name="OpenSettingsQuestion" xml:space="preserve"><value>Öppna sekretessinställningarna nu?</value></data>
+  <data name="AccessDenied" xml:space="preserve"><value>Åtkomst nekad</value></data>
+  <data name="RemoveFromHotbar" xml:space="preserve"><value>Ta bort från snabbfältet</value></data>
+  <data name="EmptyTileHint" xml:space="preserve"><value>Dra ett ljud hit</value></data>
+  <data name="PrefsSaved" xml:space="preserve"><value>Inställningar sparade</value></data>
+  <data name="LanguageRestart" xml:space="preserve"><value>Språket ändras när VoxPad har startats om.</value></data>
+
+  <!-- Dialogs -->
+  <data name="OK" xml:space="preserve"><value>OK</value></data>
+  <data name="Cancel" xml:space="preserve"><value>Avbryt</value></data>
+  <data name="Apply" xml:space="preserve"><value>Verkställ</value></data>
+  <data name="Close" xml:space="preserve"><value>Stäng</value></data>
+  <data name="Clear" xml:space="preserve"><value>Rensa</value></data>
+  <data name="None" xml:space="preserve"><value>(ingen)</value></data>
+  <data name="HotkeyCapturePrompt" xml:space="preserve"><value>Tryck på tangenten eller tangentkombinationen nu. Musknapparna Mitten, 4 och 5 fungerar också (vänster/höger kräver en modifierare). Enter sparar, Delete eller Backsteg rensar, Esc avbryter.</value></data>
+  <data name="HexColor" xml:space="preserve"><value>Hex:</value></data>
+  <data name="NoColor" xml:space="preserve"><value>Ingen färg</value></data>
+  <data name="Rows" xml:space="preserve"><value>Rader:</value></data>
+  <data name="Pages" xml:space="preserve"><value>Sidor:</value></data>
+  <data name="HotbarSizeHint" xml:space="preserve"><value>Snabbtangenter delas mellan sidorna. Rutor utanför det nya rutnätet tas bort.</value></data>
+  <data name="Type" xml:space="preserve"><value>Typ</value></data>
+  <data name="Target" xml:space="preserve"><value>Mål</value></data>
+  <data name="Sound" xml:space="preserve"><value>Ljud</value></data>
+  <data name="CategoryRandom" xml:space="preserve"><value>Spela slumpmässigt i kategori</value></data>
+  <data name="Special" xml:space="preserve"><value>Special</value></data>
+  <data name="Numpad" xml:space="preserve"><value>Numeriskt tangentbord</value></data>
+  <data name="NumpadDesc" xml:space="preserve"><value>Spela upp efter nummer i aktuell kategori</value></data>
+  <data name="Index" xml:space="preserve"><value>Index</value></data>
+  <data name="IndexDesc" xml:space="preserve"><value>Spela upp efter radindex i Alla ljud</value></data>
+  <data name="HotkeyOverviewHint" xml:space="preserve"><value>Snabbtangenter är {0}; vidarebefordran är {1}.</value></data>
+  <data name="Enabled" xml:space="preserve"><value>aktiverade</value></data>
+  <data name="Disabled" xml:space="preserve"><value>inaktiverade</value></data>
+  <data name="On" xml:space="preserve"><value>på</value></data>
+  <data name="Off" xml:space="preserve"><value>av</value></data>
+  <data name="Version" xml:space="preserve"><value>Version</value></data>
+  <data name="TrialEdition" xml:space="preserve"><value>Provversion – max 10 ljud, 10 mikrofonuppspelningar per start</value></data>
+  <data name="LicensedTo" xml:space="preserve"><value>Licensierad till {0} ({1}-utgåva)</value></data>
+  <data name="AboutText" xml:space="preserve"><value>En soundboard för Windows som skickar ljud till din mikrofon. Ljudmotor: NAudio, NVorbis, Concentus, TagLib#. Virtuell mikrofon via VB-CABLE / Voicemeeter.</value></data>
+  <data name="DataFolder" xml:space="preserve"><value>Data</value></data>
+  <data name="LogFolder" xml:space="preserve"><value>Loggar</value></data>
+  <data name="OpenDataFolder" xml:space="preserve"><value>Öppna datamappen</value></data>
+  <data name="HideLicenseeName" xml:space="preserve"><value>Dölj mitt namn (streamerläge)</value></data>
+  <data name="RemoveLicense" xml:space="preserve"><value>Ta bort licens</value></data>
+  <data name="ConfirmRemoveLicense" xml:space="preserve"><value>Ta bort licensen från den här datorn?</value></data>
+  <data name="RegisterPrompt" xml:space="preserve"><value>Ange namnet och serienumret från ditt köpmejl. Serienumret kontrolleras offline och sparas i license.dat.</value></data>
+  <data name="Name" xml:space="preserve"><value>Namn:</value></data>
+  <data name="Serial" xml:space="preserve"><value>Serienummer:</value></data>
+  <data name="RegisteredThanks" xml:space="preserve"><value>Tack! VoxPad är nu registrerat.</value></data>
+  <data name="SerialInvalid" xml:space="preserve"><value>Serienumret matchar inte namnet. Kontrollera stavfel (I/1 och O/0 är utbytbara).</value></data>
+  <data name="AllTimePlays" xml:space="preserve"><value>Mikrofonuppspelningar totalt</value></data>
+  <data name="ListPlays" xml:space="preserve"><value>Uppspelningar i denna lista</value></data>
+  <data name="SoundsInList" xml:space="preserve"><value>Ljud i listan</value></data>
+  <data name="Launches" xml:space="preserve"><value>Starter</value></data>
+  <data name="Since" xml:space="preserve"><value>Sedan</value></data>
+  <data name="TopSounds" xml:space="preserve"><value>Mest spelade</value></data>
+  <data name="ResetAllTime" xml:space="preserve"><value>Nollställ totalsumman</value></data>
+  <data name="ConfirmResetAllTime" xml:space="preserve"><value>Nollställa totalsumman?</value></data>
+  <data name="WebImportPrompt" xml:space="preserve"><value>Klistra in en direktlänk till en ljudfil (mp3, ogg, wav…). Filen laddas ned till din VoxPad-musikmapp och läggs till i listan.</value></data>
+  <data name="FileNameOptional" xml:space="preserve"><value>Filnamn (valfritt):</value></data>
+  <data name="Import" xml:space="preserve"><value>Importera</value></data>
+  <data name="Downloading" xml:space="preserve"><value>Laddar ned…</value></data>
+  <data name="UnsupportedFormat" xml:space="preserve"><value>Ljudformatet stöds inte</value></data>
+  <data name="RestorePrompt" xml:space="preserve"><value>Dagliga säkerhetskopior skrivs vid start. Återställning ersätter den aktuella listan (du kan fortfarande ångra genom att läsa in din sparade lista).</value></data>
+  <data name="OpenBackupFolder" xml:space="preserve"><value>Öppna mapp</value></data>
+  <data name="Restore" xml:space="preserve"><value>Återställ</value></data>
+  <data name="ConfirmRestore" xml:space="preserve"><value>Återställa säkerhetskopian från {0}?</value></data>
+  <data name="Restored" xml:space="preserve"><value>Återställde säkerhetskopian från {0}</value></data>
+  <data name="Checking" xml:space="preserve"><value>Kontrollerar…</value></data>
+  <data name="DownloadInstall" xml:space="preserve"><value>Ladda ned och installera</value></data>
+  <data name="PackageVerified" xml:space="preserve"><value>Paketet är verifierat. Installationsprogrammet startar; VoxPad stängs nu.</value></data>
+  <data name="VoiceMeasurement" xml:space="preserve"><value>Röstmätning</value></data>
+  <data name="VoiceMeasurePrompt" xml:space="preserve"><value>Tala normalt i mikrofonen i cirka 8 sekunder. Den uppmätta ljudstyrkan blir normaliseringsmålet så att ljuden matchar din röst (ett bra resultat ligger över 74 dB).</value></data>
+  <data name="CurrentTarget" xml:space="preserve"><value>Aktuellt mål</value></data>
+  <data name="DefaultNotMeasured" xml:space="preserve"><value>standard, inte uppmätt</value></data>
+  <data name="Start" xml:space="preserve"><value>Starta</value></data>
+  <data name="UseAsTarget" xml:space="preserve"><value>Använd som mål</value></data>
+  <data name="Measuring" xml:space="preserve"><value>Mäter</value></data>
+  <data name="NothingMeasured" xml:space="preserve"><value>Inget uppmätt – är mikrofonen avstängd eller fel enhet vald?</value></data>
+  <data name="Result" xml:space="preserve"><value>Resultat</value></data>
+  <data name="TooQuiet" xml:space="preserve"><value>mycket tyst – höj mikrofonnivån i Windows</value></data>
+  <data name="BelowTarget" xml:space="preserve"><value>under 74 dB; överväg en högre mikrofonnivå</value></data>
+  <data name="TargetSet" xml:space="preserve"><value>Normaliseringsmål satt till {0:F1} dB</value></data>
+  <data name="Routing" xml:space="preserve"><value>Routning</value></data>
+  <data name="TroubleChecklist" xml:space="preserve"><value>Checklista:
+• Installera VB-CABLE (gratis) och tryck på Uppdatera under Inställningar &gt; Enheter.
+• I Discord/Teams/spelet väljer du 'CABLE Output' som mikrofon och stänger av brusreducering / ekosläckning där.
+• Låt din riktiga mikrofon vara ikryssad under 'Använd' så att din röst mixas in.
+• Windows-sekretess: tillåt skrivbordsappar att använda mikrofonen.
+• Gör snabbtangenterna inget i ett spel? Kör VoxPad med samma behörighetsnivå som spelet.</value></data>
+  <data name="DiagnosticReport" xml:space="preserve"><value>Diagnostikrapport</value></data>
+  <data name="DiagnosticHint" xml:space="preserve"><value>Skapar en zip med loggen, enhetslistan, routningsläget och inställningarna (endast enhets-id:n, inga licensuppgifter) som du kan bifoga en felrapport.</value></data>
+  <data name="CreateReport" xml:space="preserve"><value>Skapa rapport</value></data>
+  <data name="OpenDevices" xml:space="preserve"><value>Enheter…</value></data>
+  <data name="AutoKeysTroubleHint" xml:space="preserve"><value>Auto Keys trycker på din push-to-talk-tangent när ett ljud startar på mikrofonen. Den senaste utvärderingen visar varför varje post utlöstes eller inte. Spela upp ett ljud och öppna sedan dialogrutan igen för att kontrollera på nytt.</value></data>
+  <data name="MicPlayMode" xml:space="preserve"><value>mikrofonuppspelningsläge</value></data>
+  <data name="NotMicPlayMode" xml:space="preserve"><value>INTE ett mikrofonuppspelningsläge – Auto Keys utlöses aldrig</value></data>
+  <data name="Entries" xml:space="preserve"><value>Poster</value></data>
+  <data name="ForegroundNow" xml:space="preserve"><value>Förgrundsapp just nu</value></data>
+  <data name="NoEvaluationYet" xml:space="preserve"><value>Inget ljud har spelats upp ännu i denna session.</value></data>
+  <data name="LastEvaluation" xml:space="preserve"><value>Senaste utvärdering</value></data>
+  <data name="OpenAutoKeysPrefs" xml:space="preserve"><value>Inställningar för Auto Keys…</value></data>
+
+  <!-- TTS / recorder / editor -->
+  <data name="Voice" xml:space="preserve"><value>Röst:</value></data>
+  <data name="Rate" xml:space="preserve"><value>Hastighet</value></data>
+  <data name="PreviewSpeakers" xml:space="preserve"><value>Förhandslyssna (Enter)</value></data>
+  <data name="SendToMic" xml:space="preserve"><value>Skicka till mikrofon (Ctrl+Enter)</value></data>
+  <data name="SaveToList" xml:space="preserve"><value>Spara i listan</value></data>
+  <data name="TtsHint" xml:space="preserve"><value>Enter = förhandslyssna i högtalare · Ctrl+Enter = spela upp i mikrofon · specialsnabbtangenten 'Spela upp TTS' läser upp denna text.</value></data>
+  <data name="Source" xml:space="preserve"><value>Källa:</value></data>
+  <data name="Source_Speakers" xml:space="preserve"><value>Högtalare (det du hör)</value></data>
+  <data name="Source_Mic" xml:space="preserve"><value>Mikrofon</value></data>
+  <data name="Format" xml:space="preserve"><value>Format:</value></data>
+  <data name="Insert" xml:space="preserve"><value>Infoga:</value></data>
+  <data name="InsertEnd" xml:space="preserve"><value>Lägg till sist i listan</value></data>
+  <data name="InsertBeginning" xml:space="preserve"><value>Infoga i början</value></data>
+  <data name="AutoNormalize" xml:space="preserve"><value>Normalisera automatiskt till</value></data>
+  <data name="DbHint" xml:space="preserve"><value>dB (89 ≈ −23 LUFS; över 99 klipper)</value></data>
+  <data name="TrimSilence" xml:space="preserve"><value>Trimma tystnad i början och slutet</value></data>
+  <data name="MaxTime" xml:space="preserve"><value>Maxtid:</value></data>
+  <data name="MaxSecondsHint" xml:space="preserve"><value>sekunder (0 = obegränsat; buffras okomprimerat i %TEMP%)</value></data>
+  <data name="TargetDirectory" xml:space="preserve"><value>Mapp:</value></data>
+  <data name="RecorderHotkeys" xml:space="preserve"><value>Specialsnabbtangenter: start = {0}, stopp = {1}. Ett meddelandeljud spelas innan inspelningen startar.</value></data>
+  <data name="NotSet" xml:space="preserve"><value>inte angiven</value></data>
+  <data name="StartRecording" xml:space="preserve"><value>Spela in</value></data>
+  <data name="StopRecording" xml:space="preserve"><value>Stoppa</value></data>
+  <data name="PlayLastTake" xml:space="preserve"><value>Spela upp senaste tagning</value></data>
+  <data name="LastTake" xml:space="preserve"><value>Senaste tagning</value></data>
+  <data name="MaxTimeReached" xml:space="preserve"><value>Maximal inspelningstid nådd.</value></data>
+  <data name="RecordingInProgress" xml:space="preserve"><value>Inspelning pågår. Vill du förkasta den?</value></data>
+  <data name="TargetTooLoud" xml:space="preserve"><value>Ett mål över 99 dB kommer att klippa. Fortsätta ändå?</value></data>
+  <data name="RecordingFrom" xml:space="preserve"><value>Spelar in från '{0}'…</value></data>
+  <data name="RecordingStarted" xml:space="preserve"><value>Inspelning startad</value></data>
+  <data name="NothingRecorded" xml:space="preserve"><value>Inget spelades in (tystnad).</value></data>
+  <data name="RecordingSaved" xml:space="preserve"><value>Inspelning sparad: {0}</value></data>
+  <data name="Editor" xml:space="preserve"><value>Redigerare</value></data>
+  <data name="PlaySelection" xml:space="preserve"><value>Spela upp markering</value></data>
+  <data name="Crop" xml:space="preserve"><value>Beskär</value></data>
+  <data name="VolumeUp" xml:space="preserve"><value>Vol +3 dB</value></data>
+  <data name="VolumeDown" xml:space="preserve"><value>Vol −3 dB</value></data>
+  <data name="VolumeCustom" xml:space="preserve"><value>Volym…</value></data>
+  <data name="NormalizeTo" xml:space="preserve"><value>Normalisera…</value></data>
+  <data name="ZoomFit" xml:space="preserve"><value>Anpassa</value></data>
+  <data name="ZoomSelection" xml:space="preserve"><value>Zooma till markering</value></data>
+  <data name="Save" xml:space="preserve"><value>Spara</value></data>
+  <data name="EditorHint" xml:space="preserve"><value>Dra för att markera · Shift+pilar / Home / End utökar · Ctrl+A allt · Ctrl+D avmarkera · Del klipper · Esc stänger</value></data>
+  <data name="Attr_Size" xml:space="preserve"><value>Storlek</value></data>
+  <data name="Attr_Format" xml:space="preserve"><value>Format</value></data>
+  <data name="Attr_SampleRate" xml:space="preserve"><value>Samplingsfrekvens</value></data>
+  <data name="Attr_Duration" xml:space="preserve"><value>Längd</value></data>
+  <data name="Attr_Channels" xml:space="preserve"><value>Kanaler</value></data>
+  <data name="Attr_OriginalVolume" xml:space="preserve"><value>Ursprunglig volym</value></data>
+  <data name="LongFileWarning" xml:space="preserve"><value>Den här filen är längre än 10 minuter. Redigering håller hela filen i minnet och ångra-kopior mångfaldigar det; räkna med hög minnesanvändning.</value></data>
+  <data name="CannotOpenFile" xml:space="preserve"><value>Filen kunde inte öppnas: {0}</value></data>
+  <data name="Modified" xml:space="preserve"><value>ändrad</value></data>
+  <data name="Selection" xml:space="preserve"><value>Markering</value></data>
+  <data name="NoSelection" xml:space="preserve"><value>Ingen markering (åtgärder gäller hela filen)</value></data>
+  <data name="GainPrompt" xml:space="preserve"><value>Förstärkning i dB (negativt = tystare):</value></data>
+  <data name="NormalizePrompt" xml:space="preserve"><value>Mål i dB (89 ≈ −23 LUFS):</value></data>
+  <data name="EditorSaveQuestion" xml:space="preserve"><value>Spara det redigerade ljudet?</value></data>
+  <data name="EditorSaved" xml:space="preserve"><value>Sparade {0}</value></data>
+
+  <!-- Preferences -->
+  <data name="Tab_Devices" xml:space="preserve"><value>Enheter</value></data>
+  <data name="Tab_Audio" xml:space="preserve"><value>Ljud</value></data>
+  <data name="Tab_Hotkeys" xml:space="preserve"><value>Snabbtangenter</value></data>
+  <data name="Tab_Recorder" xml:space="preserve"><value>Inspelare</value></data>
+  <data name="Tab_Interface" xml:space="preserve"><value>Gränssnitt</value></data>
+  <data name="Tab_Notifications" xml:space="preserve"><value>Aviseringar</value></data>
+  <data name="Tab_Updates" xml:space="preserve"><value>Uppdateringar</value></data>
+  <data name="SetupMode" xml:space="preserve"><value>Konfigurationsläge</value></data>
+  <data name="SetupModeHint" xml:space="preserve"><value>VoxPad har ingen egen kernel-ljuddrivrutin. Den renderar röst + ljud till en virtuell kabels uppspelningsenhet; appar spelar sedan in från kabelns inspelningsenhet (t.ex. 'CABLE Output'). Automatiskt val provar VB-CABLE, VB-CABLE A/B, Voicemeeter, en manuellt vald kabel och Stereo Mix i den ordningen.</value></data>
+  <data name="Refresh" xml:space="preserve"><value>Uppdatera</value></data>
+  <data name="Status" xml:space="preserve"><value>Status: </value></data>
+  <data name="Microphones" xml:space="preserve"><value>Mikrofoner (kryssa i 'Använd' för de som ska mixas in i kabeln)</value></data>
+  <data name="Use" xml:space="preserve"><value>Använd</value></data>
+  <data name="DefaultComm" xml:space="preserve"><value> (standard för kommunikation)</value></data>
+  <data name="NoMics" xml:space="preserve"><value>Inga inspelningsenheter hittades.</value></data>
+  <data name="NoMicsTickedHint" xml:space="preserve"><value>Inget ikryssat = standardmikrofonen för kommunikation används.</value></data>
+  <data name="VirtualCableEndpoint" xml:space="preserve"><value>Virtuell kabels uppspelningsenhet (för 'Annan virtuell kabel')</value></data>
+  <data name="AutoDetect" xml:space="preserve"><value>(identifiera automatiskt)</value></data>
+  <data name="SpeakerDevice" xml:space="preserve"><value>Högtalare (din egen kopia av ljudet)</value></data>
+  <data name="DefaultDevice" xml:space="preserve"><value>(Windows-standard)</value></data>
+  <data name="RecorderMic" xml:space="preserve"><value>Mikrofon för inspelaren</value></data>
+  <data name="MicLatency" xml:space="preserve"><value>Mikrofonlatens (ms):</value></data>
+  <data name="LatencyHint" xml:space="preserve"><value>Lägre = mindre fördröjning på din röst, högre = färre avbrott på långsamma datorer. 30 ms är ett bra standardvärde.</value></data>
+  <data name="OpenPrivacySettings" xml:space="preserve"><value>Mikrofonåtkomst nekas – öppna Windows sekretessinställningar</value></data>
+  <data name="Normalization" xml:space="preserve"><value>Volymnormalisering (EBU R128, per kanal)</value></data>
+  <data name="Norm_Off" xml:space="preserve"><value>Av</value></data>
+  <data name="Norm_Dynamic" xml:space="preserve"><value>Dynamisk – analysera de första 6 s, förfina under uppspelning (standard)</value></data>
+  <data name="Norm_Full" xml:space="preserve"><value>Hela filen – analysera hela filen före uppspelning (cachas)</value></data>
+  <data name="MeasureVoice" xml:space="preserve"><value>Mät röst…</value></data>
+  <data name="NormHint" xml:space="preserve"><value>Ljud på mikrofonen anpassas till din röstnivå (mät den; ett bra resultat ligger över 74 dB). Högtalarkopian ändras inte – använd högtalarvolymreglaget för dig själv.</value></data>
+  <data name="BlockVoice" xml:space="preserve"><value>Blockera röst</value></data>
+  <data name="BlockVoiceCheck" xml:space="preserve"><value>Ersätt min röst helt medan ett ljud spelas (i stället för att mixa)</value></data>
+  <data name="VoiceActivation" xml:space="preserve"><value>Röstaktiveringsljud</value></data>
+  <data name="VoiceActivationCheck" xml:space="preserve"><value>Spela upp ett kort, högt förljud på mikrofonen så att röstaktiverade appar öppnar sin gate</value></data>
+  <data name="CustomFile" xml:space="preserve"><value>Egen fil (tom = 250 ms ton):</value></data>
+  <data name="Default" xml:space="preserve"><value>Standard</value></data>
+  <data name="VoiceActivationHeadphones" xml:space="preserve"><value>Spela även upp förljudet i mina högtalare/hörlurar</value></data>
+  <data name="Playback" xml:space="preserve"><value>Uppspelning</value></data>
+  <data name="AllowResumeOtherMode" xml:space="preserve"><value>Tillåt återupptagning i ett annat uppspelningsläge (startar om vid pausläget med det nya läget)</value></data>
+  <data name="General" xml:space="preserve"><value>Allmänt</value></data>
+  <data name="HotkeysEnabledCheck" xml:space="preserve"><value>Snabbtangenter aktiverade</value></data>
+  <data name="PassHotkeysCheck" xml:space="preserve"><value>Skicka snabbtangenter vidare till det aktiva programmet (standard av: tangenten fångas upp)</value></data>
+  <data name="AutoStopCheck" xml:space="preserve"><value>Autostopp: ljud som startas med snabbtangent ignorerar Upprepa och Fortsätt (standard på)</value></data>
+  <data name="HotkeysGeneralHint" xml:space="preserve"><value>Ange ett ljuds snabbtangent genom att högerklicka på det eller dubbelklicka på dess Snabbtangent-cell. Enskilda tangenter, alla kombinationer med Ctrl/Alt/Shift/Win samt musknapparna Mitten/4/5 fungerar globalt.</value></data>
+  <data name="SpecialHint" xml:space="preserve"><value>Specialsnabbtangenter är reserverade: ett ljud kan inte använda samma tangent.</value></data>
+  <data name="NumpadHotkeys" xml:space="preserve"><value>Snabbtangenter på numeriskt tangentbord</value></data>
+  <data name="NumpadEnabledCheck" xml:space="preserve"><value>Aktiverat: håll modifieraren, skriv ljudets nummer på det numeriska tangentbordet, släpp</value></data>
+  <data name="Modifier" xml:space="preserve"><value>Modifierare:</value></data>
+  <data name="NumpadHint" xml:space="preserve"><value>Numret är kolumnen # i den aktuella kategorin.</value></data>
+  <data name="IndexHotkeys" xml:space="preserve"><value>Indexsnabbtangenter</value></data>
+  <data name="IndexEnabledCheck" xml:space="preserve"><value>Aktiverat: håll modifieraren, skriv radindexet med sifferraden, släpp</value></data>
+  <data name="IndexHint" xml:space="preserve"><value>Indexet är raden i den dolda kategorin 'Alla ljud', t.ex. Alt+1,2,3 spelar rad 123.</value></data>
+  <data name="Advanced" xml:space="preserve"><value>Avancerat</value></data>
+  <data name="AllowLeftRight" xml:space="preserve"><value>Tillåt vänster/höger modifierare (LCtrl och RCtrl är olika tangenter)</value></data>
+  <data name="SameHotkeysAllCategories" xml:space="preserve"><value>Samma snabbtangenter i alla kategorier (radbaserat: snabbtangenten för rad N spelar rad N i den valda kategorin)</value></data>
+  <data name="JumpSeconds" xml:space="preserve"><value>Hoppa ±N sekunder:</value></data>
+  <data name="VolumeStep" xml:space="preserve"><value>Steg för volym upp/ned (%):</value></data>
+  <data name="VolumeSet" xml:space="preserve"><value>Nivå för snabbtangenten 'Ange volym' (%):</value></data>
+  <data name="AutoKeysEnabledCheck" xml:space="preserve"><value>Auto Keys aktiverade</value></data>
+  <data name="AutoKeysHint" xml:space="preserve"><value>Automatisk push-to-talk: när ett ljud startar på mikrofonen trycks tangenten (hålls under ljudets längd eller trycks före och efter). Utlöses endast i mikrofonuppspelningslägen.</value></data>
+  <data name="NoKey" xml:space="preserve"><value>(ingen tangent)</value></data>
+  <data name="AutoKey" xml:space="preserve"><value>Auto Key</value></data>
+  <data name="OnlyIfHotkey" xml:space="preserve"><value>Endast om startat med snabbtangent</value></data>
+  <data name="PressHold" xml:space="preserve"><value>Håll nedtryckt under ljudets längd</value></data>
+  <data name="PressBeforeAfter" xml:space="preserve"><value>Tryck före och efter</value></data>
+  <data name="PressMode" xml:space="preserve"><value>Tryckläge:</value></data>
+  <data name="Cond_Always" xml:space="preserve"><value>Alltid</value></data>
+  <data name="Cond_Fullscreen" xml:space="preserve"><value>Förgrundsappen är i helskärm (inkl. kantlöst)</value></data>
+  <data name="Cond_Running" xml:space="preserve"><value>En listad app körs</value></data>
+  <data name="Cond_Foreground" xml:space="preserve"><value>En listad app är i förgrunden</value></data>
+  <data name="Condition" xml:space="preserve"><value>Villkor:</value></data>
+  <data name="AppsTip" xml:space="preserve"><value>Processnamn, ett per rad, t.ex. discord.exe</value></data>
+  <data name="Apps" xml:space="preserve"><value>Applista:</value></data>
+  <data name="AddAutoKey" xml:space="preserve"><value>Lägg till Auto Key</value></data>
+  <data name="RecorderFormatHint" xml:space="preserve"><value>Allt konverteras till stereo 48 kHz. Redigeraren sparar också i detta format.</value></data>
+  <data name="TargetDb" xml:space="preserve"><value>Mål (dB, standard 89 ≈ −23 LU; &gt;99 klipper):</value></data>
+  <data name="NotificationSound" xml:space="preserve"><value>Spela upp ett meddelandeljud innan inspelningen startar</value></data>
+  <data name="RecorderHotkeyHint" xml:space="preserve"><value>Snabbtangenter för start/stopp av inspelning finns på fliken Snabbtangenter &gt; Special.</value></data>
+  <data name="Language" xml:space="preserve"><value>Språk:</value></data>
+  <data name="Style" xml:space="preserve"><value>Stil:</value></data>
+  <data name="Theme_Light" xml:space="preserve"><value>Ljust</value></data>
+  <data name="Theme_Dark" xml:space="preserve"><value>Mörkt</value></data>
+  <data name="Theme_Native" xml:space="preserve"><value>Inbyggt (Windows)</value></data>
+  <data name="NativeForced" xml:space="preserve"><value>Högkontrast eller en skärmläsare är aktiv: den inbyggda stilen används.</value></data>
+  <data name="ToolbarItems" xml:space="preserve"><value>Verktygsfältsobjekt</value></data>
+  <data name="Timer" xml:space="preserve"><value>Spårtimer</value></data>
+  <data name="SeekSlider" xml:space="preserve"><value>Sökreglage</value></data>
+  <data name="SpeakerVolume" xml:space="preserve"><value>Högtalarvolym</value></data>
+  <data name="MicLevelMeter" xml:space="preserve"><value>Mikrofonnivåmätare</value></data>
+  <data name="Behaviour" xml:space="preserve"><value>Beteende</value></data>
+  <data name="StartMinimized" xml:space="preserve"><value>Starta minimerat</value></data>
+  <data name="MinimizeToTrayCheck" xml:space="preserve"><value>Minimera till meddelandefältet</value></data>
+  <data name="CloseToTray" xml:space="preserve"><value>Att stänga fönstret minimerar till meddelandefältet i stället för att avsluta</value></data>
+  <data name="DisableSorting" xml:space="preserve"><value>Inaktivera sortering (kolumnrubriker sorterar aldrig; endast manuell ordning)</value></data>
+  <data name="Confirmations" xml:space="preserve"><value>Bekräftelser</value></data>
+  <data name="ConfirmRemoveCheck" xml:space="preserve"><value>Bekräfta innan ljud tas bort</value></data>
+  <data name="ConfirmResetCheck" xml:space="preserve"><value>Bekräfta innan uppspelningsräknare nollställs</value></data>
+  <data name="ConfirmQuitCheck" xml:space="preserve"><value>Bekräfta avslut medan ett ljud spelas</value></data>
+  <data name="NotifyMissing" xml:space="preserve"><value>Varna för saknade filer när en lista läses in</value></data>
+  <data name="NotifyDevices" xml:space="preserve"><value>Rapportera ändringar av ljudenheter i statusfältet</value></data>
+  <data name="NotifyTray" xml:space="preserve"><value>Visa en ballong vid minimering till meddelandefältet</value></data>
+  <data name="NotifyRecording" xml:space="preserve"><value>Statusmeddelande när en inspelning startar</value></data>
+  <data name="NotifyTrial" xml:space="preserve"><value>Visa en dialogruta när en provversionsgräns nås</value></data>
+  <data name="NotifyUpdates" xml:space="preserve"><value>Visa tillgängliga uppdateringar</value></data>
+  <data name="CheckInterval" xml:space="preserve"><value>Sök efter uppdateringar:</value></data>
+  <data name="Never" xml:space="preserve"><value>Aldrig (standard)</value></data>
+  <data name="Daily" xml:space="preserve"><value>Dagligen</value></data>
+  <data name="Weekly" xml:space="preserve"><value>Varje vecka</value></data>
+  <data name="ManifestUrl" xml:space="preserve"><value>Manifest-URL:</value></data>
+  <data name="UpdateHint" xml:space="preserve"><value>Uppdateringspaket installeras bara när manifestets signatur och paketets hash verifieras mot nyckeln som är inbyggd i VoxPad.</value></data>
+  <data name="LastCheck" xml:space="preserve"><value>Senaste kontroll</value></data>
+  <data name="CheckNow" xml:space="preserve"><value>Sök nu</value></data>
+
+  <!-- Special hotkey names -->
+  <data name="Special_Stop" xml:space="preserve"><value>Stoppa</value></data>
+  <data name="Special_Start" xml:space="preserve"><value>Starta (spela markerat / fortsätt)</value></data>
+  <data name="Special_Pause" xml:space="preserve"><value>Pausa / fortsätt</value></data>
+  <data name="Special_PlayPrevious" xml:space="preserve"><value>Spela föregående fil</value></data>
+  <data name="Special_PlayNext" xml:space="preserve"><value>Spela nästa fil</value></data>
+  <data name="Special_PlaySelected" xml:space="preserve"><value>Spela markerad fil</value></data>
+  <data name="Special_PlayRandomInCategory" xml:space="preserve"><value>Spela slumpmässig fil (aktuell kategori)</value></data>
+  <data name="Special_PlayRandomFromAll" xml:space="preserve"><value>Spela slumpmässig fil (alla ljud)</value></data>
+  <data name="Special_SelectPreviousFile" xml:space="preserve"><value>Markera föregående fil</value></data>
+  <data name="Special_SelectNextFile" xml:space="preserve"><value>Markera nästa fil</value></data>
+  <data name="Special_SelectPreviousCategory" xml:space="preserve"><value>Välj föregående kategori</value></data>
+  <data name="Special_SelectNextCategory" xml:space="preserve"><value>Välj nästa kategori</value></data>
+  <data name="Special_StartRecording" xml:space="preserve"><value>Starta inspelning</value></data>
+  <data name="Special_StopRecording" xml:space="preserve"><value>Stoppa inspelning</value></data>
+  <data name="Special_JumpBackward" xml:space="preserve"><value>Hoppa bakåt N sekunder</value></data>
+  <data name="Special_JumpForward" xml:space="preserve"><value>Hoppa framåt N sekunder</value></data>
+  <data name="Special_SpeakerVolumeUp" xml:space="preserve"><value>Höj högtalarvolym</value></data>
+  <data name="Special_SpeakerVolumeDown" xml:space="preserve"><value>Sänk högtalarvolym</value></data>
+  <data name="Special_SpeakerVolumeSet" xml:space="preserve"><value>Ange högtalarvolym</value></data>
+  <data name="Special_SpeakerVolumeMute" xml:space="preserve"><value>Stäng av / slå på högtalarljud</value></data>
+  <data name="Special_SetPlayModeBoth" xml:space="preserve"><value>Uppspelningsläge: högtalare + mikrofon</value></data>
+  <data name="Special_SetPlayModeMic" xml:space="preserve"><value>Uppspelningsläge: endast mikrofon</value></data>
+  <data name="Special_SetPlayModeSpeakers" xml:space="preserve"><value>Uppspelningsläge: endast högtalare</value></data>
+  <data name="Special_CyclePlayMode" xml:space="preserve"><value>Växla uppspelningsläge</value></data>
+  <data name="Special_EnableHotkeys" xml:space="preserve"><value>Aktivera snabbtangenter</value></data>
+  <data name="Special_DisableHotkeys" xml:space="preserve"><value>Inaktivera snabbtangenter</value></data>
+  <data name="Special_ToggleHotkeys" xml:space="preserve"><value>Växla snabbtangenter</value></data>
+  <data name="Special_EnableAutoKeys" xml:space="preserve"><value>Aktivera Auto Keys</value></data>
+  <data name="Special_DisableAutoKeys" xml:space="preserve"><value>Inaktivera Auto Keys</value></data>
+  <data name="Special_ToggleAutoKeys" xml:space="preserve"><value>Växla Auto Keys</value></data>
+  <data name="Special_PlayTts" xml:space="preserve"><value>Läs upp text-till-tal-text</value></data>
+</root>

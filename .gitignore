@@ -1,0 +1,48 @@
+# Build output
+bin/
+obj/
+artifacts/
+publish/
+*.msi
+*.wixpdb
+*.wixobj
+TestResults/
+*.trx
+*.nupkg
+
+# Dependencies / tool caches
+packages/
+.nuget/
+node_modules/
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userprefs
+*.DotSettings.user
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Logs, dumps, runtime data (portable mode writes Data\ beside the exe)
+*.log
+logs/
+*.dmp
+crashdumps/
+Data/
+portable.txt
+
+# Secrets: never commit signing keys or environment files
+.env
+.env.*
+*.pem
+*.pfx
+*.p12
+*.snk
+*signing-key*

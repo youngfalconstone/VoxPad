@@ -1,0 +1,27 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <SolidColorBrush x:Key="Theme.WindowBackground" Color="#F3F3F3"/>
+    <SolidColorBrush x:Key="Theme.PanelBackground" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="Theme.ControlBackground" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="Theme.Foreground" Color="#1B1B1B"/>
+    <SolidColorBrush x:Key="Theme.SecondaryForeground" Color="#6B6B6B"/>
+    <SolidColorBrush x:Key="Theme.Border" Color="#D0D0D0"/>
+    <SolidColorBrush x:Key="Theme.Accent" Color="#5848C8"/>
+    <SolidColorBrush x:Key="Theme.AccentForeground" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="Theme.Selection" Color="#DCD8F5"/>
+    <SolidColorBrush x:Key="Theme.Hover" Color="#ECEAF8"/>
+    <SolidColorBrush x:Key="Theme.ListAlternate" Color="#F8F8F8"/>
+    <SolidColorBrush x:Key="Theme.HeaderBackground" Color="#EDEDED"/>
+    <SolidColorBrush x:Key="Theme.StatusBackground" Color="#E6E6E6"/>
+    <SolidColorBrush x:Key="Theme.SeekMic" Color="#D9342B"/>
+    <SolidColorBrush x:Key="Theme.SeekSpeakers" Color="#2B6DD9"/>
+    <SolidColorBrush x:Key="Theme.MissingForeground" Color="#9A9A9A"/>
+    <SolidColorBrush x:Key="Theme.Good" Color="#2E8B57"/>
+    <SolidColorBrush x:Key="Theme.Bad" Color="#D9342B"/>
+    <SolidColorBrush x:Key="Theme.Warn" Color="#C58A00"/>
+    <SolidColorBrush x:Key="Theme.TileBackground" Color="#E9E9EF"/>
+    <SolidColorBrush x:Key="Theme.MeterBackground" Color="#DDDDDD"/>
+    <Color x:Key="Theme.ForegroundColor">#1B1B1B</Color>
+    <Color x:Key="Theme.SelectionColor">#DCD8F5</Color>
+    <Color x:Key="Theme.HoverColor">#ECEAF8</Color>
+</ResourceDictionary>

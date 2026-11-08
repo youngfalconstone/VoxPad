@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+  <!-- Menus -->
+  <data name="File" xml:space="preserve"><value>_Tiedosto</value></data>
+  <data name="NewList" xml:space="preserve"><value>_Uusi äänilista</value></data>
+  <data name="LoadList" xml:space="preserve"><value>_Avaa äänilista…</value></data>
+  <data name="SaveList" xml:space="preserve"><value>_Tallenna äänilista</value></data>
+  <data name="SaveListAs" xml:space="preserve"><value>Tallenna äänilista _nimellä…</value></data>
+  <data name="RecentLists" xml:space="preserve"><value>_Viimeisimmät äänilistat</value></data>
+  <data name="RestoreList" xml:space="preserve"><value>Palauta äänilista…</value></data>
+  <data name="AddFiles" xml:space="preserve"><value>Lisää äänitiedostoja…</value></data>
+  <data name="AddFolder" xml:space="preserve"><value>Lisää kansio…</value></data>
+  <data name="WebImport" xml:space="preserve"><value>Tuo verkosta…</value></data>
+  <data name="Export" xml:space="preserve"><value>_Vie</value></data>
+  <data name="ExportSoundFiles" xml:space="preserve"><value>Äänitiedostot…</value></data>
+  <data name="ExportPreferences" xml:space="preserve"><value>Asetukset…</value></data>
+  <data name="ImportPreferences" xml:space="preserve"><value>Tuo asetukset…</value></data>
+  <data name="Statistics" xml:space="preserve"><value>Tilastot…</value></data>
+  <data name="Preferences" xml:space="preserve"><value>_Asetukset…</value></data>
+  <data name="Exit" xml:space="preserve"><value>_Lopeta</value></data>
+  <data name="Edit" xml:space="preserve"><value>_Muokkaa</value></data>
+  <data name="SelectAll" xml:space="preserve"><value>Valitse kaikki</value></data>
+  <data name="Remove" xml:space="preserve"><value>Poista</value></data>
+  <data name="Copy" xml:space="preserve"><value>Kopioi</value></data>
+  <data name="Cut" xml:space="preserve"><value>Leikkaa</value></data>
+  <data name="Paste" xml:space="preserve"><value>Liitä</value></data>
+  <data name="MoveUp" xml:space="preserve"><value>Siirrä ylös</value></data>
+  <data name="MoveDown" xml:space="preserve"><value>Siirrä alas</value></data>
+  <data name="Undo" xml:space="preserve"><value>Kumoa</value></data>
+  <data name="Redo" xml:space="preserve"><value>Tee uudelleen</value></data>
+  <data name="EditFile" xml:space="preserve"><value>Muokkaa tiedostoa…</value></data>
+  <data name="SetHotkey" xml:space="preserve"><value>Aseta pikanäppäin…</value></data>
+  <data name="RemoveHotkey" xml:space="preserve"><value>Poista pikanäppäin</value></data>
+  <data name="SetColor" xml:space="preserve"><value>Väri…</value></data>
+  <data name="PlayRandom" xml:space="preserve"><value>Toista satunnainen</value></data>
+  <data name="ResetPlayCount" xml:space="preserve"><value>Nollaa toistolaskuri</value></data>
+  <data name="ResetAllPlayCounts" xml:space="preserve"><value>Nollaa kaikki toistolaskurit</value></data>
+  <data name="SelectInExplorer" xml:space="preserve"><value>Näytä Resurssienhallinnassa</value></data>
+  <data name="PlayMenu" xml:space="preserve"><value>_Toisto</value></data>
+  <data name="Play" xml:space="preserve"><value>Toista</value></data>
+  <data name="PlayOnSpeakers" xml:space="preserve"><value>Toista kaiuttimiin</value></data>
+  <data name="PlayOnMic" xml:space="preserve"><value>Toista mikrofoniin</value></data>
+  <data name="PauseResume" xml:space="preserve"><value>Tauko / jatka</value></data>
+  <data name="Stop" xml:space="preserve"><value>Pysäytä</value></data>
+  <data name="Previous" xml:space="preserve"><value>Edellinen</value></data>
+  <data name="Next" xml:space="preserve"><value>Seuraava</value></data>
+  <data name="Repeat" xml:space="preserve"><value>Toista uudelleen</value></data>
+  <data name="Continue" xml:space="preserve"><value>Jatka</value></data>
+  <data name="AutoStop" xml:space="preserve"><value>Automaattipysäytys (pikanäppäinäänet ohittavat Toista uudelleen/Jatka-asetukset)</value></data>
+  <data name="PlayModeMenu" xml:space="preserve"><value>Toistotila</value></data>
+  <data name="PlayMode_Both" xml:space="preserve"><value>Kaiuttimet + mikrofoni</value></data>
+  <data name="PlayMode_Mic" xml:space="preserve"><value>Vain mikrofoni</value></data>
+  <data name="PlayMode_Speakers" xml:space="preserve"><value>Vain kaiuttimet</value></data>
+  <data name="Recorder" xml:space="preserve"><value>Tallennin…</value></data>
+  <data name="TextToSpeech" xml:space="preserve"><value>Tekstistä puheeksi…</value></data>
+  <data name="Window" xml:space="preserve"><value>_Ikkuna</value></data>
+  <data name="Categories" xml:space="preserve"><value>Luokkapaneeli</value></data>
+  <data name="Hotbar" xml:space="preserve"><value>Pikapalkki</value></data>
+  <data name="Toolbar" xml:space="preserve"><value>Toistopalkki</value></data>
+  <data name="StatusBar" xml:space="preserve"><value>Tilarivi</value></data>
+  <data name="ShowHiddenCategories" xml:space="preserve"><value>Näytä piilotetut luokat</value></data>
+  <data name="CategoryIconSize" xml:space="preserve"><value>Luokkakuvakkeiden koko</value></data>
+  <data name="Small" xml:space="preserve"><value>Pieni</value></data>
+  <data name="Medium" xml:space="preserve"><value>Keskikokoinen</value></data>
+  <data name="Large" xml:space="preserve"><value>Suuri</value></data>
+  <data name="ExtraLarge" xml:space="preserve"><value>Erittäin suuri</value></data>
+  <data name="Columns" xml:space="preserve"><value>Sarakkeet</value></data>
+  <data name="HotbarSize" xml:space="preserve"><value>Pikapalkin koko…</value></data>
+  <data name="HotkeyOverview" xml:space="preserve"><value>Pikanäppäinten yleiskatsaus…</value></data>
+  <data name="MinimizeToTray" xml:space="preserve"><value>Pienennä ilmaisinalueelle</value></data>
+  <data name="Help" xml:space="preserve"><value>_Ohje</value></data>
+  <data name="Manual" xml:space="preserve"><value>Käyttöopas</value></data>
+  <data name="Troubleshooting" xml:space="preserve"><value>Vianmääritys…</value></data>
+  <data name="AutoKeysTroubleshooting" xml:space="preserve"><value>Auto Keys -vianmääritys…</value></data>
+  <data name="CheckForUpdates" xml:space="preserve"><value>Tarkista päivitykset…</value></data>
+  <data name="Register" xml:space="preserve"><value>Rekisteröi…</value></data>
+  <data name="About" xml:space="preserve"><value>Tietoja: VoxPad</value></data>
+
+  <!-- Toolbar / status bar -->
+  <data name="TimerTip" xml:space="preserve"><value>Kulunut / yhteensä. Kaksoisnapsauta siirtyäksesi toistettavaan ääneen.</value></data>
+  <data name="SpeakerVolumeTip" xml:space="preserve"><value>Kaiuttimien äänenvoimakkuus (vain oma kopiosi; sidottu Windowsin äänenvoimakkuuden mikseriin)</value></data>
+  <data name="MicMeterTip" xml:space="preserve"><value>Mikrofonin taso. Napsauta kuvaketta mitataksesi äänesi tason.</value></data>
+  <data name="SeekTip" xml:space="preserve"><value>Punainen = muut kuulevat sen (mikrofoni), sininen = vain kaiuttimet</value></data>
+  <data name="PlayModeTip" xml:space="preserve"><value>Toistotila – vaihda napsauttamalla</value></data>
+  <data name="HotkeysTip" xml:space="preserve"><value>Pikanäppäimet – kaksoisnapsautus kytkee päälle/pois, oikea painike avaa asetukset</value></data>
+  <data name="PassHotkeys" xml:space="preserve"><value>Välitä pikanäppäimet aktiiviselle sovellukselle</value></data>
+  <data name="Hotkeys" xml:space="preserve"><value>Pikanäppäimet</value></data>
+  <data name="AutoKeysTip" xml:space="preserve"><value>Auto Keys – kaksoisnapsautus kytkee päälle/pois, oikea painike avaa vianmäärityksen</value></data>
+  <data name="AutoKeys" xml:space="preserve"><value>Auto Keys</value></data>
+  <data name="RepeatTip" xml:space="preserve"><value>Toista nykyinen ääni uudelleen – kytke napsauttamalla</value></data>
+  <data name="ContinueTip" xml:space="preserve"><value>Jatka seuraavaan ääneen – kytke napsauttamalla</value></data>
+  <data name="PreviousPage" xml:space="preserve"><value>Edellinen sivu (Ctrl+PgUp)</value></data>
+  <data name="NextPage" xml:space="preserve"><value>Seuraava sivu (Ctrl+PgDn)</value></data>
+  <data name="HideCategory" xml:space="preserve"><value>Piilota luokka</value></data>
+  <data name="SearchTip" xml:space="preserve"><value>Kirjoita suodattaaksesi · Enter selaa osumia · Ctrl+Enter toistaa · Esc tyhjentää</value></data>
+  <data name="ColTag" xml:space="preserve"><value>Tunniste</value></data>
+  <data name="ColDuration" xml:space="preserve"><value>Kesto</value></data>
+  <data name="ColHotkey" xml:space="preserve"><value>Pikanäppäin</value></data>
+  <data name="ColPlayCount" xml:space="preserve"><value>Toistokerrat</value></data>
+  <data name="ColLastPlayed" xml:space="preserve"><value>Viimeksi toistettu</value></data>
+  <data name="ColIndex" xml:space="preserve"><value>#</value></data>
+  <data name="MoveToCategory" xml:space="preserve"><value>Siirrä luokkaan</value></data>
+  <data name="RemoveFromCategory" xml:space="preserve"><value>Poista tästä luokasta</value></data>
+  <data name="AddCategory" xml:space="preserve"><value>Lisää luokka…</value></data>
+  <data name="AddSubcategory" xml:space="preserve"><value>Lisää aliluokka…</value></data>
+  <data name="RenameCategory" xml:space="preserve"><value>Nimeä uudelleen…</value></data>
+  <data name="RemoveCategory" xml:space="preserve"><value>Poista luokka</value></data>
+  <data name="SetRandomHotkey" xml:space="preserve"><value>Aseta 'Toista satunnainen' -pikanäppäin…</value></data>
+  <data name="AllSounds" xml:space="preserve"><value>Kaikki äänet</value></data>
+  <data name="UntitledList" xml:space="preserve"><value>Nimetön</value></data>
+  <data name="Trial" xml:space="preserve"><value>Kokeiluversio</value></data>
+  <data name="TrialStatus" xml:space="preserve"><value>Kokeiluversio: enintään {0} ääntä, {1} mikrofonitoistoa jäljellä tällä käynnistyskerralla</value></data>
+
+  <!-- Status messages -->
+  <data name="PlayModeSet" xml:space="preserve"><value>Toistotila: {0}</value></data>
+  <data name="HotkeysOn" xml:space="preserve"><value>Pikanäppäimet käytössä</value></data>
+  <data name="HotkeysOff" xml:space="preserve"><value>Pikanäppäimet pois käytöstä</value></data>
+  <data name="AutoKeysOn" xml:space="preserve"><value>Auto Keys käytössä</value></data>
+  <data name="AutoKeysOff" xml:space="preserve"><value>Auto Keys pois käytöstä</value></data>
+  <data name="Playing" xml:space="preserve"><value>Toistetaan '{0}' → {1}</value></data>
+  <data name="TrialPlayLimit" xml:space="preserve"><value>Kokeiluversio: 10 mikrofonitoiston raja per käynnistys on täynnä. Rekisteröi poistaaksesi rajoituksen.</value></data>
+  <data name="TrialSoundLimit" xml:space="preserve"><value>Kokeiluversio: listassa voi olla enintään {0} ääntä. Rekisteröi poistaaksesi rajoituksen.</value></data>
+  <data name="NothingToPlay" xml:space="preserve"><value>Ei mitään toistettavaa</value></data>
+  <data name="DevicesChanged" xml:space="preserve"><value>Äänilaitteet muuttuivat; reititys otettiin uudelleen käyttöön.</value></data>
+  <data name="MissingFiles" xml:space="preserve"><value>{0} listan tiedosto(a) puuttuu (himmennetty).</value></data>
+  <data name="CategoryInfo" xml:space="preserve"><value>{0}: {1} ääntä, {2} yhteensä</value></data>
+  <data name="Copied" xml:space="preserve"><value>{0} ääntä kopioitu</value></data>
+  <data name="CutStatus" xml:space="preserve"><value>{0} ääntä leikattu</value></data>
+  <data name="Importing" xml:space="preserve"><value>Luetaan {0} tiedosto(a)…</value></data>
+  <data name="Imported" xml:space="preserve"><value>{0} ääntä lisätty</value></data>
+  <data name="NoAudioFiles" xml:space="preserve"><value>Tuettuja äänitiedostoja ei löytynyt</value></data>
+  <data name="ConfirmRemove" xml:space="preserve"><value>Poistetaanko {0} ääntä listasta? Äänitiedostoja ei poisteta levyltä.</value></data>
+  <data name="Removed" xml:space="preserve"><value>{0} ääntä poistettu</value></data>
+  <data name="HotkeyFor" xml:space="preserve"><value>Pikanäppäin kohteelle '{0}'</value></data>
+  <data name="RandomHotkeyFor" xml:space="preserve"><value>'Toista satunnainen' -pikanäppäin kohteelle '{0}'</value></data>
+  <data name="BareMouseNotAllowed" xml:space="preserve"><value>Hiiren vasen ja oikea painike vaativat muokkausnäppäimen (esim. Ctrl+napsautus).</value></data>
+  <data name="ReservedHotkey" xml:space="preserve"><value>{0} on varattu erikoispikanäppäimelle '{1}'.</value></data>
+  <data name="HotkeyRemoved" xml:space="preserve"><value>Pikanäppäin poistettu kohteesta '{0}'</value></data>
+  <data name="HotkeySet" xml:space="preserve"><value>{0} → '{1}'</value></data>
+  <data name="ConfirmResetPlayCount" xml:space="preserve"><value>Nollataanko {0} äänen toistolaskuri?</value></data>
+  <data name="ConfirmResetAll" xml:space="preserve"><value>Nollataanko kaikkien äänten toistolaskurit ja listan kokonaismäärä?</value></data>
+  <data name="FileMissing" xml:space="preserve"><value>Tiedostoa ei löydy: {0}</value></data>
+  <data name="ConfirmRemoveCategory" xml:space="preserve"><value>Poistetaanko luokka '{0}' (ja sen aliluokat)? Äänet säilyvät listassa.</value></data>
+  <data name="CategoryName" xml:space="preserve"><value>Nimi:</value></data>
+  <data name="NewCategory" xml:space="preserve"><value>Uusi luokka</value></data>
+  <data name="AddedToCategory" xml:space="preserve"><value>{0} ääntä → '{1}'</value></data>
+  <data name="ReorderWhileSorted" xml:space="preserve"><value>Poista lajittelu (napsauta sarakeotsikkoa uudelleen), jotta voit järjestää manuaalisesti.</value></data>
+  <data name="UnsavedTitle" xml:space="preserve"><value>Tallentamattomia muutoksia</value></data>
+  <data name="UnsavedText" xml:space="preserve"><value>Äänilistassa on tallentamattomia muutoksia. Hylätäänkö ne?</value></data>
+  <data name="NewListCreated" xml:space="preserve"><value>Uusi äänilista</value></data>
+  <data name="ListLoaded" xml:space="preserve"><value>Ladattiin {0}</value></data>
+  <data name="ListLoadFailed" xml:space="preserve"><value>Äänilistaa ei voitu ladata: {0}</value></data>
+  <data name="ListSaved" xml:space="preserve"><value>Tallennettiin {0}</value></data>
+  <data name="Exported" xml:space="preserve"><value>Vietiin {0} tiedosto(a), {1} epäonnistui → {2}</value></data>
+  <data name="PrefsExported" xml:space="preserve"><value>Asetukset viety kohteeseen {0}</value></data>
+  <data name="PrefsImportedRestart" xml:space="preserve"><value>Asetukset tuotu. Käynnistä VoxPad uudelleen ottaaksesi ne käyttöön.</value></data>
+  <data name="NoSoundAtNumber" xml:space="preserve"><value>Numerolla {0} ei ole ääntä</value></data>
+  <data name="ElevatedWarning" xml:space="preserve"><value>VoxPad on käynnissä järjestelmänvalvojana: vetäminen ja pudottaminen Resurssienhallinnasta ei toimi (Windows estää pudotukset korotettuihin ikkunoihin).</value></data>
+  <data name="UnexpectedError" xml:space="preserve"><value>Tapahtui odottamaton virhe.</value></data>
+  <data name="DumpWritten" xml:space="preserve"><value>Tiedot kirjoitettiin kohteeseen</value></data>
+  <data name="TrayHint" xml:space="preserve"><value>VoxPad jatkaa toimintaansa ilmaisinalueella. Palauta kaksoisnapsauttamalla kuvaketta.</value></data>
+  <data name="Tray_Show" xml:space="preserve"><value>Näytä VoxPad</value></data>
+  <data name="ConfirmQuitPlaying" xml:space="preserve"><value>Ääntä toistetaan. Lopetetaanko silti?</value></data>
+  <data name="SaveBeforeExit" xml:space="preserve"><value>Tallennetaanko äänilistan muutokset ennen lopettamista?</value></data>
+  <data name="MicAccessDenied" xml:space="preserve"><value>Windows estää työpöytäsovellusten mikrofonin käytön, joten VoxPad ei voi lukea mikrofoniasi.
+
+Korjaus: Asetukset &gt; Tietosuoja ja suojaus &gt; Mikrofoni &gt; ota käyttöön "Mikrofonin käyttöoikeus" ja "Salli työpöytäsovellusten käyttää mikrofonia" ja paina sitten Päivitä kohdassa Asetukset &gt; Laitteet.</value></data>
+  <data name="OpenSettingsQuestion" xml:space="preserve"><value>Avataanko tietosuoja-asetukset nyt?</value></data>
+  <data name="AccessDenied" xml:space="preserve"><value>Käyttö estetty</value></data>
+  <data name="RemoveFromHotbar" xml:space="preserve"><value>Poista pikapalkista</value></data>
+  <data name="EmptyTileHint" xml:space="preserve"><value>Vedä ääni tähän</value></data>
+  <data name="PrefsSaved" xml:space="preserve"><value>Asetukset tallennettu</value></data>
+  <data name="LanguageRestart" xml:space="preserve"><value>Kieli vaihtuu, kun VoxPad käynnistetään uudelleen.</value></data>
+
+  <!-- Dialogs -->
+  <data name="OK" xml:space="preserve"><value>OK</value></data>
+  <data name="Cancel" xml:space="preserve"><value>Peruuta</value></data>
+  <data name="Apply" xml:space="preserve"><value>Käytä</value></data>
+  <data name="Close" xml:space="preserve"><value>Sulje</value></data>
+  <data name="Clear" xml:space="preserve"><value>Tyhjennä</value></data>
+  <data name="None" xml:space="preserve"><value>(ei mitään)</value></data>
+  <data name="HotkeyCapturePrompt" xml:space="preserve"><value>Paina näppäintä tai näppäinyhdistelmää nyt. Myös hiiren keskipainike sekä painikkeet 4 ja 5 toimivat (vasen/oikea vaativat muokkausnäppäimen). Enter tallentaa, Delete tai askelpalautin tyhjentää, Esc peruuttaa.</value></data>
+  <data name="HexColor" xml:space="preserve"><value>Heksa:</value></data>
+  <data name="NoColor" xml:space="preserve"><value>Ei väriä</value></data>
+  <data name="Rows" xml:space="preserve"><value>Rivit:</value></data>
+  <data name="Pages" xml:space="preserve"><value>Sivut:</value></data>
+  <data name="HotbarSizeHint" xml:space="preserve"><value>Pikanäppäimet ovat yhteiset kaikille sivuille. Uuden ruudukon ulkopuoliset ruudut poistetaan.</value></data>
+  <data name="Type" xml:space="preserve"><value>Tyyppi</value></data>
+  <data name="Target" xml:space="preserve"><value>Kohde</value></data>
+  <data name="Sound" xml:space="preserve"><value>Ääni</value></data>
+  <data name="CategoryRandom" xml:space="preserve"><value>Toista satunnainen luokasta</value></data>
+  <data name="Special" xml:space="preserve"><value>Erikois</value></data>
+  <data name="Numpad" xml:space="preserve"><value>Numeronäppäimistö</value></data>
+  <data name="NumpadDesc" xml:space="preserve"><value>Toista numerolla nykyisestä luokasta</value></data>
+  <data name="Index" xml:space="preserve"><value>Indeksi</value></data>
+  <data name="IndexDesc" xml:space="preserve"><value>Toista rivi-indeksillä Kaikki äänet -luokasta</value></data>
+  <data name="HotkeyOverviewHint" xml:space="preserve"><value>Pikanäppäimet: {0}; välitys: {1}.</value></data>
+  <data name="Enabled" xml:space="preserve"><value>käytössä</value></data>
+  <data name="Disabled" xml:space="preserve"><value>pois käytöstä</value></data>
+  <data name="On" xml:space="preserve"><value>päällä</value></data>
+  <data name="Off" xml:space="preserve"><value>pois</value></data>
+  <data name="Version" xml:space="preserve"><value>Versio</value></data>
+  <data name="TrialEdition" xml:space="preserve"><value>Kokeiluversio – enintään 10 ääntä, 10 mikrofonitoistoa per käynnistys</value></data>
+  <data name="LicensedTo" xml:space="preserve"><value>Lisensoitu käyttäjälle {0} ({1}-versio)</value></data>
+  <data name="AboutText" xml:space="preserve"><value>Windows-soundboard, joka reitittää äänet mikrofoniisi. Äänimoottori: NAudio, NVorbis, Concentus, TagLib#. Virtuaalinen mikrofoni VB-CABLE / Voicemeeter -ohjelmien kautta.</value></data>
+  <data name="DataFolder" xml:space="preserve"><value>Tiedot</value></data>
+  <data name="LogFolder" xml:space="preserve"><value>Lokit</value></data>
+  <data name="OpenDataFolder" xml:space="preserve"><value>Avaa tietokansio</value></data>
+  <data name="HideLicenseeName" xml:space="preserve"><value>Piilota nimeni (striimaustila)</value></data>
+  <data name="RemoveLicense" xml:space="preserve"><value>Poista lisenssi</value></data>
+  <data name="ConfirmRemoveLicense" xml:space="preserve"><value>Poistetaanko lisenssi tältä tietokoneelta?</value></data>
+  <data name="RegisterPrompt" xml:space="preserve"><value>Syötä nimi ja sarjanumero ostovahvistussähköpostistasi. Sarjanumero tarkistetaan offline-tilassa ja tallennetaan tiedostoon license.dat.</value></data>
+  <data name="Name" xml:space="preserve"><value>Nimi:</value></data>
+  <data name="Serial" xml:space="preserve"><value>Sarjanumero:</value></data>
+  <data name="RegisteredThanks" xml:space="preserve"><value>Kiitos! VoxPad on nyt rekisteröity.</value></data>
+  <data name="SerialInvalid" xml:space="preserve"><value>Sarjanumero ei vastaa nimeä. Tarkista kirjoitusvirheet (I/1 ja O/0 ovat keskenään vaihdettavissa).</value></data>
+  <data name="AllTimePlays" xml:space="preserve"><value>Mikrofonitoistot kaikkiaan</value></data>
+  <data name="ListPlays" xml:space="preserve"><value>Toistot tässä listassa</value></data>
+  <data name="SoundsInList" xml:space="preserve"><value>Ääniä listassa</value></data>
+  <data name="Launches" xml:space="preserve"><value>Käynnistykset</value></data>
+  <data name="Since" xml:space="preserve"><value>Alkaen</value></data>
+  <data name="TopSounds" xml:space="preserve"><value>Eniten toistetut</value></data>
+  <data name="ResetAllTime" xml:space="preserve"><value>Nollaa kokonaismäärä</value></data>
+  <data name="ConfirmResetAllTime" xml:space="preserve"><value>Nollataanko kokonaismäärä?</value></data>
+  <data name="WebImportPrompt" xml:space="preserve"><value>Liitä suora linkki äänitiedostoon (mp3, ogg, wav…). Tiedosto ladataan VoxPad-musiikkikansioosi ja lisätään listaan.</value></data>
+  <data name="FileNameOptional" xml:space="preserve"><value>Tiedostonimi (valinnainen):</value></data>
+  <data name="Import" xml:space="preserve"><value>Tuo</value></data>
+  <data name="Downloading" xml:space="preserve"><value>Ladataan…</value></data>
+  <data name="UnsupportedFormat" xml:space="preserve"><value>Äänimuotoa ei tueta</value></data>
+  <data name="RestorePrompt" xml:space="preserve"><value>Päivittäiset varmuuskopiot kirjoitetaan käynnistyksen yhteydessä. Palautus korvaa nykyisen listan (voit yhä perua lataamalla tallennetun listasi).</value></data>
+  <data name="OpenBackupFolder" xml:space="preserve"><value>Avaa kansio</value></data>
+  <data name="Restore" xml:space="preserve"><value>Palauta</value></data>
+  <data name="ConfirmRestore" xml:space="preserve"><value>Palautetaanko varmuuskopio ajalta {0}?</value></data>
+  <data name="Restored" xml:space="preserve"><value>Varmuuskopio ajalta {0} palautettu</value></data>
+  <data name="Checking" xml:space="preserve"><value>Tarkistetaan…</value></data>
+  <data name="DownloadInstall" xml:space="preserve"><value>Lataa ja asenna</value></data>
+  <data name="PackageVerified" xml:space="preserve"><value>Paketti vahvistettu. Asennusohjelma käynnistyy; VoxPad sulkeutuu nyt.</value></data>
+  <data name="VoiceMeasurement" xml:space="preserve"><value>Äänen mittaus</value></data>
+  <data name="VoiceMeasurePrompt" xml:space="preserve"><value>Puhu normaalisti mikrofoniin noin 8 sekunnin ajan. Mitatusta äänekkyydestä tulee normalisoinnin tavoite, jotta äänet vastaavat ääntäsi (hyvä tulos on yli 74 dB).</value></data>
+  <data name="CurrentTarget" xml:space="preserve"><value>Nykyinen tavoite</value></data>
+  <data name="DefaultNotMeasured" xml:space="preserve"><value>oletus, ei mitattu</value></data>
+  <data name="Start" xml:space="preserve"><value>Aloita</value></data>
+  <data name="UseAsTarget" xml:space="preserve"><value>Käytä tavoitteena</value></data>
+  <data name="Measuring" xml:space="preserve"><value>Mitataan</value></data>
+  <data name="NothingMeasured" xml:space="preserve"><value>Mitään ei mitattu – onko mikrofoni mykistetty tai väärä laite valittuna?</value></data>
+  <data name="Result" xml:space="preserve"><value>Tulos</value></data>
+  <data name="TooQuiet" xml:space="preserve"><value>hyvin hiljainen – nosta mikrofonin tasoa Windowsissa</value></data>
+  <data name="BelowTarget" xml:space="preserve"><value>alle 74 dB; harkitse mikrofonin tason nostamista</value></data>
+  <data name="TargetSet" xml:space="preserve"><value>Normalisoinnin tavoitteeksi asetettu {0:F1} dB</value></data>
+  <data name="Routing" xml:space="preserve"><value>Reititys</value></data>
+  <data name="TroubleChecklist" xml:space="preserve"><value>Tarkistuslista:
+• Asenna VB-CABLE (ilmainen) ja paina Päivitä kohdassa Asetukset &gt; Laitteet.
+• Valitse Discordissa/Teamsissa/pelissä mikrofoniksi 'CABLE Output' ja poista siellä käytöstä kohinanvaimennus / kaiunpoisto.
+• Pidä oikea mikrofonisi valittuna 'Käytä'-sarakkeessa, jotta äänesi miksataan mukaan.
+• Windowsin tietosuoja: salli työpöytäsovellusten käyttää mikrofonia.
+• Eivätkö pikanäppäimet toimi pelissä? Käynnistä VoxPad samalla käyttöoikeustasolla kuin peli.</value></data>
+  <data name="DiagnosticReport" xml:space="preserve"><value>Diagnostiikkaraportti</value></data>
+  <data name="DiagnosticHint" xml:space="preserve"><value>Luo zip-paketin, joka sisältää lokin, laiteluettelon, reitityksen tilan ja asetukset (vain laitetunnukset, ei lisenssitietoja) ja jonka voit liittää vikailmoitukseen.</value></data>
+  <data name="CreateReport" xml:space="preserve"><value>Luo raportti</value></data>
+  <data name="OpenDevices" xml:space="preserve"><value>Laitteet…</value></data>
+  <data name="AutoKeysTroubleHint" xml:space="preserve"><value>Auto Keys painaa push-to-talk-näppäintäsi, kun ääni alkaa mikrofonissa. Viimeisin arviointi näyttää, miksi kukin merkintä laukesi tai ei lauennut. Toista ääni ja avaa sitten tämä ikkuna uudelleen tarkistaaksesi.</value></data>
+  <data name="MicPlayMode" xml:space="preserve"><value>mikrofonitoistotila</value></data>
+  <data name="NotMicPlayMode" xml:space="preserve"><value>EI mikrofonitoistotila – Auto Keys ei laukea koskaan</value></data>
+  <data name="Entries" xml:space="preserve"><value>Merkinnät</value></data>
+  <data name="ForegroundNow" xml:space="preserve"><value>Etualan sovellus nyt</value></data>
+  <data name="NoEvaluationYet" xml:space="preserve"><value>Tässä istunnossa ei ole vielä toistettu ääntä.</value></data>
+  <data name="LastEvaluation" xml:space="preserve"><value>Viimeisin arviointi</value></data>
+  <data name="OpenAutoKeysPrefs" xml:space="preserve"><value>Auto Keys -asetukset…</value></data>
+
+  <!-- TTS / recorder / editor -->
+  <data name="Voice" xml:space="preserve"><value>Ääni:</value></data>
+  <data name="Rate" xml:space="preserve"><value>Nopeus</value></data>
+  <data name="PreviewSpeakers" xml:space="preserve"><value>Esikuuntelu (Enter)</value></data>
+  <data name="SendToMic" xml:space="preserve"><value>Lähetä mikrofoniin (Ctrl+Enter)</value></data>
+  <data name="SaveToList" xml:space="preserve"><value>Tallenna listaan</value></data>
+  <data name="TtsHint" xml:space="preserve"><value>Enter = esikuuntelu kaiuttimista · Ctrl+Enter = toisto mikrofoniin · erikoispikanäppäin 'Toista TTS' puhuu tämän tekstin.</value></data>
+  <data name="Source" xml:space="preserve"><value>Lähde:</value></data>
+  <data name="Source_Speakers" xml:space="preserve"><value>Kaiuttimet (se, mitä kuulet)</value></data>
+  <data name="Source_Mic" xml:space="preserve"><value>Mikrofoni</value></data>
+  <data name="Format" xml:space="preserve"><value>Muoto:</value></data>
+  <data name="Insert" xml:space="preserve"><value>Lisää:</value></data>
+  <data name="InsertEnd" xml:space="preserve"><value>Lisää listan loppuun</value></data>
+  <data name="InsertBeginning" xml:space="preserve"><value>Lisää alkuun</value></data>
+  <data name="AutoNormalize" xml:space="preserve"><value>Normalisoi automaattisesti tasoon</value></data>
+  <data name="DbHint" xml:space="preserve"><value>dB (89 ≈ −23 LUFS; yli 99 säröytyy)</value></data>
+  <data name="TrimSilence" xml:space="preserve"><value>Leikkaa hiljaisuus alusta ja lopusta</value></data>
+  <data name="MaxTime" xml:space="preserve"><value>Enimmäisaika:</value></data>
+  <data name="MaxSecondsHint" xml:space="preserve"><value>sekuntia (0 = rajoittamaton; puskuroidaan pakkaamattomana kansioon %TEMP%)</value></data>
+  <data name="TargetDirectory" xml:space="preserve"><value>Kansio:</value></data>
+  <data name="RecorderHotkeys" xml:space="preserve"><value>Erikoispikanäppäimet: aloitus = {0}, pysäytys = {1}. Ilmoitusääni soitetaan ennen tallennuksen alkua.</value></data>
+  <data name="NotSet" xml:space="preserve"><value>ei asetettu</value></data>
+  <data name="StartRecording" xml:space="preserve"><value>Tallenna</value></data>
+  <data name="StopRecording" xml:space="preserve"><value>Pysäytä</value></data>
+  <data name="PlayLastTake" xml:space="preserve"><value>Toista viimeisin otto</value></data>
+  <data name="LastTake" xml:space="preserve"><value>Viimeisin otto</value></data>
+  <data name="MaxTimeReached" xml:space="preserve"><value>Tallennuksen enimmäisaika saavutettu.</value></data>
+  <data name="RecordingInProgress" xml:space="preserve"><value>Tallennus on käynnissä. Hylätäänkö se?</value></data>
+  <data name="TargetTooLoud" xml:space="preserve"><value>Yli 99 dB:n tavoite säröytyy. Jatketaanko silti?</value></data>
+  <data name="RecordingFrom" xml:space="preserve"><value>Tallennetaan lähteestä '{0}'…</value></data>
+  <data name="RecordingStarted" xml:space="preserve"><value>Tallennus aloitettu</value></data>
+  <data name="NothingRecorded" xml:space="preserve"><value>Mitään ei tallennettu (hiljaisuus).</value></data>
+  <data name="RecordingSaved" xml:space="preserve"><value>Tallenne tallennettu: {0}</value></data>
+  <data name="Editor" xml:space="preserve"><value>Editori</value></data>
+  <data name="PlaySelection" xml:space="preserve"><value>Toista valinta</value></data>
+  <data name="Crop" xml:space="preserve"><value>Rajaa</value></data>
+  <data name="VolumeUp" xml:space="preserve"><value>Voim. +3 dB</value></data>
+  <data name="VolumeDown" xml:space="preserve"><value>Voim. −3 dB</value></data>
+  <data name="VolumeCustom" xml:space="preserve"><value>Äänenvoimakkuus…</value></data>
+  <data name="NormalizeTo" xml:space="preserve"><value>Normalisoi…</value></data>
+  <data name="ZoomFit" xml:space="preserve"><value>Sovita</value></data>
+  <data name="ZoomSelection" xml:space="preserve"><value>Zoomaa valintaan</value></data>
+  <data name="Save" xml:space="preserve"><value>Tallenna</value></data>
+  <data name="EditorHint" xml:space="preserve"><value>Valitse vetämällä · Shift+nuolet / Home / End laajentavat · Ctrl+A kaikki · Ctrl+D poistaa valinnan · Del leikkaa · Esc sulkee</value></data>
+  <data name="Attr_Size" xml:space="preserve"><value>Koko</value></data>
+  <data name="Attr_Format" xml:space="preserve"><value>Muoto</value></data>
+  <data name="Attr_SampleRate" xml:space="preserve"><value>Näytteenottotaajuus</value></data>
+  <data name="Attr_Duration" xml:space="preserve"><value>Kesto</value></data>
+  <data name="Attr_Channels" xml:space="preserve"><value>Kanavat</value></data>
+  <data name="Attr_OriginalVolume" xml:space="preserve"><value>Alkuperäinen voimakkuus</value></data>
+  <data name="LongFileWarning" xml:space="preserve"><value>Tämä tiedosto on yli 10 minuutin pituinen. Muokkaus pitää koko tiedoston muistissa, ja kumoamiskopiot moninkertaistavat sen; odotettavissa on suuri muistinkäyttö.</value></data>
+  <data name="CannotOpenFile" xml:space="preserve"><value>Tiedostoa ei voitu avata: {0}</value></data>
+  <data name="Modified" xml:space="preserve"><value>muokattu</value></data>
+  <data name="Selection" xml:space="preserve"><value>Valinta</value></data>
+  <data name="NoSelection" xml:space="preserve"><value>Ei valintaa (toiminnot koskevat koko tiedostoa)</value></data>
+  <data name="GainPrompt" xml:space="preserve"><value>Vahvistus desibeleinä (negatiivinen = hiljaisempi):</value></data>
+  <data name="NormalizePrompt" xml:space="preserve"><value>Tavoite desibeleinä (89 ≈ −23 LUFS):</value></data>
+  <data name="EditorSaveQuestion" xml:space="preserve"><value>Tallennetaanko muokattu ääni?</value></data>
+  <data name="EditorSaved" xml:space="preserve"><value>Tallennettiin {0}</value></data>
+
+  <!-- Preferences -->
+  <data name="Tab_Devices" xml:space="preserve"><value>Laitteet</value></data>
+  <data name="Tab_Audio" xml:space="preserve"><value>Ääni</value></data>
+  <data name="Tab_Hotkeys" xml:space="preserve"><value>Pikanäppäimet</value></data>
+  <data name="Tab_Recorder" xml:space="preserve"><value>Tallennin</value></data>
+  <data name="Tab_Interface" xml:space="preserve"><value>Käyttöliittymä</value></data>
+  <data name="Tab_Notifications" xml:space="preserve"><value>Ilmoitukset</value></data>
+  <data name="Tab_Updates" xml:space="preserve"><value>Päivitykset</value></data>
+  <data name="SetupMode" xml:space="preserve"><value>Asennustila</value></data>
+  <data name="SetupModeHint" xml:space="preserve"><value>VoxPadilla ei ole omaa ydintason ääniajuria. Se toistaa äänen + puheen virtuaalikaapelin toistolaitteeseen; sovellukset tallentavat sitten kaapelin tallennuslaitteesta (esim. 'CABLE Output'). Automaattivalinta kokeilee järjestyksessä VB-CABLE, VB-CABLE A/B, Voicemeeter, manuaalisesti valittu kaapeli ja Stereo Mix.</value></data>
+  <data name="Refresh" xml:space="preserve"><value>Päivitä</value></data>
+  <data name="Status" xml:space="preserve"><value>Tila: </value></data>
+  <data name="Microphones" xml:space="preserve"><value>Mikrofonit (valitse 'Käytä' niille, jotka miksataan kaapeliin)</value></data>
+  <data name="Use" xml:space="preserve"><value>Käytä</value></data>
+  <data name="DefaultComm" xml:space="preserve"><value> (viestinnän oletus)</value></data>
+  <data name="NoMics" xml:space="preserve"><value>Tallennuslaitteita ei löytynyt.</value></data>
+  <data name="NoMicsTickedHint" xml:space="preserve"><value>Ei valintoja = käytetään viestinnän oletusmikrofonia.</value></data>
+  <data name="VirtualCableEndpoint" xml:space="preserve"><value>Virtuaalikaapelin toistolaite ('Muu virtuaalikaapeli' -tilaa varten)</value></data>
+  <data name="AutoDetect" xml:space="preserve"><value>(tunnista automaattisesti)</value></data>
+  <data name="SpeakerDevice" xml:space="preserve"><value>Kaiuttimet (oma kopiosi äänestä)</value></data>
+  <data name="DefaultDevice" xml:space="preserve"><value>(Windowsin oletus)</value></data>
+  <data name="RecorderMic" xml:space="preserve"><value>Tallentimen mikrofoni</value></data>
+  <data name="MicLatency" xml:space="preserve"><value>Mikrofonin viive (ms):</value></data>
+  <data name="LatencyHint" xml:space="preserve"><value>Pienempi = vähemmän viivettä äänessäsi, suurempi = vähemmän katkoksia hitailla koneilla. 30 ms on hyvä oletus.</value></data>
+  <data name="OpenPrivacySettings" xml:space="preserve"><value>Mikrofonin käyttö on estetty – avaa Windowsin tietosuoja-asetukset</value></data>
+  <data name="Normalization" xml:space="preserve"><value>Äänenvoimakkuuden normalisointi (EBU R128, kanavakohtainen)</value></data>
+  <data name="Norm_Off" xml:space="preserve"><value>Pois</value></data>
+  <data name="Norm_Dynamic" xml:space="preserve"><value>Dynaaminen – analysoi ensimmäiset 6 s, tarkentaa toiston aikana (oletus)</value></data>
+  <data name="Norm_Full" xml:space="preserve"><value>Koko tiedosto – analysoi koko tiedoston ennen toistoa (välimuistiin)</value></data>
+  <data name="MeasureVoice" xml:space="preserve"><value>Mittaa ääni…</value></data>
+  <data name="NormHint" xml:space="preserve"><value>Mikrofoniin toistettavat äänet tuodaan äänesi tasolle (mittaa se; hyvä tulos on yli 74 dB). Kaiutinkopiota ei muuteta – käytä kaiuttimien äänenvoimakkuuden liukusäädintä itseäsi varten.</value></data>
+  <data name="BlockVoice" xml:space="preserve"><value>Estä puhe</value></data>
+  <data name="BlockVoiceCheck" xml:space="preserve"><value>Korvaa puheeni kokonaan äänen toiston ajaksi (miksauksen sijaan)</value></data>
+  <data name="VoiceActivation" xml:space="preserve"><value>Ääniaktivoinnin ääni</value></data>
+  <data name="VoiceActivationCheck" xml:space="preserve"><value>Toista lyhyt, voimakas aloitusääni mikrofoniin, jotta ääniaktivoidut sovellukset avaavat porttinsa</value></data>
+  <data name="CustomFile" xml:space="preserve"><value>Mukautettu tiedosto (tyhjä = 250 ms ääni):</value></data>
+  <data name="Default" xml:space="preserve"><value>Oletus</value></data>
+  <data name="VoiceActivationHeadphones" xml:space="preserve"><value>Toista aloitusääni myös kaiuttimiini/kuulokkeisiini</value></data>
+  <data name="Playback" xml:space="preserve"><value>Toisto</value></data>
+  <data name="AllowResumeOtherMode" xml:space="preserve"><value>Salli jatkaminen toisessa toistotilassa (käynnistää uudelleen taukokohdasta uudella tilalla)</value></data>
+  <data name="General" xml:space="preserve"><value>Yleiset</value></data>
+  <data name="HotkeysEnabledCheck" xml:space="preserve"><value>Pikanäppäimet käytössä</value></data>
+  <data name="PassHotkeysCheck" xml:space="preserve"><value>Välitä pikanäppäimet aktiiviselle sovellukselle (oletus pois: näppäin siepataan)</value></data>
+  <data name="AutoStopCheck" xml:space="preserve"><value>Automaattipysäytys: pikanäppäimellä käynnistetyt äänet ohittavat Toista uudelleen- ja Jatka-asetukset (oletus päällä)</value></data>
+  <data name="HotkeysGeneralHint" xml:space="preserve"><value>Aseta äänen pikanäppäin napsauttamalla sitä hiiren oikealla painikkeella tai kaksoisnapsauttamalla sen Pikanäppäin-solua. Yksittäiset näppäimet, kaikki yhdistelmät Ctrl/Alt/Shift/Win-näppäinten kanssa sekä hiiren painikkeet Keski/4/5 toimivat globaalisti.</value></data>
+  <data name="SpecialHint" xml:space="preserve"><value>Erikoispikanäppäimet on varattu: ääni ei voi käyttää samaa näppäintä.</value></data>
+  <data name="NumpadHotkeys" xml:space="preserve"><value>Numeronäppäimistön pikanäppäimet</value></data>
+  <data name="NumpadEnabledCheck" xml:space="preserve"><value>Käytössä: pidä muokkausnäppäin pohjassa, näppäile äänen numero numeronäppäimistöllä, vapauta</value></data>
+  <data name="Modifier" xml:space="preserve"><value>Muokkausnäppäin:</value></data>
+  <data name="NumpadHint" xml:space="preserve"><value>Numero on nykyisen luokan #-sarake.</value></data>
+  <data name="IndexHotkeys" xml:space="preserve"><value>Indeksipikanäppäimet</value></data>
+  <data name="IndexEnabledCheck" xml:space="preserve"><value>Käytössä: pidä muokkausnäppäin pohjassa, näppäile rivi-indeksi numerorivillä, vapauta</value></data>
+  <data name="IndexHint" xml:space="preserve"><value>Indeksi on rivi piilotetussa 'Kaikki äänet' -luokassa, esim. Alt+1,2,3 toistaa rivin 123.</value></data>
+  <data name="Advanced" xml:space="preserve"><value>Lisäasetukset</value></data>
+  <data name="AllowLeftRight" xml:space="preserve"><value>Salli vasen/oikea muokkausnäppäimet (LCtrl ja RCtrl ovat eri näppäimiä)</value></data>
+  <data name="SameHotkeysAllCategories" xml:space="preserve"><value>Samat pikanäppäimet kaikissa luokissa (rivipohjainen: rivin N pikanäppäin toistaa valitun luokan rivin N)</value></data>
+  <data name="JumpSeconds" xml:space="preserve"><value>Hyppy ±N sekuntia:</value></data>
+  <data name="VolumeStep" xml:space="preserve"><value>Äänenvoimakkuuden askel ylös/alas (%):</value></data>
+  <data name="VolumeSet" xml:space="preserve"><value>'Aseta äänenvoimakkuus' -pikanäppäimen taso (%):</value></data>
+  <data name="AutoKeysEnabledCheck" xml:space="preserve"><value>Auto Keys käytössä</value></data>
+  <data name="AutoKeysHint" xml:space="preserve"><value>Automaattinen push-to-talk: kun ääni alkaa mikrofonissa, näppäintä painetaan (pidetään pohjassa äänen keston ajan tai napautetaan ennen ja jälkeen). Laukeaa vain mikrofonitoistotiloissa.</value></data>
+  <data name="NoKey" xml:space="preserve"><value>(ei näppäintä)</value></data>
+  <data name="AutoKey" xml:space="preserve"><value>Auto Key</value></data>
+  <data name="OnlyIfHotkey" xml:space="preserve"><value>Vain jos toistettu pikanäppäimellä</value></data>
+  <data name="PressHold" xml:space="preserve"><value>Pidä pohjassa äänen keston ajan</value></data>
+  <data name="PressBeforeAfter" xml:space="preserve"><value>Paina ennen ja jälkeen</value></data>
+  <data name="PressMode" xml:space="preserve"><value>Painallustapa:</value></data>
+  <data name="Cond_Always" xml:space="preserve"><value>Aina</value></data>
+  <data name="Cond_Fullscreen" xml:space="preserve"><value>Etualan sovellus on koko näytön tilassa (myös reunaton)</value></data>
+  <data name="Cond_Running" xml:space="preserve"><value>Listattu sovellus on käynnissä</value></data>
+  <data name="Cond_Foreground" xml:space="preserve"><value>Listattu sovellus on etualalla</value></data>
+  <data name="Condition" xml:space="preserve"><value>Ehto:</value></data>
+  <data name="AppsTip" xml:space="preserve"><value>Prosessien nimet, yksi per rivi, esim. discord.exe</value></data>
+  <data name="Apps" xml:space="preserve"><value>Sovellusluettelo:</value></data>
+  <data name="AddAutoKey" xml:space="preserve"><value>Lisää Auto Key</value></data>
+  <data name="RecorderFormatHint" xml:space="preserve"><value>Kaikki muunnetaan stereoksi 48 kHz. Myös editori tallentaa tässä muodossa.</value></data>
+  <data name="TargetDb" xml:space="preserve"><value>Tavoite (dB, oletus 89 ≈ −23 LU; &gt;99 säröytyy):</value></data>
+  <data name="NotificationSound" xml:space="preserve"><value>Toista ilmoitusääni ennen tallennuksen alkua</value></data>
+  <data name="RecorderHotkeyHint" xml:space="preserve"><value>Tallennuksen aloitus-/pysäytyspikanäppäimet ovat välilehdellä Pikanäppäimet &gt; Erikois.</value></data>
+  <data name="Language" xml:space="preserve"><value>Kieli:</value></data>
+  <data name="Style" xml:space="preserve"><value>Tyyli:</value></data>
+  <data name="Theme_Light" xml:space="preserve"><value>Vaalea</value></data>
+  <data name="Theme_Dark" xml:space="preserve"><value>Tumma</value></data>
+  <data name="Theme_Native" xml:space="preserve"><value>Natiivi (Windows)</value></data>
+  <data name="NativeForced" xml:space="preserve"><value>Suuri kontrasti tai näytönlukija on käytössä: käytetään natiivia tyyliä.</value></data>
+  <data name="ToolbarItems" xml:space="preserve"><value>Työkalupalkin kohteet</value></data>
+  <data name="Timer" xml:space="preserve"><value>Kappaleen ajastin</value></data>
+  <data name="SeekSlider" xml:space="preserve"><value>Hakuliukusäädin</value></data>
+  <data name="SpeakerVolume" xml:space="preserve"><value>Kaiuttimien äänenvoimakkuus</value></data>
+  <data name="MicLevelMeter" xml:space="preserve"><value>Mikrofonin tasomittari</value></data>
+  <data name="Behaviour" xml:space="preserve"><value>Toiminta</value></data>
+  <data name="StartMinimized" xml:space="preserve"><value>Käynnistä pienennettynä</value></data>
+  <data name="MinimizeToTrayCheck" xml:space="preserve"><value>Pienennä ilmaisinalueelle</value></data>
+  <data name="CloseToTray" xml:space="preserve"><value>Ikkunan sulkeminen pienentää ilmaisinalueelle lopettamisen sijaan</value></data>
+  <data name="DisableSorting" xml:space="preserve"><value>Poista lajittelu käytöstä (sarakeotsikot eivät koskaan lajittele; vain manuaalinen järjestys)</value></data>
+  <data name="Confirmations" xml:space="preserve"><value>Vahvistukset</value></data>
+  <data name="ConfirmRemoveCheck" xml:space="preserve"><value>Vahvista ennen äänten poistamista</value></data>
+  <data name="ConfirmResetCheck" xml:space="preserve"><value>Vahvista ennen toistolaskurien nollaamista</value></data>
+  <data name="ConfirmQuitCheck" xml:space="preserve"><value>Vahvista lopettaminen äänen toiston aikana</value></data>
+  <data name="NotifyMissing" xml:space="preserve"><value>Varoita puuttuvista tiedostoista, kun lista ladataan</value></data>
+  <data name="NotifyDevices" xml:space="preserve"><value>Ilmoita äänilaitteiden muutoksista tilarivillä</value></data>
+  <data name="NotifyTray" xml:space="preserve"><value>Näytä ilmoituskupla, kun pienennetään ilmaisinalueelle</value></data>
+  <data name="NotifyRecording" xml:space="preserve"><value>Tilaviesti, kun tallennus alkaa</value></data>
+  <data name="NotifyTrial" xml:space="preserve"><value>Näytä ikkuna, kun kokeiluversion raja tulee vastaan</value></data>
+  <data name="NotifyUpdates" xml:space="preserve"><value>Näytä saatavilla olevat päivitykset</value></data>
+  <data name="CheckInterval" xml:space="preserve"><value>Tarkista päivitykset:</value></data>
+  <data name="Never" xml:space="preserve"><value>Ei koskaan (oletus)</value></data>
+  <data name="Daily" xml:space="preserve"><value>Päivittäin</value></data>
+  <data name="Weekly" xml:space="preserve"><value>Viikoittain</value></data>
+  <data name="ManifestUrl" xml:space="preserve"><value>Manifestin URL:</value></data>
+  <data name="UpdateHint" xml:space="preserve"><value>Päivityspaketit asennetaan vain, kun manifestin allekirjoitus ja paketin tiiviste vahvistuvat VoxPadiin sisäänrakennetulla avaimella.</value></data>
+  <data name="LastCheck" xml:space="preserve"><value>Viimeisin tarkistus</value></data>
+  <data name="CheckNow" xml:space="preserve"><value>Tarkista nyt</value></data>
+
+  <!-- Special hotkey names -->
+  <data name="Special_Stop" xml:space="preserve"><value>Pysäytä</value></data>
+  <data name="Special_Start" xml:space="preserve"><value>Aloita (toista valittu / jatka)</value></data>
+  <data name="Special_Pause" xml:space="preserve"><value>Tauko / jatka</value></data>
+  <data name="Special_PlayPrevious" xml:space="preserve"><value>Toista edellinen tiedosto</value></data>
+  <data name="Special_PlayNext" xml:space="preserve"><value>Toista seuraava tiedosto</value></data>
+  <data name="Special_PlaySelected" xml:space="preserve"><value>Toista valittu tiedosto</value></data>
+  <data name="Special_PlayRandomInCategory" xml:space="preserve"><value>Toista satunnainen tiedosto (nykyinen luokka)</value></data>
+  <data name="Special_PlayRandomFromAll" xml:space="preserve"><value>Toista satunnainen tiedosto (kaikki äänet)</value></data>
+  <data name="Special_SelectPreviousFile" xml:space="preserve"><value>Valitse edellinen tiedosto</value></data>
+  <data name="Special_SelectNextFile" xml:space="preserve"><value>Valitse seuraava tiedosto</value></data>
+  <data name="Special_SelectPreviousCategory" xml:space="preserve"><value>Valitse edellinen luokka</value></data>
+  <data name="Special_SelectNextCategory" xml:space="preserve"><value>Valitse seuraava luokka</value></data>
+  <data name="Special_StartRecording" xml:space="preserve"><value>Aloita tallennus</value></data>
+  <data name="Special_StopRecording" xml:space="preserve"><value>Pysäytä tallennus</value></data>
+  <data name="Special_JumpBackward" xml:space="preserve"><value>Hyppää N sekuntia taaksepäin</value></data>
+  <data name="Special_JumpForward" xml:space="preserve"><value>Hyppää N sekuntia eteenpäin</value></data>
+  <data name="Special_SpeakerVolumeUp" xml:space="preserve"><value>Kaiuttimien äänenvoimakkuus ylös</value></data>
+  <data name="Special_SpeakerVolumeDown" xml:space="preserve"><value>Kaiuttimien äänenvoimakkuus alas</value></data>
+  <data name="Special_SpeakerVolumeSet" xml:space="preserve"><value>Aseta kaiuttimien äänenvoimakkuus</value></data>
+  <data name="Special_SpeakerVolumeMute" xml:space="preserve"><value>Mykistä / poista kaiuttimien mykistys</value></data>
+  <data name="Special_SetPlayModeBoth" xml:space="preserve"><value>Toistotila: kaiuttimet + mikrofoni</value></data>
+  <data name="Special_SetPlayModeMic" xml:space="preserve"><value>Toistotila: vain mikrofoni</value></data>
+  <data name="Special_SetPlayModeSpeakers" xml:space="preserve"><value>Toistotila: vain kaiuttimet</value></data>
+  <data name="Special_CyclePlayMode" xml:space="preserve"><value>Vaihda toistotilaa</value></data>
+  <data name="Special_EnableHotkeys" xml:space="preserve"><value>Ota pikanäppäimet käyttöön</value></data>
+  <data name="Special_DisableHotkeys" xml:space="preserve"><value>Poista pikanäppäimet käytöstä</value></data>
+  <data name="Special_ToggleHotkeys" xml:space="preserve"><value>Vaihda pikanäppäinten tilaa</value></data>
+  <data name="Special_EnableAutoKeys" xml:space="preserve"><value>Ota Auto Keys käyttöön</value></data>
+  <data name="Special_DisableAutoKeys" xml:space="preserve"><value>Poista Auto Keys käytöstä</value></data>
+  <data name="Special_ToggleAutoKeys" xml:space="preserve"><value>Vaihda Auto Keys -tilaa</value></data>
+  <data name="Special_PlayTts" xml:space="preserve"><value>Toista tekstistä puheeksi -teksti</value></data>
+</root>

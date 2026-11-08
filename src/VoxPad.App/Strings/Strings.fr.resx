@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+  <!-- Menus -->
+  <data name="File" xml:space="preserve"><value>_Fichier</value></data>
+  <data name="NewList" xml:space="preserve"><value>_Nouvelle liste de sons</value></data>
+  <data name="LoadList" xml:space="preserve"><value>_Charger une liste de sons…</value></data>
+  <data name="SaveList" xml:space="preserve"><value>_Enregistrer la liste de sons</value></data>
+  <data name="SaveListAs" xml:space="preserve"><value>Enregistrer la liste de sons _sous…</value></data>
+  <data name="RecentLists" xml:space="preserve"><value>Listes de sons _récentes</value></data>
+  <data name="RestoreList" xml:space="preserve"><value>Restaurer une liste de sons…</value></data>
+  <data name="AddFiles" xml:space="preserve"><value>Ajouter des fichiers audio…</value></data>
+  <data name="AddFolder" xml:space="preserve"><value>Ajouter un dossier…</value></data>
+  <data name="WebImport" xml:space="preserve"><value>Importer depuis le web…</value></data>
+  <data name="Export" xml:space="preserve"><value>E_xporter</value></data>
+  <data name="ExportSoundFiles" xml:space="preserve"><value>Fichiers audio…</value></data>
+  <data name="ExportPreferences" xml:space="preserve"><value>Préférences…</value></data>
+  <data name="ImportPreferences" xml:space="preserve"><value>Importer les préférences…</value></data>
+  <data name="Statistics" xml:space="preserve"><value>Statistiques…</value></data>
+  <data name="Preferences" xml:space="preserve"><value>_Préférences…</value></data>
+  <data name="Exit" xml:space="preserve"><value>_Quitter</value></data>
+  <data name="Edit" xml:space="preserve"><value>É_dition</value></data>
+  <data name="SelectAll" xml:space="preserve"><value>Tout sélectionner</value></data>
+  <data name="Remove" xml:space="preserve"><value>Supprimer</value></data>
+  <data name="Copy" xml:space="preserve"><value>Copier</value></data>
+  <data name="Cut" xml:space="preserve"><value>Couper</value></data>
+  <data name="Paste" xml:space="preserve"><value>Coller</value></data>
+  <data name="MoveUp" xml:space="preserve"><value>Monter</value></data>
+  <data name="MoveDown" xml:space="preserve"><value>Descendre</value></data>
+  <data name="Undo" xml:space="preserve"><value>Annuler</value></data>
+  <data name="Redo" xml:space="preserve"><value>Rétablir</value></data>
+  <data name="EditFile" xml:space="preserve"><value>Modifier le fichier…</value></data>
+  <data name="SetHotkey" xml:space="preserve"><value>Définir un raccourci…</value></data>
+  <data name="RemoveHotkey" xml:space="preserve"><value>Supprimer le raccourci</value></data>
+  <data name="SetColor" xml:space="preserve"><value>Couleur…</value></data>
+  <data name="PlayRandom" xml:space="preserve"><value>Lecture aléatoire</value></data>
+  <data name="ResetPlayCount" xml:space="preserve"><value>Réinitialiser le compteur de lectures</value></data>
+  <data name="ResetAllPlayCounts" xml:space="preserve"><value>Réinitialiser tous les compteurs de lectures</value></data>
+  <data name="SelectInExplorer" xml:space="preserve"><value>Afficher dans l'Explorateur</value></data>
+  <data name="PlayMenu" xml:space="preserve"><value>_Lecture</value></data>
+  <data name="Play" xml:space="preserve"><value>Lire</value></data>
+  <data name="PlayOnSpeakers" xml:space="preserve"><value>Lire sur les haut-parleurs</value></data>
+  <data name="PlayOnMic" xml:space="preserve"><value>Lire sur le microphone</value></data>
+  <data name="PauseResume" xml:space="preserve"><value>Pause / reprendre</value></data>
+  <data name="Stop" xml:space="preserve"><value>Arrêter</value></data>
+  <data name="Previous" xml:space="preserve"><value>Précédent</value></data>
+  <data name="Next" xml:space="preserve"><value>Suivant</value></data>
+  <data name="Repeat" xml:space="preserve"><value>Répéter</value></data>
+  <data name="Continue" xml:space="preserve"><value>Enchaîner</value></data>
+  <data name="AutoStop" xml:space="preserve"><value>Arrêt auto (les sons par raccourci ignorent Répéter/Enchaîner)</value></data>
+  <data name="PlayModeMenu" xml:space="preserve"><value>Mode de lecture</value></data>
+  <data name="PlayMode_Both" xml:space="preserve"><value>Haut-parleurs + microphone</value></data>
+  <data name="PlayMode_Mic" xml:space="preserve"><value>Microphone uniquement</value></data>
+  <data name="PlayMode_Speakers" xml:space="preserve"><value>Haut-parleurs uniquement</value></data>
+  <data name="Recorder" xml:space="preserve"><value>Enregistreur…</value></data>
+  <data name="TextToSpeech" xml:space="preserve"><value>Synthèse vocale…</value></data>
+  <data name="Window" xml:space="preserve"><value>Fe_nêtre</value></data>
+  <data name="Categories" xml:space="preserve"><value>Panneau des catégories</value></data>
+  <data name="Hotbar" xml:space="preserve"><value>Barre rapide</value></data>
+  <data name="Toolbar" xml:space="preserve"><value>Barre de lecture</value></data>
+  <data name="StatusBar" xml:space="preserve"><value>Barre d'état</value></data>
+  <data name="ShowHiddenCategories" xml:space="preserve"><value>Afficher les catégories masquées</value></data>
+  <data name="CategoryIconSize" xml:space="preserve"><value>Taille des icônes de catégorie</value></data>
+  <data name="Small" xml:space="preserve"><value>Petite</value></data>
+  <data name="Medium" xml:space="preserve"><value>Moyenne</value></data>
+  <data name="Large" xml:space="preserve"><value>Grande</value></data>
+  <data name="ExtraLarge" xml:space="preserve"><value>Très grande</value></data>
+  <data name="Columns" xml:space="preserve"><value>Colonnes</value></data>
+  <data name="HotbarSize" xml:space="preserve"><value>Taille de la barre rapide…</value></data>
+  <data name="HotkeyOverview" xml:space="preserve"><value>Aperçu des raccourcis…</value></data>
+  <data name="MinimizeToTray" xml:space="preserve"><value>Réduire dans la zone de notification</value></data>
+  <data name="Help" xml:space="preserve"><value>_Aide</value></data>
+  <data name="Manual" xml:space="preserve"><value>Manuel</value></data>
+  <data name="Troubleshooting" xml:space="preserve"><value>Dépannage…</value></data>
+  <data name="AutoKeysTroubleshooting" xml:space="preserve"><value>Dépannage des Auto Keys…</value></data>
+  <data name="CheckForUpdates" xml:space="preserve"><value>Rechercher des mises à jour…</value></data>
+  <data name="Register" xml:space="preserve"><value>Enregistrer la licence…</value></data>
+  <data name="About" xml:space="preserve"><value>À propos de VoxPad</value></data>
+
+  <!-- Toolbar / status bar -->
+  <data name="TimerTip" xml:space="preserve"><value>Écoulé / total. Double-cliquez pour aller au son en cours.</value></data>
+  <data name="SpeakerVolumeTip" xml:space="preserve"><value>Volume des haut-parleurs (votre copie seulement ; lié au mélangeur de volume Windows)</value></data>
+  <data name="MicMeterTip" xml:space="preserve"><value>Niveau du microphone. Cliquez sur l'icône pour mesurer le niveau de votre voix.</value></data>
+  <data name="SeekTip" xml:space="preserve"><value>Rouge = les autres l'entendent (microphone), bleu = haut-parleurs seulement</value></data>
+  <data name="PlayModeTip" xml:space="preserve"><value>Mode de lecture – cliquez pour changer</value></data>
+  <data name="HotkeysTip" xml:space="preserve"><value>Raccourcis – double-clic pour activer/désactiver, clic droit pour les options</value></data>
+  <data name="PassHotkeys" xml:space="preserve"><value>Transmettre les raccourcis à l'application active</value></data>
+  <data name="Hotkeys" xml:space="preserve"><value>Raccourcis</value></data>
+  <data name="AutoKeysTip" xml:space="preserve"><value>Auto Keys – double-clic pour activer/désactiver, clic droit pour le dépannage</value></data>
+  <data name="AutoKeys" xml:space="preserve"><value>Auto Keys</value></data>
+  <data name="RepeatTip" xml:space="preserve"><value>Répéter le son en cours – cliquez pour activer/désactiver</value></data>
+  <data name="ContinueTip" xml:space="preserve"><value>Enchaîner avec le son suivant – cliquez pour activer/désactiver</value></data>
+  <data name="PreviousPage" xml:space="preserve"><value>Page précédente (Ctrl+PgUp)</value></data>
+  <data name="NextPage" xml:space="preserve"><value>Page suivante (Ctrl+PgDn)</value></data>
+  <data name="HideCategory" xml:space="preserve"><value>Masquer la catégorie</value></data>
+  <data name="SearchTip" xml:space="preserve"><value>Tapez pour filtrer · Enter parcourt les résultats · Ctrl+Enter lit · Esc efface</value></data>
+  <data name="ColTag" xml:space="preserve"><value>Étiquette</value></data>
+  <data name="ColDuration" xml:space="preserve"><value>Durée</value></data>
+  <data name="ColHotkey" xml:space="preserve"><value>Raccourci</value></data>
+  <data name="ColPlayCount" xml:space="preserve"><value>Lectures</value></data>
+  <data name="ColLastPlayed" xml:space="preserve"><value>Dernière lecture le</value></data>
+  <data name="ColIndex" xml:space="preserve"><value>#</value></data>
+  <data name="MoveToCategory" xml:space="preserve"><value>Déplacer vers la catégorie</value></data>
+  <data name="RemoveFromCategory" xml:space="preserve"><value>Retirer de cette catégorie</value></data>
+  <data name="AddCategory" xml:space="preserve"><value>Ajouter une catégorie…</value></data>
+  <data name="AddSubcategory" xml:space="preserve"><value>Ajouter une sous-catégorie…</value></data>
+  <data name="RenameCategory" xml:space="preserve"><value>Renommer…</value></data>
+  <data name="RemoveCategory" xml:space="preserve"><value>Supprimer la catégorie</value></data>
+  <data name="SetRandomHotkey" xml:space="preserve"><value>Définir le raccourci « lecture aléatoire »…</value></data>
+  <data name="AllSounds" xml:space="preserve"><value>Tous les sons</value></data>
+  <data name="UntitledList" xml:space="preserve"><value>Sans titre</value></data>
+  <data name="Trial" xml:space="preserve"><value>Essai</value></data>
+  <data name="TrialStatus" xml:space="preserve"><value>Essai : max. {0} sons, {1} lectures micro restantes pour cette session</value></data>
+
+  <!-- Status messages -->
+  <data name="PlayModeSet" xml:space="preserve"><value>Mode de lecture : {0}</value></data>
+  <data name="HotkeysOn" xml:space="preserve"><value>Raccourcis activés</value></data>
+  <data name="HotkeysOff" xml:space="preserve"><value>Raccourcis désactivés</value></data>
+  <data name="AutoKeysOn" xml:space="preserve"><value>Auto Keys activées</value></data>
+  <data name="AutoKeysOff" xml:space="preserve"><value>Auto Keys désactivées</value></data>
+  <data name="Playing" xml:space="preserve"><value>Lecture de '{0}' → {1}</value></data>
+  <data name="TrialPlayLimit" xml:space="preserve"><value>Essai : limite de 10 lectures micro par session atteinte. Enregistrez une licence pour la supprimer.</value></data>
+  <data name="TrialSoundLimit" xml:space="preserve"><value>Essai : la liste ne peut contenir que {0} sons. Enregistrez une licence pour supprimer la limite.</value></data>
+  <data name="NothingToPlay" xml:space="preserve"><value>Rien à lire</value></data>
+  <data name="DevicesChanged" xml:space="preserve"><value>Périphériques audio modifiés ; routage réappliqué.</value></data>
+  <data name="MissingFiles" xml:space="preserve"><value>{0} fichier(s) de la liste sont introuvables (grisés).</value></data>
+  <data name="CategoryInfo" xml:space="preserve"><value>{0} : {1} sons, {2} au total</value></data>
+  <data name="Copied" xml:space="preserve"><value>{0} son(s) copié(s)</value></data>
+  <data name="CutStatus" xml:space="preserve"><value>{0} son(s) coupé(s)</value></data>
+  <data name="Importing" xml:space="preserve"><value>Lecture de {0} fichier(s)…</value></data>
+  <data name="Imported" xml:space="preserve"><value>{0} son(s) ajouté(s)</value></data>
+  <data name="NoAudioFiles" xml:space="preserve"><value>Aucun fichier audio pris en charge trouvé</value></data>
+  <data name="ConfirmRemove" xml:space="preserve"><value>Supprimer {0} son(s) de la liste ? Les fichiers audio ne sont pas supprimés.</value></data>
+  <data name="Removed" xml:space="preserve"><value>{0} son(s) supprimé(s)</value></data>
+  <data name="HotkeyFor" xml:space="preserve"><value>Raccourci pour '{0}'</value></data>
+  <data name="RandomHotkeyFor" xml:space="preserve"><value>Raccourci « lecture aléatoire » pour '{0}'</value></data>
+  <data name="BareMouseNotAllowed" xml:space="preserve"><value>Les boutons gauche et droit de la souris nécessitent une touche de modification (ex. Ctrl+clic).</value></data>
+  <data name="ReservedHotkey" xml:space="preserve"><value>{0} est réservé au raccourci spécial '{1}'.</value></data>
+  <data name="HotkeyRemoved" xml:space="preserve"><value>Raccourci supprimé de '{0}'</value></data>
+  <data name="HotkeySet" xml:space="preserve"><value>{0} → '{1}'</value></data>
+  <data name="ConfirmResetPlayCount" xml:space="preserve"><value>Réinitialiser le compteur de lectures de {0} son(s) ?</value></data>
+  <data name="ConfirmResetAll" xml:space="preserve"><value>Réinitialiser le compteur de lectures de tous les sons et le total de la liste ?</value></data>
+  <data name="FileMissing" xml:space="preserve"><value>Fichier introuvable : {0}</value></data>
+  <data name="ConfirmRemoveCategory" xml:space="preserve"><value>Supprimer la catégorie '{0}' (et ses sous-catégories) ? Les sons restent dans la liste.</value></data>
+  <data name="CategoryName" xml:space="preserve"><value>Nom :</value></data>
+  <data name="NewCategory" xml:space="preserve"><value>Nouvelle catégorie</value></data>
+  <data name="AddedToCategory" xml:space="preserve"><value>{0} son(s) → '{1}'</value></data>
+  <data name="ReorderWhileSorted" xml:space="preserve"><value>Annulez le tri (cliquez de nouveau sur l'en-tête de colonne) pour réordonner manuellement.</value></data>
+  <data name="UnsavedTitle" xml:space="preserve"><value>Modifications non enregistrées</value></data>
+  <data name="UnsavedText" xml:space="preserve"><value>La liste de sons contient des modifications non enregistrées. Les abandonner ?</value></data>
+  <data name="NewListCreated" xml:space="preserve"><value>Nouvelle liste de sons</value></data>
+  <data name="ListLoaded" xml:space="preserve"><value>{0} chargé</value></data>
+  <data name="ListLoadFailed" xml:space="preserve"><value>Impossible de charger la liste de sons : {0}</value></data>
+  <data name="ListSaved" xml:space="preserve"><value>{0} enregistré</value></data>
+  <data name="Exported" xml:space="preserve"><value>{0} fichier(s) exporté(s), {1} échec(s) → {2}</value></data>
+  <data name="PrefsExported" xml:space="preserve"><value>Préférences exportées vers {0}</value></data>
+  <data name="PrefsImportedRestart" xml:space="preserve"><value>Préférences importées. Redémarrez VoxPad pour les appliquer.</value></data>
+  <data name="NoSoundAtNumber" xml:space="preserve"><value>Aucun son au numéro {0}</value></data>
+  <data name="ElevatedWarning" xml:space="preserve"><value>VoxPad s'exécute en tant qu'administrateur : le glisser-déposer depuis l'Explorateur ne fonctionnera pas (Windows bloque les dépôts vers les fenêtres élevées).</value></data>
+  <data name="UnexpectedError" xml:space="preserve"><value>Une erreur inattendue s'est produite.</value></data>
+  <data name="DumpWritten" xml:space="preserve"><value>Les détails ont été écrits dans</value></data>
+  <data name="TrayHint" xml:space="preserve"><value>VoxPad continue de s'exécuter dans la zone de notification. Double-cliquez sur l'icône pour le restaurer.</value></data>
+  <data name="Tray_Show" xml:space="preserve"><value>Afficher VoxPad</value></data>
+  <data name="ConfirmQuitPlaying" xml:space="preserve"><value>Un son est en cours de lecture. Quitter quand même ?</value></data>
+  <data name="SaveBeforeExit" xml:space="preserve"><value>Enregistrer les modifications de la liste de sons avant de quitter ?</value></data>
+  <data name="MicAccessDenied" xml:space="preserve"><value>Windows bloque l'accès au microphone pour les applications de bureau ; VoxPad ne peut donc pas lire votre microphone.
+
+Solution : Paramètres &gt; Confidentialité et sécurité &gt; Microphone &gt; activez « Accès au microphone » et « Autoriser les applications de bureau à accéder à votre microphone », puis cliquez sur Actualiser dans Préférences &gt; Périphériques.</value></data>
+  <data name="OpenSettingsQuestion" xml:space="preserve"><value>Ouvrir les paramètres de confidentialité maintenant ?</value></data>
+  <data name="AccessDenied" xml:space="preserve"><value>Accès refusé</value></data>
+  <data name="RemoveFromHotbar" xml:space="preserve"><value>Retirer de la barre rapide</value></data>
+  <data name="EmptyTileHint" xml:space="preserve"><value>Glissez un son ici</value></data>
+  <data name="PrefsSaved" xml:space="preserve"><value>Préférences enregistrées</value></data>
+  <data name="LanguageRestart" xml:space="preserve"><value>La langue changera après le redémarrage de VoxPad.</value></data>
+
+  <!-- Dialogs -->
+  <data name="OK" xml:space="preserve"><value>OK</value></data>
+  <data name="Cancel" xml:space="preserve"><value>Annuler</value></data>
+  <data name="Apply" xml:space="preserve"><value>Appliquer</value></data>
+  <data name="Close" xml:space="preserve"><value>Fermer</value></data>
+  <data name="Clear" xml:space="preserve"><value>Effacer</value></data>
+  <data name="None" xml:space="preserve"><value>(aucun)</value></data>
+  <data name="HotkeyCapturePrompt" xml:space="preserve"><value>Appuyez maintenant sur la touche ou la combinaison. Les boutons de souris Milieu, 4 et 5 fonctionnent aussi (gauche/droit nécessitent un modificateur). Enter enregistre, Delete ou Backspace efface, Esc annule.</value></data>
+  <data name="HexColor" xml:space="preserve"><value>Hex :</value></data>
+  <data name="NoColor" xml:space="preserve"><value>Aucune couleur</value></data>
+  <data name="Rows" xml:space="preserve"><value>Lignes :</value></data>
+  <data name="Pages" xml:space="preserve"><value>Pages :</value></data>
+  <data name="HotbarSizeHint" xml:space="preserve"><value>Les raccourcis sont partagés entre les pages. Les tuiles hors de la nouvelle grille sont supprimées.</value></data>
+  <data name="Type" xml:space="preserve"><value>Type</value></data>
+  <data name="Target" xml:space="preserve"><value>Cible</value></data>
+  <data name="Sound" xml:space="preserve"><value>Son</value></data>
+  <data name="CategoryRandom" xml:space="preserve"><value>Lecture aléatoire dans la catégorie</value></data>
+  <data name="Special" xml:space="preserve"><value>Spécial</value></data>
+  <data name="Numpad" xml:space="preserve"><value>Pavé numérique</value></data>
+  <data name="NumpadDesc" xml:space="preserve"><value>Lire par numéro dans la catégorie actuelle</value></data>
+  <data name="Index" xml:space="preserve"><value>Index</value></data>
+  <data name="IndexDesc" xml:space="preserve"><value>Lire par index de ligne dans Tous les sons</value></data>
+  <data name="HotkeyOverviewHint" xml:space="preserve"><value>Les raccourcis sont {0} ; la transmission est {1}.</value></data>
+  <data name="Enabled" xml:space="preserve"><value>activés</value></data>
+  <data name="Disabled" xml:space="preserve"><value>désactivés</value></data>
+  <data name="On" xml:space="preserve"><value>activée</value></data>
+  <data name="Off" xml:space="preserve"><value>désactivée</value></data>
+  <data name="Version" xml:space="preserve"><value>Version</value></data>
+  <data name="TrialEdition" xml:space="preserve"><value>Essai – max. 10 sons, 10 lectures micro par session</value></data>
+  <data name="LicensedTo" xml:space="preserve"><value>Licence accordée à {0} (édition {1})</value></data>
+  <data name="AboutText" xml:space="preserve"><value>Un soundboard Windows qui envoie les sons dans votre microphone. Moteur audio : NAudio, NVorbis, Concentus, TagLib#. Microphone virtuel via VB-CABLE / Voicemeeter.</value></data>
+  <data name="DataFolder" xml:space="preserve"><value>Données</value></data>
+  <data name="LogFolder" xml:space="preserve"><value>Journaux</value></data>
+  <data name="OpenDataFolder" xml:space="preserve"><value>Ouvrir le dossier de données</value></data>
+  <data name="HideLicenseeName" xml:space="preserve"><value>Masquer mon nom (mode streamer)</value></data>
+  <data name="RemoveLicense" xml:space="preserve"><value>Supprimer la licence</value></data>
+  <data name="ConfirmRemoveLicense" xml:space="preserve"><value>Supprimer la licence de ce PC ?</value></data>
+  <data name="RegisterPrompt" xml:space="preserve"><value>Saisissez le nom et le numéro de série de votre e-mail d'achat. Le numéro de série est vérifié hors ligne et stocké dans license.dat.</value></data>
+  <data name="Name" xml:space="preserve"><value>Nom :</value></data>
+  <data name="Serial" xml:space="preserve"><value>Numéro de série :</value></data>
+  <data name="RegisteredThanks" xml:space="preserve"><value>Merci ! VoxPad est maintenant enregistré.</value></data>
+  <data name="SerialInvalid" xml:space="preserve"><value>Le numéro de série ne correspond pas au nom. Vérifiez les fautes de frappe (I/1 et O/0 sont interchangeables).</value></data>
+  <data name="AllTimePlays" xml:space="preserve"><value>Lectures micro depuis le début</value></data>
+  <data name="ListPlays" xml:space="preserve"><value>Lectures dans cette liste</value></data>
+  <data name="SoundsInList" xml:space="preserve"><value>Sons dans la liste</value></data>
+  <data name="Launches" xml:space="preserve"><value>Lancements</value></data>
+  <data name="Since" xml:space="preserve"><value>Depuis</value></data>
+  <data name="TopSounds" xml:space="preserve"><value>Les plus lus</value></data>
+  <data name="ResetAllTime" xml:space="preserve"><value>Réinitialiser le total général</value></data>
+  <data name="ConfirmResetAllTime" xml:space="preserve"><value>Réinitialiser le total général ?</value></data>
+  <data name="WebImportPrompt" xml:space="preserve"><value>Collez un lien direct vers un fichier audio (mp3, ogg, wav…). Le fichier est téléchargé dans votre dossier de musique VoxPad et ajouté à la liste.</value></data>
+  <data name="FileNameOptional" xml:space="preserve"><value>Nom du fichier (facultatif) :</value></data>
+  <data name="Import" xml:space="preserve"><value>Importer</value></data>
+  <data name="Downloading" xml:space="preserve"><value>Téléchargement…</value></data>
+  <data name="UnsupportedFormat" xml:space="preserve"><value>Format audio non pris en charge</value></data>
+  <data name="RestorePrompt" xml:space="preserve"><value>Des sauvegardes quotidiennes sont créées au démarrage. La restauration remplace la liste actuelle (vous pouvez revenir en arrière en chargeant votre liste enregistrée).</value></data>
+  <data name="OpenBackupFolder" xml:space="preserve"><value>Ouvrir le dossier</value></data>
+  <data name="Restore" xml:space="preserve"><value>Restaurer</value></data>
+  <data name="ConfirmRestore" xml:space="preserve"><value>Restaurer la sauvegarde du {0} ?</value></data>
+  <data name="Restored" xml:space="preserve"><value>Sauvegarde du {0} restaurée</value></data>
+  <data name="Checking" xml:space="preserve"><value>Vérification…</value></data>
+  <data name="DownloadInstall" xml:space="preserve"><value>Télécharger et installer</value></data>
+  <data name="PackageVerified" xml:space="preserve"><value>Paquet vérifié. L'installateur va démarrer ; VoxPad se ferme maintenant.</value></data>
+  <data name="VoiceMeasurement" xml:space="preserve"><value>Mesure de la voix</value></data>
+  <data name="VoiceMeasurePrompt" xml:space="preserve"><value>Parlez normalement dans votre microphone pendant environ 8 secondes. Le niveau mesuré devient la cible de normalisation afin que les sons correspondent à votre voix (un bon résultat dépasse 74 dB).</value></data>
+  <data name="CurrentTarget" xml:space="preserve"><value>Cible actuelle</value></data>
+  <data name="DefaultNotMeasured" xml:space="preserve"><value>par défaut, non mesurée</value></data>
+  <data name="Start" xml:space="preserve"><value>Démarrer</value></data>
+  <data name="UseAsTarget" xml:space="preserve"><value>Utiliser comme cible</value></data>
+  <data name="Measuring" xml:space="preserve"><value>Mesure en cours</value></data>
+  <data name="NothingMeasured" xml:space="preserve"><value>Rien mesuré – le microphone est-il coupé ou le mauvais périphérique sélectionné ?</value></data>
+  <data name="Result" xml:space="preserve"><value>Résultat</value></data>
+  <data name="TooQuiet" xml:space="preserve"><value>très faible – augmentez le niveau du microphone dans Windows</value></data>
+  <data name="BelowTarget" xml:space="preserve"><value>sous 74 dB ; envisagez un niveau micro plus élevé</value></data>
+  <data name="TargetSet" xml:space="preserve"><value>Cible de normalisation définie à {0:F1} dB</value></data>
+  <data name="Routing" xml:space="preserve"><value>Routage</value></data>
+  <data name="TroubleChecklist" xml:space="preserve"><value>Liste de vérification :
+• Installez VB-CABLE (gratuit) et cliquez sur Actualiser dans Préférences &gt; Périphériques.
+• Dans Discord/Teams/le jeu, sélectionnez 'CABLE Output' comme microphone et désactivez-y la suppression du bruit / l'annulation d'écho.
+• Gardez votre vrai microphone coché sous « Utiliser » pour que votre voix soit mixée.
+• Confidentialité Windows : autorisez les applications de bureau à utiliser le microphone.
+• Les raccourcis ne font rien dans un jeu ? Lancez VoxPad avec le même niveau d'élévation que le jeu.</value></data>
+  <data name="DiagnosticReport" xml:space="preserve"><value>Rapport de diagnostic</value></data>
+  <data name="DiagnosticHint" xml:space="preserve"><value>Crée un zip contenant le journal, la liste des périphériques, l'état du routage et les préférences (identifiants de périphériques seulement, aucune donnée de licence) à joindre à un rapport de bug.</value></data>
+  <data name="CreateReport" xml:space="preserve"><value>Créer le rapport</value></data>
+  <data name="OpenDevices" xml:space="preserve"><value>Périphériques…</value></data>
+  <data name="AutoKeysTroubleHint" xml:space="preserve"><value>Les Auto Keys appuient sur votre touche push-to-talk quand un son démarre sur le microphone. La dernière évaluation montre pourquoi chaque entrée s'est déclenchée ou non. Lisez un son, puis rouvrez cette boîte de dialogue pour revérifier.</value></data>
+  <data name="MicPlayMode" xml:space="preserve"><value>mode de lecture microphone</value></data>
+  <data name="NotMicPlayMode" xml:space="preserve"><value>PAS un mode de lecture microphone – les Auto Keys ne se déclenchent jamais</value></data>
+  <data name="Entries" xml:space="preserve"><value>Entrées</value></data>
+  <data name="ForegroundNow" xml:space="preserve"><value>Application au premier plan</value></data>
+  <data name="NoEvaluationYet" xml:space="preserve"><value>Aucun son n'a encore été lu dans cette session.</value></data>
+  <data name="LastEvaluation" xml:space="preserve"><value>Dernière évaluation</value></data>
+  <data name="OpenAutoKeysPrefs" xml:space="preserve"><value>Paramètres des Auto Keys…</value></data>
+
+  <!-- TTS / recorder / editor -->
+  <data name="Voice" xml:space="preserve"><value>Voix :</value></data>
+  <data name="Rate" xml:space="preserve"><value>Vitesse</value></data>
+  <data name="PreviewSpeakers" xml:space="preserve"><value>Aperçu (Enter)</value></data>
+  <data name="SendToMic" xml:space="preserve"><value>Envoyer au micro (Ctrl+Enter)</value></data>
+  <data name="SaveToList" xml:space="preserve"><value>Enregistrer dans la liste</value></data>
+  <data name="TtsHint" xml:space="preserve"><value>Enter = aperçu sur les haut-parleurs · Ctrl+Enter = lecture sur le microphone · le raccourci spécial « Lire la synthèse vocale » prononce ce texte.</value></data>
+  <data name="Source" xml:space="preserve"><value>Source :</value></data>
+  <data name="Source_Speakers" xml:space="preserve"><value>Haut-parleurs (ce que vous entendez)</value></data>
+  <data name="Source_Mic" xml:space="preserve"><value>Microphone</value></data>
+  <data name="Format" xml:space="preserve"><value>Format :</value></data>
+  <data name="Insert" xml:space="preserve"><value>Insérer :</value></data>
+  <data name="InsertEnd" xml:space="preserve"><value>Ajouter en fin de liste</value></data>
+  <data name="InsertBeginning" xml:space="preserve"><value>Insérer au début</value></data>
+  <data name="AutoNormalize" xml:space="preserve"><value>Normaliser automatiquement à</value></data>
+  <data name="DbHint" xml:space="preserve"><value>dB (89 ≈ −23 LUFS ; au-delà de 99, saturation)</value></data>
+  <data name="TrimSilence" xml:space="preserve"><value>Couper le silence au début et à la fin</value></data>
+  <data name="MaxTime" xml:space="preserve"><value>Durée max. :</value></data>
+  <data name="MaxSecondsHint" xml:space="preserve"><value>secondes (0 = illimité ; mis en tampon non compressé dans %TEMP%)</value></data>
+  <data name="TargetDirectory" xml:space="preserve"><value>Dossier :</value></data>
+  <data name="RecorderHotkeys" xml:space="preserve"><value>Raccourcis spéciaux : démarrer = {0}, arrêter = {1}. Un son de notification est joué avant le début de la capture.</value></data>
+  <data name="NotSet" xml:space="preserve"><value>non défini</value></data>
+  <data name="StartRecording" xml:space="preserve"><value>Enregistrer</value></data>
+  <data name="StopRecording" xml:space="preserve"><value>Arrêter</value></data>
+  <data name="PlayLastTake" xml:space="preserve"><value>Lire la dernière prise</value></data>
+  <data name="LastTake" xml:space="preserve"><value>Dernière prise</value></data>
+  <data name="MaxTimeReached" xml:space="preserve"><value>Durée d'enregistrement maximale atteinte.</value></data>
+  <data name="RecordingInProgress" xml:space="preserve"><value>Enregistrement en cours. L'abandonner ?</value></data>
+  <data name="TargetTooLoud" xml:space="preserve"><value>Une cible supérieure à 99 dB saturera. Continuer quand même ?</value></data>
+  <data name="RecordingFrom" xml:space="preserve"><value>Enregistrement depuis '{0}'…</value></data>
+  <data name="RecordingStarted" xml:space="preserve"><value>Enregistrement démarré</value></data>
+  <data name="NothingRecorded" xml:space="preserve"><value>Rien n'a été enregistré (silence).</value></data>
+  <data name="RecordingSaved" xml:space="preserve"><value>Enregistrement sauvegardé : {0}</value></data>
+  <data name="Editor" xml:space="preserve"><value>Éditeur</value></data>
+  <data name="PlaySelection" xml:space="preserve"><value>Lire la sélection</value></data>
+  <data name="Crop" xml:space="preserve"><value>Rogner</value></data>
+  <data name="VolumeUp" xml:space="preserve"><value>Vol +3 dB</value></data>
+  <data name="VolumeDown" xml:space="preserve"><value>Vol −3 dB</value></data>
+  <data name="VolumeCustom" xml:space="preserve"><value>Volume…</value></data>
+  <data name="NormalizeTo" xml:space="preserve"><value>Normaliser…</value></data>
+  <data name="ZoomFit" xml:space="preserve"><value>Ajuster</value></data>
+  <data name="ZoomSelection" xml:space="preserve"><value>Zoomer sur la sélection</value></data>
+  <data name="Save" xml:space="preserve"><value>Enregistrer</value></data>
+  <data name="EditorHint" xml:space="preserve"><value>Glissez pour sélectionner · Shift+flèches / Home / End étendent · Ctrl+A tout · Ctrl+D désélectionne · Del coupe · Esc ferme</value></data>
+  <data name="Attr_Size" xml:space="preserve"><value>Taille</value></data>
+  <data name="Attr_Format" xml:space="preserve"><value>Format</value></data>
+  <data name="Attr_SampleRate" xml:space="preserve"><value>Fréquence d'échantillonnage</value></data>
+  <data name="Attr_Duration" xml:space="preserve"><value>Durée</value></data>
+  <data name="Attr_Channels" xml:space="preserve"><value>Canaux</value></data>
+  <data name="Attr_OriginalVolume" xml:space="preserve"><value>Volume d'origine</value></data>
+  <data name="LongFileWarning" xml:space="preserve"><value>Ce fichier dépasse 10 minutes. L'édition garde tout le fichier en mémoire et les instantanés d'annulation multiplient cela ; attendez-vous à une forte utilisation de la mémoire.</value></data>
+  <data name="CannotOpenFile" xml:space="preserve"><value>Impossible d'ouvrir le fichier : {0}</value></data>
+  <data name="Modified" xml:space="preserve"><value>modifié</value></data>
+  <data name="Selection" xml:space="preserve"><value>Sélection</value></data>
+  <data name="NoSelection" xml:space="preserve"><value>Aucune sélection (les opérations s'appliquent à tout le fichier)</value></data>
+  <data name="GainPrompt" xml:space="preserve"><value>Gain en dB (négatif = plus faible) :</value></data>
+  <data name="NormalizePrompt" xml:space="preserve"><value>Cible en dB (89 ≈ −23 LUFS) :</value></data>
+  <data name="EditorSaveQuestion" xml:space="preserve"><value>Enregistrer l'audio modifié ?</value></data>
+  <data name="EditorSaved" xml:space="preserve"><value>{0} enregistré</value></data>
+
+  <!-- Preferences -->
+  <data name="Tab_Devices" xml:space="preserve"><value>Périphériques</value></data>
+  <data name="Tab_Audio" xml:space="preserve"><value>Audio</value></data>
+  <data name="Tab_Hotkeys" xml:space="preserve"><value>Raccourcis</value></data>
+  <data name="Tab_Recorder" xml:space="preserve"><value>Enregistreur</value></data>
+  <data name="Tab_Interface" xml:space="preserve"><value>Interface</value></data>
+  <data name="Tab_Notifications" xml:space="preserve"><value>Notifications</value></data>
+  <data name="Tab_Updates" xml:space="preserve"><value>Mises à jour</value></data>
+  <data name="SetupMode" xml:space="preserve"><value>Mode de configuration</value></data>
+  <data name="SetupModeHint" xml:space="preserve"><value>VoxPad n'a pas de pilote audio noyau propre. Il restitue voix + son vers le point de lecture d'un câble virtuel ; les applications enregistrent ensuite depuis le point d'enregistrement du câble (ex. 'CABLE Output'). La sélection automatique essaie VB-CABLE, VB-CABLE A/B, Voicemeeter, un câble choisi manuellement et Stereo Mix dans cet ordre.</value></data>
+  <data name="Refresh" xml:space="preserve"><value>Actualiser</value></data>
+  <data name="Status" xml:space="preserve"><value>État : </value></data>
+  <data name="Microphones" xml:space="preserve"><value>Microphones (cochez « Utiliser » pour ceux à mixer dans le câble)</value></data>
+  <data name="Use" xml:space="preserve"><value>Utiliser</value></data>
+  <data name="DefaultComm" xml:space="preserve"><value> (communications par défaut)</value></data>
+  <data name="NoMics" xml:space="preserve"><value>Aucun périphérique d'enregistrement trouvé.</value></data>
+  <data name="NoMicsTickedHint" xml:space="preserve"><value>Rien de coché = le microphone de communication par défaut est utilisé.</value></data>
+  <data name="VirtualCableEndpoint" xml:space="preserve"><value>Point de lecture du câble virtuel (pour « Autre câble virtuel »)</value></data>
+  <data name="AutoDetect" xml:space="preserve"><value>(détection auto)</value></data>
+  <data name="SpeakerDevice" xml:space="preserve"><value>Haut-parleurs (votre propre copie du son)</value></data>
+  <data name="DefaultDevice" xml:space="preserve"><value>(par défaut Windows)</value></data>
+  <data name="RecorderMic" xml:space="preserve"><value>Microphone pour l'enregistreur</value></data>
+  <data name="MicLatency" xml:space="preserve"><value>Latence du microphone (ms) :</value></data>
+  <data name="LatencyHint" xml:space="preserve"><value>Plus bas = moins de délai sur votre voix, plus haut = moins de coupures sur les machines lentes. 30 ms est une bonne valeur par défaut.</value></data>
+  <data name="OpenPrivacySettings" xml:space="preserve"><value>Accès au microphone refusé – ouvrir les paramètres de confidentialité Windows</value></data>
+  <data name="Normalization" xml:space="preserve"><value>Normalisation du volume (EBU R128, par canal)</value></data>
+  <data name="Norm_Off" xml:space="preserve"><value>Désactivée</value></data>
+  <data name="Norm_Dynamic" xml:space="preserve"><value>Dynamique – analyse les 6 premières s, affine pendant la lecture (par défaut)</value></data>
+  <data name="Norm_Full" xml:space="preserve"><value>Fichier entier – analyse tout le fichier avant la lecture (mis en cache)</value></data>
+  <data name="MeasureVoice" xml:space="preserve"><value>Mesurer la voix…</value></data>
+  <data name="NormHint" xml:space="preserve"><value>Les sons sur le microphone sont ramenés au niveau de votre voix (mesurez-le ; un bon résultat dépasse 74 dB). La copie haut-parleurs n'est pas modifiée – utilisez le curseur de volume des haut-parleurs pour vous-même.</value></data>
+  <data name="BlockVoice" xml:space="preserve"><value>Bloquer la voix</value></data>
+  <data name="BlockVoiceCheck" xml:space="preserve"><value>Remplacer entièrement ma voix pendant la lecture d'un son (au lieu de mixer)</value></data>
+  <data name="VoiceActivation" xml:space="preserve"><value>Son d'activation vocale</value></data>
+  <data name="VoiceActivationCheck" xml:space="preserve"><value>Lire un bref signal fort sur le microphone pour que les applications à activation vocale ouvrent leur seuil</value></data>
+  <data name="CustomFile" xml:space="preserve"><value>Fichier personnalisé (vide = tonalité de 250 ms) :</value></data>
+  <data name="Default" xml:space="preserve"><value>Par défaut</value></data>
+  <data name="VoiceActivationHeadphones" xml:space="preserve"><value>Lire aussi le signal sur mes haut-parleurs/mon casque</value></data>
+  <data name="Playback" xml:space="preserve"><value>Lecture</value></data>
+  <data name="AllowResumeOtherMode" xml:space="preserve"><value>Autoriser la reprise dans un autre mode de lecture (redémarre à la position de pause avec le nouveau mode)</value></data>
+  <data name="General" xml:space="preserve"><value>Général</value></data>
+  <data name="HotkeysEnabledCheck" xml:space="preserve"><value>Raccourcis activés</value></data>
+  <data name="PassHotkeysCheck" xml:space="preserve"><value>Transmettre les raccourcis à l'application active (désactivé par défaut : la touche est absorbée)</value></data>
+  <data name="AutoStopCheck" xml:space="preserve"><value>Arrêt auto : les sons lancés par raccourci ignorent Répéter et Enchaîner (activé par défaut)</value></data>
+  <data name="HotkeysGeneralHint" xml:space="preserve"><value>Définissez le raccourci d'un son par clic droit ou double-clic sur sa cellule Raccourci. Les touches seules, toute combinaison avec Ctrl/Alt/Shift/Win et les boutons de souris Milieu/4/5 fonctionnent globalement.</value></data>
+  <data name="SpecialHint" xml:space="preserve"><value>Les raccourcis spéciaux sont réservés : un son ne peut pas utiliser la même touche.</value></data>
+  <data name="NumpadHotkeys" xml:space="preserve"><value>Raccourcis du pavé numérique</value></data>
+  <data name="NumpadEnabledCheck" xml:space="preserve"><value>Activé : maintenez le modificateur, tapez le numéro du son sur le pavé numérique, relâchez</value></data>
+  <data name="Modifier" xml:space="preserve"><value>Modificateur :</value></data>
+  <data name="NumpadHint" xml:space="preserve"><value>Le numéro est la colonne # de la catégorie actuelle.</value></data>
+  <data name="IndexHotkeys" xml:space="preserve"><value>Raccourcis par index</value></data>
+  <data name="IndexEnabledCheck" xml:space="preserve"><value>Activé : maintenez le modificateur, tapez l'index de ligne avec la rangée de chiffres, relâchez</value></data>
+  <data name="IndexHint" xml:space="preserve"><value>L'index est la ligne dans la catégorie masquée « Tous les sons », ex. Alt+1,2,3 lit la ligne 123.</value></data>
+  <data name="Advanced" xml:space="preserve"><value>Avancé</value></data>
+  <data name="AllowLeftRight" xml:space="preserve"><value>Distinguer les modificateurs gauche/droit (Ctrl gauche et Ctrl droit sont des touches différentes)</value></data>
+  <data name="SameHotkeysAllCategories" xml:space="preserve"><value>Mêmes raccourcis dans toutes les catégories (par ligne : le raccourci de la ligne N lit la ligne N de la catégorie sélectionnée)</value></data>
+  <data name="JumpSeconds" xml:space="preserve"><value>Saut de ±N secondes :</value></data>
+  <data name="VolumeStep" xml:space="preserve"><value>Pas de volume +/− (%) :</value></data>
+  <data name="VolumeSet" xml:space="preserve"><value>Niveau du raccourci « Régler le volume » (%) :</value></data>
+  <data name="AutoKeysEnabledCheck" xml:space="preserve"><value>Auto Keys activées</value></data>
+  <data name="AutoKeysHint" xml:space="preserve"><value>Push-to-talk automatique : quand un son démarre sur le microphone, la touche est pressée (maintenue pendant la durée du son, ou tapée avant et après). Ne se déclenche que dans les modes de lecture microphone.</value></data>
+  <data name="NoKey" xml:space="preserve"><value>(aucune touche)</value></data>
+  <data name="AutoKey" xml:space="preserve"><value>Auto Key</value></data>
+  <data name="OnlyIfHotkey" xml:space="preserve"><value>Seulement si lu par raccourci</value></data>
+  <data name="PressHold" xml:space="preserve"><value>Maintenir enfoncée pendant la durée du son</value></data>
+  <data name="PressBeforeAfter" xml:space="preserve"><value>Appuyer avant et après</value></data>
+  <data name="PressMode" xml:space="preserve"><value>Mode d'appui :</value></data>
+  <data name="Cond_Always" xml:space="preserve"><value>Toujours</value></data>
+  <data name="Cond_Fullscreen" xml:space="preserve"><value>L'application au premier plan est en plein écran (y compris sans bordure)</value></data>
+  <data name="Cond_Running" xml:space="preserve"><value>Une application listée est en cours d'exécution</value></data>
+  <data name="Cond_Foreground" xml:space="preserve"><value>Une application listée est au premier plan</value></data>
+  <data name="Condition" xml:space="preserve"><value>Condition :</value></data>
+  <data name="AppsTip" xml:space="preserve"><value>Noms de processus, un par ligne, ex. discord.exe</value></data>
+  <data name="Apps" xml:space="preserve"><value>Liste d'applications :</value></data>
+  <data name="AddAutoKey" xml:space="preserve"><value>Ajouter une Auto Key</value></data>
+  <data name="RecorderFormatHint" xml:space="preserve"><value>Tout est converti en stéréo 48 kHz. L'éditeur enregistre aussi dans ce format.</value></data>
+  <data name="TargetDb" xml:space="preserve"><value>Cible (dB, 89 par défaut ≈ −23 LU ; &gt;99 sature) :</value></data>
+  <data name="NotificationSound" xml:space="preserve"><value>Jouer un son de notification avant le début de la capture</value></data>
+  <data name="RecorderHotkeyHint" xml:space="preserve"><value>Les raccourcis de démarrage/arrêt de l'enregistrement sont dans l'onglet Raccourcis &gt; Spécial.</value></data>
+  <data name="Language" xml:space="preserve"><value>Langue :</value></data>
+  <data name="Style" xml:space="preserve"><value>Style :</value></data>
+  <data name="Theme_Light" xml:space="preserve"><value>Clair</value></data>
+  <data name="Theme_Dark" xml:space="preserve"><value>Sombre</value></data>
+  <data name="Theme_Native" xml:space="preserve"><value>Natif (Windows)</value></data>
+  <data name="NativeForced" xml:space="preserve"><value>Contraste élevé ou lecteur d'écran actif : le style Natif est utilisé.</value></data>
+  <data name="ToolbarItems" xml:space="preserve"><value>Éléments de la barre d'outils</value></data>
+  <data name="Timer" xml:space="preserve"><value>Minuteur de piste</value></data>
+  <data name="SeekSlider" xml:space="preserve"><value>Curseur de position</value></data>
+  <data name="SpeakerVolume" xml:space="preserve"><value>Volume des haut-parleurs</value></data>
+  <data name="MicLevelMeter" xml:space="preserve"><value>Indicateur de niveau du microphone</value></data>
+  <data name="Behaviour" xml:space="preserve"><value>Comportement</value></data>
+  <data name="StartMinimized" xml:space="preserve"><value>Démarrer réduit</value></data>
+  <data name="MinimizeToTrayCheck" xml:space="preserve"><value>Réduire dans la zone de notification</value></data>
+  <data name="CloseToTray" xml:space="preserve"><value>Fermer la fenêtre la réduit dans la zone de notification au lieu de quitter</value></data>
+  <data name="DisableSorting" xml:space="preserve"><value>Désactiver le tri (les en-têtes de colonne ne trient jamais ; ordre manuel uniquement)</value></data>
+  <data name="Confirmations" xml:space="preserve"><value>Confirmations</value></data>
+  <data name="ConfirmRemoveCheck" xml:space="preserve"><value>Confirmer avant de supprimer des sons</value></data>
+  <data name="ConfirmResetCheck" xml:space="preserve"><value>Confirmer avant de réinitialiser les compteurs de lectures</value></data>
+  <data name="ConfirmQuitCheck" xml:space="preserve"><value>Confirmer la fermeture pendant la lecture d'un son</value></data>
+  <data name="NotifyMissing" xml:space="preserve"><value>Avertir des fichiers manquants au chargement d'une liste</value></data>
+  <data name="NotifyDevices" xml:space="preserve"><value>Signaler les changements de périphériques audio dans la barre d'état</value></data>
+  <data name="NotifyTray" xml:space="preserve"><value>Afficher une bulle lors de la réduction dans la zone de notification</value></data>
+  <data name="NotifyRecording" xml:space="preserve"><value>Message d'état au démarrage d'un enregistrement</value></data>
+  <data name="NotifyTrial" xml:space="preserve"><value>Afficher une boîte de dialogue quand une limite d'essai est atteinte</value></data>
+  <data name="NotifyUpdates" xml:space="preserve"><value>Afficher les mises à jour disponibles</value></data>
+  <data name="CheckInterval" xml:space="preserve"><value>Rechercher des mises à jour :</value></data>
+  <data name="Never" xml:space="preserve"><value>Jamais (par défaut)</value></data>
+  <data name="Daily" xml:space="preserve"><value>Quotidiennement</value></data>
+  <data name="Weekly" xml:space="preserve"><value>Hebdomadairement</value></data>
+  <data name="ManifestUrl" xml:space="preserve"><value>URL du manifeste :</value></data>
+  <data name="UpdateHint" xml:space="preserve"><value>Les paquets de mise à jour ne sont installés que si la signature du manifeste et le hachage du paquet sont vérifiés avec la clé intégrée à VoxPad.</value></data>
+  <data name="LastCheck" xml:space="preserve"><value>Dernière vérification</value></data>
+  <data name="CheckNow" xml:space="preserve"><value>Vérifier maintenant</value></data>
+
+  <!-- Special hotkey names -->
+  <data name="Special_Stop" xml:space="preserve"><value>Arrêter</value></data>
+  <data name="Special_Start" xml:space="preserve"><value>Démarrer (lire la sélection / reprendre)</value></data>
+  <data name="Special_Pause" xml:space="preserve"><value>Pause / reprendre</value></data>
+  <data name="Special_PlayPrevious" xml:space="preserve"><value>Lire le fichier précédent</value></data>
+  <data name="Special_PlayNext" xml:space="preserve"><value>Lire le fichier suivant</value></data>
+  <data name="Special_PlaySelected" xml:space="preserve"><value>Lire le fichier sélectionné</value></data>
+  <data name="Special_PlayRandomInCategory" xml:space="preserve"><value>Lire un fichier aléatoire (catégorie actuelle)</value></data>
+  <data name="Special_PlayRandomFromAll" xml:space="preserve"><value>Lire un fichier aléatoire (tous les sons)</value></data>
+  <data name="Special_SelectPreviousFile" xml:space="preserve"><value>Sélectionner le fichier précédent</value></data>
+  <data name="Special_SelectNextFile" xml:space="preserve"><value>Sélectionner le fichier suivant</value></data>
+  <data name="Special_SelectPreviousCategory" xml:space="preserve"><value>Sélectionner la catégorie précédente</value></data>
+  <data name="Special_SelectNextCategory" xml:space="preserve"><value>Sélectionner la catégorie suivante</value></data>
+  <data name="Special_StartRecording" xml:space="preserve"><value>Démarrer l'enregistrement</value></data>
+  <data name="Special_StopRecording" xml:space="preserve"><value>Arrêter l'enregistrement</value></data>
+  <data name="Special_JumpBackward" xml:space="preserve"><value>Reculer de N secondes</value></data>
+  <data name="Special_JumpForward" xml:space="preserve"><value>Avancer de N secondes</value></data>
+  <data name="Special_SpeakerVolumeUp" xml:space="preserve"><value>Augmenter le volume des haut-parleurs</value></data>
+  <data name="Special_SpeakerVolumeDown" xml:space="preserve"><value>Baisser le volume des haut-parleurs</value></data>
+  <data name="Special_SpeakerVolumeSet" xml:space="preserve"><value>Régler le volume des haut-parleurs</value></data>
+  <data name="Special_SpeakerVolumeMute" xml:space="preserve"><value>Couper / rétablir les haut-parleurs</value></data>
+  <data name="Special_SetPlayModeBoth" xml:space="preserve"><value>Mode de lecture : haut-parleurs + microphone</value></data>
+  <data name="Special_SetPlayModeMic" xml:space="preserve"><value>Mode de lecture : microphone uniquement</value></data>
+  <data name="Special_SetPlayModeSpeakers" xml:space="preserve"><value>Mode de lecture : haut-parleurs uniquement</value></data>
+  <data name="Special_CyclePlayMode" xml:space="preserve"><value>Changer de mode de lecture</value></data>
+  <data name="Special_EnableHotkeys" xml:space="preserve"><value>Activer les raccourcis</value></data>
+  <data name="Special_DisableHotkeys" xml:space="preserve"><value>Désactiver les raccourcis</value></data>
+  <data name="Special_ToggleHotkeys" xml:space="preserve"><value>Activer/désactiver les raccourcis</value></data>
+  <data name="Special_EnableAutoKeys" xml:space="preserve"><value>Activer les Auto Keys</value></data>
+  <data name="Special_DisableAutoKeys" xml:space="preserve"><value>Désactiver les Auto Keys</value></data>
+  <data name="Special_ToggleAutoKeys" xml:space="preserve"><value>Activer/désactiver les Auto Keys</value></data>
+  <data name="Special_PlayTts" xml:space="preserve"><value>Lire le texte de la synthèse vocale</value></data>
+</root>

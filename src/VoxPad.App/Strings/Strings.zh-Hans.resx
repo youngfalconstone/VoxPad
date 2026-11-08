@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+  <!-- Menus -->
+  <data name="File" xml:space="preserve"><value>文件(_F)</value></data>
+  <data name="NewList" xml:space="preserve"><value>新建声音列表(_N)</value></data>
+  <data name="LoadList" xml:space="preserve"><value>加载声音列表(_L)…</value></data>
+  <data name="SaveList" xml:space="preserve"><value>保存声音列表(_S)</value></data>
+  <data name="SaveListAs" xml:space="preserve"><value>声音列表另存为(_A)…</value></data>
+  <data name="RecentLists" xml:space="preserve"><value>最近的声音列表(_R)</value></data>
+  <data name="RestoreList" xml:space="preserve"><value>还原声音列表…</value></data>
+  <data name="AddFiles" xml:space="preserve"><value>添加声音文件…</value></data>
+  <data name="AddFolder" xml:space="preserve"><value>添加文件夹…</value></data>
+  <data name="WebImport" xml:space="preserve"><value>从网络导入…</value></data>
+  <data name="Export" xml:space="preserve"><value>导出(_E)</value></data>
+  <data name="ExportSoundFiles" xml:space="preserve"><value>声音文件…</value></data>
+  <data name="ExportPreferences" xml:space="preserve"><value>首选项…</value></data>
+  <data name="ImportPreferences" xml:space="preserve"><value>导入首选项…</value></data>
+  <data name="Statistics" xml:space="preserve"><value>统计信息…</value></data>
+  <data name="Preferences" xml:space="preserve"><value>首选项(_P)…</value></data>
+  <data name="Exit" xml:space="preserve"><value>退出(_X)</value></data>
+  <data name="Edit" xml:space="preserve"><value>编辑(_E)</value></data>
+  <data name="SelectAll" xml:space="preserve"><value>全选</value></data>
+  <data name="Remove" xml:space="preserve"><value>移除</value></data>
+  <data name="Copy" xml:space="preserve"><value>复制</value></data>
+  <data name="Cut" xml:space="preserve"><value>剪切</value></data>
+  <data name="Paste" xml:space="preserve"><value>粘贴</value></data>
+  <data name="MoveUp" xml:space="preserve"><value>上移</value></data>
+  <data name="MoveDown" xml:space="preserve"><value>下移</value></data>
+  <data name="Undo" xml:space="preserve"><value>撤销</value></data>
+  <data name="Redo" xml:space="preserve"><value>重做</value></data>
+  <data name="EditFile" xml:space="preserve"><value>编辑文件…</value></data>
+  <data name="SetHotkey" xml:space="preserve"><value>设置热键…</value></data>
+  <data name="RemoveHotkey" xml:space="preserve"><value>移除热键</value></data>
+  <data name="SetColor" xml:space="preserve"><value>颜色…</value></data>
+  <data name="PlayRandom" xml:space="preserve"><value>随机播放</value></data>
+  <data name="ResetPlayCount" xml:space="preserve"><value>重置播放次数</value></data>
+  <data name="ResetAllPlayCounts" xml:space="preserve"><value>重置所有播放次数</value></data>
+  <data name="SelectInExplorer" xml:space="preserve"><value>在资源管理器中显示</value></data>
+  <data name="PlayMenu" xml:space="preserve"><value>播放(_P)</value></data>
+  <data name="Play" xml:space="preserve"><value>播放</value></data>
+  <data name="PlayOnSpeakers" xml:space="preserve"><value>通过扬声器播放</value></data>
+  <data name="PlayOnMic" xml:space="preserve"><value>通过麦克风播放</value></data>
+  <data name="PauseResume" xml:space="preserve"><value>暂停 / 继续</value></data>
+  <data name="Stop" xml:space="preserve"><value>停止</value></data>
+  <data name="Previous" xml:space="preserve"><value>上一个</value></data>
+  <data name="Next" xml:space="preserve"><value>下一个</value></data>
+  <data name="Repeat" xml:space="preserve"><value>重复</value></data>
+  <data name="Continue" xml:space="preserve"><value>连续播放</value></data>
+  <data name="AutoStop" xml:space="preserve"><value>自动停止（热键播放的声音忽略重复/连续播放）</value></data>
+  <data name="PlayModeMenu" xml:space="preserve"><value>播放模式</value></data>
+  <data name="PlayMode_Both" xml:space="preserve"><value>扬声器 + 麦克风</value></data>
+  <data name="PlayMode_Mic" xml:space="preserve"><value>仅麦克风</value></data>
+  <data name="PlayMode_Speakers" xml:space="preserve"><value>仅扬声器</value></data>
+  <data name="Recorder" xml:space="preserve"><value>录音机…</value></data>
+  <data name="TextToSpeech" xml:space="preserve"><value>文本转语音…</value></data>
+  <data name="Window" xml:space="preserve"><value>窗口(_W)</value></data>
+  <data name="Categories" xml:space="preserve"><value>类别面板</value></data>
+  <data name="Hotbar" xml:space="preserve"><value>快捷栏</value></data>
+  <data name="Toolbar" xml:space="preserve"><value>播放工具栏</value></data>
+  <data name="StatusBar" xml:space="preserve"><value>状态栏</value></data>
+  <data name="ShowHiddenCategories" xml:space="preserve"><value>显示隐藏的类别</value></data>
+  <data name="CategoryIconSize" xml:space="preserve"><value>类别图标大小</value></data>
+  <data name="Small" xml:space="preserve"><value>小</value></data>
+  <data name="Medium" xml:space="preserve"><value>中</value></data>
+  <data name="Large" xml:space="preserve"><value>大</value></data>
+  <data name="ExtraLarge" xml:space="preserve"><value>特大</value></data>
+  <data name="Columns" xml:space="preserve"><value>列</value></data>
+  <data name="HotbarSize" xml:space="preserve"><value>快捷栏大小…</value></data>
+  <data name="HotkeyOverview" xml:space="preserve"><value>热键一览…</value></data>
+  <data name="MinimizeToTray" xml:space="preserve"><value>最小化到托盘</value></data>
+  <data name="Help" xml:space="preserve"><value>帮助(_H)</value></data>
+  <data name="Manual" xml:space="preserve"><value>用户手册</value></data>
+  <data name="Troubleshooting" xml:space="preserve"><value>疑难解答…</value></data>
+  <data name="AutoKeysTroubleshooting" xml:space="preserve"><value>Auto Keys 疑难解答…</value></data>
+  <data name="CheckForUpdates" xml:space="preserve"><value>检查更新…</value></data>
+  <data name="Register" xml:space="preserve"><value>注册…</value></data>
+  <data name="About" xml:space="preserve"><value>关于 VoxPad</value></data>
+
+  <!-- Toolbar / status bar -->
+  <data name="TimerTip" xml:space="preserve"><value>已播放 / 总时长。双击可跳转到正在播放的声音。</value></data>
+  <data name="SpeakerVolumeTip" xml:space="preserve"><value>扬声器音量（仅你自己听到的副本；与 Windows 音量合成器绑定）</value></data>
+  <data name="MicMeterTip" xml:space="preserve"><value>麦克风电平。点击图标可测量你的语音电平。</value></data>
+  <data name="SeekTip" xml:space="preserve"><value>红色 = 其他人可听到（麦克风），蓝色 = 仅扬声器</value></data>
+  <data name="PlayModeTip" xml:space="preserve"><value>播放模式 – 点击切换</value></data>
+  <data name="HotkeysTip" xml:space="preserve"><value>热键 – 双击开关，右键查看选项</value></data>
+  <data name="PassHotkeys" xml:space="preserve"><value>将热键传递给活动应用程序</value></data>
+  <data name="Hotkeys" xml:space="preserve"><value>热键</value></data>
+  <data name="AutoKeysTip" xml:space="preserve"><value>Auto Keys – 双击开关，右键进行疑难解答</value></data>
+  <data name="AutoKeys" xml:space="preserve"><value>Auto Keys</value></data>
+  <data name="RepeatTip" xml:space="preserve"><value>重复当前声音 – 点击切换</value></data>
+  <data name="ContinueTip" xml:space="preserve"><value>继续播放下一个声音 – 点击切换</value></data>
+  <data name="PreviousPage" xml:space="preserve"><value>上一页 (Ctrl+PgUp)</value></data>
+  <data name="NextPage" xml:space="preserve"><value>下一页 (Ctrl+PgDn)</value></data>
+  <data name="HideCategory" xml:space="preserve"><value>隐藏类别</value></data>
+  <data name="SearchTip" xml:space="preserve"><value>输入以筛选 · Enter 切换匹配项 · Ctrl+Enter 播放 · Esc 清除</value></data>
+  <data name="ColTag" xml:space="preserve"><value>标签</value></data>
+  <data name="ColDuration" xml:space="preserve"><value>时长</value></data>
+  <data name="ColHotkey" xml:space="preserve"><value>热键</value></data>
+  <data name="ColPlayCount" xml:space="preserve"><value>播放次数</value></data>
+  <data name="ColLastPlayed" xml:space="preserve"><value>上次播放时间</value></data>
+  <data name="ColIndex" xml:space="preserve"><value>#</value></data>
+  <data name="MoveToCategory" xml:space="preserve"><value>移动到类别</value></data>
+  <data name="RemoveFromCategory" xml:space="preserve"><value>从此类别中移除</value></data>
+  <data name="AddCategory" xml:space="preserve"><value>添加类别…</value></data>
+  <data name="AddSubcategory" xml:space="preserve"><value>添加子类别…</value></data>
+  <data name="RenameCategory" xml:space="preserve"><value>重命名…</value></data>
+  <data name="RemoveCategory" xml:space="preserve"><value>移除类别</value></data>
+  <data name="SetRandomHotkey" xml:space="preserve"><value>设置“随机播放”热键…</value></data>
+  <data name="AllSounds" xml:space="preserve"><value>所有声音</value></data>
+  <data name="UntitledList" xml:space="preserve"><value>未命名</value></data>
+  <data name="Trial" xml:space="preserve"><value>试用版</value></data>
+  <data name="TrialStatus" xml:space="preserve"><value>试用版：最多 {0} 个声音，本次启动还可通过麦克风播放 {1} 次</value></data>
+
+  <!-- Status messages -->
+  <data name="PlayModeSet" xml:space="preserve"><value>播放模式：{0}</value></data>
+  <data name="HotkeysOn" xml:space="preserve"><value>热键已启用</value></data>
+  <data name="HotkeysOff" xml:space="preserve"><value>热键已禁用</value></data>
+  <data name="AutoKeysOn" xml:space="preserve"><value>Auto Keys 已启用</value></data>
+  <data name="AutoKeysOff" xml:space="preserve"><value>Auto Keys 已禁用</value></data>
+  <data name="Playing" xml:space="preserve"><value>正在播放“{0}” → {1}</value></data>
+  <data name="TrialPlayLimit" xml:space="preserve"><value>试用版：已达到每次启动 10 次麦克风播放的上限。注册即可解除限制。</value></data>
+  <data name="TrialSoundLimit" xml:space="preserve"><value>试用版：列表最多只能包含 {0} 个声音。注册即可解除限制。</value></data>
+  <data name="NothingToPlay" xml:space="preserve"><value>没有可播放的内容</value></data>
+  <data name="DevicesChanged" xml:space="preserve"><value>音频设备已更改；路由已重新应用。</value></data>
+  <data name="MissingFiles" xml:space="preserve"><value>列表中有 {0} 个文件缺失（已灰显）。</value></data>
+  <data name="CategoryInfo" xml:space="preserve"><value>{0}：{1} 个声音，共 {2}</value></data>
+  <data name="Copied" xml:space="preserve"><value>已复制 {0} 个声音</value></data>
+  <data name="CutStatus" xml:space="preserve"><value>已剪切 {0} 个声音</value></data>
+  <data name="Importing" xml:space="preserve"><value>正在读取 {0} 个文件…</value></data>
+  <data name="Imported" xml:space="preserve"><value>已添加 {0} 个声音</value></data>
+  <data name="NoAudioFiles" xml:space="preserve"><value>未找到支持的音频文件</value></data>
+  <data name="ConfirmRemove" xml:space="preserve"><value>从列表中移除 {0} 个声音？音频文件不会被删除。</value></data>
+  <data name="Removed" xml:space="preserve"><value>已移除 {0} 个声音</value></data>
+  <data name="HotkeyFor" xml:space="preserve"><value>“{0}”的热键</value></data>
+  <data name="RandomHotkeyFor" xml:space="preserve"><value>“{0}”的“随机播放”热键</value></data>
+  <data name="BareMouseNotAllowed" xml:space="preserve"><value>鼠标左键和右键需要搭配修饰键（例如 Ctrl+单击）。</value></data>
+  <data name="ReservedHotkey" xml:space="preserve"><value>{0} 已保留给特殊热键“{1}”。</value></data>
+  <data name="HotkeyRemoved" xml:space="preserve"><value>已移除“{0}”的热键</value></data>
+  <data name="HotkeySet" xml:space="preserve"><value>{0} → “{1}”</value></data>
+  <data name="ConfirmResetPlayCount" xml:space="preserve"><value>重置 {0} 个声音的播放次数？</value></data>
+  <data name="ConfirmResetAll" xml:space="preserve"><value>重置所有声音的播放次数和列表总计？</value></data>
+  <data name="FileMissing" xml:space="preserve"><value>找不到文件：{0}</value></data>
+  <data name="ConfirmRemoveCategory" xml:space="preserve"><value>移除类别“{0}”（及其子类别）？声音仍保留在列表中。</value></data>
+  <data name="CategoryName" xml:space="preserve"><value>名称：</value></data>
+  <data name="NewCategory" xml:space="preserve"><value>新类别</value></data>
+  <data name="AddedToCategory" xml:space="preserve"><value>{0} 个声音 → “{1}”</value></data>
+  <data name="ReorderWhileSorted" xml:space="preserve"><value>请先清除排序（再次点击列标题）才能手动调整顺序。</value></data>
+  <data name="UnsavedTitle" xml:space="preserve"><value>未保存的更改</value></data>
+  <data name="UnsavedText" xml:space="preserve"><value>声音列表有未保存的更改。要放弃吗？</value></data>
+  <data name="NewListCreated" xml:space="preserve"><value>新建声音列表</value></data>
+  <data name="ListLoaded" xml:space="preserve"><value>已加载 {0}</value></data>
+  <data name="ListLoadFailed" xml:space="preserve"><value>无法加载声音列表：{0}</value></data>
+  <data name="ListSaved" xml:space="preserve"><value>已保存 {0}</value></data>
+  <data name="Exported" xml:space="preserve"><value>已导出 {0} 个文件，{1} 个失败 → {2}</value></data>
+  <data name="PrefsExported" xml:space="preserve"><value>首选项已导出到 {0}</value></data>
+  <data name="PrefsImportedRestart" xml:space="preserve"><value>首选项已导入。重新启动 VoxPad 以应用。</value></data>
+  <data name="NoSoundAtNumber" xml:space="preserve"><value>编号 {0} 处没有声音</value></data>
+  <data name="ElevatedWarning" xml:space="preserve"><value>VoxPad 正以管理员身份运行：无法从资源管理器拖放（Windows 禁止向提升权限的窗口拖放）。</value></data>
+  <data name="UnexpectedError" xml:space="preserve"><value>发生了意外错误。</value></data>
+  <data name="DumpWritten" xml:space="preserve"><value>详细信息已写入</value></data>
+  <data name="TrayHint" xml:space="preserve"><value>VoxPad 在通知区域继续运行。双击图标可还原窗口。</value></data>
+  <data name="Tray_Show" xml:space="preserve"><value>显示 VoxPad</value></data>
+  <data name="ConfirmQuitPlaying" xml:space="preserve"><value>有声音正在播放。仍要退出吗？</value></data>
+  <data name="SaveBeforeExit" xml:space="preserve"><value>退出前保存对声音列表的更改？</value></data>
+  <data name="MicAccessDenied" xml:space="preserve"><value>Windows 阻止桌面应用访问麦克风，因此 VoxPad 无法读取你的麦克风。
+
+解决方法：设置 &gt; 隐私和安全性 &gt; 麦克风 &gt; 打开“麦克风访问”和“允许桌面应用访问你的麦克风”，然后在首选项 &gt; 设备中点击“刷新”。</value></data>
+  <data name="OpenSettingsQuestion" xml:space="preserve"><value>现在打开隐私设置？</value></data>
+  <data name="AccessDenied" xml:space="preserve"><value>访问被拒绝</value></data>
+  <data name="RemoveFromHotbar" xml:space="preserve"><value>从快捷栏移除</value></data>
+  <data name="EmptyTileHint" xml:space="preserve"><value>将声音拖到此处</value></data>
+  <data name="PrefsSaved" xml:space="preserve"><value>首选项已保存</value></data>
+  <data name="LanguageRestart" xml:space="preserve"><value>语言将在重新启动 VoxPad 后更改。</value></data>
+
+  <!-- Dialogs -->
+  <data name="OK" xml:space="preserve"><value>确定</value></data>
+  <data name="Cancel" xml:space="preserve"><value>取消</value></data>
+  <data name="Apply" xml:space="preserve"><value>应用</value></data>
+  <data name="Close" xml:space="preserve"><value>关闭</value></data>
+  <data name="Clear" xml:space="preserve"><value>清除</value></data>
+  <data name="None" xml:space="preserve"><value>（无）</value></data>
+  <data name="HotkeyCapturePrompt" xml:space="preserve"><value>现在按下按键或组合键。鼠标中键、侧键 4 和 5 也可用（左键/右键需要修饰键）。Enter 保存，Delete 或 Backspace 清除，Esc 取消。</value></data>
+  <data name="HexColor" xml:space="preserve"><value>十六进制：</value></data>
+  <data name="NoColor" xml:space="preserve"><value>无颜色</value></data>
+  <data name="Rows" xml:space="preserve"><value>行数：</value></data>
+  <data name="Pages" xml:space="preserve"><value>页数：</value></data>
+  <data name="HotbarSizeHint" xml:space="preserve"><value>热键在各页之间共享。新网格之外的格子将被移除。</value></data>
+  <data name="Type" xml:space="preserve"><value>类型</value></data>
+  <data name="Target" xml:space="preserve"><value>目标</value></data>
+  <data name="Sound" xml:space="preserve"><value>声音</value></data>
+  <data name="CategoryRandom" xml:space="preserve"><value>在类别中随机播放</value></data>
+  <data name="Special" xml:space="preserve"><value>特殊</value></data>
+  <data name="Numpad" xml:space="preserve"><value>小键盘</value></data>
+  <data name="NumpadDesc" xml:space="preserve"><value>按编号播放当前类别中的声音</value></data>
+  <data name="Index" xml:space="preserve"><value>索引</value></data>
+  <data name="IndexDesc" xml:space="preserve"><value>按“所有声音”中的行索引播放</value></data>
+  <data name="HotkeyOverviewHint" xml:space="preserve"><value>热键{0}；传递{1}。</value></data>
+  <data name="Enabled" xml:space="preserve"><value>已启用</value></data>
+  <data name="Disabled" xml:space="preserve"><value>已禁用</value></data>
+  <data name="On" xml:space="preserve"><value>开</value></data>
+  <data name="Off" xml:space="preserve"><value>关</value></data>
+  <data name="Version" xml:space="preserve"><value>版本</value></data>
+  <data name="TrialEdition" xml:space="preserve"><value>试用版 – 最多 10 个声音，每次启动 10 次麦克风播放</value></data>
+  <data name="LicensedTo" xml:space="preserve"><value>授权给 {0}（{1} 版）</value></data>
+  <data name="AboutText" xml:space="preserve"><value>一款将声音路由到麦克风的 Windows 音效板。音频引擎：NAudio、NVorbis、Concentus、TagLib#。虚拟麦克风通过 VB-CABLE / Voicemeeter 实现。</value></data>
+  <data name="DataFolder" xml:space="preserve"><value>数据</value></data>
+  <data name="LogFolder" xml:space="preserve"><value>日志</value></data>
+  <data name="OpenDataFolder" xml:space="preserve"><value>打开数据文件夹</value></data>
+  <data name="HideLicenseeName" xml:space="preserve"><value>隐藏我的名字（主播模式）</value></data>
+  <data name="RemoveLicense" xml:space="preserve"><value>移除许可证</value></data>
+  <data name="ConfirmRemoveLicense" xml:space="preserve"><value>从这台电脑移除许可证？</value></data>
+  <data name="RegisterPrompt" xml:space="preserve"><value>输入购买邮件中的名称和序列号。序列号将离线验证并保存在 license.dat 中。</value></data>
+  <data name="Name" xml:space="preserve"><value>名称：</value></data>
+  <data name="Serial" xml:space="preserve"><value>序列号：</value></data>
+  <data name="RegisteredThanks" xml:space="preserve"><value>感谢你！VoxPad 已注册。</value></data>
+  <data name="SerialInvalid" xml:space="preserve"><value>序列号与名称不匹配。请检查是否有输入错误（I/1 和 O/0 可互换）。</value></data>
+  <data name="AllTimePlays" xml:space="preserve"><value>累计麦克风播放次数</value></data>
+  <data name="ListPlays" xml:space="preserve"><value>此列表的播放次数</value></data>
+  <data name="SoundsInList" xml:space="preserve"><value>列表中的声音数</value></data>
+  <data name="Launches" xml:space="preserve"><value>启动次数</value></data>
+  <data name="Since" xml:space="preserve"><value>统计起始</value></data>
+  <data name="TopSounds" xml:space="preserve"><value>播放最多</value></data>
+  <data name="ResetAllTime" xml:space="preserve"><value>重置累计总数</value></data>
+  <data name="ConfirmResetAllTime" xml:space="preserve"><value>重置累计总数？</value></data>
+  <data name="WebImportPrompt" xml:space="preserve"><value>粘贴音频文件的直接链接（mp3、ogg、wav…）。文件将下载到你的 VoxPad 音乐文件夹并添加到列表。</value></data>
+  <data name="FileNameOptional" xml:space="preserve"><value>文件名（可选）：</value></data>
+  <data name="Import" xml:space="preserve"><value>导入</value></data>
+  <data name="Downloading" xml:space="preserve"><value>正在下载…</value></data>
+  <data name="UnsupportedFormat" xml:space="preserve"><value>不支持的音频格式</value></data>
+  <data name="RestorePrompt" xml:space="preserve"><value>每日备份在启动时写入。还原会替换当前列表（你仍可通过加载已保存的列表来撤销）。</value></data>
+  <data name="OpenBackupFolder" xml:space="preserve"><value>打开文件夹</value></data>
+  <data name="Restore" xml:space="preserve"><value>还原</value></data>
+  <data name="ConfirmRestore" xml:space="preserve"><value>还原 {0} 的备份？</value></data>
+  <data name="Restored" xml:space="preserve"><value>已还原 {0} 的备份</value></data>
+  <data name="Checking" xml:space="preserve"><value>正在检查…</value></data>
+  <data name="DownloadInstall" xml:space="preserve"><value>下载并安装</value></data>
+  <data name="PackageVerified" xml:space="preserve"><value>安装包已验证。安装程序即将启动；VoxPad 现在关闭。</value></data>
+  <data name="VoiceMeasurement" xml:space="preserve"><value>语音测量</value></data>
+  <data name="VoiceMeasurePrompt" xml:space="preserve"><value>对着麦克风正常说话约 8 秒。测得的响度将作为归一化目标，使声音与你的语音匹配（理想结果高于 74 dB）。</value></data>
+  <data name="CurrentTarget" xml:space="preserve"><value>当前目标</value></data>
+  <data name="DefaultNotMeasured" xml:space="preserve"><value>默认值，未测量</value></data>
+  <data name="Start" xml:space="preserve"><value>开始</value></data>
+  <data name="UseAsTarget" xml:space="preserve"><value>设为目标</value></data>
+  <data name="Measuring" xml:space="preserve"><value>正在测量</value></data>
+  <data name="NothingMeasured" xml:space="preserve"><value>未测到任何内容 – 麦克风是否静音或选错了设备？</value></data>
+  <data name="Result" xml:space="preserve"><value>结果</value></data>
+  <data name="TooQuiet" xml:space="preserve"><value>非常安静 – 请在 Windows 中提高麦克风电平</value></data>
+  <data name="BelowTarget" xml:space="preserve"><value>低于 74 dB；建议提高麦克风电平</value></data>
+  <data name="TargetSet" xml:space="preserve"><value>归一化目标已设为 {0:F1} dB</value></data>
+  <data name="Routing" xml:space="preserve"><value>路由</value></data>
+  <data name="TroubleChecklist" xml:space="preserve"><value>检查清单：
+• 安装 VB-CABLE（免费），然后在首选项 &gt; 设备中点击“刷新”。
+• 在 Discord/Teams/游戏中选择 'CABLE Output' 作为麦克风，并在那里禁用噪声抑制 / 回声消除。
+• 在“使用”下保持勾选你的真实麦克风，以便混入你的语音。
+• Windows 隐私：允许桌面应用使用麦克风。
+• 热键在游戏中无效？请以与游戏相同的权限级别运行 VoxPad。</value></data>
+  <data name="DiagnosticReport" xml:space="preserve"><value>诊断报告</value></data>
+  <data name="DiagnosticHint" xml:space="preserve"><value>创建一个包含日志、设备列表、路由状态和首选项（仅设备 ID，不含许可证数据）的 zip 文件，可附加到错误报告中。</value></data>
+  <data name="CreateReport" xml:space="preserve"><value>创建报告</value></data>
+  <data name="OpenDevices" xml:space="preserve"><value>设备…</value></data>
+  <data name="AutoKeysTroubleHint" xml:space="preserve"><value>当声音开始通过麦克风播放时，Auto Keys 会按下你的按键说话键。上次评估显示每个条目触发或未触发的原因。播放一个声音，然后重新打开此对话框再次检查。</value></data>
+  <data name="MicPlayMode" xml:space="preserve"><value>麦克风播放模式</value></data>
+  <data name="NotMicPlayMode" xml:space="preserve"><value>不是麦克风播放模式 – Auto Keys 永远不会触发</value></data>
+  <data name="Entries" xml:space="preserve"><value>条目</value></data>
+  <data name="ForegroundNow" xml:space="preserve"><value>当前前台应用</value></data>
+  <data name="NoEvaluationYet" xml:space="preserve"><value>本次会话尚未播放任何声音。</value></data>
+  <data name="LastEvaluation" xml:space="preserve"><value>上次评估</value></data>
+  <data name="OpenAutoKeysPrefs" xml:space="preserve"><value>Auto Keys 设置…</value></data>
+
+  <!-- TTS / recorder / editor -->
+  <data name="Voice" xml:space="preserve"><value>语音：</value></data>
+  <data name="Rate" xml:space="preserve"><value>语速</value></data>
+  <data name="PreviewSpeakers" xml:space="preserve"><value>预览 (Enter)</value></data>
+  <data name="SendToMic" xml:space="preserve"><value>发送到麦克风 (Ctrl+Enter)</value></data>
+  <data name="SaveToList" xml:space="preserve"><value>保存到列表</value></data>
+  <data name="TtsHint" xml:space="preserve"><value>Enter = 通过扬声器预览 · Ctrl+Enter = 通过麦克风播放 · 特殊热键“播放 TTS”会朗读此文本。</value></data>
+  <data name="Source" xml:space="preserve"><value>来源：</value></data>
+  <data name="Source_Speakers" xml:space="preserve"><value>扬声器（你听到的声音）</value></data>
+  <data name="Source_Mic" xml:space="preserve"><value>麦克风</value></data>
+  <data name="Format" xml:space="preserve"><value>格式：</value></data>
+  <data name="Insert" xml:space="preserve"><value>插入：</value></data>
+  <data name="InsertEnd" xml:space="preserve"><value>添加到列表末尾</value></data>
+  <data name="InsertBeginning" xml:space="preserve"><value>插入到开头</value></data>
+  <data name="AutoNormalize" xml:space="preserve"><value>自动归一化到</value></data>
+  <data name="DbHint" xml:space="preserve"><value>dB（89 ≈ −23 LUFS；高于 99 会削波）</value></data>
+  <data name="TrimSilence" xml:space="preserve"><value>裁剪首尾静音</value></data>
+  <data name="MaxTime" xml:space="preserve"><value>最长时间：</value></data>
+  <data name="MaxSecondsHint" xml:space="preserve"><value>秒（0 = 不限；以未压缩形式缓冲在 %TEMP% 中）</value></data>
+  <data name="TargetDirectory" xml:space="preserve"><value>目录：</value></data>
+  <data name="RecorderHotkeys" xml:space="preserve"><value>特殊热键：开始 = {0}，停止 = {1}。开始录制前会播放提示音。</value></data>
+  <data name="NotSet" xml:space="preserve"><value>未设置</value></data>
+  <data name="StartRecording" xml:space="preserve"><value>录制</value></data>
+  <data name="StopRecording" xml:space="preserve"><value>停止</value></data>
+  <data name="PlayLastTake" xml:space="preserve"><value>播放上次录音</value></data>
+  <data name="LastTake" xml:space="preserve"><value>上次录音</value></data>
+  <data name="MaxTimeReached" xml:space="preserve"><value>已达到最长录制时间。</value></data>
+  <data name="RecordingInProgress" xml:space="preserve"><value>正在录制。要放弃吗？</value></data>
+  <data name="TargetTooLoud" xml:space="preserve"><value>高于 99 dB 的目标会削波。仍要继续吗？</value></data>
+  <data name="RecordingFrom" xml:space="preserve"><value>正在从“{0}”录制…</value></data>
+  <data name="RecordingStarted" xml:space="preserve"><value>录制已开始</value></data>
+  <data name="NothingRecorded" xml:space="preserve"><value>未录到任何内容（静音）。</value></data>
+  <data name="RecordingSaved" xml:space="preserve"><value>录音已保存：{0}</value></data>
+  <data name="Editor" xml:space="preserve"><value>编辑器</value></data>
+  <data name="PlaySelection" xml:space="preserve"><value>播放选区</value></data>
+  <data name="Crop" xml:space="preserve"><value>裁剪</value></data>
+  <data name="VolumeUp" xml:space="preserve"><value>音量 +3 dB</value></data>
+  <data name="VolumeDown" xml:space="preserve"><value>音量 −3 dB</value></data>
+  <data name="VolumeCustom" xml:space="preserve"><value>音量…</value></data>
+  <data name="NormalizeTo" xml:space="preserve"><value>归一化…</value></data>
+  <data name="ZoomFit" xml:space="preserve"><value>适应</value></data>
+  <data name="ZoomSelection" xml:space="preserve"><value>缩放到选区</value></data>
+  <data name="Save" xml:space="preserve"><value>保存</value></data>
+  <data name="EditorHint" xml:space="preserve"><value>拖动选择 · Shift+方向键 / Home / End 扩展 · Ctrl+A 全选 · Ctrl+D 取消选择 · Del 剪切 · Esc 关闭</value></data>
+  <data name="Attr_Size" xml:space="preserve"><value>大小</value></data>
+  <data name="Attr_Format" xml:space="preserve"><value>格式</value></data>
+  <data name="Attr_SampleRate" xml:space="preserve"><value>采样率</value></data>
+  <data name="Attr_Duration" xml:space="preserve"><value>时长</value></data>
+  <data name="Attr_Channels" xml:space="preserve"><value>声道</value></data>
+  <data name="Attr_OriginalVolume" xml:space="preserve"><value>原始音量</value></data>
+  <data name="LongFileWarning" xml:space="preserve"><value>此文件超过 10 分钟。编辑时整个文件会保留在内存中，撤销快照会成倍增加内存占用；请注意内存使用量可能很高。</value></data>
+  <data name="CannotOpenFile" xml:space="preserve"><value>无法打开文件：{0}</value></data>
+  <data name="Modified" xml:space="preserve"><value>已修改</value></data>
+  <data name="Selection" xml:space="preserve"><value>选区</value></data>
+  <data name="NoSelection" xml:space="preserve"><value>无选区（操作将应用于整个文件）</value></data>
+  <data name="GainPrompt" xml:space="preserve"><value>增益（dB，负值 = 更安静）：</value></data>
+  <data name="NormalizePrompt" xml:space="preserve"><value>目标（dB，89 ≈ −23 LUFS）：</value></data>
+  <data name="EditorSaveQuestion" xml:space="preserve"><value>保存编辑后的音频？</value></data>
+  <data name="EditorSaved" xml:space="preserve"><value>已保存 {0}</value></data>
+
+  <!-- Preferences -->
+  <data name="Tab_Devices" xml:space="preserve"><value>设备</value></data>
+  <data name="Tab_Audio" xml:space="preserve"><value>音频</value></data>
+  <data name="Tab_Hotkeys" xml:space="preserve"><value>热键</value></data>
+  <data name="Tab_Recorder" xml:space="preserve"><value>录音机</value></data>
+  <data name="Tab_Interface" xml:space="preserve"><value>界面</value></data>
+  <data name="Tab_Notifications" xml:space="preserve"><value>通知</value></data>
+  <data name="Tab_Updates" xml:space="preserve"><value>更新</value></data>
+  <data name="SetupMode" xml:space="preserve"><value>设置模式</value></data>
+  <data name="SetupModeHint" xml:space="preserve"><value>VoxPad 没有自己的内核音频驱动程序。它将语音 + 声音渲染到虚拟线缆的播放端点；应用程序再从线缆的录制端点（例如 'CABLE Output'）录音。自动选择会依次尝试 VB-CABLE、VB-CABLE A/B、Voicemeeter、手动选择的线缆和 Stereo Mix。</value></data>
+  <data name="Refresh" xml:space="preserve"><value>刷新</value></data>
+  <data name="Status" xml:space="preserve"><value>状态：</value></data>
+  <data name="Microphones" xml:space="preserve"><value>麦克风（勾选“使用”以将其混入线缆）</value></data>
+  <data name="Use" xml:space="preserve"><value>使用</value></data>
+  <data name="DefaultComm" xml:space="preserve"><value>（默认通信设备）</value></data>
+  <data name="NoMics" xml:space="preserve"><value>未找到录音设备。</value></data>
+  <data name="NoMicsTickedHint" xml:space="preserve"><value>未勾选任何项 = 使用默认通信麦克风。</value></data>
+  <data name="VirtualCableEndpoint" xml:space="preserve"><value>虚拟线缆播放端点（用于“其他虚拟线缆”）</value></data>
+  <data name="AutoDetect" xml:space="preserve"><value>（自动检测）</value></data>
+  <data name="SpeakerDevice" xml:space="preserve"><value>扬声器（你自己听到的声音副本）</value></data>
+  <data name="DefaultDevice" xml:space="preserve"><value>（Windows 默认）</value></data>
+  <data name="RecorderMic" xml:space="preserve"><value>录音机使用的麦克风</value></data>
+  <data name="MicLatency" xml:space="preserve"><value>麦克风延迟 (ms)：</value></data>
+  <data name="LatencyHint" xml:space="preserve"><value>越低 = 语音延迟越小，越高 = 在较慢的电脑上更少断音。30 ms 是不错的默认值。</value></data>
+  <data name="OpenPrivacySettings" xml:space="preserve"><value>麦克风访问被拒绝 – 打开 Windows 隐私设置</value></data>
+  <data name="Normalization" xml:space="preserve"><value>音量归一化（EBU R128，按声道）</value></data>
+  <data name="Norm_Off" xml:space="preserve"><value>关闭</value></data>
+  <data name="Norm_Dynamic" xml:space="preserve"><value>动态 – 分析前 6 秒，播放时持续修正（默认）</value></data>
+  <data name="Norm_Full" xml:space="preserve"><value>完整文件 – 播放前分析整个文件（带缓存）</value></data>
+  <data name="MeasureVoice" xml:space="preserve"><value>测量语音…</value></data>
+  <data name="NormHint" xml:space="preserve"><value>通过麦克风播放的声音会调整到你的语音电平（请先测量；理想结果高于 74 dB）。扬声器副本不受影响 – 请用扬声器音量滑块调节自己听到的音量。</value></data>
+  <data name="BlockVoice" xml:space="preserve"><value>屏蔽语音</value></data>
+  <data name="BlockVoiceCheck" xml:space="preserve"><value>播放声音时完全替换我的语音（而不是混合）</value></data>
+  <data name="VoiceActivation" xml:space="preserve"><value>语音激活提示音</value></data>
+  <data name="VoiceActivationCheck" xml:space="preserve"><value>在麦克风上播放一段短促的响亮前导音，以便语音激活的应用打开其门限</value></data>
+  <data name="CustomFile" xml:space="preserve"><value>自定义文件（留空 = 250 ms 提示音）：</value></data>
+  <data name="Default" xml:space="preserve"><value>默认</value></data>
+  <data name="VoiceActivationHeadphones" xml:space="preserve"><value>同时在我的扬声器/耳机上播放前导音</value></data>
+  <data name="Playback" xml:space="preserve"><value>播放</value></data>
+  <data name="AllowResumeOtherMode" xml:space="preserve"><value>允许在另一种播放模式下继续播放（以新模式从暂停位置重新开始）</value></data>
+  <data name="General" xml:space="preserve"><value>常规</value></data>
+  <data name="HotkeysEnabledCheck" xml:space="preserve"><value>启用热键</value></data>
+  <data name="PassHotkeysCheck" xml:space="preserve"><value>将热键传递给活动应用程序（默认关闭：按键会被拦截）</value></data>
+  <data name="AutoStopCheck" xml:space="preserve"><value>自动停止：通过热键启动的声音忽略重复和连续播放（默认开启）</value></data>
+  <data name="HotkeysGeneralHint" xml:space="preserve"><value>右键单击声音或双击其“热键”单元格以设置热键。单个按键、与 Ctrl/Alt/Shift/Win 的任意组合以及鼠标中键/侧键 4/5 均可全局使用。</value></data>
+  <data name="SpecialHint" xml:space="preserve"><value>特殊热键为保留项：声音不能使用相同的按键。</value></data>
+  <data name="NumpadHotkeys" xml:space="preserve"><value>小键盘热键</value></data>
+  <data name="NumpadEnabledCheck" xml:space="preserve"><value>启用：按住修饰键，在小键盘上输入声音编号，然后松开</value></data>
+  <data name="Modifier" xml:space="preserve"><value>修饰键：</value></data>
+  <data name="NumpadHint" xml:space="preserve"><value>编号即当前类别的 # 列。</value></data>
+  <data name="IndexHotkeys" xml:space="preserve"><value>索引热键</value></data>
+  <data name="IndexEnabledCheck" xml:space="preserve"><value>启用：按住修饰键，用主键盘数字行输入行索引，然后松开</value></data>
+  <data name="IndexHint" xml:space="preserve"><value>索引即隐藏的“所有声音”类别中的行号，例如 Alt+1,2,3 播放第 123 行。</value></data>
+  <data name="Advanced" xml:space="preserve"><value>高级</value></data>
+  <data name="AllowLeftRight" xml:space="preserve"><value>区分左/右修饰键（LCtrl 和 RCtrl 视为不同按键）</value></data>
+  <data name="SameHotkeysAllCategories" xml:space="preserve"><value>所有类别使用相同热键（按行：第 N 行的热键播放所选类别的第 N 行）</value></data>
+  <data name="JumpSeconds" xml:space="preserve"><value>跳转 ±N 秒：</value></data>
+  <data name="VolumeStep" xml:space="preserve"><value>音量增/减步长 (%)：</value></data>
+  <data name="VolumeSet" xml:space="preserve"><value>“设置音量”热键的音量 (%)：</value></data>
+  <data name="AutoKeysEnabledCheck" xml:space="preserve"><value>启用 Auto Keys</value></data>
+  <data name="AutoKeysHint" xml:space="preserve"><value>自动按键说话：当声音开始通过麦克风播放时自动按下按键（在声音持续期间按住，或在前后各按一次）。仅在麦克风播放模式下触发。</value></data>
+  <data name="NoKey" xml:space="preserve"><value>（无按键）</value></data>
+  <data name="AutoKey" xml:space="preserve"><value>Auto Key</value></data>
+  <data name="OnlyIfHotkey" xml:space="preserve"><value>仅当通过热键播放时</value></data>
+  <data name="PressHold" xml:space="preserve"><value>在声音持续期间按住</value></data>
+  <data name="PressBeforeAfter" xml:space="preserve"><value>在前后各按一次</value></data>
+  <data name="PressMode" xml:space="preserve"><value>按键方式：</value></data>
+  <data name="Cond_Always" xml:space="preserve"><value>始终</value></data>
+  <data name="Cond_Fullscreen" xml:space="preserve"><value>前台应用处于全屏（含无边框）</value></data>
+  <data name="Cond_Running" xml:space="preserve"><value>列表中的应用正在运行</value></data>
+  <data name="Cond_Foreground" xml:space="preserve"><value>列表中的应用处于前台</value></data>
+  <data name="Condition" xml:space="preserve"><value>条件：</value></data>
+  <data name="AppsTip" xml:space="preserve"><value>进程名称，每行一个，例如 discord.exe</value></data>
+  <data name="Apps" xml:space="preserve"><value>应用列表：</value></data>
+  <data name="AddAutoKey" xml:space="preserve"><value>添加 Auto Key</value></data>
+  <data name="RecorderFormatHint" xml:space="preserve"><value>所有内容都会转换为立体声 48 kHz。编辑器也以此格式保存。</value></data>
+  <data name="TargetDb" xml:space="preserve"><value>目标（dB，默认 89 ≈ −23 LU；&gt;99 会削波）：</value></data>
+  <data name="NotificationSound" xml:space="preserve"><value>开始录制前播放提示音</value></data>
+  <data name="RecorderHotkeyHint" xml:space="preserve"><value>开始/停止录制的热键位于热键 &gt; 特殊选项卡。</value></data>
+  <data name="Language" xml:space="preserve"><value>语言：</value></data>
+  <data name="Style" xml:space="preserve"><value>样式：</value></data>
+  <data name="Theme_Light" xml:space="preserve"><value>浅色</value></data>
+  <data name="Theme_Dark" xml:space="preserve"><value>深色</value></data>
+  <data name="Theme_Native" xml:space="preserve"><value>原生 (Windows)</value></data>
+  <data name="NativeForced" xml:space="preserve"><value>高对比度或屏幕阅读器已启用：将使用原生样式。</value></data>
+  <data name="ToolbarItems" xml:space="preserve"><value>工具栏项目</value></data>
+  <data name="Timer" xml:space="preserve"><value>曲目计时器</value></data>
+  <data name="SeekSlider" xml:space="preserve"><value>进度滑块</value></data>
+  <data name="SpeakerVolume" xml:space="preserve"><value>扬声器音量</value></data>
+  <data name="MicLevelMeter" xml:space="preserve"><value>麦克风电平表</value></data>
+  <data name="Behaviour" xml:space="preserve"><value>行为</value></data>
+  <data name="StartMinimized" xml:space="preserve"><value>启动时最小化</value></data>
+  <data name="MinimizeToTrayCheck" xml:space="preserve"><value>最小化到系统托盘</value></data>
+  <data name="CloseToTray" xml:space="preserve"><value>关闭窗口时最小化到托盘而不是退出</value></data>
+  <data name="DisableSorting" xml:space="preserve"><value>禁用排序（列标题不再排序；仅手动顺序）</value></data>
+  <data name="Confirmations" xml:space="preserve"><value>确认</value></data>
+  <data name="ConfirmRemoveCheck" xml:space="preserve"><value>移除声音前确认</value></data>
+  <data name="ConfirmResetCheck" xml:space="preserve"><value>重置播放次数前确认</value></data>
+  <data name="ConfirmQuitCheck" xml:space="preserve"><value>有声音播放时退出需确认</value></data>
+  <data name="NotifyMissing" xml:space="preserve"><value>加载列表时提示缺失的文件</value></data>
+  <data name="NotifyDevices" xml:space="preserve"><value>在状态栏中报告音频设备更改</value></data>
+  <data name="NotifyTray" xml:space="preserve"><value>最小化到托盘时显示气泡提示</value></data>
+  <data name="NotifyRecording" xml:space="preserve"><value>录制开始时显示状态消息</value></data>
+  <data name="NotifyTrial" xml:space="preserve"><value>达到试用限制时显示对话框</value></data>
+  <data name="NotifyUpdates" xml:space="preserve"><value>显示可用更新</value></data>
+  <data name="CheckInterval" xml:space="preserve"><value>检查更新：</value></data>
+  <data name="Never" xml:space="preserve"><value>从不（默认）</value></data>
+  <data name="Daily" xml:space="preserve"><value>每天</value></data>
+  <data name="Weekly" xml:space="preserve"><value>每周</value></data>
+  <data name="ManifestUrl" xml:space="preserve"><value>清单 URL：</value></data>
+  <data name="UpdateHint" xml:space="preserve"><value>仅当清单签名和安装包哈希通过 VoxPad 内置密钥验证后才会安装更新包。</value></data>
+  <data name="LastCheck" xml:space="preserve"><value>上次检查</value></data>
+  <data name="CheckNow" xml:space="preserve"><value>立即检查</value></data>
+
+  <!-- Special hotkey names -->
+  <data name="Special_Stop" xml:space="preserve"><value>停止</value></data>
+  <data name="Special_Start" xml:space="preserve"><value>开始（播放所选 / 继续）</value></data>
+  <data name="Special_Pause" xml:space="preserve"><value>暂停 / 继续</value></data>
+  <data name="Special_PlayPrevious" xml:space="preserve"><value>播放上一个文件</value></data>
+  <data name="Special_PlayNext" xml:space="preserve"><value>播放下一个文件</value></data>
+  <data name="Special_PlaySelected" xml:space="preserve"><value>播放所选文件</value></data>
+  <data name="Special_PlayRandomInCategory" xml:space="preserve"><value>随机播放文件（当前类别）</value></data>
+  <data name="Special_PlayRandomFromAll" xml:space="preserve"><value>随机播放文件（所有声音）</value></data>
+  <data name="Special_SelectPreviousFile" xml:space="preserve"><value>选择上一个文件</value></data>
+  <data name="Special_SelectNextFile" xml:space="preserve"><value>选择下一个文件</value></data>
+  <data name="Special_SelectPreviousCategory" xml:space="preserve"><value>选择上一个类别</value></data>
+  <data name="Special_SelectNextCategory" xml:space="preserve"><value>选择下一个类别</value></data>
+  <data name="Special_StartRecording" xml:space="preserve"><value>开始录制</value></data>
+  <data name="Special_StopRecording" xml:space="preserve"><value>停止录制</value></data>
+  <data name="Special_JumpBackward" xml:space="preserve"><value>后退 N 秒</value></data>
+  <data name="Special_JumpForward" xml:space="preserve"><value>前进 N 秒</value></data>
+  <data name="Special_SpeakerVolumeUp" xml:space="preserve"><value>扬声器音量增大</value></data>
+  <data name="Special_SpeakerVolumeDown" xml:space="preserve"><value>扬声器音量减小</value></data>
+  <data name="Special_SpeakerVolumeSet" xml:space="preserve"><value>设置扬声器音量</value></data>
+  <data name="Special_SpeakerVolumeMute" xml:space="preserve"><value>扬声器静音 / 取消静音</value></data>
+  <data name="Special_SetPlayModeBoth" xml:space="preserve"><value>播放模式：扬声器 + 麦克风</value></data>
+  <data name="Special_SetPlayModeMic" xml:space="preserve"><value>播放模式：仅麦克风</value></data>
+  <data name="Special_SetPlayModeSpeakers" xml:space="preserve"><value>播放模式：仅扬声器</value></data>
+  <data name="Special_CyclePlayMode" xml:space="preserve"><value>循环切换播放模式</value></data>
+  <data name="Special_EnableHotkeys" xml:space="preserve"><value>启用热键</value></data>
+  <data name="Special_DisableHotkeys" xml:space="preserve"><value>禁用热键</value></data>
+  <data name="Special_ToggleHotkeys" xml:space="preserve"><value>切换热键</value></data>
+  <data name="Special_EnableAutoKeys" xml:space="preserve"><value>启用 Auto Keys</value></data>
+  <data name="Special_DisableAutoKeys" xml:space="preserve"><value>禁用 Auto Keys</value></data>
+  <data name="Special_ToggleAutoKeys" xml:space="preserve"><value>切换 Auto Keys</value></data>
+  <data name="Special_PlayTts" xml:space="preserve"><value>播放文本转语音文本</value></data>
+</root>

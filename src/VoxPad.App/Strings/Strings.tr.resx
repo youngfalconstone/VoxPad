@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+  <!-- Menus -->
+  <data name="File" xml:space="preserve"><value>_Dosya</value></data>
+  <data name="NewList" xml:space="preserve"><value>_Yeni ses listesi</value></data>
+  <data name="LoadList" xml:space="preserve"><value>Ses listesi _yükle…</value></data>
+  <data name="SaveList" xml:space="preserve"><value>Ses listesini _kaydet</value></data>
+  <data name="SaveListAs" xml:space="preserve"><value>Ses listesini _farklı kaydet…</value></data>
+  <data name="RecentLists" xml:space="preserve"><value>_Son ses listeleri</value></data>
+  <data name="RestoreList" xml:space="preserve"><value>Ses listesini geri yükle…</value></data>
+  <data name="AddFiles" xml:space="preserve"><value>Ses dosyası ekle…</value></data>
+  <data name="AddFolder" xml:space="preserve"><value>Klasör ekle…</value></data>
+  <data name="WebImport" xml:space="preserve"><value>Web'den içe aktar…</value></data>
+  <data name="Export" xml:space="preserve"><value>_Dışa aktar</value></data>
+  <data name="ExportSoundFiles" xml:space="preserve"><value>Ses dosyaları…</value></data>
+  <data name="ExportPreferences" xml:space="preserve"><value>Tercihler…</value></data>
+  <data name="ImportPreferences" xml:space="preserve"><value>Tercihleri içe aktar…</value></data>
+  <data name="Statistics" xml:space="preserve"><value>İstatistikler…</value></data>
+  <data name="Preferences" xml:space="preserve"><value>_Tercihler…</value></data>
+  <data name="Exit" xml:space="preserve"><value>Çı_kış</value></data>
+  <data name="Edit" xml:space="preserve"><value>_Düzen</value></data>
+  <data name="SelectAll" xml:space="preserve"><value>Tümünü seç</value></data>
+  <data name="Remove" xml:space="preserve"><value>Kaldır</value></data>
+  <data name="Copy" xml:space="preserve"><value>Kopyala</value></data>
+  <data name="Cut" xml:space="preserve"><value>Kes</value></data>
+  <data name="Paste" xml:space="preserve"><value>Yapıştır</value></data>
+  <data name="MoveUp" xml:space="preserve"><value>Yukarı taşı</value></data>
+  <data name="MoveDown" xml:space="preserve"><value>Aşağı taşı</value></data>
+  <data name="Undo" xml:space="preserve"><value>Geri al</value></data>
+  <data name="Redo" xml:space="preserve"><value>Yinele</value></data>
+  <data name="EditFile" xml:space="preserve"><value>Dosyayı düzenle…</value></data>
+  <data name="SetHotkey" xml:space="preserve"><value>Kısayol tuşu ata…</value></data>
+  <data name="RemoveHotkey" xml:space="preserve"><value>Kısayol tuşunu kaldır</value></data>
+  <data name="SetColor" xml:space="preserve"><value>Renk…</value></data>
+  <data name="PlayRandom" xml:space="preserve"><value>Rastgele çal</value></data>
+  <data name="ResetPlayCount" xml:space="preserve"><value>Çalma sayısını sıfırla</value></data>
+  <data name="ResetAllPlayCounts" xml:space="preserve"><value>Tüm çalma sayılarını sıfırla</value></data>
+  <data name="SelectInExplorer" xml:space="preserve"><value>Gezgin'de göster</value></data>
+  <data name="PlayMenu" xml:space="preserve"><value>_Çal</value></data>
+  <data name="Play" xml:space="preserve"><value>Çal</value></data>
+  <data name="PlayOnSpeakers" xml:space="preserve"><value>Hoparlörlerde çal</value></data>
+  <data name="PlayOnMic" xml:space="preserve"><value>Mikrofonda çal</value></data>
+  <data name="PauseResume" xml:space="preserve"><value>Duraklat / sürdür</value></data>
+  <data name="Stop" xml:space="preserve"><value>Durdur</value></data>
+  <data name="Previous" xml:space="preserve"><value>Önceki</value></data>
+  <data name="Next" xml:space="preserve"><value>Sonraki</value></data>
+  <data name="Repeat" xml:space="preserve"><value>Yinele</value></data>
+  <data name="Continue" xml:space="preserve"><value>Devam et</value></data>
+  <data name="AutoStop" xml:space="preserve"><value>Otomatik durdur (kısayol tuşuyla çalan sesler Yinele/Devam et'i yok sayar)</value></data>
+  <data name="PlayModeMenu" xml:space="preserve"><value>Çalma modu</value></data>
+  <data name="PlayMode_Both" xml:space="preserve"><value>Hoparlörler + Mikrofon</value></data>
+  <data name="PlayMode_Mic" xml:space="preserve"><value>Yalnızca mikrofon</value></data>
+  <data name="PlayMode_Speakers" xml:space="preserve"><value>Yalnızca hoparlörler</value></data>
+  <data name="Recorder" xml:space="preserve"><value>Kaydedici…</value></data>
+  <data name="TextToSpeech" xml:space="preserve"><value>Metin okuma…</value></data>
+  <data name="Window" xml:space="preserve"><value>_Pencere</value></data>
+  <data name="Categories" xml:space="preserve"><value>Kategoriler paneli</value></data>
+  <data name="Hotbar" xml:space="preserve"><value>Hızlı çubuk</value></data>
+  <data name="Toolbar" xml:space="preserve"><value>Çalma araç çubuğu</value></data>
+  <data name="StatusBar" xml:space="preserve"><value>Durum çubuğu</value></data>
+  <data name="ShowHiddenCategories" xml:space="preserve"><value>Gizli kategorileri göster</value></data>
+  <data name="CategoryIconSize" xml:space="preserve"><value>Kategori simge boyutu</value></data>
+  <data name="Small" xml:space="preserve"><value>Küçük</value></data>
+  <data name="Medium" xml:space="preserve"><value>Orta</value></data>
+  <data name="Large" xml:space="preserve"><value>Büyük</value></data>
+  <data name="ExtraLarge" xml:space="preserve"><value>Çok büyük</value></data>
+  <data name="Columns" xml:space="preserve"><value>Sütunlar</value></data>
+  <data name="HotbarSize" xml:space="preserve"><value>Hızlı çubuk boyutu…</value></data>
+  <data name="HotkeyOverview" xml:space="preserve"><value>Kısayol tuşlarına genel bakış…</value></data>
+  <data name="MinimizeToTray" xml:space="preserve"><value>Tepsiye küçült</value></data>
+  <data name="Help" xml:space="preserve"><value>_Yardım</value></data>
+  <data name="Manual" xml:space="preserve"><value>Kılavuz</value></data>
+  <data name="Troubleshooting" xml:space="preserve"><value>Sorun giderme…</value></data>
+  <data name="AutoKeysTroubleshooting" xml:space="preserve"><value>Auto Keys sorun giderme…</value></data>
+  <data name="CheckForUpdates" xml:space="preserve"><value>Güncellemeleri denetle…</value></data>
+  <data name="Register" xml:space="preserve"><value>Kaydol…</value></data>
+  <data name="About" xml:space="preserve"><value>VoxPad hakkında</value></data>
+
+  <!-- Toolbar / status bar -->
+  <data name="TimerTip" xml:space="preserve"><value>Geçen / toplam. Çalan sese atlamak için çift tıklayın.</value></data>
+  <data name="SpeakerVolumeTip" xml:space="preserve"><value>Hoparlör ses düzeyi (yalnızca sizin kopyanız; Windows ses karıştırıcısına bağlı)</value></data>
+  <data name="MicMeterTip" xml:space="preserve"><value>Mikrofon düzeyi. Ses düzeyinizi ölçmek için simgeye tıklayın.</value></data>
+  <data name="SeekTip" xml:space="preserve"><value>Kırmızı = başkaları duyar (mikrofon), mavi = yalnızca hoparlörler</value></data>
+  <data name="PlayModeTip" xml:space="preserve"><value>Çalma modu – değiştirmek için tıklayın</value></data>
+  <data name="HotkeysTip" xml:space="preserve"><value>Kısayol tuşları – çift tıklayarak aç/kapat, sağ tıklayarak seçenekler</value></data>
+  <data name="PassHotkeys" xml:space="preserve"><value>Kısayol tuşlarını etkin uygulamaya ilet</value></data>
+  <data name="Hotkeys" xml:space="preserve"><value>Kısayol tuşları</value></data>
+  <data name="AutoKeysTip" xml:space="preserve"><value>Auto Keys – çift tıklayarak aç/kapat, sağ tıklayarak sorun giderme</value></data>
+  <data name="AutoKeys" xml:space="preserve"><value>Auto Keys</value></data>
+  <data name="RepeatTip" xml:space="preserve"><value>Geçerli sesi yinele – tıklayarak aç/kapat</value></data>
+  <data name="ContinueTip" xml:space="preserve"><value>Sonraki sesle devam et – tıklayarak aç/kapat</value></data>
+  <data name="PreviousPage" xml:space="preserve"><value>Önceki sayfa (Ctrl+PgUp)</value></data>
+  <data name="NextPage" xml:space="preserve"><value>Sonraki sayfa (Ctrl+PgDn)</value></data>
+  <data name="HideCategory" xml:space="preserve"><value>Kategoriyi gizle</value></data>
+  <data name="SearchTip" xml:space="preserve"><value>Filtrelemek için yazın · Enter eşleşmeler arasında gezer · Ctrl+Enter çalar · Esc temizler</value></data>
+  <data name="ColTag" xml:space="preserve"><value>Etiket</value></data>
+  <data name="ColDuration" xml:space="preserve"><value>Süre</value></data>
+  <data name="ColHotkey" xml:space="preserve"><value>Kısayol tuşu</value></data>
+  <data name="ColPlayCount" xml:space="preserve"><value>Çalma sayısı</value></data>
+  <data name="ColLastPlayed" xml:space="preserve"><value>Son çalma</value></data>
+  <data name="ColIndex" xml:space="preserve"><value>#</value></data>
+  <data name="MoveToCategory" xml:space="preserve"><value>Kategoriye taşı</value></data>
+  <data name="RemoveFromCategory" xml:space="preserve"><value>Bu kategoriden kaldır</value></data>
+  <data name="AddCategory" xml:space="preserve"><value>Kategori ekle…</value></data>
+  <data name="AddSubcategory" xml:space="preserve"><value>Alt kategori ekle…</value></data>
+  <data name="RenameCategory" xml:space="preserve"><value>Yeniden adlandır…</value></data>
+  <data name="RemoveCategory" xml:space="preserve"><value>Kategoriyi kaldır</value></data>
+  <data name="SetRandomHotkey" xml:space="preserve"><value>'Rastgele çal' kısayol tuşu ata…</value></data>
+  <data name="AllSounds" xml:space="preserve"><value>Tüm sesler</value></data>
+  <data name="UntitledList" xml:space="preserve"><value>Adsız</value></data>
+  <data name="Trial" xml:space="preserve"><value>Deneme</value></data>
+  <data name="TrialStatus" xml:space="preserve"><value>Deneme: en fazla {0} ses, bu oturumda {1} mikrofon çalması kaldı</value></data>
+
+  <!-- Status messages -->
+  <data name="PlayModeSet" xml:space="preserve"><value>Çalma modu: {0}</value></data>
+  <data name="HotkeysOn" xml:space="preserve"><value>Kısayol tuşları etkin</value></data>
+  <data name="HotkeysOff" xml:space="preserve"><value>Kısayol tuşları devre dışı</value></data>
+  <data name="AutoKeysOn" xml:space="preserve"><value>Auto Keys etkin</value></data>
+  <data name="AutoKeysOff" xml:space="preserve"><value>Auto Keys devre dışı</value></data>
+  <data name="Playing" xml:space="preserve"><value>Çalınıyor: '{0}' → {1}</value></data>
+  <data name="TrialPlayLimit" xml:space="preserve"><value>Deneme: oturum başına 10 mikrofon çalması sınırına ulaşıldı. Sınırı kaldırmak için kaydolun.</value></data>
+  <data name="TrialSoundLimit" xml:space="preserve"><value>Deneme: liste en fazla {0} ses içerebilir. Sınırı kaldırmak için kaydolun.</value></data>
+  <data name="NothingToPlay" xml:space="preserve"><value>Çalınacak bir şey yok</value></data>
+  <data name="DevicesChanged" xml:space="preserve"><value>Ses aygıtları değişti; yönlendirme yeniden uygulandı.</value></data>
+  <data name="MissingFiles" xml:space="preserve"><value>Listedeki {0} dosya eksik (soluk gösteriliyor).</value></data>
+  <data name="CategoryInfo" xml:space="preserve"><value>{0}: {1} ses, toplam {2}</value></data>
+  <data name="Copied" xml:space="preserve"><value>{0} ses kopyalandı</value></data>
+  <data name="CutStatus" xml:space="preserve"><value>{0} ses kesildi</value></data>
+  <data name="Importing" xml:space="preserve"><value>{0} dosya okunuyor…</value></data>
+  <data name="Imported" xml:space="preserve"><value>{0} ses eklendi</value></data>
+  <data name="NoAudioFiles" xml:space="preserve"><value>Desteklenen ses dosyası bulunamadı</value></data>
+  <data name="ConfirmRemove" xml:space="preserve"><value>{0} ses listeden kaldırılsın mı? Ses dosyaları silinmez.</value></data>
+  <data name="Removed" xml:space="preserve"><value>{0} ses kaldırıldı</value></data>
+  <data name="HotkeyFor" xml:space="preserve"><value>'{0}' için kısayol tuşu</value></data>
+  <data name="RandomHotkeyFor" xml:space="preserve"><value>'{0}' için 'Rastgele çal' kısayol tuşu</value></data>
+  <data name="BareMouseNotAllowed" xml:space="preserve"><value>Sol ve sağ fare düğmeleri için bir değiştirici tuş gerekir (örn. Ctrl+tık).</value></data>
+  <data name="ReservedHotkey" xml:space="preserve"><value>{0}, '{1}' özel kısayol tuşu için ayrılmış.</value></data>
+  <data name="HotkeyRemoved" xml:space="preserve"><value>'{0}' kısayol tuşu kaldırıldı</value></data>
+  <data name="HotkeySet" xml:space="preserve"><value>{0} → '{1}'</value></data>
+  <data name="ConfirmResetPlayCount" xml:space="preserve"><value>{0} sesin çalma sayısı sıfırlansın mı?</value></data>
+  <data name="ConfirmResetAll" xml:space="preserve"><value>Tüm seslerin çalma sayısı ve liste toplamı sıfırlansın mı?</value></data>
+  <data name="FileMissing" xml:space="preserve"><value>Dosya bulunamadı: {0}</value></data>
+  <data name="ConfirmRemoveCategory" xml:space="preserve"><value>'{0}' kategorisi (ve alt kategorileri) kaldırılsın mı? Sesler listede kalır.</value></data>
+  <data name="CategoryName" xml:space="preserve"><value>Ad:</value></data>
+  <data name="NewCategory" xml:space="preserve"><value>Yeni kategori</value></data>
+  <data name="AddedToCategory" xml:space="preserve"><value>{0} ses → '{1}'</value></data>
+  <data name="ReorderWhileSorted" xml:space="preserve"><value>El ile sıralamak için sıralamayı kaldırın (sütun başlığına yeniden tıklayın).</value></data>
+  <data name="UnsavedTitle" xml:space="preserve"><value>Kaydedilmemiş değişiklikler</value></data>
+  <data name="UnsavedText" xml:space="preserve"><value>Ses listesinde kaydedilmemiş değişiklikler var. Yok sayılsın mı?</value></data>
+  <data name="NewListCreated" xml:space="preserve"><value>Yeni ses listesi</value></data>
+  <data name="ListLoaded" xml:space="preserve"><value>{0} yüklendi</value></data>
+  <data name="ListLoadFailed" xml:space="preserve"><value>Ses listesi yüklenemedi: {0}</value></data>
+  <data name="ListSaved" xml:space="preserve"><value>{0} kaydedildi</value></data>
+  <data name="Exported" xml:space="preserve"><value>{0} dosya dışa aktarıldı, {1} başarısız → {2}</value></data>
+  <data name="PrefsExported" xml:space="preserve"><value>Tercihler şuraya dışa aktarıldı: {0}</value></data>
+  <data name="PrefsImportedRestart" xml:space="preserve"><value>Tercihler içe aktarıldı. Uygulamak için VoxPad'i yeniden başlatın.</value></data>
+  <data name="NoSoundAtNumber" xml:space="preserve"><value>{0} numarasında ses yok</value></data>
+  <data name="ElevatedWarning" xml:space="preserve"><value>VoxPad yönetici olarak çalışıyor: Gezgin'den sürükleyip bırakma çalışmaz (Windows, yükseltilmiş pencerelere bırakmayı engeller).</value></data>
+  <data name="UnexpectedError" xml:space="preserve"><value>Beklenmeyen bir hata oluştu.</value></data>
+  <data name="DumpWritten" xml:space="preserve"><value>Ayrıntılar şuraya yazıldı:</value></data>
+  <data name="TrayHint" xml:space="preserve"><value>VoxPad bildirim alanında çalışmaya devam ediyor. Geri getirmek için simgeye çift tıklayın.</value></data>
+  <data name="Tray_Show" xml:space="preserve"><value>VoxPad'i göster</value></data>
+  <data name="ConfirmQuitPlaying" xml:space="preserve"><value>Bir ses çalıyor. Yine de çıkılsın mı?</value></data>
+  <data name="SaveBeforeExit" xml:space="preserve"><value>Çıkmadan önce ses listesindeki değişiklikler kaydedilsin mi?</value></data>
+  <data name="MicAccessDenied" xml:space="preserve"><value>Windows, masaüstü uygulamalarının mikrofon erişimini engelliyor; bu yüzden VoxPad mikrofonunuzu okuyamıyor.
+
+Çözüm: Ayarlar &gt; Gizlilik ve güvenlik &gt; Mikrofon &gt; "Mikrofon erişimi" ve "Masaüstü uygulamalarının mikrofonunuza erişmesine izin ver" seçeneklerini açın, sonra Tercihler &gt; Aygıtlar'da Yenile'ye basın.</value></data>
+  <data name="OpenSettingsQuestion" xml:space="preserve"><value>Gizlilik ayarları şimdi açılsın mı?</value></data>
+  <data name="AccessDenied" xml:space="preserve"><value>Erişim reddedildi</value></data>
+  <data name="RemoveFromHotbar" xml:space="preserve"><value>Hızlı çubuktan kaldır</value></data>
+  <data name="EmptyTileHint" xml:space="preserve"><value>Buraya bir ses sürükleyin</value></data>
+  <data name="PrefsSaved" xml:space="preserve"><value>Tercihler kaydedildi</value></data>
+  <data name="LanguageRestart" xml:space="preserve"><value>Dil, VoxPad yeniden başlatıldıktan sonra değişir.</value></data>
+
+  <!-- Dialogs -->
+  <data name="OK" xml:space="preserve"><value>Tamam</value></data>
+  <data name="Cancel" xml:space="preserve"><value>İptal</value></data>
+  <data name="Apply" xml:space="preserve"><value>Uygula</value></data>
+  <data name="Close" xml:space="preserve"><value>Kapat</value></data>
+  <data name="Clear" xml:space="preserve"><value>Temizle</value></data>
+  <data name="None" xml:space="preserve"><value>(yok)</value></data>
+  <data name="HotkeyCapturePrompt" xml:space="preserve"><value>Şimdi tuşa veya tuş bileşimine basın. Orta, 4 ve 5 numaralı fare düğmeleri de çalışır (sol/sağ için değiştirici gerekir). Enter kaydeder, Delete veya Backspace temizler, Esc iptal eder.</value></data>
+  <data name="HexColor" xml:space="preserve"><value>Hex:</value></data>
+  <data name="NoColor" xml:space="preserve"><value>Renk yok</value></data>
+  <data name="Rows" xml:space="preserve"><value>Satırlar:</value></data>
+  <data name="Pages" xml:space="preserve"><value>Sayfalar:</value></data>
+  <data name="HotbarSizeHint" xml:space="preserve"><value>Kısayol tuşları sayfalar arasında ortaktır. Yeni ızgaranın dışında kalan kutucuklar kaldırılır.</value></data>
+  <data name="Type" xml:space="preserve"><value>Tür</value></data>
+  <data name="Target" xml:space="preserve"><value>Hedef</value></data>
+  <data name="Sound" xml:space="preserve"><value>Ses</value></data>
+  <data name="CategoryRandom" xml:space="preserve"><value>Kategoride rastgele çal</value></data>
+  <data name="Special" xml:space="preserve"><value>Özel</value></data>
+  <data name="Numpad" xml:space="preserve"><value>Sayısal tuş takımı</value></data>
+  <data name="NumpadDesc" xml:space="preserve"><value>Geçerli kategoride numaraya göre çal</value></data>
+  <data name="Index" xml:space="preserve"><value>Dizin</value></data>
+  <data name="IndexDesc" xml:space="preserve"><value>Tüm sesler'de satır dizinine göre çal</value></data>
+  <data name="HotkeyOverviewHint" xml:space="preserve"><value>Kısayol tuşları {0}; iletme {1}.</value></data>
+  <data name="Enabled" xml:space="preserve"><value>etkin</value></data>
+  <data name="Disabled" xml:space="preserve"><value>devre dışı</value></data>
+  <data name="On" xml:space="preserve"><value>açık</value></data>
+  <data name="Off" xml:space="preserve"><value>kapalı</value></data>
+  <data name="Version" xml:space="preserve"><value>Sürüm</value></data>
+  <data name="TrialEdition" xml:space="preserve"><value>Deneme – en fazla 10 ses, oturum başına 10 mikrofon çalması</value></data>
+  <data name="LicensedTo" xml:space="preserve"><value>Lisans sahibi: {0} ({1} sürümü)</value></data>
+  <data name="AboutText" xml:space="preserve"><value>Sesleri mikrofonunuza yönlendiren bir Windows soundboard uygulaması. Ses motoru: NAudio, NVorbis, Concentus, TagLib#. Sanal mikrofon: VB-CABLE / Voicemeeter.</value></data>
+  <data name="DataFolder" xml:space="preserve"><value>Veriler</value></data>
+  <data name="LogFolder" xml:space="preserve"><value>Günlükler</value></data>
+  <data name="OpenDataFolder" xml:space="preserve"><value>Veri klasörünü aç</value></data>
+  <data name="HideLicenseeName" xml:space="preserve"><value>Adımı gizle (yayıncı modu)</value></data>
+  <data name="RemoveLicense" xml:space="preserve"><value>Lisansı kaldır</value></data>
+  <data name="ConfirmRemoveLicense" xml:space="preserve"><value>Lisans bu bilgisayardan kaldırılsın mı?</value></data>
+  <data name="RegisterPrompt" xml:space="preserve"><value>Satın alma e-postanızdaki adı ve seri numarasını girin. Seri numarası çevrimdışı doğrulanır ve license.dat dosyasında saklanır.</value></data>
+  <data name="Name" xml:space="preserve"><value>Ad:</value></data>
+  <data name="Serial" xml:space="preserve"><value>Seri numarası:</value></data>
+  <data name="RegisteredThanks" xml:space="preserve"><value>Teşekkürler! VoxPad artık kayıtlı.</value></data>
+  <data name="SerialInvalid" xml:space="preserve"><value>Seri numarası adla eşleşmiyor. Yazım hatalarını denetleyin (I/1 ve O/0 birbirinin yerine kullanılabilir).</value></data>
+  <data name="AllTimePlays" xml:space="preserve"><value>Tüm zamanların mikrofon çalmaları</value></data>
+  <data name="ListPlays" xml:space="preserve"><value>Bu listedeki çalmalar</value></data>
+  <data name="SoundsInList" xml:space="preserve"><value>Listedeki sesler</value></data>
+  <data name="Launches" xml:space="preserve"><value>Başlatmalar</value></data>
+  <data name="Since" xml:space="preserve"><value>Başlangıç</value></data>
+  <data name="TopSounds" xml:space="preserve"><value>En çok çalınanlar</value></data>
+  <data name="ResetAllTime" xml:space="preserve"><value>Genel toplamı sıfırla</value></data>
+  <data name="ConfirmResetAllTime" xml:space="preserve"><value>Genel toplam sıfırlansın mı?</value></data>
+  <data name="WebImportPrompt" xml:space="preserve"><value>Bir ses dosyasına (mp3, ogg, wav…) doğrudan bağlantı yapıştırın. Dosya VoxPad müzik klasörünüze indirilir ve listeye eklenir.</value></data>
+  <data name="FileNameOptional" xml:space="preserve"><value>Dosya adı (isteğe bağlı):</value></data>
+  <data name="Import" xml:space="preserve"><value>İçe aktar</value></data>
+  <data name="Downloading" xml:space="preserve"><value>İndiriliyor…</value></data>
+  <data name="UnsupportedFormat" xml:space="preserve"><value>Desteklenmeyen ses biçimi</value></data>
+  <data name="RestorePrompt" xml:space="preserve"><value>Günlük yedekler başlangıçta yazılır. Geri yükleme geçerli listenin yerini alır (kaydettiğiniz listeyi yükleyerek geri alabilirsiniz).</value></data>
+  <data name="OpenBackupFolder" xml:space="preserve"><value>Klasörü aç</value></data>
+  <data name="Restore" xml:space="preserve"><value>Geri yükle</value></data>
+  <data name="ConfirmRestore" xml:space="preserve"><value>{0} tarihli yedek geri yüklensin mi?</value></data>
+  <data name="Restored" xml:space="preserve"><value>{0} tarihli yedek geri yüklendi</value></data>
+  <data name="Checking" xml:space="preserve"><value>Denetleniyor…</value></data>
+  <data name="DownloadInstall" xml:space="preserve"><value>İndir ve yükle</value></data>
+  <data name="PackageVerified" xml:space="preserve"><value>Paket doğrulandı. Yükleyici başlatılacak; VoxPad şimdi kapanıyor.</value></data>
+  <data name="VoiceMeasurement" xml:space="preserve"><value>Ses ölçümü</value></data>
+  <data name="VoiceMeasurePrompt" xml:space="preserve"><value>Yaklaşık 8 saniye boyunca mikrofonunuza normal şekilde konuşun. Ölçülen ses yüksekliği normalleştirme hedefi olur; böylece sesler sesinize uyar (iyi bir sonuç 74 dB'nin üzerindedir).</value></data>
+  <data name="CurrentTarget" xml:space="preserve"><value>Geçerli hedef</value></data>
+  <data name="DefaultNotMeasured" xml:space="preserve"><value>varsayılan, ölçülmedi</value></data>
+  <data name="Start" xml:space="preserve"><value>Başlat</value></data>
+  <data name="UseAsTarget" xml:space="preserve"><value>Hedef olarak kullan</value></data>
+  <data name="Measuring" xml:space="preserve"><value>Ölçülüyor</value></data>
+  <data name="NothingMeasured" xml:space="preserve"><value>Hiçbir şey ölçülmedi – mikrofon sessize alınmış ya da yanlış aygıt seçilmiş olabilir mi?</value></data>
+  <data name="Result" xml:space="preserve"><value>Sonuç</value></data>
+  <data name="TooQuiet" xml:space="preserve"><value>çok sessiz – Windows'ta mikrofon düzeyini yükseltin</value></data>
+  <data name="BelowTarget" xml:space="preserve"><value>74 dB'nin altında; mikrofon düzeyini yükseltmeyi düşünün</value></data>
+  <data name="TargetSet" xml:space="preserve"><value>Normalleştirme hedefi {0:F1} dB olarak ayarlandı</value></data>
+  <data name="Routing" xml:space="preserve"><value>Yönlendirme</value></data>
+  <data name="TroubleChecklist" xml:space="preserve"><value>Denetim listesi:
+• VB-CABLE'ı (ücretsiz) yükleyin ve Tercihler &gt; Aygıtlar'da Yenile'ye basın.
+• Discord/Teams/oyunda mikrofon olarak 'CABLE Output'u seçin ve oradaki gürültü bastırma / yankı giderme özelliklerini kapatın.
+• Sesinizin karıştırılması için gerçek mikrofonunuzu 'Kullan' altında işaretli tutun.
+• Windows gizliliği: masaüstü uygulamalarının mikrofonu kullanmasına izin verin.
+• Kısayol tuşları oyunda çalışmıyor mu? VoxPad'i oyunla aynı yetki düzeyinde çalıştırın.</value></data>
+  <data name="DiagnosticReport" xml:space="preserve"><value>Tanılama raporu</value></data>
+  <data name="DiagnosticHint" xml:space="preserve"><value>Günlük, aygıt listesi, yönlendirme durumu ve tercihleri (yalnızca aygıt kimlikleri, lisans verisi yok) içeren ve hata raporuna ekleyebileceğiniz bir zip oluşturur.</value></data>
+  <data name="CreateReport" xml:space="preserve"><value>Rapor oluştur</value></data>
+  <data name="OpenDevices" xml:space="preserve"><value>Aygıtlar…</value></data>
+  <data name="AutoKeysTroubleHint" xml:space="preserve"><value>Auto Keys, bir ses mikrofonda başladığında bas-konuş tuşunuza basar. Son değerlendirme her girdinin neden tetiklenip tetiklenmediğini gösterir. Bir ses çalın, sonra yeniden denetlemek için bu iletişim kutusunu tekrar açın.</value></data>
+  <data name="MicPlayMode" xml:space="preserve"><value>mikrofon çalma modu</value></data>
+  <data name="NotMicPlayMode" xml:space="preserve"><value>mikrofon çalma modu DEĞİL – Auto Keys hiç tetiklenmez</value></data>
+  <data name="Entries" xml:space="preserve"><value>Girdiler</value></data>
+  <data name="ForegroundNow" xml:space="preserve"><value>Şu anki ön plan uygulaması</value></data>
+  <data name="NoEvaluationYet" xml:space="preserve"><value>Bu oturumda henüz ses çalınmadı.</value></data>
+  <data name="LastEvaluation" xml:space="preserve"><value>Son değerlendirme</value></data>
+  <data name="OpenAutoKeysPrefs" xml:space="preserve"><value>Auto Keys ayarları…</value></data>
+
+  <!-- TTS / recorder / editor -->
+  <data name="Voice" xml:space="preserve"><value>Ses:</value></data>
+  <data name="Rate" xml:space="preserve"><value>Hız</value></data>
+  <data name="PreviewSpeakers" xml:space="preserve"><value>Önizle (Enter)</value></data>
+  <data name="SendToMic" xml:space="preserve"><value>Mikrofona gönder (Ctrl+Enter)</value></data>
+  <data name="SaveToList" xml:space="preserve"><value>Listeye kaydet</value></data>
+  <data name="TtsHint" xml:space="preserve"><value>Enter = hoparlörlerde önizle · Ctrl+Enter = mikrofonda çal · 'TTS çal' özel kısayol tuşu bu metni seslendirir.</value></data>
+  <data name="Source" xml:space="preserve"><value>Kaynak:</value></data>
+  <data name="Source_Speakers" xml:space="preserve"><value>Hoparlörler (duyduğunuz ses)</value></data>
+  <data name="Source_Mic" xml:space="preserve"><value>Mikrofon</value></data>
+  <data name="Format" xml:space="preserve"><value>Biçim:</value></data>
+  <data name="Insert" xml:space="preserve"><value>Ekle:</value></data>
+  <data name="InsertEnd" xml:space="preserve"><value>Listenin sonuna ekle</value></data>
+  <data name="InsertBeginning" xml:space="preserve"><value>Başa ekle</value></data>
+  <data name="AutoNormalize" xml:space="preserve"><value>Otomatik normalleştir:</value></data>
+  <data name="DbHint" xml:space="preserve"><value>dB (89 ≈ −23 LUFS; 99 üzeri kırpılır)</value></data>
+  <data name="TrimSilence" xml:space="preserve"><value>Baştaki ve sondaki sessizliği kırp</value></data>
+  <data name="MaxTime" xml:space="preserve"><value>En fazla süre:</value></data>
+  <data name="MaxSecondsHint" xml:space="preserve"><value>saniye (0 = sınırsız; %TEMP% içinde sıkıştırılmadan arabelleğe alınır)</value></data>
+  <data name="TargetDirectory" xml:space="preserve"><value>Dizin:</value></data>
+  <data name="RecorderHotkeys" xml:space="preserve"><value>Özel kısayol tuşları: başlat = {0}, durdur = {1}. Yakalama başlamadan önce bir bildirim sesi çalar.</value></data>
+  <data name="NotSet" xml:space="preserve"><value>ayarlanmadı</value></data>
+  <data name="StartRecording" xml:space="preserve"><value>Kaydet</value></data>
+  <data name="StopRecording" xml:space="preserve"><value>Durdur</value></data>
+  <data name="PlayLastTake" xml:space="preserve"><value>Son kaydı çal</value></data>
+  <data name="LastTake" xml:space="preserve"><value>Son kayıt</value></data>
+  <data name="MaxTimeReached" xml:space="preserve"><value>En fazla kayıt süresine ulaşıldı.</value></data>
+  <data name="RecordingInProgress" xml:space="preserve"><value>Kayıt sürüyor. Yok sayılsın mı?</value></data>
+  <data name="TargetTooLoud" xml:space="preserve"><value>99 dB'nin üzerindeki hedef kırpılır. Yine de devam edilsin mi?</value></data>
+  <data name="RecordingFrom" xml:space="preserve"><value>'{0}' kaynağından kaydediliyor…</value></data>
+  <data name="RecordingStarted" xml:space="preserve"><value>Kayıt başladı</value></data>
+  <data name="NothingRecorded" xml:space="preserve"><value>Hiçbir şey kaydedilmedi (sessizlik).</value></data>
+  <data name="RecordingSaved" xml:space="preserve"><value>Kayıt kaydedildi: {0}</value></data>
+  <data name="Editor" xml:space="preserve"><value>Düzenleyici</value></data>
+  <data name="PlaySelection" xml:space="preserve"><value>Seçimi çal</value></data>
+  <data name="Crop" xml:space="preserve"><value>Kırp</value></data>
+  <data name="VolumeUp" xml:space="preserve"><value>Ses +3 dB</value></data>
+  <data name="VolumeDown" xml:space="preserve"><value>Ses −3 dB</value></data>
+  <data name="VolumeCustom" xml:space="preserve"><value>Ses düzeyi…</value></data>
+  <data name="NormalizeTo" xml:space="preserve"><value>Normalleştir…</value></data>
+  <data name="ZoomFit" xml:space="preserve"><value>Sığdır</value></data>
+  <data name="ZoomSelection" xml:space="preserve"><value>Seçimi yakınlaştır</value></data>
+  <data name="Save" xml:space="preserve"><value>Kaydet</value></data>
+  <data name="EditorHint" xml:space="preserve"><value>Seçmek için sürükleyin · Shift+oklar / Home / End genişletir · Ctrl+A tümü · Ctrl+D seçimi kaldırır · Del keser · Esc kapatır</value></data>
+  <data name="Attr_Size" xml:space="preserve"><value>Boyut</value></data>
+  <data name="Attr_Format" xml:space="preserve"><value>Biçim</value></data>
+  <data name="Attr_SampleRate" xml:space="preserve"><value>Örnekleme hızı</value></data>
+  <data name="Attr_Duration" xml:space="preserve"><value>Süre</value></data>
+  <data name="Attr_Channels" xml:space="preserve"><value>Kanallar</value></data>
+  <data name="Attr_OriginalVolume" xml:space="preserve"><value>Özgün ses düzeyi</value></data>
+  <data name="LongFileWarning" xml:space="preserve"><value>Bu dosya 10 dakikadan uzun. Düzenleme dosyanın tamamını bellekte tutar ve geri alma anlık görüntüleri bunu katlar; yüksek bellek kullanımı bekleyin.</value></data>
+  <data name="CannotOpenFile" xml:space="preserve"><value>Dosya açılamadı: {0}</value></data>
+  <data name="Modified" xml:space="preserve"><value>değiştirildi</value></data>
+  <data name="Selection" xml:space="preserve"><value>Seçim</value></data>
+  <data name="NoSelection" xml:space="preserve"><value>Seçim yok (işlemler tüm dosyaya uygulanır)</value></data>
+  <data name="GainPrompt" xml:space="preserve"><value>Kazanç, dB (negatif = daha sessiz):</value></data>
+  <data name="NormalizePrompt" xml:space="preserve"><value>Hedef, dB (89 ≈ −23 LUFS):</value></data>
+  <data name="EditorSaveQuestion" xml:space="preserve"><value>Düzenlenen ses kaydedilsin mi?</value></data>
+  <data name="EditorSaved" xml:space="preserve"><value>{0} kaydedildi</value></data>
+
+  <!-- Preferences -->
+  <data name="Tab_Devices" xml:space="preserve"><value>Aygıtlar</value></data>
+  <data name="Tab_Audio" xml:space="preserve"><value>Ses</value></data>
+  <data name="Tab_Hotkeys" xml:space="preserve"><value>Kısayol tuşları</value></data>
+  <data name="Tab_Recorder" xml:space="preserve"><value>Kaydedici</value></data>
+  <data name="Tab_Interface" xml:space="preserve"><value>Arabirim</value></data>
+  <data name="Tab_Notifications" xml:space="preserve"><value>Bildirimler</value></data>
+  <data name="Tab_Updates" xml:space="preserve"><value>Güncellemeler</value></data>
+  <data name="SetupMode" xml:space="preserve"><value>Kurulum modu</value></data>
+  <data name="SetupModeHint" xml:space="preserve"><value>VoxPad'in kendi çekirdek ses sürücüsü yoktur. Ses + sesleri sanal bir kablonun çalma uç noktasına işler; uygulamalar ise kablonun kayıt uç noktasından (örn. 'CABLE Output') kaydeder. Otomatik seçim sırasıyla VB-CABLE, VB-CABLE A/B, Voicemeeter, el ile seçilen kablo ve Stereo Mix'i dener.</value></data>
+  <data name="Refresh" xml:space="preserve"><value>Yenile</value></data>
+  <data name="Status" xml:space="preserve"><value>Durum: </value></data>
+  <data name="Microphones" xml:space="preserve"><value>Mikrofonlar (kabloya karıştırılacakları 'Kullan' ile işaretleyin)</value></data>
+  <data name="Use" xml:space="preserve"><value>Kullan</value></data>
+  <data name="DefaultComm" xml:space="preserve"><value> (varsayılan iletişim)</value></data>
+  <data name="NoMics" xml:space="preserve"><value>Kayıt aygıtı bulunamadı.</value></data>
+  <data name="NoMicsTickedHint" xml:space="preserve"><value>Hiçbiri işaretli değilse varsayılan iletişim mikrofonu kullanılır.</value></data>
+  <data name="VirtualCableEndpoint" xml:space="preserve"><value>Sanal kablo çalma uç noktası ('Diğer sanal kablo' için)</value></data>
+  <data name="AutoDetect" xml:space="preserve"><value>(otomatik algıla)</value></data>
+  <data name="SpeakerDevice" xml:space="preserve"><value>Hoparlörler (sesin size ait kopyası)</value></data>
+  <data name="DefaultDevice" xml:space="preserve"><value>(Windows varsayılanı)</value></data>
+  <data name="RecorderMic" xml:space="preserve"><value>Kaydedici için mikrofon</value></data>
+  <data name="MicLatency" xml:space="preserve"><value>Mikrofon gecikmesi (ms):</value></data>
+  <data name="LatencyHint" xml:space="preserve"><value>Düşük = sesinizde daha az gecikme, yüksek = yavaş makinelerde daha az kesinti. 30 ms iyi bir varsayılandır.</value></data>
+  <data name="OpenPrivacySettings" xml:space="preserve"><value>Mikrofon erişimi reddedildi – Windows gizlilik ayarlarını aç</value></data>
+  <data name="Normalization" xml:space="preserve"><value>Ses düzeyi normalleştirme (EBU R128, kanal başına)</value></data>
+  <data name="Norm_Off" xml:space="preserve"><value>Kapalı</value></data>
+  <data name="Norm_Dynamic" xml:space="preserve"><value>Dinamik – ilk 6 sn çözümlenir, çalma sırasında iyileştirilir (varsayılan)</value></data>
+  <data name="Norm_Full" xml:space="preserve"><value>Tam dosya – çalmadan önce tüm dosya çözümlenir (önbelleğe alınır)</value></data>
+  <data name="MeasureVoice" xml:space="preserve"><value>Sesi ölç…</value></data>
+  <data name="NormHint" xml:space="preserve"><value>Mikrofondaki sesler ses düzeyinize getirilir (ölçün; iyi bir sonuç 74 dB'nin üzerindedir). Hoparlör kopyası değişmez – kendiniz için hoparlör ses kaydırıcısını kullanın.</value></data>
+  <data name="BlockVoice" xml:space="preserve"><value>Sesi engelle</value></data>
+  <data name="BlockVoiceCheck" xml:space="preserve"><value>Bir ses çalarken sesimi tamamen değiştir (karıştırmak yerine)</value></data>
+  <data name="VoiceActivation" xml:space="preserve"><value>Ses etkinleştirme sesi</value></data>
+  <data name="VoiceActivationCheck" xml:space="preserve"><value>Sesle etkinleşen uygulamaların geçidi açması için mikrofonda kısa ve yüksek bir ön ses çal</value></data>
+  <data name="CustomFile" xml:space="preserve"><value>Özel dosya (boş = 250 ms ton):</value></data>
+  <data name="Default" xml:space="preserve"><value>Varsayılan</value></data>
+  <data name="VoiceActivationHeadphones" xml:space="preserve"><value>Ön sesi hoparlörlerimde/kulaklığımda da çal</value></data>
+  <data name="Playback" xml:space="preserve"><value>Çalma</value></data>
+  <data name="AllowResumeOtherMode" xml:space="preserve"><value>Başka bir çalma modunda sürdürmeye izin ver (duraklatılan konumdan yeni modla yeniden başlat)</value></data>
+  <data name="General" xml:space="preserve"><value>Genel</value></data>
+  <data name="HotkeysEnabledCheck" xml:space="preserve"><value>Kısayol tuşları etkin</value></data>
+  <data name="PassHotkeysCheck" xml:space="preserve"><value>Kısayol tuşlarını etkin uygulamaya ilet (varsayılan kapalı: tuş yutulur)</value></data>
+  <data name="AutoStopCheck" xml:space="preserve"><value>Otomatik durdur: kısayol tuşuyla başlatılan sesler Yinele ve Devam et'i yok sayar (varsayılan açık)</value></data>
+  <data name="HotkeysGeneralHint" xml:space="preserve"><value>Bir sesin kısayol tuşunu sağ tıklayarak ya da Kısayol tuşu hücresine çift tıklayarak atayın. Tek tuşlar, Ctrl/Alt/Shift/Win ile her bileşim ve Orta/4/5 fare düğmeleri genel olarak çalışır.</value></data>
+  <data name="SpecialHint" xml:space="preserve"><value>Özel kısayol tuşları ayrılmıştır: bir ses aynı tuşu alamaz.</value></data>
+  <data name="NumpadHotkeys" xml:space="preserve"><value>Sayısal tuş takımı kısayolları</value></data>
+  <data name="NumpadEnabledCheck" xml:space="preserve"><value>Etkin: değiştiriciyi basılı tutun, sesin numarasını sayısal tuş takımında yazın, bırakın</value></data>
+  <data name="Modifier" xml:space="preserve"><value>Değiştirici:</value></data>
+  <data name="NumpadHint" xml:space="preserve"><value>Numara, geçerli kategorinin # sütunudur.</value></data>
+  <data name="IndexHotkeys" xml:space="preserve"><value>Dizin kısayolları</value></data>
+  <data name="IndexEnabledCheck" xml:space="preserve"><value>Etkin: değiştiriciyi basılı tutun, satır dizinini rakam satırıyla yazın, bırakın</value></data>
+  <data name="IndexHint" xml:space="preserve"><value>Dizin, gizli 'Tüm sesler' kategorisindeki satırdır; örn. Alt+1,2,3 123. satırı çalar.</value></data>
+  <data name="Advanced" xml:space="preserve"><value>Gelişmiş</value></data>
+  <data name="AllowLeftRight" xml:space="preserve"><value>Sol/sağ değiştiricilere izin ver (Sol Ctrl ve Sağ Ctrl farklı tuşlardır)</value></data>
+  <data name="SameHotkeysAllCategories" xml:space="preserve"><value>Tüm kategorilerde aynı kısayol tuşları (satır tabanlı: N. satırın kısayolu seçili kategorinin N. satırını çalar)</value></data>
+  <data name="JumpSeconds" xml:space="preserve"><value>±N saniye atla:</value></data>
+  <data name="VolumeStep" xml:space="preserve"><value>Ses artırma/azaltma adımı (%):</value></data>
+  <data name="VolumeSet" xml:space="preserve"><value>'Ses düzeyini ayarla' kısayol düzeyi (%):</value></data>
+  <data name="AutoKeysEnabledCheck" xml:space="preserve"><value>Auto Keys etkin</value></data>
+  <data name="AutoKeysHint" xml:space="preserve"><value>Otomatik bas-konuş: bir ses mikrofonda başladığında tuşa basılır (sesin süresi boyunca basılı tutulur ya da öncesinde ve sonrasında dokunulur). Yalnızca mikrofon çalma modlarında tetiklenir.</value></data>
+  <data name="NoKey" xml:space="preserve"><value>(tuş yok)</value></data>
+  <data name="AutoKey" xml:space="preserve"><value>Auto Key</value></data>
+  <data name="OnlyIfHotkey" xml:space="preserve"><value>Yalnızca kısayol tuşuyla çalındıysa</value></data>
+  <data name="PressHold" xml:space="preserve"><value>Sesin süresi boyunca basılı tut</value></data>
+  <data name="PressBeforeAfter" xml:space="preserve"><value>Öncesinde ve sonrasında bas</value></data>
+  <data name="PressMode" xml:space="preserve"><value>Basma modu:</value></data>
+  <data name="Cond_Always" xml:space="preserve"><value>Her zaman</value></data>
+  <data name="Cond_Fullscreen" xml:space="preserve"><value>Ön plan uygulaması tam ekran (çerçevesiz dahil)</value></data>
+  <data name="Cond_Running" xml:space="preserve"><value>Listedeki bir uygulama çalışıyor</value></data>
+  <data name="Cond_Foreground" xml:space="preserve"><value>Listedeki bir uygulama ön planda</value></data>
+  <data name="Condition" xml:space="preserve"><value>Koşul:</value></data>
+  <data name="AppsTip" xml:space="preserve"><value>İşlem adları, her satıra bir tane, örn. discord.exe</value></data>
+  <data name="Apps" xml:space="preserve"><value>Uygulama listesi:</value></data>
+  <data name="AddAutoKey" xml:space="preserve"><value>Auto Key ekle</value></data>
+  <data name="RecorderFormatHint" xml:space="preserve"><value>Her şey stereo 48 kHz'e dönüştürülür. Düzenleyici de bu biçimde kaydeder.</value></data>
+  <data name="TargetDb" xml:space="preserve"><value>Hedef (dB, varsayılan 89 ≈ −23 LU; &gt;99 kırpılır):</value></data>
+  <data name="NotificationSound" xml:space="preserve"><value>Yakalama başlamadan önce bildirim sesi çal</value></data>
+  <data name="RecorderHotkeyHint" xml:space="preserve"><value>Kaydı başlat/durdur kısayol tuşları Kısayol tuşları &gt; Özel sekmesindedir.</value></data>
+  <data name="Language" xml:space="preserve"><value>Dil:</value></data>
+  <data name="Style" xml:space="preserve"><value>Stil:</value></data>
+  <data name="Theme_Light" xml:space="preserve"><value>Açık</value></data>
+  <data name="Theme_Dark" xml:space="preserve"><value>Koyu</value></data>
+  <data name="Theme_Native" xml:space="preserve"><value>Yerel (Windows)</value></data>
+  <data name="NativeForced" xml:space="preserve"><value>Yüksek karşıtlık veya ekran okuyucu etkin: Yerel stil kullanılıyor.</value></data>
+  <data name="ToolbarItems" xml:space="preserve"><value>Araç çubuğu öğeleri</value></data>
+  <data name="Timer" xml:space="preserve"><value>Parça sayacı</value></data>
+  <data name="SeekSlider" xml:space="preserve"><value>Konum kaydırıcısı</value></data>
+  <data name="SpeakerVolume" xml:space="preserve"><value>Hoparlör ses düzeyi</value></data>
+  <data name="MicLevelMeter" xml:space="preserve"><value>Mikrofon düzey göstergesi</value></data>
+  <data name="Behaviour" xml:space="preserve"><value>Davranış</value></data>
+  <data name="StartMinimized" xml:space="preserve"><value>Simge durumunda başlat</value></data>
+  <data name="MinimizeToTrayCheck" xml:space="preserve"><value>Sistem tepsisine küçült</value></data>
+  <data name="CloseToTray" xml:space="preserve"><value>Pencereyi kapatmak çıkmak yerine tepsiye küçültür</value></data>
+  <data name="DisableSorting" xml:space="preserve"><value>Sıralamayı devre dışı bırak (sütun başlıkları sıralamaz; yalnızca el ile sıra)</value></data>
+  <data name="Confirmations" xml:space="preserve"><value>Onaylar</value></data>
+  <data name="ConfirmRemoveCheck" xml:space="preserve"><value>Sesleri kaldırmadan önce onay iste</value></data>
+  <data name="ConfirmResetCheck" xml:space="preserve"><value>Çalma sayılarını sıfırlamadan önce onay iste</value></data>
+  <data name="ConfirmQuitCheck" xml:space="preserve"><value>Ses çalarken çıkışı onayla</value></data>
+  <data name="NotifyMissing" xml:space="preserve"><value>Liste yüklenirken eksik dosyalar hakkında uyar</value></data>
+  <data name="NotifyDevices" xml:space="preserve"><value>Ses aygıtı değişikliklerini durum çubuğunda bildir</value></data>
+  <data name="NotifyTray" xml:space="preserve"><value>Tepsiye küçültürken balon göster</value></data>
+  <data name="NotifyRecording" xml:space="preserve"><value>Kayıt başladığında durum iletisi</value></data>
+  <data name="NotifyTrial" xml:space="preserve"><value>Deneme sınırına ulaşıldığında iletişim kutusu göster</value></data>
+  <data name="NotifyUpdates" xml:space="preserve"><value>Kullanılabilir güncellemeleri göster</value></data>
+  <data name="CheckInterval" xml:space="preserve"><value>Güncellemeleri denetle:</value></data>
+  <data name="Never" xml:space="preserve"><value>Hiçbir zaman (varsayılan)</value></data>
+  <data name="Daily" xml:space="preserve"><value>Günlük</value></data>
+  <data name="Weekly" xml:space="preserve"><value>Haftalık</value></data>
+  <data name="ManifestUrl" xml:space="preserve"><value>Bildirim URL'si:</value></data>
+  <data name="UpdateHint" xml:space="preserve"><value>Güncelleme paketleri yalnızca bildirim imzası ve paket karması VoxPad'e gömülü anahtarla doğrulandığında yüklenir.</value></data>
+  <data name="LastCheck" xml:space="preserve"><value>Son denetim</value></data>
+  <data name="CheckNow" xml:space="preserve"><value>Şimdi denetle</value></data>
+
+  <!-- Special hotkey names -->
+  <data name="Special_Stop" xml:space="preserve"><value>Durdur</value></data>
+  <data name="Special_Start" xml:space="preserve"><value>Başlat (seçileni çal / sürdür)</value></data>
+  <data name="Special_Pause" xml:space="preserve"><value>Duraklat / sürdür</value></data>
+  <data name="Special_PlayPrevious" xml:space="preserve"><value>Önceki dosyayı çal</value></data>
+  <data name="Special_PlayNext" xml:space="preserve"><value>Sonraki dosyayı çal</value></data>
+  <data name="Special_PlaySelected" xml:space="preserve"><value>Seçili dosyayı çal</value></data>
+  <data name="Special_PlayRandomInCategory" xml:space="preserve"><value>Rastgele dosya çal (geçerli kategori)</value></data>
+  <data name="Special_PlayRandomFromAll" xml:space="preserve"><value>Rastgele dosya çal (tüm sesler)</value></data>
+  <data name="Special_SelectPreviousFile" xml:space="preserve"><value>Önceki dosyayı seç</value></data>
+  <data name="Special_SelectNextFile" xml:space="preserve"><value>Sonraki dosyayı seç</value></data>
+  <data name="Special_SelectPreviousCategory" xml:space="preserve"><value>Önceki kategoriyi seç</value></data>
+  <data name="Special_SelectNextCategory" xml:space="preserve"><value>Sonraki kategoriyi seç</value></data>
+  <data name="Special_StartRecording" xml:space="preserve"><value>Kaydı başlat</value></data>
+  <data name="Special_StopRecording" xml:space="preserve"><value>Kaydı durdur</value></data>
+  <data name="Special_JumpBackward" xml:space="preserve"><value>N saniye geri atla</value></data>
+  <data name="Special_JumpForward" xml:space="preserve"><value>N saniye ileri atla</value></data>
+  <data name="Special_SpeakerVolumeUp" xml:space="preserve"><value>Hoparlör sesini artır</value></data>
+  <data name="Special_SpeakerVolumeDown" xml:space="preserve"><value>Hoparlör sesini azalt</value></data>
+  <data name="Special_SpeakerVolumeSet" xml:space="preserve"><value>Hoparlör ses düzeyini ayarla</value></data>
+  <data name="Special_SpeakerVolumeMute" xml:space="preserve"><value>Hoparlörleri sessize al / aç</value></data>
+  <data name="Special_SetPlayModeBoth" xml:space="preserve"><value>Çalma modu: hoparlörler + mikrofon</value></data>
+  <data name="Special_SetPlayModeMic" xml:space="preserve"><value>Çalma modu: yalnızca mikrofon</value></data>
+  <data name="Special_SetPlayModeSpeakers" xml:space="preserve"><value>Çalma modu: yalnızca hoparlörler</value></data>
+  <data name="Special_CyclePlayMode" xml:space="preserve"><value>Çalma modunu değiştir</value></data>
+  <data name="Special_EnableHotkeys" xml:space="preserve"><value>Kısayol tuşlarını etkinleştir</value></data>
+  <data name="Special_DisableHotkeys" xml:space="preserve"><value>Kısayol tuşlarını devre dışı bırak</value></data>
+  <data name="Special_ToggleHotkeys" xml:space="preserve"><value>Kısayol tuşlarını aç/kapat</value></data>
+  <data name="Special_EnableAutoKeys" xml:space="preserve"><value>Auto Keys'i etkinleştir</value></data>
+  <data name="Special_DisableAutoKeys" xml:space="preserve"><value>Auto Keys'i devre dışı bırak</value></data>
+  <data name="Special_ToggleAutoKeys" xml:space="preserve"><value>Auto Keys'i aç/kapat</value></data>
+  <data name="Special_PlayTts" xml:space="preserve"><value>Metin okuma metnini çal</value></data>
+</root>

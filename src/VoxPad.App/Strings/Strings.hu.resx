@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+  <!-- Menus -->
+  <data name="File" xml:space="preserve"><value>_Fájl</value></data>
+  <data name="NewList" xml:space="preserve"><value>_Új hanglista</value></data>
+  <data name="LoadList" xml:space="preserve"><value>Hanglista _betöltése…</value></data>
+  <data name="SaveList" xml:space="preserve"><value>Hanglista _mentése</value></data>
+  <data name="SaveListAs" xml:space="preserve"><value>Hanglista mentése más_ként…</value></data>
+  <data name="RecentLists" xml:space="preserve"><value>_Legutóbbi hanglisták</value></data>
+  <data name="RestoreList" xml:space="preserve"><value>Hanglista visszaállítása…</value></data>
+  <data name="AddFiles" xml:space="preserve"><value>Hangfájlok hozzáadása…</value></data>
+  <data name="AddFolder" xml:space="preserve"><value>Mappa hozzáadása…</value></data>
+  <data name="WebImport" xml:space="preserve"><value>Importálás a webről…</value></data>
+  <data name="Export" xml:space="preserve"><value>_Exportálás</value></data>
+  <data name="ExportSoundFiles" xml:space="preserve"><value>Hangfájlok…</value></data>
+  <data name="ExportPreferences" xml:space="preserve"><value>Beállítások…</value></data>
+  <data name="ImportPreferences" xml:space="preserve"><value>Beállítások importálása…</value></data>
+  <data name="Statistics" xml:space="preserve"><value>Statisztika…</value></data>
+  <data name="Preferences" xml:space="preserve"><value>_Beállítások…</value></data>
+  <data name="Exit" xml:space="preserve"><value>_Kilépés</value></data>
+  <data name="Edit" xml:space="preserve"><value>_Szerkesztés</value></data>
+  <data name="SelectAll" xml:space="preserve"><value>Összes kijelölése</value></data>
+  <data name="Remove" xml:space="preserve"><value>Eltávolítás</value></data>
+  <data name="Copy" xml:space="preserve"><value>Másolás</value></data>
+  <data name="Cut" xml:space="preserve"><value>Kivágás</value></data>
+  <data name="Paste" xml:space="preserve"><value>Beillesztés</value></data>
+  <data name="MoveUp" xml:space="preserve"><value>Mozgatás felfelé</value></data>
+  <data name="MoveDown" xml:space="preserve"><value>Mozgatás lefelé</value></data>
+  <data name="Undo" xml:space="preserve"><value>Visszavonás</value></data>
+  <data name="Redo" xml:space="preserve"><value>Mégis</value></data>
+  <data name="EditFile" xml:space="preserve"><value>Fájl szerkesztése…</value></data>
+  <data name="SetHotkey" xml:space="preserve"><value>Gyorsbillentyű beállítása…</value></data>
+  <data name="RemoveHotkey" xml:space="preserve"><value>Gyorsbillentyű eltávolítása</value></data>
+  <data name="SetColor" xml:space="preserve"><value>Szín…</value></data>
+  <data name="PlayRandom" xml:space="preserve"><value>Véletlenszerű lejátszás</value></data>
+  <data name="ResetPlayCount" xml:space="preserve"><value>Lejátszásszámláló nullázása</value></data>
+  <data name="ResetAllPlayCounts" xml:space="preserve"><value>Összes lejátszásszámláló nullázása</value></data>
+  <data name="SelectInExplorer" xml:space="preserve"><value>Megjelenítés az Intézőben</value></data>
+  <data name="PlayMenu" xml:space="preserve"><value>_Lejátszás</value></data>
+  <data name="Play" xml:space="preserve"><value>Lejátszás</value></data>
+  <data name="PlayOnSpeakers" xml:space="preserve"><value>Lejátszás a hangszórókon</value></data>
+  <data name="PlayOnMic" xml:space="preserve"><value>Lejátszás a mikrofonon</value></data>
+  <data name="PauseResume" xml:space="preserve"><value>Szünet / folytatás</value></data>
+  <data name="Stop" xml:space="preserve"><value>Leállítás</value></data>
+  <data name="Previous" xml:space="preserve"><value>Előző</value></data>
+  <data name="Next" xml:space="preserve"><value>Következő</value></data>
+  <data name="Repeat" xml:space="preserve"><value>Ismétlés</value></data>
+  <data name="Continue" xml:space="preserve"><value>Folytatás</value></data>
+  <data name="AutoStop" xml:space="preserve"><value>Automatikus leállítás (a gyorsbillentyűs hangok figyelmen kívül hagyják az Ismétlés/Folytatás beállítást)</value></data>
+  <data name="PlayModeMenu" xml:space="preserve"><value>Lejátszási mód</value></data>
+  <data name="PlayMode_Both" xml:space="preserve"><value>Hangszórók + mikrofon</value></data>
+  <data name="PlayMode_Mic" xml:space="preserve"><value>Csak mikrofon</value></data>
+  <data name="PlayMode_Speakers" xml:space="preserve"><value>Csak hangszórók</value></data>
+  <data name="Recorder" xml:space="preserve"><value>Felvevő…</value></data>
+  <data name="TextToSpeech" xml:space="preserve"><value>Szövegfelolvasás…</value></data>
+  <data name="Window" xml:space="preserve"><value>_Ablak</value></data>
+  <data name="Categories" xml:space="preserve"><value>Kategóriapanel</value></data>
+  <data name="Hotbar" xml:space="preserve"><value>Gyorssáv</value></data>
+  <data name="Toolbar" xml:space="preserve"><value>Lejátszási eszköztár</value></data>
+  <data name="StatusBar" xml:space="preserve"><value>Állapotsor</value></data>
+  <data name="ShowHiddenCategories" xml:space="preserve"><value>Rejtett kategóriák megjelenítése</value></data>
+  <data name="CategoryIconSize" xml:space="preserve"><value>Kategóriaikonok mérete</value></data>
+  <data name="Small" xml:space="preserve"><value>Kicsi</value></data>
+  <data name="Medium" xml:space="preserve"><value>Közepes</value></data>
+  <data name="Large" xml:space="preserve"><value>Nagy</value></data>
+  <data name="ExtraLarge" xml:space="preserve"><value>Extra nagy</value></data>
+  <data name="Columns" xml:space="preserve"><value>Oszlopok</value></data>
+  <data name="HotbarSize" xml:space="preserve"><value>Gyorssáv mérete…</value></data>
+  <data name="HotkeyOverview" xml:space="preserve"><value>Gyorsbillentyűk áttekintése…</value></data>
+  <data name="MinimizeToTray" xml:space="preserve"><value>Kis méret az értesítési területre</value></data>
+  <data name="Help" xml:space="preserve"><value>_Súgó</value></data>
+  <data name="Manual" xml:space="preserve"><value>Kézikönyv</value></data>
+  <data name="Troubleshooting" xml:space="preserve"><value>Hibaelhárítás…</value></data>
+  <data name="AutoKeysTroubleshooting" xml:space="preserve"><value>Auto Keys hibaelhárítás…</value></data>
+  <data name="CheckForUpdates" xml:space="preserve"><value>Frissítések keresése…</value></data>
+  <data name="Register" xml:space="preserve"><value>Regisztráció…</value></data>
+  <data name="About" xml:space="preserve"><value>A VoxPad névjegye</value></data>
+
+  <!-- Toolbar / status bar -->
+  <data name="TimerTip" xml:space="preserve"><value>Eltelt / teljes. Dupla kattintással a lejátszott hangra ugrik.</value></data>
+  <data name="SpeakerVolumeTip" xml:space="preserve"><value>Hangszóró-hangerő (csak a saját példányod; a Windows hangerőkeverőhöz kötve)</value></data>
+  <data name="MicMeterTip" xml:space="preserve"><value>Mikrofonszint. Kattints az ikonra a hangod szintjének méréséhez.</value></data>
+  <data name="SeekTip" xml:space="preserve"><value>Piros = mások is hallják (mikrofon), kék = csak hangszórók</value></data>
+  <data name="PlayModeTip" xml:space="preserve"><value>Lejátszási mód – kattintással váltható</value></data>
+  <data name="HotkeysTip" xml:space="preserve"><value>Gyorsbillentyűk – dupla kattintás ki/be, jobb kattintás a beállításokhoz</value></data>
+  <data name="PassHotkeys" xml:space="preserve"><value>Gyorsbillentyűk továbbadása az aktív alkalmazásnak</value></data>
+  <data name="Hotkeys" xml:space="preserve"><value>Gyorsbillentyűk</value></data>
+  <data name="AutoKeysTip" xml:space="preserve"><value>Auto Keys – dupla kattintás ki/be, jobb kattintás a hibaelhárításhoz</value></data>
+  <data name="AutoKeys" xml:space="preserve"><value>Auto Keys</value></data>
+  <data name="RepeatTip" xml:space="preserve"><value>Aktuális hang ismétlése – kattintással ki/be</value></data>
+  <data name="ContinueTip" xml:space="preserve"><value>Folytatás a következő hanggal – kattintással ki/be</value></data>
+  <data name="PreviousPage" xml:space="preserve"><value>Előző oldal (Ctrl+PgUp)</value></data>
+  <data name="NextPage" xml:space="preserve"><value>Következő oldal (Ctrl+PgDn)</value></data>
+  <data name="HideCategory" xml:space="preserve"><value>Kategória elrejtése</value></data>
+  <data name="SearchTip" xml:space="preserve"><value>Gépelés a szűréshez · Enter: találatok léptetése · Ctrl+Enter: lejátszás · Esc: törlés</value></data>
+  <data name="ColTag" xml:space="preserve"><value>Címke</value></data>
+  <data name="ColDuration" xml:space="preserve"><value>Hossz</value></data>
+  <data name="ColHotkey" xml:space="preserve"><value>Gyorsbillentyű</value></data>
+  <data name="ColPlayCount" xml:space="preserve"><value>Lejátszások</value></data>
+  <data name="ColLastPlayed" xml:space="preserve"><value>Utoljára lejátszva</value></data>
+  <data name="ColIndex" xml:space="preserve"><value>#</value></data>
+  <data name="MoveToCategory" xml:space="preserve"><value>Áthelyezés kategóriába</value></data>
+  <data name="RemoveFromCategory" xml:space="preserve"><value>Eltávolítás ebből a kategóriából</value></data>
+  <data name="AddCategory" xml:space="preserve"><value>Kategória hozzáadása…</value></data>
+  <data name="AddSubcategory" xml:space="preserve"><value>Alkategória hozzáadása…</value></data>
+  <data name="RenameCategory" xml:space="preserve"><value>Átnevezés…</value></data>
+  <data name="RemoveCategory" xml:space="preserve"><value>Kategória eltávolítása</value></data>
+  <data name="SetRandomHotkey" xml:space="preserve"><value>„Véletlenszerű lejátszás” gyorsbillentyű beállítása…</value></data>
+  <data name="AllSounds" xml:space="preserve"><value>Összes hang</value></data>
+  <data name="UntitledList" xml:space="preserve"><value>Névtelen</value></data>
+  <data name="Trial" xml:space="preserve"><value>Próbaverzió</value></data>
+  <data name="TrialStatus" xml:space="preserve"><value>Próbaverzió: legfeljebb {0} hang, {1} mikrofonos lejátszás maradt ebben az indításban</value></data>
+
+  <!-- Status messages -->
+  <data name="PlayModeSet" xml:space="preserve"><value>Lejátszási mód: {0}</value></data>
+  <data name="HotkeysOn" xml:space="preserve"><value>Gyorsbillentyűk engedélyezve</value></data>
+  <data name="HotkeysOff" xml:space="preserve"><value>Gyorsbillentyűk letiltva</value></data>
+  <data name="AutoKeysOn" xml:space="preserve"><value>Auto Keys engedélyezve</value></data>
+  <data name="AutoKeysOff" xml:space="preserve"><value>Auto Keys letiltva</value></data>
+  <data name="Playing" xml:space="preserve"><value>Lejátszás: „{0}” → {1}</value></data>
+  <data name="TrialPlayLimit" xml:space="preserve"><value>Próbaverzió: elérted az indításonkénti 10 mikrofonos lejátszást. Regisztrálj a korlát megszüntetéséhez.</value></data>
+  <data name="TrialSoundLimit" xml:space="preserve"><value>Próbaverzió: a lista legfeljebb {0} hangot tartalmazhat. Regisztrálj a korlát megszüntetéséhez.</value></data>
+  <data name="NothingToPlay" xml:space="preserve"><value>Nincs mit lejátszani</value></data>
+  <data name="DevicesChanged" xml:space="preserve"><value>Az audioeszközök megváltoztak; az útválasztás újra alkalmazva.</value></data>
+  <data name="MissingFiles" xml:space="preserve"><value>{0} fájl hiányzik a listából (szürkítve).</value></data>
+  <data name="CategoryInfo" xml:space="preserve"><value>{0}: {1} hang, összesen {2}</value></data>
+  <data name="Copied" xml:space="preserve"><value>{0} hang másolva</value></data>
+  <data name="CutStatus" xml:space="preserve"><value>{0} hang kivágva</value></data>
+  <data name="Importing" xml:space="preserve"><value>{0} fájl beolvasása…</value></data>
+  <data name="Imported" xml:space="preserve"><value>{0} hang hozzáadva</value></data>
+  <data name="NoAudioFiles" xml:space="preserve"><value>Nem található támogatott hangfájl</value></data>
+  <data name="ConfirmRemove" xml:space="preserve"><value>Eltávolítasz {0} hangot a listából? A hangfájlok nem törlődnek.</value></data>
+  <data name="Removed" xml:space="preserve"><value>{0} hang eltávolítva</value></data>
+  <data name="HotkeyFor" xml:space="preserve"><value>Gyorsbillentyű ehhez: „{0}”</value></data>
+  <data name="RandomHotkeyFor" xml:space="preserve"><value>„Véletlenszerű lejátszás” gyorsbillentyű ehhez: „{0}”</value></data>
+  <data name="BareMouseNotAllowed" xml:space="preserve"><value>A bal és jobb egérgombhoz módosítóbillentyű szükséges (pl. Ctrl+kattintás).</value></data>
+  <data name="ReservedHotkey" xml:space="preserve"><value>A(z) {0} a(z) „{1}” speciális gyorsbillentyű számára van fenntartva.</value></data>
+  <data name="HotkeyRemoved" xml:space="preserve"><value>Gyorsbillentyű eltávolítva innen: „{0}”</value></data>
+  <data name="HotkeySet" xml:space="preserve"><value>{0} → „{1}”</value></data>
+  <data name="ConfirmResetPlayCount" xml:space="preserve"><value>Nullázod {0} hang lejátszásszámlálóját?</value></data>
+  <data name="ConfirmResetAll" xml:space="preserve"><value>Nullázod minden hang lejátszásszámlálóját és a lista összesítését?</value></data>
+  <data name="FileMissing" xml:space="preserve"><value>A fájl nem található: {0}</value></data>
+  <data name="ConfirmRemoveCategory" xml:space="preserve"><value>Eltávolítod a(z) „{0}” kategóriát (és alkategóriáit)? A hangok a listában maradnak.</value></data>
+  <data name="CategoryName" xml:space="preserve"><value>Név:</value></data>
+  <data name="NewCategory" xml:space="preserve"><value>Új kategória</value></data>
+  <data name="AddedToCategory" xml:space="preserve"><value>{0} hang → „{1}”</value></data>
+  <data name="ReorderWhileSorted" xml:space="preserve"><value>A kézi átrendezéshez szüntesd meg a rendezést (kattints újra az oszlopfejlécre).</value></data>
+  <data name="UnsavedTitle" xml:space="preserve"><value>Nem mentett módosítások</value></data>
+  <data name="UnsavedText" xml:space="preserve"><value>A hanglistában nem mentett módosítások vannak. Elveted őket?</value></data>
+  <data name="NewListCreated" xml:space="preserve"><value>Új hanglista</value></data>
+  <data name="ListLoaded" xml:space="preserve"><value>Betöltve: {0}</value></data>
+  <data name="ListLoadFailed" xml:space="preserve"><value>A hanglista nem tölthető be: {0}</value></data>
+  <data name="ListSaved" xml:space="preserve"><value>Mentve: {0}</value></data>
+  <data name="Exported" xml:space="preserve"><value>{0} fájl exportálva, {1} sikertelen → {2}</value></data>
+  <data name="PrefsExported" xml:space="preserve"><value>Beállítások exportálva ide: {0}</value></data>
+  <data name="PrefsImportedRestart" xml:space="preserve"><value>Beállítások importálva. Az alkalmazásukhoz indítsd újra a VoxPadot.</value></data>
+  <data name="NoSoundAtNumber" xml:space="preserve"><value>Nincs hang a(z) {0}. számon</value></data>
+  <data name="ElevatedWarning" xml:space="preserve"><value>A VoxPad rendszergazdaként fut: a húzás az Intézőből nem fog működni (a Windows blokkolja az ejtést emelt szintű ablakokba).</value></data>
+  <data name="UnexpectedError" xml:space="preserve"><value>Váratlan hiba történt.</value></data>
+  <data name="DumpWritten" xml:space="preserve"><value>A részletek ide lettek írva:</value></data>
+  <data name="TrayHint" xml:space="preserve"><value>A VoxPad tovább fut az értesítési területen. Dupla kattintás az ikonra a visszaállításhoz.</value></data>
+  <data name="Tray_Show" xml:space="preserve"><value>VoxPad megjelenítése</value></data>
+  <data name="ConfirmQuitPlaying" xml:space="preserve"><value>Egy hang lejátszása folyamatban van. Mégis kilépsz?</value></data>
+  <data name="SaveBeforeExit" xml:space="preserve"><value>Mented a hanglista módosításait kilépés előtt?</value></data>
+  <data name="MicAccessDenied" xml:space="preserve"><value>A Windows blokkolja az asztali alkalmazások mikrofon-hozzáférését, ezért a VoxPad nem tudja olvasni a mikrofonodat.
+
+Megoldás: Beállítások &gt; Adatvédelem és biztonság &gt; Mikrofon &gt; kapcsold be a „Mikrofon-hozzáférés” és az „Asztali alkalmazások hozzáférhetnek a mikrofonhoz” beállítást, majd nyomd meg a Frissítés gombot a Beállítások &gt; Eszközök lapon.</value></data>
+  <data name="OpenSettingsQuestion" xml:space="preserve"><value>Megnyitod most az adatvédelmi beállításokat?</value></data>
+  <data name="AccessDenied" xml:space="preserve"><value>Hozzáférés megtagadva</value></data>
+  <data name="RemoveFromHotbar" xml:space="preserve"><value>Eltávolítás a gyorssávról</value></data>
+  <data name="EmptyTileHint" xml:space="preserve"><value>Húzz ide egy hangot</value></data>
+  <data name="PrefsSaved" xml:space="preserve"><value>Beállítások mentve</value></data>
+  <data name="LanguageRestart" xml:space="preserve"><value>A nyelv a VoxPad újraindítása után változik meg.</value></data>
+
+  <!-- Dialogs -->
+  <data name="OK" xml:space="preserve"><value>OK</value></data>
+  <data name="Cancel" xml:space="preserve"><value>Mégse</value></data>
+  <data name="Apply" xml:space="preserve"><value>Alkalmaz</value></data>
+  <data name="Close" xml:space="preserve"><value>Bezárás</value></data>
+  <data name="Clear" xml:space="preserve"><value>Törlés</value></data>
+  <data name="None" xml:space="preserve"><value>(nincs)</value></data>
+  <data name="HotkeyCapturePrompt" xml:space="preserve"><value>Nyomd meg most a billentyűt vagy billentyűkombinációt. A középső, 4. és 5. egérgomb is működik (a bal/jobb gombhoz módosító kell). Enter: mentés, Delete vagy Backspace: törlés, Esc: mégse.</value></data>
+  <data name="HexColor" xml:space="preserve"><value>Hex:</value></data>
+  <data name="NoColor" xml:space="preserve"><value>Nincs szín</value></data>
+  <data name="Rows" xml:space="preserve"><value>Sorok:</value></data>
+  <data name="Pages" xml:space="preserve"><value>Oldalak:</value></data>
+  <data name="HotbarSizeHint" xml:space="preserve"><value>A gyorsbillentyűk az oldalak között közösek. Az új rácson kívüli csempék eltávolításra kerülnek.</value></data>
+  <data name="Type" xml:space="preserve"><value>Típus</value></data>
+  <data name="Target" xml:space="preserve"><value>Cél</value></data>
+  <data name="Sound" xml:space="preserve"><value>Hang</value></data>
+  <data name="CategoryRandom" xml:space="preserve"><value>Véletlenszerű lejátszás a kategóriából</value></data>
+  <data name="Special" xml:space="preserve"><value>Speciális</value></data>
+  <data name="Numpad" xml:space="preserve"><value>Numerikus billentyűzet</value></data>
+  <data name="NumpadDesc" xml:space="preserve"><value>Lejátszás sorszám szerint az aktuális kategóriában</value></data>
+  <data name="Index" xml:space="preserve"><value>Index</value></data>
+  <data name="IndexDesc" xml:space="preserve"><value>Lejátszás sorindex szerint az Összes hang kategóriában</value></data>
+  <data name="HotkeyOverviewHint" xml:space="preserve"><value>Gyorsbillentyűk: {0}; továbbadás: {1}.</value></data>
+  <data name="Enabled" xml:space="preserve"><value>engedélyezve</value></data>
+  <data name="Disabled" xml:space="preserve"><value>letiltva</value></data>
+  <data name="On" xml:space="preserve"><value>be</value></data>
+  <data name="Off" xml:space="preserve"><value>ki</value></data>
+  <data name="Version" xml:space="preserve"><value>Verzió</value></data>
+  <data name="TrialEdition" xml:space="preserve"><value>Próbaverzió – legfeljebb 10 hang, indításonként 10 mikrofonos lejátszás</value></data>
+  <data name="LicensedTo" xml:space="preserve"><value>Licenc tulajdonosa: {0} ({1} kiadás)</value></data>
+  <data name="AboutText" xml:space="preserve"><value>Windowsos soundboard, amely a hangokat a mikrofonodba irányítja. Hangmotor: NAudio, NVorbis, Concentus, TagLib#. Virtuális mikrofon VB-CABLE / Voicemeeter segítségével.</value></data>
+  <data name="DataFolder" xml:space="preserve"><value>Adatok</value></data>
+  <data name="LogFolder" xml:space="preserve"><value>Naplók</value></data>
+  <data name="OpenDataFolder" xml:space="preserve"><value>Adatmappa megnyitása</value></data>
+  <data name="HideLicenseeName" xml:space="preserve"><value>Nevem elrejtése (streamer mód)</value></data>
+  <data name="RemoveLicense" xml:space="preserve"><value>Licenc eltávolítása</value></data>
+  <data name="ConfirmRemoveLicense" xml:space="preserve"><value>Eltávolítod a licencet erről a számítógépről?</value></data>
+  <data name="RegisterPrompt" xml:space="preserve"><value>Add meg a vásárlási e-mailben kapott nevet és sorozatszámot. A sorozatszám ellenőrzése offline történik, és a license.dat fájlban tárolódik.</value></data>
+  <data name="Name" xml:space="preserve"><value>Név:</value></data>
+  <data name="Serial" xml:space="preserve"><value>Sorozatszám:</value></data>
+  <data name="RegisteredThanks" xml:space="preserve"><value>Köszönjük! A VoxPad regisztrálva van.</value></data>
+  <data name="SerialInvalid" xml:space="preserve"><value>A sorozatszám nem egyezik a névvel. Ellenőrizd az elírásokat (az I/1 és az O/0 felcserélhető).</value></data>
+  <data name="AllTimePlays" xml:space="preserve"><value>Mikrofonos lejátszások összesen</value></data>
+  <data name="ListPlays" xml:space="preserve"><value>Lejátszások ebben a listában</value></data>
+  <data name="SoundsInList" xml:space="preserve"><value>Hangok a listában</value></data>
+  <data name="Launches" xml:space="preserve"><value>Indítások</value></data>
+  <data name="Since" xml:space="preserve"><value>Ettől kezdve</value></data>
+  <data name="TopSounds" xml:space="preserve"><value>Legtöbbet játszott</value></data>
+  <data name="ResetAllTime" xml:space="preserve"><value>Teljes összesítés nullázása</value></data>
+  <data name="ConfirmResetAllTime" xml:space="preserve"><value>Nullázod a teljes összesítést?</value></data>
+  <data name="WebImportPrompt" xml:space="preserve"><value>Illessz be egy közvetlen hivatkozást egy hangfájlra (mp3, ogg, wav…). A fájl a VoxPad zenemappádba töltődik le, és a listához adódik.</value></data>
+  <data name="FileNameOptional" xml:space="preserve"><value>Fájlnév (nem kötelező):</value></data>
+  <data name="Import" xml:space="preserve"><value>Importálás</value></data>
+  <data name="Downloading" xml:space="preserve"><value>Letöltés…</value></data>
+  <data name="UnsupportedFormat" xml:space="preserve"><value>Nem támogatott hangformátum</value></data>
+  <data name="RestorePrompt" xml:space="preserve"><value>A napi biztonsági mentések indításkor készülnek. A visszaállítás felülírja az aktuális listát (a mentett listád betöltésével továbbra is visszavonhatod).</value></data>
+  <data name="OpenBackupFolder" xml:space="preserve"><value>Mappa megnyitása</value></data>
+  <data name="Restore" xml:space="preserve"><value>Visszaállítás</value></data>
+  <data name="ConfirmRestore" xml:space="preserve"><value>Visszaállítod a(z) {0} dátumú biztonsági mentést?</value></data>
+  <data name="Restored" xml:space="preserve"><value>A(z) {0} dátumú biztonsági mentés visszaállítva</value></data>
+  <data name="Checking" xml:space="preserve"><value>Ellenőrzés…</value></data>
+  <data name="DownloadInstall" xml:space="preserve"><value>Letöltés és telepítés</value></data>
+  <data name="PackageVerified" xml:space="preserve"><value>A csomag ellenőrizve. A telepítő elindul; a VoxPad most bezárul.</value></data>
+  <data name="VoiceMeasurement" xml:space="preserve"><value>Hangmérés</value></data>
+  <data name="VoiceMeasurePrompt" xml:space="preserve"><value>Beszélj normálisan a mikrofonba kb. 8 másodpercig. A mért hangosság lesz a normalizálási cél, így a hangok illeszkednek a hangodhoz (a jó eredmény 74 dB felett van).</value></data>
+  <data name="CurrentTarget" xml:space="preserve"><value>Aktuális cél</value></data>
+  <data name="DefaultNotMeasured" xml:space="preserve"><value>alapértelmezett, nincs mérve</value></data>
+  <data name="Start" xml:space="preserve"><value>Indítás</value></data>
+  <data name="UseAsTarget" xml:space="preserve"><value>Használat célként</value></data>
+  <data name="Measuring" xml:space="preserve"><value>Mérés</value></data>
+  <data name="NothingMeasured" xml:space="preserve"><value>Nincs mért érték – némítva van a mikrofon, vagy rossz eszköz van kiválasztva?</value></data>
+  <data name="Result" xml:space="preserve"><value>Eredmény</value></data>
+  <data name="TooQuiet" xml:space="preserve"><value>nagyon halk – növeld a mikrofonszintet a Windowsban</value></data>
+  <data name="BelowTarget" xml:space="preserve"><value>74 dB alatt; érdemes magasabb mikrofonszintet beállítani</value></data>
+  <data name="TargetSet" xml:space="preserve"><value>Normalizálási cél beállítva: {0:F1} dB</value></data>
+  <data name="Routing" xml:space="preserve"><value>Útválasztás</value></data>
+  <data name="TroubleChecklist" xml:space="preserve"><value>Ellenőrzőlista:
+• Telepítsd a VB-CABLE-t (ingyenes), és nyomd meg a Frissítés gombot a Beállítások &gt; Eszközök lapon.
+• A Discordban/Teamsben/játékban válaszd a „CABLE Output” eszközt mikrofonnak, és ott kapcsold ki a zajszűrést / visszhangelnyomást.
+• Hagyd bejelölve az igazi mikrofonodat a „Használat” oszlopban, hogy a hangod is bekeveredjen.
+• Windows adatvédelem: engedélyezd az asztali alkalmazásoknak a mikrofon használatát.
+• A gyorsbillentyűk nem működnek egy játékban? Futtasd a VoxPadot ugyanazon a jogosultsági szinten, mint a játékot.</value></data>
+  <data name="DiagnosticReport" xml:space="preserve"><value>Diagnosztikai jelentés</value></data>
+  <data name="DiagnosticHint" xml:space="preserve"><value>Létrehoz egy zip-fájlt a naplóval, az eszközlistával, az útválasztás állapotával és a beállításokkal (csak eszközazonosítók, licencadatok nélkül), amelyet csatolhatsz egy hibajelentéshez.</value></data>
+  <data name="CreateReport" xml:space="preserve"><value>Jelentés létrehozása</value></data>
+  <data name="OpenDevices" xml:space="preserve"><value>Eszközök…</value></data>
+  <data name="AutoKeysTroubleHint" xml:space="preserve"><value>Az Auto Keys megnyomja a push-to-talk billentyűdet, amikor egy hang elindul a mikrofonon. Az utolsó kiértékelés mutatja, hogy az egyes bejegyzések miért aktiválódtak vagy nem. Játssz le egy hangot, majd nyisd meg újra ezt az ablakot az újbóli ellenőrzéshez.</value></data>
+  <data name="MicPlayMode" xml:space="preserve"><value>mikrofonos lejátszási mód</value></data>
+  <data name="NotMicPlayMode" xml:space="preserve"><value>NEM mikrofonos lejátszási mód – az Auto Keys sosem aktiválódik</value></data>
+  <data name="Entries" xml:space="preserve"><value>Bejegyzések</value></data>
+  <data name="ForegroundNow" xml:space="preserve"><value>Előtérben lévő alkalmazás most</value></data>
+  <data name="NoEvaluationYet" xml:space="preserve"><value>Ebben a munkamenetben még nem volt hang lejátszva.</value></data>
+  <data name="LastEvaluation" xml:space="preserve"><value>Utolsó kiértékelés</value></data>
+  <data name="OpenAutoKeysPrefs" xml:space="preserve"><value>Auto Keys beállítások…</value></data>
+
+  <!-- TTS / recorder / editor -->
+  <data name="Voice" xml:space="preserve"><value>Hang:</value></data>
+  <data name="Rate" xml:space="preserve"><value>Sebesség</value></data>
+  <data name="PreviewSpeakers" xml:space="preserve"><value>Előnézet (Enter)</value></data>
+  <data name="SendToMic" xml:space="preserve"><value>Küldés a mikrofonra (Ctrl+Enter)</value></data>
+  <data name="SaveToList" xml:space="preserve"><value>Mentés a listába</value></data>
+  <data name="TtsHint" xml:space="preserve"><value>Enter = előnézet a hangszórókon · Ctrl+Enter = lejátszás a mikrofonon · a „TTS lejátszása” speciális gyorsbillentyű ezt a szöveget mondja ki.</value></data>
+  <data name="Source" xml:space="preserve"><value>Forrás:</value></data>
+  <data name="Source_Speakers" xml:space="preserve"><value>Hangszórók (amit te hallasz)</value></data>
+  <data name="Source_Mic" xml:space="preserve"><value>Mikrofon</value></data>
+  <data name="Format" xml:space="preserve"><value>Formátum:</value></data>
+  <data name="Insert" xml:space="preserve"><value>Beszúrás:</value></data>
+  <data name="InsertEnd" xml:space="preserve"><value>Hozzáadás a lista végéhez</value></data>
+  <data name="InsertBeginning" xml:space="preserve"><value>Beszúrás az elejére</value></data>
+  <data name="AutoNormalize" xml:space="preserve"><value>Automatikus normalizálás erre:</value></data>
+  <data name="DbHint" xml:space="preserve"><value>dB (89 ≈ −23 LUFS; 99 felett torzít)</value></data>
+  <data name="TrimSilence" xml:space="preserve"><value>Csend levágása az elején és a végén</value></data>
+  <data name="MaxTime" xml:space="preserve"><value>Max. idő:</value></data>
+  <data name="MaxSecondsHint" xml:space="preserve"><value>másodperc (0 = korlátlan; tömörítetlenül pufferelve a %TEMP% mappában)</value></data>
+  <data name="TargetDirectory" xml:space="preserve"><value>Mappa:</value></data>
+  <data name="RecorderHotkeys" xml:space="preserve"><value>Speciális gyorsbillentyűk: indítás = {0}, leállítás = {1}. A felvétel kezdete előtt értesítési hang szólal meg.</value></data>
+  <data name="NotSet" xml:space="preserve"><value>nincs beállítva</value></data>
+  <data name="StartRecording" xml:space="preserve"><value>Felvétel</value></data>
+  <data name="StopRecording" xml:space="preserve"><value>Leállítás</value></data>
+  <data name="PlayLastTake" xml:space="preserve"><value>Utolsó felvétel lejátszása</value></data>
+  <data name="LastTake" xml:space="preserve"><value>Utolsó felvétel</value></data>
+  <data name="MaxTimeReached" xml:space="preserve"><value>Elérted a maximális felvételi időt.</value></data>
+  <data name="RecordingInProgress" xml:space="preserve"><value>Felvétel folyamatban. Elveted?</value></data>
+  <data name="TargetTooLoud" xml:space="preserve"><value>A 99 dB feletti cél torzítani fog. Mégis folytatod?</value></data>
+  <data name="RecordingFrom" xml:space="preserve"><value>Felvétel innen: „{0}”…</value></data>
+  <data name="RecordingStarted" xml:space="preserve"><value>Felvétel elindítva</value></data>
+  <data name="NothingRecorded" xml:space="preserve"><value>Semmi nem lett felvéve (csend).</value></data>
+  <data name="RecordingSaved" xml:space="preserve"><value>Felvétel mentve: {0}</value></data>
+  <data name="Editor" xml:space="preserve"><value>Szerkesztő</value></data>
+  <data name="PlaySelection" xml:space="preserve"><value>Kijelölés lejátszása</value></data>
+  <data name="Crop" xml:space="preserve"><value>Vágás</value></data>
+  <data name="VolumeUp" xml:space="preserve"><value>Hangerő +3 dB</value></data>
+  <data name="VolumeDown" xml:space="preserve"><value>Hangerő −3 dB</value></data>
+  <data name="VolumeCustom" xml:space="preserve"><value>Hangerő…</value></data>
+  <data name="NormalizeTo" xml:space="preserve"><value>Normalizálás…</value></data>
+  <data name="ZoomFit" xml:space="preserve"><value>Igazítás</value></data>
+  <data name="ZoomSelection" xml:space="preserve"><value>Nagyítás a kijelölésre</value></data>
+  <data name="Save" xml:space="preserve"><value>Mentés</value></data>
+  <data name="EditorHint" xml:space="preserve"><value>Húzás: kijelölés · Shift+nyilak / Home / End: bővítés · Ctrl+A: mind · Ctrl+D: kijelölés megszüntetése · Del: kivágás · Esc: bezárás</value></data>
+  <data name="Attr_Size" xml:space="preserve"><value>Méret</value></data>
+  <data name="Attr_Format" xml:space="preserve"><value>Formátum</value></data>
+  <data name="Attr_SampleRate" xml:space="preserve"><value>Mintavételi frekvencia</value></data>
+  <data name="Attr_Duration" xml:space="preserve"><value>Hossz</value></data>
+  <data name="Attr_Channels" xml:space="preserve"><value>Csatornák</value></data>
+  <data name="Attr_OriginalVolume" xml:space="preserve"><value>Eredeti hangerő</value></data>
+  <data name="LongFileWarning" xml:space="preserve"><value>Ez a fájl 10 percnél hosszabb. A szerkesztés az egész fájlt a memóriában tartja, a visszavonási pillanatképek pedig ezt megsokszorozzák; számíts nagy memóriahasználatra.</value></data>
+  <data name="CannotOpenFile" xml:space="preserve"><value>A fájl nem nyitható meg: {0}</value></data>
+  <data name="Modified" xml:space="preserve"><value>módosítva</value></data>
+  <data name="Selection" xml:space="preserve"><value>Kijelölés</value></data>
+  <data name="NoSelection" xml:space="preserve"><value>Nincs kijelölés (a műveletek az egész fájlra vonatkoznak)</value></data>
+  <data name="GainPrompt" xml:space="preserve"><value>Erősítés dB-ben (negatív = halkabb):</value></data>
+  <data name="NormalizePrompt" xml:space="preserve"><value>Cél dB-ben (89 ≈ −23 LUFS):</value></data>
+  <data name="EditorSaveQuestion" xml:space="preserve"><value>Mented a szerkesztett hangot?</value></data>
+  <data name="EditorSaved" xml:space="preserve"><value>Mentve: {0}</value></data>
+
+  <!-- Preferences -->
+  <data name="Tab_Devices" xml:space="preserve"><value>Eszközök</value></data>
+  <data name="Tab_Audio" xml:space="preserve"><value>Hang</value></data>
+  <data name="Tab_Hotkeys" xml:space="preserve"><value>Gyorsbillentyűk</value></data>
+  <data name="Tab_Recorder" xml:space="preserve"><value>Felvevő</value></data>
+  <data name="Tab_Interface" xml:space="preserve"><value>Felület</value></data>
+  <data name="Tab_Notifications" xml:space="preserve"><value>Értesítések</value></data>
+  <data name="Tab_Updates" xml:space="preserve"><value>Frissítések</value></data>
+  <data name="SetupMode" xml:space="preserve"><value>Beállítási mód</value></data>
+  <data name="SetupModeHint" xml:space="preserve"><value>A VoxPadnak nincs saját kernel szintű audio-illesztőprogramja. A hangot + a beszédet egy virtuális kábel lejátszási végpontjára rendereli; az alkalmazások ezután a kábel felvételi végpontjáról rögzítenek (pl. „CABLE Output”). Az automatikus választás sorrendben a VB-CABLE, VB-CABLE A/B, Voicemeeter, egy kézzel választott kábel és a Stereo Mix eszközöket próbálja.</value></data>
+  <data name="Refresh" xml:space="preserve"><value>Frissítés</value></data>
+  <data name="Status" xml:space="preserve"><value>Állapot: </value></data>
+  <data name="Microphones" xml:space="preserve"><value>Mikrofonok (jelöld be a „Használat” oszlopban, melyek keveredjenek a kábelbe)</value></data>
+  <data name="Use" xml:space="preserve"><value>Használat</value></data>
+  <data name="DefaultComm" xml:space="preserve"><value> (alapértelmezett kommunikációs)</value></data>
+  <data name="NoMics" xml:space="preserve"><value>Nem található felvevőeszköz.</value></data>
+  <data name="NoMicsTickedHint" xml:space="preserve"><value>Ha semmi sincs bejelölve, az alapértelmezett kommunikációs mikrofon kerül használatra.</value></data>
+  <data name="VirtualCableEndpoint" xml:space="preserve"><value>Virtuális kábel lejátszási végpontja (az „Egyéb virtuális kábel” beállításhoz)</value></data>
+  <data name="AutoDetect" xml:space="preserve"><value>(automatikus felismerés)</value></data>
+  <data name="SpeakerDevice" xml:space="preserve"><value>Hangszórók (a hang saját példánya)</value></data>
+  <data name="DefaultDevice" xml:space="preserve"><value>(Windows alapértelmezés)</value></data>
+  <data name="RecorderMic" xml:space="preserve"><value>Mikrofon a felvevőhöz</value></data>
+  <data name="MicLatency" xml:space="preserve"><value>Mikrofon késleltetése (ms):</value></data>
+  <data name="LatencyHint" xml:space="preserve"><value>Alacsonyabb = kisebb késés a hangodon, magasabb = kevesebb kimaradás lassú gépeken. A 30 ms jó alapértelmezés.</value></data>
+  <data name="OpenPrivacySettings" xml:space="preserve"><value>A mikrofon-hozzáférés megtagadva – Windows adatvédelmi beállítások megnyitása</value></data>
+  <data name="Normalization" xml:space="preserve"><value>Hangerő-normalizálás (EBU R128, csatornánként)</value></data>
+  <data name="Norm_Off" xml:space="preserve"><value>Ki</value></data>
+  <data name="Norm_Dynamic" xml:space="preserve"><value>Dinamikus – az első 6 mp elemzése, finomítás lejátszás közben (alapértelmezett)</value></data>
+  <data name="Norm_Full" xml:space="preserve"><value>Teljes fájl – az egész fájl elemzése lejátszás előtt (gyorsítótárazva)</value></data>
+  <data name="MeasureVoice" xml:space="preserve"><value>Hang mérése…</value></data>
+  <data name="NormHint" xml:space="preserve"><value>A mikrofonon lejátszott hangok a hangod szintjére kerülnek (mérd meg; a jó eredmény 74 dB felett van). A hangszórós példány nem változik – magadnak a hangszóró-hangerő csúszkát használd.</value></data>
+  <data name="BlockVoice" xml:space="preserve"><value>Hang blokkolása</value></data>
+  <data name="BlockVoiceCheck" xml:space="preserve"><value>A hangom teljes lecserélése, amíg egy hang szól (keverés helyett)</value></data>
+  <data name="VoiceActivation" xml:space="preserve"><value>Hangaktiválási hang</value></data>
+  <data name="VoiceActivationCheck" xml:space="preserve"><value>Rövid, hangos előjel lejátszása a mikrofonon, hogy a hangvezérelt alkalmazások kinyissák a kapujukat</value></data>
+  <data name="CustomFile" xml:space="preserve"><value>Egyéni fájl (üres = 250 ms hangjel):</value></data>
+  <data name="Default" xml:space="preserve"><value>Alapértelmezett</value></data>
+  <data name="VoiceActivationHeadphones" xml:space="preserve"><value>Az előjel lejátszása a hangszóróimon/fejhallgatómon is</value></data>
+  <data name="Playback" xml:space="preserve"><value>Lejátszás</value></data>
+  <data name="AllowResumeOtherMode" xml:space="preserve"><value>Folytatás engedélyezése másik lejátszási módban (újraindítás a szüneteltetett pozíciótól az új móddal)</value></data>
+  <data name="General" xml:space="preserve"><value>Általános</value></data>
+  <data name="HotkeysEnabledCheck" xml:space="preserve"><value>Gyorsbillentyűk engedélyezve</value></data>
+  <data name="PassHotkeysCheck" xml:space="preserve"><value>Gyorsbillentyűk továbbadása az aktív alkalmazásnak (alapértelmezetten ki: a billentyűt elnyeli)</value></data>
+  <data name="AutoStopCheck" xml:space="preserve"><value>Automatikus leállítás: a gyorsbillentyűvel indított hangok figyelmen kívül hagyják az Ismétlést és a Folytatást (alapértelmezetten be)</value></data>
+  <data name="HotkeysGeneralHint" xml:space="preserve"><value>Egy hang gyorsbillentyűjét jobb kattintással vagy a Gyorsbillentyű cellájára duplán kattintva állíthatod be. Egyes billentyűk, bármely kombináció Ctrl/Alt/Shift/Win billentyűvel, valamint a középső/4./5. egérgomb globálisan működik.</value></data>
+  <data name="SpecialHint" xml:space="preserve"><value>A speciális gyorsbillentyűk fenntartottak: egy hang nem használhatja ugyanazt a billentyűt.</value></data>
+  <data name="NumpadHotkeys" xml:space="preserve"><value>Numerikus billentyűzet gyorsbillentyűi</value></data>
+  <data name="NumpadEnabledCheck" xml:space="preserve"><value>Engedélyezve: tartsd lenyomva a módosítót, írd be a hang sorszámát a numerikus billentyűzeten, engedd el</value></data>
+  <data name="Modifier" xml:space="preserve"><value>Módosító:</value></data>
+  <data name="NumpadHint" xml:space="preserve"><value>A sorszám az aktuális kategória # oszlopa.</value></data>
+  <data name="IndexHotkeys" xml:space="preserve"><value>Index gyorsbillentyűk</value></data>
+  <data name="IndexEnabledCheck" xml:space="preserve"><value>Engedélyezve: tartsd lenyomva a módosítót, írd be a sorindexet a számsorral, engedd el</value></data>
+  <data name="IndexHint" xml:space="preserve"><value>Az index a rejtett „Összes hang” kategória sora, pl. Alt+1,2,3 a 123. sort játssza le.</value></data>
+  <data name="Advanced" xml:space="preserve"><value>Speciális</value></data>
+  <data name="AllowLeftRight" xml:space="preserve"><value>Bal/jobb módosítók engedélyezése (az LCtrl és az RCtrl különböző billentyű)</value></data>
+  <data name="SameHotkeysAllCategories" xml:space="preserve"><value>Ugyanazok a gyorsbillentyűk minden kategóriában (soralapú: az N. sor gyorsbillentyűje a kiválasztott kategória N. sorát játssza le)</value></data>
+  <data name="JumpSeconds" xml:space="preserve"><value>Ugrás ±N másodperc:</value></data>
+  <data name="VolumeStep" xml:space="preserve"><value>Hangerő fel/le lépésköz (%):</value></data>
+  <data name="VolumeSet" xml:space="preserve"><value>„Hangerő beállítása” gyorsbillentyű szintje (%):</value></data>
+  <data name="AutoKeysEnabledCheck" xml:space="preserve"><value>Auto Keys engedélyezve</value></data>
+  <data name="AutoKeysHint" xml:space="preserve"><value>Automatikus push-to-talk: amikor egy hang elindul a mikrofonon, a billentyű lenyomódik (a hang hosszáig lenyomva tartva, vagy előtte és utána megnyomva). Csak mikrofonos lejátszási módokban aktiválódik.</value></data>
+  <data name="NoKey" xml:space="preserve"><value>(nincs billentyű)</value></data>
+  <data name="AutoKey" xml:space="preserve"><value>Auto Key</value></data>
+  <data name="OnlyIfHotkey" xml:space="preserve"><value>Csak gyorsbillentyűs lejátszás esetén</value></data>
+  <data name="PressHold" xml:space="preserve"><value>Lenyomva tartás a hang hosszáig</value></data>
+  <data name="PressBeforeAfter" xml:space="preserve"><value>Megnyomás előtte és utána</value></data>
+  <data name="PressMode" xml:space="preserve"><value>Lenyomási mód:</value></data>
+  <data name="Cond_Always" xml:space="preserve"><value>Mindig</value></data>
+  <data name="Cond_Fullscreen" xml:space="preserve"><value>Az előtérben lévő alkalmazás teljes képernyős (keret nélkülit is beleértve)</value></data>
+  <data name="Cond_Running" xml:space="preserve"><value>Egy listázott alkalmazás fut</value></data>
+  <data name="Cond_Foreground" xml:space="preserve"><value>Egy listázott alkalmazás van előtérben</value></data>
+  <data name="Condition" xml:space="preserve"><value>Feltétel:</value></data>
+  <data name="AppsTip" xml:space="preserve"><value>Folyamatnevek, soronként egy, pl. discord.exe</value></data>
+  <data name="Apps" xml:space="preserve"><value>Alkalmazáslista:</value></data>
+  <data name="AddAutoKey" xml:space="preserve"><value>Auto Key hozzáadása</value></data>
+  <data name="RecorderFormatHint" xml:space="preserve"><value>Minden sztereó 48 kHz formátumra lesz konvertálva. A szerkesztő is ebben a formátumban ment.</value></data>
+  <data name="TargetDb" xml:space="preserve"><value>Cél (dB, alapértelmezett 89 ≈ −23 LU; &gt;99 torzít):</value></data>
+  <data name="NotificationSound" xml:space="preserve"><value>Értesítési hang lejátszása a felvétel kezdete előtt</value></data>
+  <data name="RecorderHotkeyHint" xml:space="preserve"><value>A felvétel indítás/leállítás gyorsbillentyűi a Gyorsbillentyűk &gt; Speciális lapon találhatók.</value></data>
+  <data name="Language" xml:space="preserve"><value>Nyelv:</value></data>
+  <data name="Style" xml:space="preserve"><value>Stílus:</value></data>
+  <data name="Theme_Light" xml:space="preserve"><value>Világos</value></data>
+  <data name="Theme_Dark" xml:space="preserve"><value>Sötét</value></data>
+  <data name="Theme_Native" xml:space="preserve"><value>Natív (Windows)</value></data>
+  <data name="NativeForced" xml:space="preserve"><value>Nagy kontraszt vagy képernyőolvasó aktív: a natív stílus van használatban.</value></data>
+  <data name="ToolbarItems" xml:space="preserve"><value>Eszköztár elemei</value></data>
+  <data name="Timer" xml:space="preserve"><value>Számidőzítő</value></data>
+  <data name="SeekSlider" xml:space="preserve"><value>Keresősáv</value></data>
+  <data name="SpeakerVolume" xml:space="preserve"><value>Hangszóró-hangerő</value></data>
+  <data name="MicLevelMeter" xml:space="preserve"><value>Mikrofonszint-mérő</value></data>
+  <data name="Behaviour" xml:space="preserve"><value>Viselkedés</value></data>
+  <data name="StartMinimized" xml:space="preserve"><value>Indítás kis méretben</value></data>
+  <data name="MinimizeToTrayCheck" xml:space="preserve"><value>Kis méret az értesítési területre</value></data>
+  <data name="CloseToTray" xml:space="preserve"><value>Az ablak bezárása kilépés helyett az értesítési területre kicsinyít</value></data>
+  <data name="DisableSorting" xml:space="preserve"><value>Rendezés letiltása (az oszlopfejlécek sosem rendeznek; csak kézi sorrend)</value></data>
+  <data name="Confirmations" xml:space="preserve"><value>Megerősítések</value></data>
+  <data name="ConfirmRemoveCheck" xml:space="preserve"><value>Megerősítés hangok eltávolítása előtt</value></data>
+  <data name="ConfirmResetCheck" xml:space="preserve"><value>Megerősítés lejátszásszámlálók nullázása előtt</value></data>
+  <data name="ConfirmQuitCheck" xml:space="preserve"><value>Kilépés megerősítése, amíg hang szól</value></data>
+  <data name="NotifyMissing" xml:space="preserve"><value>Figyelmeztetés hiányzó fájlokra lista betöltésekor</value></data>
+  <data name="NotifyDevices" xml:space="preserve"><value>Audioeszköz-változások jelzése az állapotsorban</value></data>
+  <data name="NotifyTray" xml:space="preserve"><value>Buborék megjelenítése az értesítési területre kicsinyítéskor</value></data>
+  <data name="NotifyRecording" xml:space="preserve"><value>Állapotüzenet felvétel indulásakor</value></data>
+  <data name="NotifyTrial" xml:space="preserve"><value>Párbeszédablak megjelenítése a próbaverzió korlátjának elérésekor</value></data>
+  <data name="NotifyUpdates" xml:space="preserve"><value>Elérhető frissítések megjelenítése</value></data>
+  <data name="CheckInterval" xml:space="preserve"><value>Frissítések keresése:</value></data>
+  <data name="Never" xml:space="preserve"><value>Soha (alapértelmezett)</value></data>
+  <data name="Daily" xml:space="preserve"><value>Naponta</value></data>
+  <data name="Weekly" xml:space="preserve"><value>Hetente</value></data>
+  <data name="ManifestUrl" xml:space="preserve"><value>Manifest URL:</value></data>
+  <data name="UpdateHint" xml:space="preserve"><value>A frissítőcsomagok csak akkor települnek, ha a manifest aláírása és a csomag hash-e ellenőrizhető a VoxPadba beépített kulccsal.</value></data>
+  <data name="LastCheck" xml:space="preserve"><value>Utolsó ellenőrzés</value></data>
+  <data name="CheckNow" xml:space="preserve"><value>Ellenőrzés most</value></data>
+
+  <!-- Special hotkey names -->
+  <data name="Special_Stop" xml:space="preserve"><value>Leállítás</value></data>
+  <data name="Special_Start" xml:space="preserve"><value>Indítás (kijelölt lejátszása / folytatás)</value></data>
+  <data name="Special_Pause" xml:space="preserve"><value>Szünet / folytatás</value></data>
+  <data name="Special_PlayPrevious" xml:space="preserve"><value>Előző fájl lejátszása</value></data>
+  <data name="Special_PlayNext" xml:space="preserve"><value>Következő fájl lejátszása</value></data>
+  <data name="Special_PlaySelected" xml:space="preserve"><value>Kijelölt fájl lejátszása</value></data>
+  <data name="Special_PlayRandomInCategory" xml:space="preserve"><value>Véletlenszerű fájl lejátszása (aktuális kategória)</value></data>
+  <data name="Special_PlayRandomFromAll" xml:space="preserve"><value>Véletlenszerű fájl lejátszása (összes hang)</value></data>
+  <data name="Special_SelectPreviousFile" xml:space="preserve"><value>Előző fájl kijelölése</value></data>
+  <data name="Special_SelectNextFile" xml:space="preserve"><value>Következő fájl kijelölése</value></data>
+  <data name="Special_SelectPreviousCategory" xml:space="preserve"><value>Előző kategória kiválasztása</value></data>
+  <data name="Special_SelectNextCategory" xml:space="preserve"><value>Következő kategória kiválasztása</value></data>
+  <data name="Special_StartRecording" xml:space="preserve"><value>Felvétel indítása</value></data>
+  <data name="Special_StopRecording" xml:space="preserve"><value>Felvétel leállítása</value></data>
+  <data name="Special_JumpBackward" xml:space="preserve"><value>Ugrás vissza N másodpercet</value></data>
+  <data name="Special_JumpForward" xml:space="preserve"><value>Ugrás előre N másodpercet</value></data>
+  <data name="Special_SpeakerVolumeUp" xml:space="preserve"><value>Hangszóró-hangerő fel</value></data>
+  <data name="Special_SpeakerVolumeDown" xml:space="preserve"><value>Hangszóró-hangerő le</value></data>
+  <data name="Special_SpeakerVolumeSet" xml:space="preserve"><value>Hangszóró-hangerő beállítása</value></data>
+  <data name="Special_SpeakerVolumeMute" xml:space="preserve"><value>Hangszórók némítása / feloldása</value></data>
+  <data name="Special_SetPlayModeBoth" xml:space="preserve"><value>Lejátszási mód: hangszórók + mikrofon</value></data>
+  <data name="Special_SetPlayModeMic" xml:space="preserve"><value>Lejátszási mód: csak mikrofon</value></data>
+  <data name="Special_SetPlayModeSpeakers" xml:space="preserve"><value>Lejátszási mód: csak hangszórók</value></data>
+  <data name="Special_CyclePlayMode" xml:space="preserve"><value>Lejátszási mód váltása</value></data>
+  <data name="Special_EnableHotkeys" xml:space="preserve"><value>Gyorsbillentyűk engedélyezése</value></data>
+  <data name="Special_DisableHotkeys" xml:space="preserve"><value>Gyorsbillentyűk letiltása</value></data>
+  <data name="Special_ToggleHotkeys" xml:space="preserve"><value>Gyorsbillentyűk ki/be</value></data>
+  <data name="Special_EnableAutoKeys" xml:space="preserve"><value>Auto Keys engedélyezése</value></data>
+  <data name="Special_DisableAutoKeys" xml:space="preserve"><value>Auto Keys letiltása</value></data>
+  <data name="Special_ToggleAutoKeys" xml:space="preserve"><value>Auto Keys ki/be</value></data>
+  <data name="Special_PlayTts" xml:space="preserve"><value>Szövegfelolvasás szövegének lejátszása</value></data>
+</root>

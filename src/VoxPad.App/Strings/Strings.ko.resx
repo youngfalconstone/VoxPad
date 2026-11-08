@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+  <!-- Menus -->
+  <data name="File" xml:space="preserve"><value>파일(_F)</value></data>
+  <data name="NewList" xml:space="preserve"><value>새 사운드 목록(_N)</value></data>
+  <data name="LoadList" xml:space="preserve"><value>사운드 목록 열기(_L)…</value></data>
+  <data name="SaveList" xml:space="preserve"><value>사운드 목록 저장(_S)</value></data>
+  <data name="SaveListAs" xml:space="preserve"><value>다른 이름으로 사운드 목록 저장(_A)…</value></data>
+  <data name="RecentLists" xml:space="preserve"><value>최근 사운드 목록(_R)</value></data>
+  <data name="RestoreList" xml:space="preserve"><value>사운드 목록 복원…</value></data>
+  <data name="AddFiles" xml:space="preserve"><value>사운드 파일 추가…</value></data>
+  <data name="AddFolder" xml:space="preserve"><value>폴더 추가…</value></data>
+  <data name="WebImport" xml:space="preserve"><value>웹에서 가져오기…</value></data>
+  <data name="Export" xml:space="preserve"><value>내보내기(_E)</value></data>
+  <data name="ExportSoundFiles" xml:space="preserve"><value>사운드 파일…</value></data>
+  <data name="ExportPreferences" xml:space="preserve"><value>설정…</value></data>
+  <data name="ImportPreferences" xml:space="preserve"><value>설정 가져오기…</value></data>
+  <data name="Statistics" xml:space="preserve"><value>통계…</value></data>
+  <data name="Preferences" xml:space="preserve"><value>설정(_P)…</value></data>
+  <data name="Exit" xml:space="preserve"><value>끝내기(_X)</value></data>
+  <data name="Edit" xml:space="preserve"><value>편집(_E)</value></data>
+  <data name="SelectAll" xml:space="preserve"><value>모두 선택</value></data>
+  <data name="Remove" xml:space="preserve"><value>제거</value></data>
+  <data name="Copy" xml:space="preserve"><value>복사</value></data>
+  <data name="Cut" xml:space="preserve"><value>잘라내기</value></data>
+  <data name="Paste" xml:space="preserve"><value>붙여넣기</value></data>
+  <data name="MoveUp" xml:space="preserve"><value>위로 이동</value></data>
+  <data name="MoveDown" xml:space="preserve"><value>아래로 이동</value></data>
+  <data name="Undo" xml:space="preserve"><value>실행 취소</value></data>
+  <data name="Redo" xml:space="preserve"><value>다시 실행</value></data>
+  <data name="EditFile" xml:space="preserve"><value>파일 편집…</value></data>
+  <data name="SetHotkey" xml:space="preserve"><value>단축키 설정…</value></data>
+  <data name="RemoveHotkey" xml:space="preserve"><value>단축키 제거</value></data>
+  <data name="SetColor" xml:space="preserve"><value>색…</value></data>
+  <data name="PlayRandom" xml:space="preserve"><value>무작위 재생</value></data>
+  <data name="ResetPlayCount" xml:space="preserve"><value>재생 횟수 초기화</value></data>
+  <data name="ResetAllPlayCounts" xml:space="preserve"><value>모든 재생 횟수 초기화</value></data>
+  <data name="SelectInExplorer" xml:space="preserve"><value>탐색기에서 표시</value></data>
+  <data name="PlayMenu" xml:space="preserve"><value>재생(_P)</value></data>
+  <data name="Play" xml:space="preserve"><value>재생</value></data>
+  <data name="PlayOnSpeakers" xml:space="preserve"><value>스피커로 재생</value></data>
+  <data name="PlayOnMic" xml:space="preserve"><value>마이크로 재생</value></data>
+  <data name="PauseResume" xml:space="preserve"><value>일시 중지 / 다시 시작</value></data>
+  <data name="Stop" xml:space="preserve"><value>중지</value></data>
+  <data name="Previous" xml:space="preserve"><value>이전</value></data>
+  <data name="Next" xml:space="preserve"><value>다음</value></data>
+  <data name="Repeat" xml:space="preserve"><value>반복</value></data>
+  <data name="Continue" xml:space="preserve"><value>연속 재생</value></data>
+  <data name="AutoStop" xml:space="preserve"><value>자동 중지 (단축키 사운드는 반복/연속 재생 무시)</value></data>
+  <data name="PlayModeMenu" xml:space="preserve"><value>재생 모드</value></data>
+  <data name="PlayMode_Both" xml:space="preserve"><value>스피커 + 마이크</value></data>
+  <data name="PlayMode_Mic" xml:space="preserve"><value>마이크만</value></data>
+  <data name="PlayMode_Speakers" xml:space="preserve"><value>스피커만</value></data>
+  <data name="Recorder" xml:space="preserve"><value>녹음기…</value></data>
+  <data name="TextToSpeech" xml:space="preserve"><value>텍스트 음성 변환…</value></data>
+  <data name="Window" xml:space="preserve"><value>창(_W)</value></data>
+  <data name="Categories" xml:space="preserve"><value>범주 패널</value></data>
+  <data name="Hotbar" xml:space="preserve"><value>핫바</value></data>
+  <data name="Toolbar" xml:space="preserve"><value>재생 도구 모음</value></data>
+  <data name="StatusBar" xml:space="preserve"><value>상태 표시줄</value></data>
+  <data name="ShowHiddenCategories" xml:space="preserve"><value>숨겨진 범주 표시</value></data>
+  <data name="CategoryIconSize" xml:space="preserve"><value>범주 아이콘 크기</value></data>
+  <data name="Small" xml:space="preserve"><value>작게</value></data>
+  <data name="Medium" xml:space="preserve"><value>보통</value></data>
+  <data name="Large" xml:space="preserve"><value>크게</value></data>
+  <data name="ExtraLarge" xml:space="preserve"><value>아주 크게</value></data>
+  <data name="Columns" xml:space="preserve"><value>열</value></data>
+  <data name="HotbarSize" xml:space="preserve"><value>핫바 크기…</value></data>
+  <data name="HotkeyOverview" xml:space="preserve"><value>단축키 개요…</value></data>
+  <data name="MinimizeToTray" xml:space="preserve"><value>트레이로 최소화</value></data>
+  <data name="Help" xml:space="preserve"><value>도움말(_H)</value></data>
+  <data name="Manual" xml:space="preserve"><value>설명서</value></data>
+  <data name="Troubleshooting" xml:space="preserve"><value>문제 해결…</value></data>
+  <data name="AutoKeysTroubleshooting" xml:space="preserve"><value>Auto Keys 문제 해결…</value></data>
+  <data name="CheckForUpdates" xml:space="preserve"><value>업데이트 확인…</value></data>
+  <data name="Register" xml:space="preserve"><value>등록…</value></data>
+  <data name="About" xml:space="preserve"><value>VoxPad 정보</value></data>
+
+  <!-- Toolbar / status bar -->
+  <data name="TimerTip" xml:space="preserve"><value>경과 / 전체. 두 번 클릭하면 재생 중인 사운드로 이동합니다.</value></data>
+  <data name="SpeakerVolumeTip" xml:space="preserve"><value>스피커 볼륨 (내 쪽만, Windows 볼륨 믹서와 연동)</value></data>
+  <data name="MicMeterTip" xml:space="preserve"><value>마이크 레벨. 아이콘을 클릭하면 음성 레벨을 측정합니다.</value></data>
+  <data name="SeekTip" xml:space="preserve"><value>빨강 = 다른 사람에게 들림 (마이크), 파랑 = 스피커만</value></data>
+  <data name="PlayModeTip" xml:space="preserve"><value>재생 모드 – 클릭하여 전환</value></data>
+  <data name="HotkeysTip" xml:space="preserve"><value>단축키 – 두 번 클릭으로 전환, 마우스 오른쪽 클릭으로 옵션</value></data>
+  <data name="PassHotkeys" xml:space="preserve"><value>단축키를 활성 앱에도 전달</value></data>
+  <data name="Hotkeys" xml:space="preserve"><value>단축키</value></data>
+  <data name="AutoKeysTip" xml:space="preserve"><value>Auto Keys – 두 번 클릭으로 전환, 마우스 오른쪽 클릭으로 문제 해결</value></data>
+  <data name="AutoKeys" xml:space="preserve"><value>Auto Keys</value></data>
+  <data name="RepeatTip" xml:space="preserve"><value>현재 사운드 반복 – 클릭하여 전환</value></data>
+  <data name="ContinueTip" xml:space="preserve"><value>다음 사운드로 계속 재생 – 클릭하여 전환</value></data>
+  <data name="PreviousPage" xml:space="preserve"><value>이전 페이지 (Ctrl+PgUp)</value></data>
+  <data name="NextPage" xml:space="preserve"><value>다음 페이지 (Ctrl+PgDn)</value></data>
+  <data name="HideCategory" xml:space="preserve"><value>범주 숨기기</value></data>
+  <data name="SearchTip" xml:space="preserve"><value>입력하여 필터 · Enter는 다음 일치 항목 · Ctrl+Enter는 재생 · Esc는 지우기</value></data>
+  <data name="ColTag" xml:space="preserve"><value>태그</value></data>
+  <data name="ColDuration" xml:space="preserve"><value>길이</value></data>
+  <data name="ColHotkey" xml:space="preserve"><value>단축키</value></data>
+  <data name="ColPlayCount" xml:space="preserve"><value>재생 횟수</value></data>
+  <data name="ColLastPlayed" xml:space="preserve"><value>마지막 재생일</value></data>
+  <data name="ColIndex" xml:space="preserve"><value>#</value></data>
+  <data name="MoveToCategory" xml:space="preserve"><value>범주로 이동</value></data>
+  <data name="RemoveFromCategory" xml:space="preserve"><value>이 범주에서 제거</value></data>
+  <data name="AddCategory" xml:space="preserve"><value>범주 추가…</value></data>
+  <data name="AddSubcategory" xml:space="preserve"><value>하위 범주 추가…</value></data>
+  <data name="RenameCategory" xml:space="preserve"><value>이름 바꾸기…</value></data>
+  <data name="RemoveCategory" xml:space="preserve"><value>범주 제거</value></data>
+  <data name="SetRandomHotkey" xml:space="preserve"><value>'무작위 재생' 단축키 설정…</value></data>
+  <data name="AllSounds" xml:space="preserve"><value>모든 사운드</value></data>
+  <data name="UntitledList" xml:space="preserve"><value>제목 없음</value></data>
+  <data name="Trial" xml:space="preserve"><value>평가판</value></data>
+  <data name="TrialStatus" xml:space="preserve"><value>평가판: 최대 {0}개 사운드, 이번 실행에서 마이크 재생 {1}회 남음</value></data>
+
+  <!-- Status messages -->
+  <data name="PlayModeSet" xml:space="preserve"><value>재생 모드: {0}</value></data>
+  <data name="HotkeysOn" xml:space="preserve"><value>단축키 사용 중</value></data>
+  <data name="HotkeysOff" xml:space="preserve"><value>단축키 사용 안 함</value></data>
+  <data name="AutoKeysOn" xml:space="preserve"><value>Auto Keys 사용 중</value></data>
+  <data name="AutoKeysOff" xml:space="preserve"><value>Auto Keys 사용 안 함</value></data>
+  <data name="Playing" xml:space="preserve"><value>재생 중 '{0}' → {1}</value></data>
+  <data name="TrialPlayLimit" xml:space="preserve"><value>평가판: 실행당 마이크 재생 10회에 도달했습니다. 등록하면 제한이 해제됩니다.</value></data>
+  <data name="TrialSoundLimit" xml:space="preserve"><value>평가판: 목록에는 최대 {0}개 사운드만 넣을 수 있습니다. 등록하면 제한이 해제됩니다.</value></data>
+  <data name="NothingToPlay" xml:space="preserve"><value>재생할 항목 없음</value></data>
+  <data name="DevicesChanged" xml:space="preserve"><value>오디오 장치가 변경되어 라우팅을 다시 적용했습니다.</value></data>
+  <data name="MissingFiles" xml:space="preserve"><value>목록의 파일 {0}개를 찾을 수 없습니다 (회색으로 표시).</value></data>
+  <data name="CategoryInfo" xml:space="preserve"><value>{0}: 사운드 {1}개, 총 {2}</value></data>
+  <data name="Copied" xml:space="preserve"><value>사운드 {0}개 복사됨</value></data>
+  <data name="CutStatus" xml:space="preserve"><value>사운드 {0}개 잘라냄</value></data>
+  <data name="Importing" xml:space="preserve"><value>파일 {0}개 읽는 중…</value></data>
+  <data name="Imported" xml:space="preserve"><value>사운드 {0}개 추가됨</value></data>
+  <data name="NoAudioFiles" xml:space="preserve"><value>지원되는 오디오 파일이 없습니다</value></data>
+  <data name="ConfirmRemove" xml:space="preserve"><value>사운드 {0}개를 목록에서 제거할까요? 오디오 파일은 삭제되지 않습니다.</value></data>
+  <data name="Removed" xml:space="preserve"><value>사운드 {0}개 제거됨</value></data>
+  <data name="HotkeyFor" xml:space="preserve"><value>'{0}'의 단축키</value></data>
+  <data name="RandomHotkeyFor" xml:space="preserve"><value>'{0}'의 '무작위 재생' 단축키</value></data>
+  <data name="BareMouseNotAllowed" xml:space="preserve"><value>마우스 왼쪽/오른쪽 단추에는 보조 키가 필요합니다 (예: Ctrl+클릭).</value></data>
+  <data name="ReservedHotkey" xml:space="preserve"><value>{0}은(는) 특수 단축키 '{1}'에 예약되어 있습니다.</value></data>
+  <data name="HotkeyRemoved" xml:space="preserve"><value>'{0}'의 단축키 제거됨</value></data>
+  <data name="HotkeySet" xml:space="preserve"><value>{0} → '{1}'</value></data>
+  <data name="ConfirmResetPlayCount" xml:space="preserve"><value>사운드 {0}개의 재생 횟수를 초기화할까요?</value></data>
+  <data name="ConfirmResetAll" xml:space="preserve"><value>모든 사운드의 재생 횟수와 목록 합계를 초기화할까요?</value></data>
+  <data name="FileMissing" xml:space="preserve"><value>파일을 찾을 수 없음: {0}</value></data>
+  <data name="ConfirmRemoveCategory" xml:space="preserve"><value>범주 '{0}'(및 하위 범주)을(를) 제거할까요? 사운드는 목록에 남습니다.</value></data>
+  <data name="CategoryName" xml:space="preserve"><value>이름:</value></data>
+  <data name="NewCategory" xml:space="preserve"><value>새 범주</value></data>
+  <data name="AddedToCategory" xml:space="preserve"><value>사운드 {0}개 → '{1}'</value></data>
+  <data name="ReorderWhileSorted" xml:space="preserve"><value>수동으로 순서를 바꾸려면 정렬을 해제하세요 (열 머리글을 다시 클릭).</value></data>
+  <data name="UnsavedTitle" xml:space="preserve"><value>저장되지 않은 변경 내용</value></data>
+  <data name="UnsavedText" xml:space="preserve"><value>사운드 목록에 저장되지 않은 변경 내용이 있습니다. 취소할까요?</value></data>
+  <data name="NewListCreated" xml:space="preserve"><value>새 사운드 목록</value></data>
+  <data name="ListLoaded" xml:space="preserve"><value>{0} 불러옴</value></data>
+  <data name="ListLoadFailed" xml:space="preserve"><value>사운드 목록을 불러올 수 없습니다: {0}</value></data>
+  <data name="ListSaved" xml:space="preserve"><value>{0} 저장됨</value></data>
+  <data name="Exported" xml:space="preserve"><value>파일 {0}개 내보냄, {1}개 실패 → {2}</value></data>
+  <data name="PrefsExported" xml:space="preserve"><value>설정을 {0}(으)로 내보냈습니다</value></data>
+  <data name="PrefsImportedRestart" xml:space="preserve"><value>설정을 가져왔습니다. 적용하려면 VoxPad를 다시 시작하세요.</value></data>
+  <data name="NoSoundAtNumber" xml:space="preserve"><value>{0}번에 사운드가 없습니다</value></data>
+  <data name="ElevatedWarning" xml:space="preserve"><value>VoxPad가 관리자 권한으로 실행 중입니다: 탐색기에서 끌어서 놓기가 작동하지 않습니다 (Windows는 권한 상승된 창으로의 놓기를 차단합니다).</value></data>
+  <data name="UnexpectedError" xml:space="preserve"><value>예기치 않은 오류가 발생했습니다.</value></data>
+  <data name="DumpWritten" xml:space="preserve"><value>자세한 내용을 다음 위치에 기록했습니다:</value></data>
+  <data name="TrayHint" xml:space="preserve"><value>VoxPad는 알림 영역에서 계속 실행됩니다. 아이콘을 두 번 클릭하면 복원됩니다.</value></data>
+  <data name="Tray_Show" xml:space="preserve"><value>VoxPad 표시</value></data>
+  <data name="ConfirmQuitPlaying" xml:space="preserve"><value>사운드가 재생 중입니다. 그래도 끝낼까요?</value></data>
+  <data name="SaveBeforeExit" xml:space="preserve"><value>끝내기 전에 사운드 목록의 변경 내용을 저장할까요?</value></data>
+  <data name="MicAccessDenied" xml:space="preserve"><value>Windows가 데스크톱 앱의 마이크 액세스를 차단하고 있어 VoxPad가 마이크를 읽을 수 없습니다.
+
+해결: 설정 &gt; 개인 정보 및 보안 &gt; 마이크 &gt; "마이크 액세스"와 "데스크톱 앱이 마이크에 액세스하도록 허용"을 켠 다음, 설정 &gt; 장치에서 새로 고침을 누르세요.</value></data>
+  <data name="OpenSettingsQuestion" xml:space="preserve"><value>지금 개인 정보 설정을 열까요?</value></data>
+  <data name="AccessDenied" xml:space="preserve"><value>액세스가 거부됨</value></data>
+  <data name="RemoveFromHotbar" xml:space="preserve"><value>핫바에서 제거</value></data>
+  <data name="EmptyTileHint" xml:space="preserve"><value>여기에 사운드를 끌어 놓으세요</value></data>
+  <data name="PrefsSaved" xml:space="preserve"><value>설정 저장됨</value></data>
+  <data name="LanguageRestart" xml:space="preserve"><value>언어는 VoxPad를 다시 시작한 후 변경됩니다.</value></data>
+
+  <!-- Dialogs -->
+  <data name="OK" xml:space="preserve"><value>확인</value></data>
+  <data name="Cancel" xml:space="preserve"><value>취소</value></data>
+  <data name="Apply" xml:space="preserve"><value>적용</value></data>
+  <data name="Close" xml:space="preserve"><value>닫기</value></data>
+  <data name="Clear" xml:space="preserve"><value>지우기</value></data>
+  <data name="None" xml:space="preserve"><value>(없음)</value></data>
+  <data name="HotkeyCapturePrompt" xml:space="preserve"><value>지금 키 또는 키 조합을 누르세요. 마우스 가운데, 4, 5 단추도 사용할 수 있습니다 (왼쪽/오른쪽은 보조 키 필요). Enter는 저장, Delete 또는 Backspace는 지우기, Esc는 취소입니다.</value></data>
+  <data name="HexColor" xml:space="preserve"><value>16진수:</value></data>
+  <data name="NoColor" xml:space="preserve"><value>색 없음</value></data>
+  <data name="Rows" xml:space="preserve"><value>행:</value></data>
+  <data name="Pages" xml:space="preserve"><value>페이지:</value></data>
+  <data name="HotbarSizeHint" xml:space="preserve"><value>단축키는 페이지 간에 공유됩니다. 새 격자 밖의 타일은 제거됩니다.</value></data>
+  <data name="Type" xml:space="preserve"><value>유형</value></data>
+  <data name="Target" xml:space="preserve"><value>대상</value></data>
+  <data name="Sound" xml:space="preserve"><value>사운드</value></data>
+  <data name="CategoryRandom" xml:space="preserve"><value>범주 내 무작위 재생</value></data>
+  <data name="Special" xml:space="preserve"><value>특수</value></data>
+  <data name="Numpad" xml:space="preserve"><value>숫자 키패드</value></data>
+  <data name="NumpadDesc" xml:space="preserve"><value>현재 범주에서 번호로 재생</value></data>
+  <data name="Index" xml:space="preserve"><value>인덱스</value></data>
+  <data name="IndexDesc" xml:space="preserve"><value>'모든 사운드'의 행 번호로 재생</value></data>
+  <data name="HotkeyOverviewHint" xml:space="preserve"><value>단축키는 {0}, 전달은 {1} 상태입니다.</value></data>
+  <data name="Enabled" xml:space="preserve"><value>사용</value></data>
+  <data name="Disabled" xml:space="preserve"><value>사용 안 함</value></data>
+  <data name="On" xml:space="preserve"><value>켜짐</value></data>
+  <data name="Off" xml:space="preserve"><value>꺼짐</value></data>
+  <data name="Version" xml:space="preserve"><value>버전</value></data>
+  <data name="TrialEdition" xml:space="preserve"><value>평가판 – 최대 10개 사운드, 실행당 마이크 재생 10회</value></data>
+  <data name="LicensedTo" xml:space="preserve"><value>라이선스 소유자: {0} ({1} 에디션)</value></data>
+  <data name="AboutText" xml:space="preserve"><value>사운드를 마이크로 보내는 Windows용 사운드보드입니다. 오디오 엔진: NAudio, NVorbis, Concentus, TagLib#. 가상 마이크는 VB-CABLE / Voicemeeter를 사용합니다.</value></data>
+  <data name="DataFolder" xml:space="preserve"><value>데이터</value></data>
+  <data name="LogFolder" xml:space="preserve"><value>로그</value></data>
+  <data name="OpenDataFolder" xml:space="preserve"><value>데이터 폴더 열기</value></data>
+  <data name="HideLicenseeName" xml:space="preserve"><value>내 이름 숨기기 (스트리머 모드)</value></data>
+  <data name="RemoveLicense" xml:space="preserve"><value>라이선스 제거</value></data>
+  <data name="ConfirmRemoveLicense" xml:space="preserve"><value>이 PC에서 라이선스를 제거할까요?</value></data>
+  <data name="RegisterPrompt" xml:space="preserve"><value>구매 이메일에 있는 이름과 시리얼을 입력하세요. 시리얼은 오프라인으로 확인되며 license.dat에 저장됩니다.</value></data>
+  <data name="Name" xml:space="preserve"><value>이름:</value></data>
+  <data name="Serial" xml:space="preserve"><value>시리얼:</value></data>
+  <data name="RegisteredThanks" xml:space="preserve"><value>감사합니다! VoxPad가 등록되었습니다.</value></data>
+  <data name="SerialInvalid" xml:space="preserve"><value>시리얼이 이름과 일치하지 않습니다. 오타가 없는지 확인하세요 (I/1과 O/0은 서로 바꿔 쓸 수 있습니다).</value></data>
+  <data name="AllTimePlays" xml:space="preserve"><value>누적 마이크 재생 횟수</value></data>
+  <data name="ListPlays" xml:space="preserve"><value>이 목록의 재생 횟수</value></data>
+  <data name="SoundsInList" xml:space="preserve"><value>목록의 사운드 수</value></data>
+  <data name="Launches" xml:space="preserve"><value>실행 횟수</value></data>
+  <data name="Since" xml:space="preserve"><value>시작일</value></data>
+  <data name="TopSounds" xml:space="preserve"><value>가장 많이 재생됨</value></data>
+  <data name="ResetAllTime" xml:space="preserve"><value>누적 합계 초기화</value></data>
+  <data name="ConfirmResetAllTime" xml:space="preserve"><value>누적 합계를 초기화할까요?</value></data>
+  <data name="WebImportPrompt" xml:space="preserve"><value>오디오 파일(mp3, ogg, wav…)의 직접 링크를 붙여넣으세요. 파일은 VoxPad 음악 폴더로 다운로드되어 목록에 추가됩니다.</value></data>
+  <data name="FileNameOptional" xml:space="preserve"><value>파일 이름 (선택 사항):</value></data>
+  <data name="Import" xml:space="preserve"><value>가져오기</value></data>
+  <data name="Downloading" xml:space="preserve"><value>다운로드 중…</value></data>
+  <data name="UnsupportedFormat" xml:space="preserve"><value>지원되지 않는 오디오 형식</value></data>
+  <data name="RestorePrompt" xml:space="preserve"><value>일일 백업은 시작 시 기록됩니다. 복원하면 현재 목록이 바뀝니다 (저장된 목록을 불러오면 되돌릴 수 있습니다).</value></data>
+  <data name="OpenBackupFolder" xml:space="preserve"><value>폴더 열기</value></data>
+  <data name="Restore" xml:space="preserve"><value>복원</value></data>
+  <data name="ConfirmRestore" xml:space="preserve"><value>{0}의 백업을 복원할까요?</value></data>
+  <data name="Restored" xml:space="preserve"><value>{0}의 백업을 복원했습니다</value></data>
+  <data name="Checking" xml:space="preserve"><value>확인 중…</value></data>
+  <data name="DownloadInstall" xml:space="preserve"><value>다운로드 및 설치</value></data>
+  <data name="PackageVerified" xml:space="preserve"><value>패키지를 확인했습니다. 설치 관리자가 시작되고 VoxPad는 지금 닫힙니다.</value></data>
+  <data name="VoiceMeasurement" xml:space="preserve"><value>음성 측정</value></data>
+  <data name="VoiceMeasurePrompt" xml:space="preserve"><value>마이크에 대고 약 8초간 평소처럼 말하세요. 측정된 음량이 정규화 목표가 되어 사운드가 내 목소리에 맞춰집니다 (74 dB 이상이면 좋습니다).</value></data>
+  <data name="CurrentTarget" xml:space="preserve"><value>현재 목표</value></data>
+  <data name="DefaultNotMeasured" xml:space="preserve"><value>기본값, 측정되지 않음</value></data>
+  <data name="Start" xml:space="preserve"><value>시작</value></data>
+  <data name="UseAsTarget" xml:space="preserve"><value>목표로 사용</value></data>
+  <data name="Measuring" xml:space="preserve"><value>측정 중</value></data>
+  <data name="NothingMeasured" xml:space="preserve"><value>측정된 것이 없습니다 – 마이크가 음소거되었거나 잘못된 장치가 선택되지 않았나요?</value></data>
+  <data name="Result" xml:space="preserve"><value>결과</value></data>
+  <data name="TooQuiet" xml:space="preserve"><value>매우 작음 – Windows에서 마이크 레벨을 높이세요</value></data>
+  <data name="BelowTarget" xml:space="preserve"><value>74 dB 미만입니다. 마이크 레벨을 높이는 것을 고려하세요</value></data>
+  <data name="TargetSet" xml:space="preserve"><value>정규화 목표를 {0:F1} dB로 설정했습니다</value></data>
+  <data name="Routing" xml:space="preserve"><value>라우팅</value></data>
+  <data name="TroubleChecklist" xml:space="preserve"><value>확인 목록:
+• VB-CABLE(무료)을 설치하고 설정 &gt; 장치에서 새로 고침을 누르세요.
+• Discord/Teams/게임에서 마이크로 'CABLE Output'을 선택하고 그곳의 소음 억제 / 에코 제거를 끄세요.
+• 내 목소리가 섞이도록 실제 마이크의 '사용'을 체크한 상태로 두세요.
+• Windows 개인 정보: 데스크톱 앱의 마이크 사용을 허용하세요.
+• 게임에서 단축키가 작동하지 않나요? 게임과 같은 권한 수준으로 VoxPad를 실행하세요.</value></data>
+  <data name="DiagnosticReport" xml:space="preserve"><value>진단 보고서</value></data>
+  <data name="DiagnosticHint" xml:space="preserve"><value>로그, 장치 목록, 라우팅 상태, 설정(장치 ID만, 라이선스 데이터 없음)이 담긴 zip을 만듭니다. 버그 보고에 첨부할 수 있습니다.</value></data>
+  <data name="CreateReport" xml:space="preserve"><value>보고서 만들기</value></data>
+  <data name="OpenDevices" xml:space="preserve"><value>장치…</value></data>
+  <data name="AutoKeysTroubleHint" xml:space="preserve"><value>Auto Keys는 사운드가 마이크로 재생을 시작할 때 푸시 투 토크 키를 누릅니다. 마지막 평가에서 각 항목이 작동했거나 작동하지 않은 이유를 볼 수 있습니다. 사운드를 재생한 다음 이 대화 상자를 다시 열어 확인하세요.</value></data>
+  <data name="MicPlayMode" xml:space="preserve"><value>마이크 재생 모드</value></data>
+  <data name="NotMicPlayMode" xml:space="preserve"><value>마이크 재생 모드가 아님 – Auto Keys가 작동하지 않습니다</value></data>
+  <data name="Entries" xml:space="preserve"><value>항목</value></data>
+  <data name="ForegroundNow" xml:space="preserve"><value>현재 포그라운드 앱</value></data>
+  <data name="NoEvaluationYet" xml:space="preserve"><value>이 세션에서 아직 재생된 사운드가 없습니다.</value></data>
+  <data name="LastEvaluation" xml:space="preserve"><value>마지막 평가</value></data>
+  <data name="OpenAutoKeysPrefs" xml:space="preserve"><value>Auto Keys 설정…</value></data>
+
+  <!-- TTS / recorder / editor -->
+  <data name="Voice" xml:space="preserve"><value>음성:</value></data>
+  <data name="Rate" xml:space="preserve"><value>속도</value></data>
+  <data name="PreviewSpeakers" xml:space="preserve"><value>미리 듣기 (Enter)</value></data>
+  <data name="SendToMic" xml:space="preserve"><value>마이크로 보내기 (Ctrl+Enter)</value></data>
+  <data name="SaveToList" xml:space="preserve"><value>목록에 저장</value></data>
+  <data name="TtsHint" xml:space="preserve"><value>Enter = 스피커로 미리 듣기 · Ctrl+Enter = 마이크로 재생 · 특수 단축키 'TTS 재생'이 이 텍스트를 읽습니다.</value></data>
+  <data name="Source" xml:space="preserve"><value>소스:</value></data>
+  <data name="Source_Speakers" xml:space="preserve"><value>스피커 (내가 듣는 소리)</value></data>
+  <data name="Source_Mic" xml:space="preserve"><value>마이크</value></data>
+  <data name="Format" xml:space="preserve"><value>형식:</value></data>
+  <data name="Insert" xml:space="preserve"><value>삽입:</value></data>
+  <data name="InsertEnd" xml:space="preserve"><value>목록 끝에 추가</value></data>
+  <data name="InsertBeginning" xml:space="preserve"><value>맨 앞에 삽입</value></data>
+  <data name="AutoNormalize" xml:space="preserve"><value>자동 정규화 목표:</value></data>
+  <data name="DbHint" xml:space="preserve"><value>dB (89 ≈ −23 LUFS, 99 초과 시 클리핑)</value></data>
+  <data name="TrimSilence" xml:space="preserve"><value>시작과 끝의 무음 자르기</value></data>
+  <data name="MaxTime" xml:space="preserve"><value>최대 시간:</value></data>
+  <data name="MaxSecondsHint" xml:space="preserve"><value>초 (0 = 무제한, %TEMP%에 비압축으로 버퍼링)</value></data>
+  <data name="TargetDirectory" xml:space="preserve"><value>폴더:</value></data>
+  <data name="RecorderHotkeys" xml:space="preserve"><value>특수 단축키: 시작 = {0}, 중지 = {1}. 녹음 시작 전에 알림음이 재생됩니다.</value></data>
+  <data name="NotSet" xml:space="preserve"><value>설정 안 됨</value></data>
+  <data name="StartRecording" xml:space="preserve"><value>녹음</value></data>
+  <data name="StopRecording" xml:space="preserve"><value>중지</value></data>
+  <data name="PlayLastTake" xml:space="preserve"><value>마지막 녹음 재생</value></data>
+  <data name="LastTake" xml:space="preserve"><value>마지막 녹음</value></data>
+  <data name="MaxTimeReached" xml:space="preserve"><value>최대 녹음 시간에 도달했습니다.</value></data>
+  <data name="RecordingInProgress" xml:space="preserve"><value>녹음이 진행 중입니다. 취소할까요?</value></data>
+  <data name="TargetTooLoud" xml:space="preserve"><value>99 dB를 넘는 목표는 클리핑됩니다. 그래도 계속할까요?</value></data>
+  <data name="RecordingFrom" xml:space="preserve"><value>'{0}'에서 녹음 중…</value></data>
+  <data name="RecordingStarted" xml:space="preserve"><value>녹음 시작됨</value></data>
+  <data name="NothingRecorded" xml:space="preserve"><value>녹음된 것이 없습니다 (무음).</value></data>
+  <data name="RecordingSaved" xml:space="preserve"><value>녹음 저장됨: {0}</value></data>
+  <data name="Editor" xml:space="preserve"><value>편집기</value></data>
+  <data name="PlaySelection" xml:space="preserve"><value>선택 영역 재생</value></data>
+  <data name="Crop" xml:space="preserve"><value>자르기</value></data>
+  <data name="VolumeUp" xml:space="preserve"><value>볼륨 +3 dB</value></data>
+  <data name="VolumeDown" xml:space="preserve"><value>볼륨 −3 dB</value></data>
+  <data name="VolumeCustom" xml:space="preserve"><value>볼륨…</value></data>
+  <data name="NormalizeTo" xml:space="preserve"><value>정규화…</value></data>
+  <data name="ZoomFit" xml:space="preserve"><value>전체 보기</value></data>
+  <data name="ZoomSelection" xml:space="preserve"><value>선택 영역 확대</value></data>
+  <data name="Save" xml:space="preserve"><value>저장</value></data>
+  <data name="EditorHint" xml:space="preserve"><value>끌어서 선택 · Shift+화살표 / Home / End로 확장 · Ctrl+A 모두 · Ctrl+D 선택 해제 · Del 잘라내기 · Esc 닫기</value></data>
+  <data name="Attr_Size" xml:space="preserve"><value>크기</value></data>
+  <data name="Attr_Format" xml:space="preserve"><value>형식</value></data>
+  <data name="Attr_SampleRate" xml:space="preserve"><value>샘플 속도</value></data>
+  <data name="Attr_Duration" xml:space="preserve"><value>길이</value></data>
+  <data name="Attr_Channels" xml:space="preserve"><value>채널</value></data>
+  <data name="Attr_OriginalVolume" xml:space="preserve"><value>원본 볼륨</value></data>
+  <data name="LongFileWarning" xml:space="preserve"><value>이 파일은 10분보다 깁니다. 편집 중에는 파일 전체가 메모리에 유지되고 실행 취소 스냅샷으로 더 늘어납니다. 메모리 사용량이 높아집니다.</value></data>
+  <data name="CannotOpenFile" xml:space="preserve"><value>파일을 열 수 없습니다: {0}</value></data>
+  <data name="Modified" xml:space="preserve"><value>수정됨</value></data>
+  <data name="Selection" xml:space="preserve"><value>선택 영역</value></data>
+  <data name="NoSelection" xml:space="preserve"><value>선택 없음 (작업이 파일 전체에 적용됨)</value></data>
+  <data name="GainPrompt" xml:space="preserve"><value>게인 (dB, 음수 = 더 작게):</value></data>
+  <data name="NormalizePrompt" xml:space="preserve"><value>목표 (dB, 89 ≈ −23 LUFS):</value></data>
+  <data name="EditorSaveQuestion" xml:space="preserve"><value>편집한 오디오를 저장할까요?</value></data>
+  <data name="EditorSaved" xml:space="preserve"><value>{0} 저장됨</value></data>
+
+  <!-- Preferences -->
+  <data name="Tab_Devices" xml:space="preserve"><value>장치</value></data>
+  <data name="Tab_Audio" xml:space="preserve"><value>오디오</value></data>
+  <data name="Tab_Hotkeys" xml:space="preserve"><value>단축키</value></data>
+  <data name="Tab_Recorder" xml:space="preserve"><value>녹음기</value></data>
+  <data name="Tab_Interface" xml:space="preserve"><value>인터페이스</value></data>
+  <data name="Tab_Notifications" xml:space="preserve"><value>알림</value></data>
+  <data name="Tab_Updates" xml:space="preserve"><value>업데이트</value></data>
+  <data name="SetupMode" xml:space="preserve"><value>설정 모드</value></data>
+  <data name="SetupModeHint" xml:space="preserve"><value>VoxPad에는 자체 커널 오디오 드라이버가 없습니다. 음성 + 사운드를 가상 케이블의 재생 엔드포인트로 출력하고, 앱은 케이블의 녹음 엔드포인트(예: 'CABLE Output')에서 녹음합니다. 자동 선택은 VB-CABLE, VB-CABLE A/B, Voicemeeter, 수동 선택 케이블, Stereo Mix 순으로 시도합니다.</value></data>
+  <data name="Refresh" xml:space="preserve"><value>새로 고침</value></data>
+  <data name="Status" xml:space="preserve"><value>상태: </value></data>
+  <data name="Microphones" xml:space="preserve"><value>마이크 (케이블에 섞을 마이크의 '사용'을 체크)</value></data>
+  <data name="Use" xml:space="preserve"><value>사용</value></data>
+  <data name="DefaultComm" xml:space="preserve"><value> (기본 통신 장치)</value></data>
+  <data name="NoMics" xml:space="preserve"><value>녹음 장치를 찾을 수 없습니다.</value></data>
+  <data name="NoMicsTickedHint" xml:space="preserve"><value>아무것도 체크하지 않음 = 기본 통신 마이크를 사용합니다.</value></data>
+  <data name="VirtualCableEndpoint" xml:space="preserve"><value>가상 케이블 재생 엔드포인트 ('기타 가상 케이블'용)</value></data>
+  <data name="AutoDetect" xml:space="preserve"><value>(자동 감지)</value></data>
+  <data name="SpeakerDevice" xml:space="preserve"><value>스피커 (내가 듣는 사운드 복사본)</value></data>
+  <data name="DefaultDevice" xml:space="preserve"><value>(Windows 기본값)</value></data>
+  <data name="RecorderMic" xml:space="preserve"><value>녹음기용 마이크</value></data>
+  <data name="MicLatency" xml:space="preserve"><value>마이크 지연 시간 (ms):</value></data>
+  <data name="LatencyHint" xml:space="preserve"><value>낮음 = 음성 지연 감소, 높음 = 느린 PC에서 끊김 감소. 기본값 30 ms가 적당합니다.</value></data>
+  <data name="OpenPrivacySettings" xml:space="preserve"><value>마이크 액세스가 거부됨 – Windows 개인 정보 설정 열기</value></data>
+  <data name="Normalization" xml:space="preserve"><value>볼륨 정규화 (EBU R128, 채널별)</value></data>
+  <data name="Norm_Off" xml:space="preserve"><value>끄기</value></data>
+  <data name="Norm_Dynamic" xml:space="preserve"><value>동적 – 처음 6초를 분석하고 재생 중에 보정 (기본값)</value></data>
+  <data name="Norm_Full" xml:space="preserve"><value>전체 파일 – 재생 전에 파일 전체를 분석 (캐시됨)</value></data>
+  <data name="MeasureVoice" xml:space="preserve"><value>음성 측정…</value></data>
+  <data name="NormHint" xml:space="preserve"><value>마이크로 재생되는 사운드는 내 음성 레벨에 맞춰집니다 (측정하세요. 74 dB 이상이면 좋습니다). 스피커 복사본은 바뀌지 않습니다 – 내 쪽은 스피커 볼륨 슬라이더를 사용하세요.</value></data>
+  <data name="BlockVoice" xml:space="preserve"><value>음성 차단</value></data>
+  <data name="BlockVoiceCheck" xml:space="preserve"><value>사운드 재생 중에는 내 음성을 완전히 대체 (섞지 않음)</value></data>
+  <data name="VoiceActivation" xml:space="preserve"><value>음성 감지용 사운드</value></data>
+  <data name="VoiceActivationCheck" xml:space="preserve"><value>음성 감지 앱의 게이트가 열리도록 짧고 큰 프리롤을 마이크로 재생</value></data>
+  <data name="CustomFile" xml:space="preserve"><value>사용자 지정 파일 (비어 있음 = 250 ms 톤):</value></data>
+  <data name="Default" xml:space="preserve"><value>기본값</value></data>
+  <data name="VoiceActivationHeadphones" xml:space="preserve"><value>프리롤을 내 스피커/헤드폰으로도 재생</value></data>
+  <data name="Playback" xml:space="preserve"><value>재생</value></data>
+  <data name="AllowResumeOtherMode" xml:space="preserve"><value>다른 재생 모드로 다시 시작 허용 (일시 중지 위치에서 새 모드로 다시 시작)</value></data>
+  <data name="General" xml:space="preserve"><value>일반</value></data>
+  <data name="HotkeysEnabledCheck" xml:space="preserve"><value>단축키 사용</value></data>
+  <data name="PassHotkeysCheck" xml:space="preserve"><value>단축키를 활성 앱에도 전달 (기본값 끄기: 키가 흡수됨)</value></data>
+  <data name="AutoStopCheck" xml:space="preserve"><value>자동 중지: 단축키로 시작한 사운드는 반복과 연속 재생을 무시 (기본값 켜기)</value></data>
+  <data name="HotkeysGeneralHint" xml:space="preserve"><value>사운드를 마우스 오른쪽 클릭하거나 단축키 셀을 두 번 클릭하여 단축키를 설정합니다. 단일 키, Ctrl/Alt/Shift/Win과의 모든 조합, 마우스 가운데/4/5 단추가 전역으로 작동합니다.</value></data>
+  <data name="SpecialHint" xml:space="preserve"><value>특수 단축키는 예약되어 있습니다: 사운드에 같은 키를 사용할 수 없습니다.</value></data>
+  <data name="NumpadHotkeys" xml:space="preserve"><value>숫자 키패드 단축키</value></data>
+  <data name="NumpadEnabledCheck" xml:space="preserve"><value>사용: 보조 키를 누른 채 숫자 키패드로 사운드 번호를 입력한 뒤 놓기</value></data>
+  <data name="Modifier" xml:space="preserve"><value>보조 키:</value></data>
+  <data name="NumpadHint" xml:space="preserve"><value>번호는 현재 범주의 # 열입니다.</value></data>
+  <data name="IndexHotkeys" xml:space="preserve"><value>인덱스 단축키</value></data>
+  <data name="IndexEnabledCheck" xml:space="preserve"><value>사용: 보조 키를 누른 채 숫자 줄로 행 번호를 입력한 뒤 놓기</value></data>
+  <data name="IndexHint" xml:space="preserve"><value>인덱스는 숨겨진 '모든 사운드' 범주의 행입니다. 예: Alt+1,2,3은 123행을 재생합니다.</value></data>
+  <data name="Advanced" xml:space="preserve"><value>고급</value></data>
+  <data name="AllowLeftRight" xml:space="preserve"><value>왼쪽/오른쪽 보조 키 구분 (LCtrl과 RCtrl은 다른 키)</value></data>
+  <data name="SameHotkeysAllCategories" xml:space="preserve"><value>모든 범주에서 같은 단축키 (행 기준: N행의 단축키가 선택한 범주의 N행을 재생)</value></data>
+  <data name="JumpSeconds" xml:space="preserve"><value>±N초 이동:</value></data>
+  <data name="VolumeStep" xml:space="preserve"><value>볼륨 높이기/낮추기 단계 (%):</value></data>
+  <data name="VolumeSet" xml:space="preserve"><value>'볼륨 설정' 단축키 레벨 (%):</value></data>
+  <data name="AutoKeysEnabledCheck" xml:space="preserve"><value>Auto Keys 사용</value></data>
+  <data name="AutoKeysHint" xml:space="preserve"><value>자동 푸시 투 토크: 사운드가 마이크로 재생을 시작하면 키를 누릅니다 (사운드 길이만큼 누르고 있거나, 앞뒤로 한 번씩 누름). 마이크 재생 모드에서만 작동합니다.</value></data>
+  <data name="NoKey" xml:space="preserve"><value>(키 없음)</value></data>
+  <data name="AutoKey" xml:space="preserve"><value>Auto Key</value></data>
+  <data name="OnlyIfHotkey" xml:space="preserve"><value>단축키로 재생한 경우에만</value></data>
+  <data name="PressHold" xml:space="preserve"><value>사운드 길이만큼 누르고 있기</value></data>
+  <data name="PressBeforeAfter" xml:space="preserve"><value>앞뒤로 누르기</value></data>
+  <data name="PressMode" xml:space="preserve"><value>누름 방식:</value></data>
+  <data name="Cond_Always" xml:space="preserve"><value>항상</value></data>
+  <data name="Cond_Fullscreen" xml:space="preserve"><value>포그라운드 앱이 전체 화면 (테두리 없음 포함)</value></data>
+  <data name="Cond_Running" xml:space="preserve"><value>목록의 앱이 실행 중</value></data>
+  <data name="Cond_Foreground" xml:space="preserve"><value>목록의 앱이 포그라운드에 있음</value></data>
+  <data name="Condition" xml:space="preserve"><value>조건:</value></data>
+  <data name="AppsTip" xml:space="preserve"><value>프로세스 이름을 한 줄에 하나씩, 예: discord.exe</value></data>
+  <data name="Apps" xml:space="preserve"><value>앱 목록:</value></data>
+  <data name="AddAutoKey" xml:space="preserve"><value>Auto Key 추가</value></data>
+  <data name="RecorderFormatHint" xml:space="preserve"><value>모든 것이 스테레오 48 kHz로 변환됩니다. 편집기도 이 형식으로 저장합니다.</value></data>
+  <data name="TargetDb" xml:space="preserve"><value>목표 (dB, 기본값 89 ≈ −23 LU, &gt;99 클리핑):</value></data>
+  <data name="NotificationSound" xml:space="preserve"><value>녹음 시작 전에 알림음 재생</value></data>
+  <data name="RecorderHotkeyHint" xml:space="preserve"><value>녹음 시작/중지 단축키는 단축키 &gt; 특수 탭에 있습니다.</value></data>
+  <data name="Language" xml:space="preserve"><value>언어:</value></data>
+  <data name="Style" xml:space="preserve"><value>스타일:</value></data>
+  <data name="Theme_Light" xml:space="preserve"><value>밝게</value></data>
+  <data name="Theme_Dark" xml:space="preserve"><value>어둡게</value></data>
+  <data name="Theme_Native" xml:space="preserve"><value>기본 (Windows)</value></data>
+  <data name="NativeForced" xml:space="preserve"><value>고대비 또는 화면 읽기 프로그램이 활성화되어 있습니다: 기본 스타일을 사용합니다.</value></data>
+  <data name="ToolbarItems" xml:space="preserve"><value>도구 모음 항목</value></data>
+  <data name="Timer" xml:space="preserve"><value>트랙 타이머</value></data>
+  <data name="SeekSlider" xml:space="preserve"><value>탐색 슬라이더</value></data>
+  <data name="SpeakerVolume" xml:space="preserve"><value>스피커 볼륨</value></data>
+  <data name="MicLevelMeter" xml:space="preserve"><value>마이크 레벨 미터</value></data>
+  <data name="Behaviour" xml:space="preserve"><value>동작</value></data>
+  <data name="StartMinimized" xml:space="preserve"><value>최소화된 상태로 시작</value></data>
+  <data name="MinimizeToTrayCheck" xml:space="preserve"><value>시스템 트레이로 최소화</value></data>
+  <data name="CloseToTray" xml:space="preserve"><value>창을 닫으면 끝내지 않고 트레이로 최소화</value></data>
+  <data name="DisableSorting" xml:space="preserve"><value>정렬 사용 안 함 (열 머리글로 정렬하지 않음, 수동 순서만)</value></data>
+  <data name="Confirmations" xml:space="preserve"><value>확인</value></data>
+  <data name="ConfirmRemoveCheck" xml:space="preserve"><value>사운드를 제거하기 전에 확인</value></data>
+  <data name="ConfirmResetCheck" xml:space="preserve"><value>재생 횟수를 초기화하기 전에 확인</value></data>
+  <data name="ConfirmQuitCheck" xml:space="preserve"><value>사운드 재생 중 끝내기 확인</value></data>
+  <data name="NotifyMissing" xml:space="preserve"><value>목록을 불러올 때 누락된 파일 경고</value></data>
+  <data name="NotifyDevices" xml:space="preserve"><value>오디오 장치 변경을 상태 표시줄에 표시</value></data>
+  <data name="NotifyTray" xml:space="preserve"><value>트레이로 최소화할 때 풍선 알림 표시</value></data>
+  <data name="NotifyRecording" xml:space="preserve"><value>녹음이 시작될 때 상태 메시지 표시</value></data>
+  <data name="NotifyTrial" xml:space="preserve"><value>평가판 제한에 도달하면 대화 상자 표시</value></data>
+  <data name="NotifyUpdates" xml:space="preserve"><value>사용 가능한 업데이트 표시</value></data>
+  <data name="CheckInterval" xml:space="preserve"><value>업데이트 확인:</value></data>
+  <data name="Never" xml:space="preserve"><value>안 함 (기본값)</value></data>
+  <data name="Daily" xml:space="preserve"><value>매일</value></data>
+  <data name="Weekly" xml:space="preserve"><value>매주</value></data>
+  <data name="ManifestUrl" xml:space="preserve"><value>매니페스트 URL:</value></data>
+  <data name="UpdateHint" xml:space="preserve"><value>업데이트 패키지는 매니페스트 서명과 패키지 해시가 VoxPad에 내장된 키로 확인된 경우에만 설치됩니다.</value></data>
+  <data name="LastCheck" xml:space="preserve"><value>마지막 확인</value></data>
+  <data name="CheckNow" xml:space="preserve"><value>지금 확인</value></data>
+
+  <!-- Special hotkey names -->
+  <data name="Special_Stop" xml:space="preserve"><value>중지</value></data>
+  <data name="Special_Start" xml:space="preserve"><value>시작 (선택 항목 재생 / 다시 시작)</value></data>
+  <data name="Special_Pause" xml:space="preserve"><value>일시 중지 / 다시 시작</value></data>
+  <data name="Special_PlayPrevious" xml:space="preserve"><value>이전 파일 재생</value></data>
+  <data name="Special_PlayNext" xml:space="preserve"><value>다음 파일 재생</value></data>
+  <data name="Special_PlaySelected" xml:space="preserve"><value>선택한 파일 재생</value></data>
+  <data name="Special_PlayRandomInCategory" xml:space="preserve"><value>무작위 파일 재생 (현재 범주)</value></data>
+  <data name="Special_PlayRandomFromAll" xml:space="preserve"><value>무작위 파일 재생 (모든 사운드)</value></data>
+  <data name="Special_SelectPreviousFile" xml:space="preserve"><value>이전 파일 선택</value></data>
+  <data name="Special_SelectNextFile" xml:space="preserve"><value>다음 파일 선택</value></data>
+  <data name="Special_SelectPreviousCategory" xml:space="preserve"><value>이전 범주 선택</value></data>
+  <data name="Special_SelectNextCategory" xml:space="preserve"><value>다음 범주 선택</value></data>
+  <data name="Special_StartRecording" xml:space="preserve"><value>녹음 시작</value></data>
+  <data name="Special_StopRecording" xml:space="preserve"><value>녹음 중지</value></data>
+  <data name="Special_JumpBackward" xml:space="preserve"><value>N초 뒤로 이동</value></data>
+  <data name="Special_JumpForward" xml:space="preserve"><value>N초 앞으로 이동</value></data>
+  <data name="Special_SpeakerVolumeUp" xml:space="preserve"><value>스피커 볼륨 높이기</value></data>
+  <data name="Special_SpeakerVolumeDown" xml:space="preserve"><value>스피커 볼륨 낮추기</value></data>
+  <data name="Special_SpeakerVolumeSet" xml:space="preserve"><value>스피커 볼륨 설정</value></data>
+  <data name="Special_SpeakerVolumeMute" xml:space="preserve"><value>스피커 음소거 / 해제</value></data>
+  <data name="Special_SetPlayModeBoth" xml:space="preserve"><value>재생 모드: 스피커 + 마이크</value></data>
+  <data name="Special_SetPlayModeMic" xml:space="preserve"><value>재생 모드: 마이크만</value></data>
+  <data name="Special_SetPlayModeSpeakers" xml:space="preserve"><value>재생 모드: 스피커만</value></data>
+  <data name="Special_CyclePlayMode" xml:space="preserve"><value>재생 모드 전환</value></data>
+  <data name="Special_EnableHotkeys" xml:space="preserve"><value>단축키 사용</value></data>
+  <data name="Special_DisableHotkeys" xml:space="preserve"><value>단축키 사용 안 함</value></data>
+  <data name="Special_ToggleHotkeys" xml:space="preserve"><value>단축키 전환</value></data>
+  <data name="Special_EnableAutoKeys" xml:space="preserve"><value>Auto Keys 사용</value></data>
+  <data name="Special_DisableAutoKeys" xml:space="preserve"><value>Auto Keys 사용 안 함</value></data>
+  <data name="Special_ToggleAutoKeys" xml:space="preserve"><value>Auto Keys 전환</value></data>
+  <data name="Special_PlayTts" xml:space="preserve"><value>텍스트 음성 변환 텍스트 재생</value></data>
+</root>

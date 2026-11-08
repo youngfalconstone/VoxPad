@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+  <!-- Menus -->
+  <data name="File" xml:space="preserve"><value>_Bestand</value></data>
+  <data name="NewList" xml:space="preserve"><value>_Nieuwe geluidenlijst</value></data>
+  <data name="LoadList" xml:space="preserve"><value>Geluidenlijst _laden…</value></data>
+  <data name="SaveList" xml:space="preserve"><value>Geluidenlijst op_slaan</value></data>
+  <data name="SaveListAs" xml:space="preserve"><value>Geluidenlijst opslaan _als…</value></data>
+  <data name="RecentLists" xml:space="preserve"><value>_Recente geluidenlijsten</value></data>
+  <data name="RestoreList" xml:space="preserve"><value>Geluidenlijst herstellen…</value></data>
+  <data name="AddFiles" xml:space="preserve"><value>Geluidsbestanden toevoegen…</value></data>
+  <data name="AddFolder" xml:space="preserve"><value>Map toevoegen…</value></data>
+  <data name="WebImport" xml:space="preserve"><value>Importeren van internet…</value></data>
+  <data name="Export" xml:space="preserve"><value>_Exporteren</value></data>
+  <data name="ExportSoundFiles" xml:space="preserve"><value>Geluidsbestanden…</value></data>
+  <data name="ExportPreferences" xml:space="preserve"><value>Voorkeuren…</value></data>
+  <data name="ImportPreferences" xml:space="preserve"><value>Voorkeuren importeren…</value></data>
+  <data name="Statistics" xml:space="preserve"><value>Statistieken…</value></data>
+  <data name="Preferences" xml:space="preserve"><value>_Voorkeuren…</value></data>
+  <data name="Exit" xml:space="preserve"><value>A_fsluiten</value></data>
+  <data name="Edit" xml:space="preserve"><value>Be_werken</value></data>
+  <data name="SelectAll" xml:space="preserve"><value>Alles selecteren</value></data>
+  <data name="Remove" xml:space="preserve"><value>Verwijderen</value></data>
+  <data name="Copy" xml:space="preserve"><value>Kopiëren</value></data>
+  <data name="Cut" xml:space="preserve"><value>Knippen</value></data>
+  <data name="Paste" xml:space="preserve"><value>Plakken</value></data>
+  <data name="MoveUp" xml:space="preserve"><value>Omhoog verplaatsen</value></data>
+  <data name="MoveDown" xml:space="preserve"><value>Omlaag verplaatsen</value></data>
+  <data name="Undo" xml:space="preserve"><value>Ongedaan maken</value></data>
+  <data name="Redo" xml:space="preserve"><value>Opnieuw</value></data>
+  <data name="EditFile" xml:space="preserve"><value>Bestand bewerken…</value></data>
+  <data name="SetHotkey" xml:space="preserve"><value>Sneltoets instellen…</value></data>
+  <data name="RemoveHotkey" xml:space="preserve"><value>Sneltoets verwijderen</value></data>
+  <data name="SetColor" xml:space="preserve"><value>Kleur…</value></data>
+  <data name="PlayRandom" xml:space="preserve"><value>Willekeurig afspelen</value></data>
+  <data name="ResetPlayCount" xml:space="preserve"><value>Afspeelteller resetten</value></data>
+  <data name="ResetAllPlayCounts" xml:space="preserve"><value>Alle afspeeltellers resetten</value></data>
+  <data name="SelectInExplorer" xml:space="preserve"><value>Weergeven in Verkenner</value></data>
+  <data name="PlayMenu" xml:space="preserve"><value>_Afspelen</value></data>
+  <data name="Play" xml:space="preserve"><value>Afspelen</value></data>
+  <data name="PlayOnSpeakers" xml:space="preserve"><value>Afspelen op luidsprekers</value></data>
+  <data name="PlayOnMic" xml:space="preserve"><value>Afspelen op microfoon</value></data>
+  <data name="PauseResume" xml:space="preserve"><value>Pauzeren / hervatten</value></data>
+  <data name="Stop" xml:space="preserve"><value>Stoppen</value></data>
+  <data name="Previous" xml:space="preserve"><value>Vorige</value></data>
+  <data name="Next" xml:space="preserve"><value>Volgende</value></data>
+  <data name="Repeat" xml:space="preserve"><value>Herhalen</value></data>
+  <data name="Continue" xml:space="preserve"><value>Doorgaan</value></data>
+  <data name="AutoStop" xml:space="preserve"><value>Automatisch stoppen (sneltoetsgeluiden negeren Herhalen/Doorgaan)</value></data>
+  <data name="PlayModeMenu" xml:space="preserve"><value>Afspeelmodus</value></data>
+  <data name="PlayMode_Both" xml:space="preserve"><value>Luidsprekers + microfoon</value></data>
+  <data name="PlayMode_Mic" xml:space="preserve"><value>Alleen microfoon</value></data>
+  <data name="PlayMode_Speakers" xml:space="preserve"><value>Alleen luidsprekers</value></data>
+  <data name="Recorder" xml:space="preserve"><value>Recorder…</value></data>
+  <data name="TextToSpeech" xml:space="preserve"><value>Tekst naar spraak…</value></data>
+  <data name="Window" xml:space="preserve"><value>_Venster</value></data>
+  <data name="Categories" xml:space="preserve"><value>Categorieënpaneel</value></data>
+  <data name="Hotbar" xml:space="preserve"><value>Hotbar</value></data>
+  <data name="Toolbar" xml:space="preserve"><value>Afspeelwerkbalk</value></data>
+  <data name="StatusBar" xml:space="preserve"><value>Statusbalk</value></data>
+  <data name="ShowHiddenCategories" xml:space="preserve"><value>Verborgen categorieën weergeven</value></data>
+  <data name="CategoryIconSize" xml:space="preserve"><value>Grootte categoriepictogram</value></data>
+  <data name="Small" xml:space="preserve"><value>Klein</value></data>
+  <data name="Medium" xml:space="preserve"><value>Normaal</value></data>
+  <data name="Large" xml:space="preserve"><value>Groot</value></data>
+  <data name="ExtraLarge" xml:space="preserve"><value>Extra groot</value></data>
+  <data name="Columns" xml:space="preserve"><value>Kolommen</value></data>
+  <data name="HotbarSize" xml:space="preserve"><value>Hotbargrootte…</value></data>
+  <data name="HotkeyOverview" xml:space="preserve"><value>Sneltoetsoverzicht…</value></data>
+  <data name="MinimizeToTray" xml:space="preserve"><value>Minimaliseren naar systeemvak</value></data>
+  <data name="Help" xml:space="preserve"><value>_Help</value></data>
+  <data name="Manual" xml:space="preserve"><value>Handleiding</value></data>
+  <data name="Troubleshooting" xml:space="preserve"><value>Problemen oplossen…</value></data>
+  <data name="AutoKeysTroubleshooting" xml:space="preserve"><value>Auto Keys-problemen oplossen…</value></data>
+  <data name="CheckForUpdates" xml:space="preserve"><value>Controleren op updates…</value></data>
+  <data name="Register" xml:space="preserve"><value>Registreren…</value></data>
+  <data name="About" xml:space="preserve"><value>Over VoxPad</value></data>
+
+  <!-- Toolbar / status bar -->
+  <data name="TimerTip" xml:space="preserve"><value>Verstreken / totaal. Dubbelklik om naar het spelende geluid te springen.</value></data>
+  <data name="SpeakerVolumeTip" xml:space="preserve"><value>Luidsprekervolume (alleen uw eigen kopie; gekoppeld aan de Windows-volumemixer)</value></data>
+  <data name="MicMeterTip" xml:space="preserve"><value>Microfoonniveau. Klik op het pictogram om uw stemniveau te meten.</value></data>
+  <data name="SeekTip" xml:space="preserve"><value>Rood = anderen horen het (microfoon), blauw = alleen luidsprekers</value></data>
+  <data name="PlayModeTip" xml:space="preserve"><value>Afspeelmodus – klik om te wisselen</value></data>
+  <data name="HotkeysTip" xml:space="preserve"><value>Sneltoetsen – dubbelklik om in/uit te schakelen, rechtsklik voor opties</value></data>
+  <data name="PassHotkeys" xml:space="preserve"><value>Sneltoetsen doorgeven aan de actieve toepassing</value></data>
+  <data name="Hotkeys" xml:space="preserve"><value>Sneltoetsen</value></data>
+  <data name="AutoKeysTip" xml:space="preserve"><value>Auto Keys – dubbelklik om in/uit te schakelen, rechtsklik voor probleemoplossing</value></data>
+  <data name="AutoKeys" xml:space="preserve"><value>Auto Keys</value></data>
+  <data name="RepeatTip" xml:space="preserve"><value>Huidig geluid herhalen – klik om in/uit te schakelen</value></data>
+  <data name="ContinueTip" xml:space="preserve"><value>Doorgaan met het volgende geluid – klik om in/uit te schakelen</value></data>
+  <data name="PreviousPage" xml:space="preserve"><value>Vorige pagina (Ctrl+PgUp)</value></data>
+  <data name="NextPage" xml:space="preserve"><value>Volgende pagina (Ctrl+PgDn)</value></data>
+  <data name="HideCategory" xml:space="preserve"><value>Categorie verbergen</value></data>
+  <data name="SearchTip" xml:space="preserve"><value>Typ om te filteren · Enter springt naar volgende match · Ctrl+Enter speelt af · Esc wist</value></data>
+  <data name="ColTag" xml:space="preserve"><value>Tag</value></data>
+  <data name="ColDuration" xml:space="preserve"><value>Duur</value></data>
+  <data name="ColHotkey" xml:space="preserve"><value>Sneltoets</value></data>
+  <data name="ColPlayCount" xml:space="preserve"><value>Aantal keer afgespeeld</value></data>
+  <data name="ColLastPlayed" xml:space="preserve"><value>Laatst afgespeeld op</value></data>
+  <data name="ColIndex" xml:space="preserve"><value>#</value></data>
+  <data name="MoveToCategory" xml:space="preserve"><value>Verplaatsen naar categorie</value></data>
+  <data name="RemoveFromCategory" xml:space="preserve"><value>Uit deze categorie verwijderen</value></data>
+  <data name="AddCategory" xml:space="preserve"><value>Categorie toevoegen…</value></data>
+  <data name="AddSubcategory" xml:space="preserve"><value>Subcategorie toevoegen…</value></data>
+  <data name="RenameCategory" xml:space="preserve"><value>Naam wijzigen…</value></data>
+  <data name="RemoveCategory" xml:space="preserve"><value>Categorie verwijderen</value></data>
+  <data name="SetRandomHotkey" xml:space="preserve"><value>Sneltoets 'willekeurig afspelen' instellen…</value></data>
+  <data name="AllSounds" xml:space="preserve"><value>Alle geluiden</value></data>
+  <data name="UntitledList" xml:space="preserve"><value>Naamloos</value></data>
+  <data name="Trial" xml:space="preserve"><value>Proefversie</value></data>
+  <data name="TrialStatus" xml:space="preserve"><value>Proefversie: max. {0} geluiden, nog {1} microfoonafspelingen deze sessie</value></data>
+
+  <!-- Status messages -->
+  <data name="PlayModeSet" xml:space="preserve"><value>Afspeelmodus: {0}</value></data>
+  <data name="HotkeysOn" xml:space="preserve"><value>Sneltoetsen ingeschakeld</value></data>
+  <data name="HotkeysOff" xml:space="preserve"><value>Sneltoetsen uitgeschakeld</value></data>
+  <data name="AutoKeysOn" xml:space="preserve"><value>Auto Keys ingeschakeld</value></data>
+  <data name="AutoKeysOff" xml:space="preserve"><value>Auto Keys uitgeschakeld</value></data>
+  <data name="Playing" xml:space="preserve"><value>'{0}' wordt afgespeeld → {1}</value></data>
+  <data name="TrialPlayLimit" xml:space="preserve"><value>Proefversie: limiet van 10 microfoonafspelingen per sessie bereikt. Registreer om de limiet op te heffen.</value></data>
+  <data name="TrialSoundLimit" xml:space="preserve"><value>Proefversie: de lijst kan maximaal {0} geluiden bevatten. Registreer om de limiet op te heffen.</value></data>
+  <data name="NothingToPlay" xml:space="preserve"><value>Niets om af te spelen</value></data>
+  <data name="DevicesChanged" xml:space="preserve"><value>Audioapparaten gewijzigd; routering opnieuw toegepast.</value></data>
+  <data name="MissingFiles" xml:space="preserve"><value>{0} bestand(en) in de lijst ontbreken (grijs weergegeven).</value></data>
+  <data name="CategoryInfo" xml:space="preserve"><value>{0}: {1} geluiden, {2} totaal</value></data>
+  <data name="Copied" xml:space="preserve"><value>{0} geluid(en) gekopieerd</value></data>
+  <data name="CutStatus" xml:space="preserve"><value>{0} geluid(en) geknipt</value></data>
+  <data name="Importing" xml:space="preserve"><value>{0} bestand(en) worden gelezen…</value></data>
+  <data name="Imported" xml:space="preserve"><value>{0} geluid(en) toegevoegd</value></data>
+  <data name="NoAudioFiles" xml:space="preserve"><value>Geen ondersteunde audiobestanden gevonden</value></data>
+  <data name="ConfirmRemove" xml:space="preserve"><value>{0} geluid(en) uit de lijst verwijderen? De audiobestanden worden niet verwijderd.</value></data>
+  <data name="Removed" xml:space="preserve"><value>{0} geluid(en) verwijderd</value></data>
+  <data name="HotkeyFor" xml:space="preserve"><value>Sneltoets voor '{0}'</value></data>
+  <data name="RandomHotkeyFor" xml:space="preserve"><value>Sneltoets 'willekeurig afspelen' voor '{0}'</value></data>
+  <data name="BareMouseNotAllowed" xml:space="preserve"><value>Linker- en rechtermuisknop vereisen een modificatietoets (bijv. Ctrl+klik).</value></data>
+  <data name="ReservedHotkey" xml:space="preserve"><value>{0} is gereserveerd voor de speciale sneltoets '{1}'.</value></data>
+  <data name="HotkeyRemoved" xml:space="preserve"><value>Sneltoets verwijderd van '{0}'</value></data>
+  <data name="HotkeySet" xml:space="preserve"><value>{0} → '{1}'</value></data>
+  <data name="ConfirmResetPlayCount" xml:space="preserve"><value>Afspeelteller van {0} geluid(en) resetten?</value></data>
+  <data name="ConfirmResetAll" xml:space="preserve"><value>Afspeelteller van elk geluid en het lijsttotaal resetten?</value></data>
+  <data name="FileMissing" xml:space="preserve"><value>Bestand niet gevonden: {0}</value></data>
+  <data name="ConfirmRemoveCategory" xml:space="preserve"><value>Categorie '{0}' (en de subcategorieën) verwijderen? De geluiden blijven in de lijst.</value></data>
+  <data name="CategoryName" xml:space="preserve"><value>Naam:</value></data>
+  <data name="NewCategory" xml:space="preserve"><value>Nieuwe categorie</value></data>
+  <data name="AddedToCategory" xml:space="preserve"><value>{0} geluid(en) → '{1}'</value></data>
+  <data name="ReorderWhileSorted" xml:space="preserve"><value>Hef de sortering op (klik nogmaals op de kolomkop) om handmatig te herschikken.</value></data>
+  <data name="UnsavedTitle" xml:space="preserve"><value>Niet-opgeslagen wijzigingen</value></data>
+  <data name="UnsavedText" xml:space="preserve"><value>De geluidenlijst heeft niet-opgeslagen wijzigingen. Negeren?</value></data>
+  <data name="NewListCreated" xml:space="preserve"><value>Nieuwe geluidenlijst</value></data>
+  <data name="ListLoaded" xml:space="preserve"><value>{0} geladen</value></data>
+  <data name="ListLoadFailed" xml:space="preserve"><value>De geluidenlijst kan niet worden geladen: {0}</value></data>
+  <data name="ListSaved" xml:space="preserve"><value>{0} opgeslagen</value></data>
+  <data name="Exported" xml:space="preserve"><value>{0} bestand(en) geëxporteerd, {1} mislukt → {2}</value></data>
+  <data name="PrefsExported" xml:space="preserve"><value>Voorkeuren geëxporteerd naar {0}</value></data>
+  <data name="PrefsImportedRestart" xml:space="preserve"><value>Voorkeuren geïmporteerd. Start VoxPad opnieuw om ze toe te passen.</value></data>
+  <data name="NoSoundAtNumber" xml:space="preserve"><value>Geen geluid op nummer {0}</value></data>
+  <data name="ElevatedWarning" xml:space="preserve"><value>VoxPad wordt uitgevoerd als administrator: slepen vanuit Verkenner werkt niet (Windows blokkeert neerzetten in vensters met verhoogde rechten).</value></data>
+  <data name="UnexpectedError" xml:space="preserve"><value>Er is een onverwachte fout opgetreden.</value></data>
+  <data name="DumpWritten" xml:space="preserve"><value>Details zijn weggeschreven naar</value></data>
+  <data name="TrayHint" xml:space="preserve"><value>VoxPad blijft actief in het systeemvak. Dubbelklik op het pictogram om te herstellen.</value></data>
+  <data name="Tray_Show" xml:space="preserve"><value>VoxPad weergeven</value></data>
+  <data name="ConfirmQuitPlaying" xml:space="preserve"><value>Er wordt een geluid afgespeeld. Toch afsluiten?</value></data>
+  <data name="SaveBeforeExit" xml:space="preserve"><value>Wijzigingen in de geluidenlijst opslaan voordat u afsluit?</value></data>
+  <data name="MicAccessDenied" xml:space="preserve"><value>Windows blokkeert microfoontoegang voor bureaublad-apps, dus VoxPad kan uw microfoon niet lezen.
+
+Oplossing: Instellingen &gt; Privacy en beveiliging &gt; Microfoon &gt; schakel "Microfoontoegang" en "Bureaublad-apps toegang geven tot uw microfoon" in en klik daarna op Vernieuwen in Voorkeuren &gt; Apparaten.</value></data>
+  <data name="OpenSettingsQuestion" xml:space="preserve"><value>De privacyinstellingen nu openen?</value></data>
+  <data name="AccessDenied" xml:space="preserve"><value>Toegang geweigerd</value></data>
+  <data name="RemoveFromHotbar" xml:space="preserve"><value>Uit hotbar verwijderen</value></data>
+  <data name="EmptyTileHint" xml:space="preserve"><value>Sleep hier een geluid naartoe</value></data>
+  <data name="PrefsSaved" xml:space="preserve"><value>Voorkeuren opgeslagen</value></data>
+  <data name="LanguageRestart" xml:space="preserve"><value>De taal wordt gewijzigd nadat VoxPad opnieuw is gestart.</value></data>
+
+  <!-- Dialogs -->
+  <data name="OK" xml:space="preserve"><value>OK</value></data>
+  <data name="Cancel" xml:space="preserve"><value>Annuleren</value></data>
+  <data name="Apply" xml:space="preserve"><value>Toepassen</value></data>
+  <data name="Close" xml:space="preserve"><value>Sluiten</value></data>
+  <data name="Clear" xml:space="preserve"><value>Wissen</value></data>
+  <data name="None" xml:space="preserve"><value>(geen)</value></data>
+  <data name="HotkeyCapturePrompt" xml:space="preserve"><value>Druk nu op de toets of toetscombinatie. Muisknoppen Mid, 4 en 5 werken ook (links/rechts vereisen een modificatietoets). Enter slaat op, Delete of Backspace wist, Esc annuleert.</value></data>
+  <data name="HexColor" xml:space="preserve"><value>Hex:</value></data>
+  <data name="NoColor" xml:space="preserve"><value>Geen kleur</value></data>
+  <data name="Rows" xml:space="preserve"><value>Rijen:</value></data>
+  <data name="Pages" xml:space="preserve"><value>Pagina's:</value></data>
+  <data name="HotbarSizeHint" xml:space="preserve"><value>Sneltoetsen worden gedeeld over pagina's. Tegels buiten het nieuwe raster worden verwijderd.</value></data>
+  <data name="Type" xml:space="preserve"><value>Type</value></data>
+  <data name="Target" xml:space="preserve"><value>Doel</value></data>
+  <data name="Sound" xml:space="preserve"><value>Geluid</value></data>
+  <data name="CategoryRandom" xml:space="preserve"><value>Willekeurig afspelen in categorie</value></data>
+  <data name="Special" xml:space="preserve"><value>Speciaal</value></data>
+  <data name="Numpad" xml:space="preserve"><value>Numeriek toetsenblok</value></data>
+  <data name="NumpadDesc" xml:space="preserve"><value>Afspelen op nummer in de huidige categorie</value></data>
+  <data name="Index" xml:space="preserve"><value>Index</value></data>
+  <data name="IndexDesc" xml:space="preserve"><value>Afspelen op rij-index in Alle geluiden</value></data>
+  <data name="HotkeyOverviewHint" xml:space="preserve"><value>Sneltoetsen zijn {0}; doorgeven is {1}.</value></data>
+  <data name="Enabled" xml:space="preserve"><value>ingeschakeld</value></data>
+  <data name="Disabled" xml:space="preserve"><value>uitgeschakeld</value></data>
+  <data name="On" xml:space="preserve"><value>aan</value></data>
+  <data name="Off" xml:space="preserve"><value>uit</value></data>
+  <data name="Version" xml:space="preserve"><value>Versie</value></data>
+  <data name="TrialEdition" xml:space="preserve"><value>Proefversie – max. 10 geluiden, 10 microfoonafspelingen per sessie</value></data>
+  <data name="LicensedTo" xml:space="preserve"><value>Gelicentieerd aan {0} ({1}-editie)</value></data>
+  <data name="AboutText" xml:space="preserve"><value>Een Windows-soundboard dat geluiden naar uw microfoon stuurt. Audio-engine: NAudio, NVorbis, Concentus, TagLib#. Virtuele microfoon via VB-CABLE / Voicemeeter.</value></data>
+  <data name="DataFolder" xml:space="preserve"><value>Gegevens</value></data>
+  <data name="LogFolder" xml:space="preserve"><value>Logboeken</value></data>
+  <data name="OpenDataFolder" xml:space="preserve"><value>Gegevensmap openen</value></data>
+  <data name="HideLicenseeName" xml:space="preserve"><value>Mijn naam verbergen (streamermodus)</value></data>
+  <data name="RemoveLicense" xml:space="preserve"><value>Licentie verwijderen</value></data>
+  <data name="ConfirmRemoveLicense" xml:space="preserve"><value>De licentie van deze pc verwijderen?</value></data>
+  <data name="RegisterPrompt" xml:space="preserve"><value>Voer de naam en het serienummer uit uw aankoop-e-mail in. Het serienummer wordt offline gecontroleerd en opgeslagen in license.dat.</value></data>
+  <data name="Name" xml:space="preserve"><value>Naam:</value></data>
+  <data name="Serial" xml:space="preserve"><value>Serienummer:</value></data>
+  <data name="RegisteredThanks" xml:space="preserve"><value>Bedankt! VoxPad is nu geregistreerd.</value></data>
+  <data name="SerialInvalid" xml:space="preserve"><value>Het serienummer komt niet overeen met de naam. Controleer op typefouten (I/1 en O/0 zijn uitwisselbaar).</value></data>
+  <data name="AllTimePlays" xml:space="preserve"><value>Microfoonafspelingen (totaal ooit)</value></data>
+  <data name="ListPlays" xml:space="preserve"><value>Afspelingen in deze lijst</value></data>
+  <data name="SoundsInList" xml:space="preserve"><value>Geluiden in lijst</value></data>
+  <data name="Launches" xml:space="preserve"><value>Keer gestart</value></data>
+  <data name="Since" xml:space="preserve"><value>Sinds</value></data>
+  <data name="TopSounds" xml:space="preserve"><value>Meest afgespeeld</value></data>
+  <data name="ResetAllTime" xml:space="preserve"><value>Totaal ooit resetten</value></data>
+  <data name="ConfirmResetAllTime" xml:space="preserve"><value>Het totaal ooit resetten?</value></data>
+  <data name="WebImportPrompt" xml:space="preserve"><value>Plak een directe link naar een audiobestand (mp3, ogg, wav…). Het bestand wordt gedownload naar uw VoxPad-muziekmap en aan de lijst toegevoegd.</value></data>
+  <data name="FileNameOptional" xml:space="preserve"><value>Bestandsnaam (optioneel):</value></data>
+  <data name="Import" xml:space="preserve"><value>Importeren</value></data>
+  <data name="Downloading" xml:space="preserve"><value>Downloaden…</value></data>
+  <data name="UnsupportedFormat" xml:space="preserve"><value>Niet-ondersteund audioformaat</value></data>
+  <data name="RestorePrompt" xml:space="preserve"><value>Dagelijkse back-ups worden bij het opstarten gemaakt. Herstellen vervangt de huidige lijst (u kunt dit nog terugdraaien door uw opgeslagen lijst te laden).</value></data>
+  <data name="OpenBackupFolder" xml:space="preserve"><value>Map openen</value></data>
+  <data name="Restore" xml:space="preserve"><value>Herstellen</value></data>
+  <data name="ConfirmRestore" xml:space="preserve"><value>De back-up van {0} herstellen?</value></data>
+  <data name="Restored" xml:space="preserve"><value>Back-up van {0} hersteld</value></data>
+  <data name="Checking" xml:space="preserve"><value>Controleren…</value></data>
+  <data name="DownloadInstall" xml:space="preserve"><value>Downloaden en installeren</value></data>
+  <data name="PackageVerified" xml:space="preserve"><value>Pakket geverifieerd. Het installatieprogramma wordt gestart; VoxPad wordt nu gesloten.</value></data>
+  <data name="VoiceMeasurement" xml:space="preserve"><value>Stemmeting</value></data>
+  <data name="VoiceMeasurePrompt" xml:space="preserve"><value>Spreek ongeveer 8 seconden normaal in uw microfoon. De gemeten luidheid wordt het normalisatiedoel, zodat geluiden bij uw stem passen (een goed resultaat ligt boven 74 dB).</value></data>
+  <data name="CurrentTarget" xml:space="preserve"><value>Huidig doel</value></data>
+  <data name="DefaultNotMeasured" xml:space="preserve"><value>standaard, niet gemeten</value></data>
+  <data name="Start" xml:space="preserve"><value>Starten</value></data>
+  <data name="UseAsTarget" xml:space="preserve"><value>Als doel gebruiken</value></data>
+  <data name="Measuring" xml:space="preserve"><value>Meten</value></data>
+  <data name="NothingMeasured" xml:space="preserve"><value>Niets gemeten – is de microfoon gedempt of is het verkeerde apparaat geselecteerd?</value></data>
+  <data name="Result" xml:space="preserve"><value>Resultaat</value></data>
+  <data name="TooQuiet" xml:space="preserve"><value>zeer stil – verhoog het microfoonniveau in Windows</value></data>
+  <data name="BelowTarget" xml:space="preserve"><value>onder 74 dB; overweeg een hoger microfoonniveau</value></data>
+  <data name="TargetSet" xml:space="preserve"><value>Normalisatiedoel ingesteld op {0:F1} dB</value></data>
+  <data name="Routing" xml:space="preserve"><value>Routering</value></data>
+  <data name="TroubleChecklist" xml:space="preserve"><value>Controlelijst:
+• Installeer VB-CABLE (gratis) en klik op Vernieuwen in Voorkeuren &gt; Apparaten.
+• Selecteer in Discord/Teams/de game 'CABLE Output' als microfoon en schakel daar ruisonderdrukking / echo-onderdrukking uit.
+• Houd uw echte microfoon aangevinkt onder 'Gebruiken', zodat uw stem wordt gemengd.
+• Windows-privacy: sta bureaublad-apps toe de microfoon te gebruiken.
+• Doen sneltoetsen niets in een game? Voer VoxPad uit met dezelfde rechten als de game.</value></data>
+  <data name="DiagnosticReport" xml:space="preserve"><value>Diagnoserapport</value></data>
+  <data name="DiagnosticHint" xml:space="preserve"><value>Maakt een zip met het logboek, de apparatenlijst, de routeringsstatus en de voorkeuren (alleen apparaat-id's, geen licentiegegevens) die u bij een bugrapport kunt voegen.</value></data>
+  <data name="CreateReport" xml:space="preserve"><value>Rapport maken</value></data>
+  <data name="OpenDevices" xml:space="preserve"><value>Apparaten…</value></data>
+  <data name="AutoKeysTroubleHint" xml:space="preserve"><value>Auto Keys drukken op uw push-to-talk-toets wanneer een geluid op de microfoon start. De laatste evaluatie toont waarom elk item wel of niet werd geactiveerd. Speel een geluid af en open dit venster opnieuw om opnieuw te controleren.</value></data>
+  <data name="MicPlayMode" xml:space="preserve"><value>microfoon-afspeelmodus</value></data>
+  <data name="NotMicPlayMode" xml:space="preserve"><value>GEEN microfoon-afspeelmodus – Auto Keys worden nooit geactiveerd</value></data>
+  <data name="Entries" xml:space="preserve"><value>Items</value></data>
+  <data name="ForegroundNow" xml:space="preserve"><value>Huidige voorgrond-app</value></data>
+  <data name="NoEvaluationYet" xml:space="preserve"><value>Er is in deze sessie nog geen geluid afgespeeld.</value></data>
+  <data name="LastEvaluation" xml:space="preserve"><value>Laatste evaluatie</value></data>
+  <data name="OpenAutoKeysPrefs" xml:space="preserve"><value>Auto Keys-instellingen…</value></data>
+
+  <!-- TTS / recorder / editor -->
+  <data name="Voice" xml:space="preserve"><value>Stem:</value></data>
+  <data name="Rate" xml:space="preserve"><value>Snelheid</value></data>
+  <data name="PreviewSpeakers" xml:space="preserve"><value>Voorbeluisteren (Enter)</value></data>
+  <data name="SendToMic" xml:space="preserve"><value>Naar microfoon (Ctrl+Enter)</value></data>
+  <data name="SaveToList" xml:space="preserve"><value>Opslaan in lijst</value></data>
+  <data name="TtsHint" xml:space="preserve"><value>Enter = voorbeluisteren op luidsprekers · Ctrl+Enter = afspelen op microfoon · speciale sneltoets 'TTS afspelen' spreekt deze tekst uit.</value></data>
+  <data name="Source" xml:space="preserve"><value>Bron:</value></data>
+  <data name="Source_Speakers" xml:space="preserve"><value>Luidsprekers (wat u hoort)</value></data>
+  <data name="Source_Mic" xml:space="preserve"><value>Microfoon</value></data>
+  <data name="Format" xml:space="preserve"><value>Formaat:</value></data>
+  <data name="Insert" xml:space="preserve"><value>Invoegen:</value></data>
+  <data name="InsertEnd" xml:space="preserve"><value>Toevoegen aan einde van lijst</value></data>
+  <data name="InsertBeginning" xml:space="preserve"><value>Invoegen aan begin</value></data>
+  <data name="AutoNormalize" xml:space="preserve"><value>Automatisch normaliseren naar</value></data>
+  <data name="DbHint" xml:space="preserve"><value>dB (89 ≈ −23 LUFS; boven 99 clipt het)</value></data>
+  <data name="TrimSilence" xml:space="preserve"><value>Stilte aan begin en einde bijsnijden</value></data>
+  <data name="MaxTime" xml:space="preserve"><value>Max. tijd:</value></data>
+  <data name="MaxSecondsHint" xml:space="preserve"><value>seconden (0 = onbeperkt; ongecomprimeerd gebufferd in %TEMP%)</value></data>
+  <data name="TargetDirectory" xml:space="preserve"><value>Map:</value></data>
+  <data name="RecorderHotkeys" xml:space="preserve"><value>Speciale sneltoetsen: starten = {0}, stoppen = {1}. Er klinkt een meldingsgeluid voordat de opname begint.</value></data>
+  <data name="NotSet" xml:space="preserve"><value>niet ingesteld</value></data>
+  <data name="StartRecording" xml:space="preserve"><value>Opnemen</value></data>
+  <data name="StopRecording" xml:space="preserve"><value>Stoppen</value></data>
+  <data name="PlayLastTake" xml:space="preserve"><value>Laatste opname afspelen</value></data>
+  <data name="LastTake" xml:space="preserve"><value>Laatste opname</value></data>
+  <data name="MaxTimeReached" xml:space="preserve"><value>Maximale opnametijd bereikt.</value></data>
+  <data name="RecordingInProgress" xml:space="preserve"><value>Er loopt een opname. Negeren?</value></data>
+  <data name="TargetTooLoud" xml:space="preserve"><value>Een doel boven 99 dB zal clippen. Toch doorgaan?</value></data>
+  <data name="RecordingFrom" xml:space="preserve"><value>Opnemen van '{0}'…</value></data>
+  <data name="RecordingStarted" xml:space="preserve"><value>Opname gestart</value></data>
+  <data name="NothingRecorded" xml:space="preserve"><value>Er is niets opgenomen (stilte).</value></data>
+  <data name="RecordingSaved" xml:space="preserve"><value>Opname opgeslagen: {0}</value></data>
+  <data name="Editor" xml:space="preserve"><value>Editor</value></data>
+  <data name="PlaySelection" xml:space="preserve"><value>Selectie afspelen</value></data>
+  <data name="Crop" xml:space="preserve"><value>Bijsnijden</value></data>
+  <data name="VolumeUp" xml:space="preserve"><value>Vol +3 dB</value></data>
+  <data name="VolumeDown" xml:space="preserve"><value>Vol −3 dB</value></data>
+  <data name="VolumeCustom" xml:space="preserve"><value>Volume…</value></data>
+  <data name="NormalizeTo" xml:space="preserve"><value>Normaliseren…</value></data>
+  <data name="ZoomFit" xml:space="preserve"><value>Passend</value></data>
+  <data name="ZoomSelection" xml:space="preserve"><value>Inzoomen op selectie</value></data>
+  <data name="Save" xml:space="preserve"><value>Opslaan</value></data>
+  <data name="EditorHint" xml:space="preserve"><value>Slepen om te selecteren · Shift+pijlen / Home / End breiden uit · Ctrl+A alles · Ctrl+D deselecteren · Del knipt · Esc sluit</value></data>
+  <data name="Attr_Size" xml:space="preserve"><value>Grootte</value></data>
+  <data name="Attr_Format" xml:space="preserve"><value>Formaat</value></data>
+  <data name="Attr_SampleRate" xml:space="preserve"><value>Samplefrequentie</value></data>
+  <data name="Attr_Duration" xml:space="preserve"><value>Duur</value></data>
+  <data name="Attr_Channels" xml:space="preserve"><value>Kanalen</value></data>
+  <data name="Attr_OriginalVolume" xml:space="preserve"><value>Oorspronkelijk volume</value></data>
+  <data name="LongFileWarning" xml:space="preserve"><value>Dit bestand is langer dan 10 minuten. Bij bewerken blijft het hele bestand in het geheugen en snapshots voor ongedaan maken vermenigvuldigen dat; verwacht hoog geheugengebruik.</value></data>
+  <data name="CannotOpenFile" xml:space="preserve"><value>Het bestand kan niet worden geopend: {0}</value></data>
+  <data name="Modified" xml:space="preserve"><value>gewijzigd</value></data>
+  <data name="Selection" xml:space="preserve"><value>Selectie</value></data>
+  <data name="NoSelection" xml:space="preserve"><value>Geen selectie (bewerkingen gelden voor het hele bestand)</value></data>
+  <data name="GainPrompt" xml:space="preserve"><value>Versterking in dB (negatief = stiller):</value></data>
+  <data name="NormalizePrompt" xml:space="preserve"><value>Doel in dB (89 ≈ −23 LUFS):</value></data>
+  <data name="EditorSaveQuestion" xml:space="preserve"><value>De bewerkte audio opslaan?</value></data>
+  <data name="EditorSaved" xml:space="preserve"><value>{0} opgeslagen</value></data>
+
+  <!-- Preferences -->
+  <data name="Tab_Devices" xml:space="preserve"><value>Apparaten</value></data>
+  <data name="Tab_Audio" xml:space="preserve"><value>Audio</value></data>
+  <data name="Tab_Hotkeys" xml:space="preserve"><value>Sneltoetsen</value></data>
+  <data name="Tab_Recorder" xml:space="preserve"><value>Recorder</value></data>
+  <data name="Tab_Interface" xml:space="preserve"><value>Interface</value></data>
+  <data name="Tab_Notifications" xml:space="preserve"><value>Meldingen</value></data>
+  <data name="Tab_Updates" xml:space="preserve"><value>Updates</value></data>
+  <data name="SetupMode" xml:space="preserve"><value>Installatiemodus</value></data>
+  <data name="SetupModeHint" xml:space="preserve"><value>VoxPad heeft geen eigen kernel-audiostuurprogramma. Het rendert stem + geluid naar het afspeeleindpunt van een virtuele kabel; apps nemen vervolgens op van het opname-eindpunt van de kabel (bijv. 'CABLE Output'). Automatisch selecteren probeert VB-CABLE, VB-CABLE A/B, Voicemeeter, een handmatig gekozen kabel en Stereo Mix, in die volgorde.</value></data>
+  <data name="Refresh" xml:space="preserve"><value>Vernieuwen</value></data>
+  <data name="Status" xml:space="preserve"><value>Status: </value></data>
+  <data name="Microphones" xml:space="preserve"><value>Microfoons (vink 'Gebruiken' aan voor de microfoons die in de kabel worden gemengd)</value></data>
+  <data name="Use" xml:space="preserve"><value>Gebruiken</value></data>
+  <data name="DefaultComm" xml:space="preserve"><value> (standaard voor communicatie)</value></data>
+  <data name="NoMics" xml:space="preserve"><value>Geen opnameapparaten gevonden.</value></data>
+  <data name="NoMicsTickedHint" xml:space="preserve"><value>Niets aangevinkt = de standaard communicatiemicrofoon wordt gebruikt.</value></data>
+  <data name="VirtualCableEndpoint" xml:space="preserve"><value>Afspeeleindpunt virtuele kabel (voor 'Andere virtuele kabel')</value></data>
+  <data name="AutoDetect" xml:space="preserve"><value>(automatisch detecteren)</value></data>
+  <data name="SpeakerDevice" xml:space="preserve"><value>Luidsprekers (uw eigen kopie van het geluid)</value></data>
+  <data name="DefaultDevice" xml:space="preserve"><value>(Windows-standaard)</value></data>
+  <data name="RecorderMic" xml:space="preserve"><value>Microfoon voor de recorder</value></data>
+  <data name="MicLatency" xml:space="preserve"><value>Microfoonlatentie (ms):</value></data>
+  <data name="LatencyHint" xml:space="preserve"><value>Lager = minder vertraging op uw stem, hoger = minder haperingen op trage pc's. 30 ms is een goede standaard.</value></data>
+  <data name="OpenPrivacySettings" xml:space="preserve"><value>Microfoontoegang is geweigerd – Windows-privacyinstellingen openen</value></data>
+  <data name="Normalization" xml:space="preserve"><value>Volumenormalisatie (EBU R128, per kanaal)</value></data>
+  <data name="Norm_Off" xml:space="preserve"><value>Uit</value></data>
+  <data name="Norm_Dynamic" xml:space="preserve"><value>Dynamisch – eerste 6 s analyseren, verfijnen tijdens afspelen (standaard)</value></data>
+  <data name="Norm_Full" xml:space="preserve"><value>Volledig bestand – hele bestand analyseren vóór afspelen (gecachet)</value></data>
+  <data name="MeasureVoice" xml:space="preserve"><value>Stem meten…</value></data>
+  <data name="NormHint" xml:space="preserve"><value>Geluiden op de microfoon worden op uw stemniveau gebracht (meet het; een goed resultaat ligt boven 74 dB). De luidsprekerkopie wordt niet gewijzigd – gebruik de volumeschuif van de luidsprekers voor uzelf.</value></data>
+  <data name="BlockVoice" xml:space="preserve"><value>Stem blokkeren</value></data>
+  <data name="BlockVoiceCheck" xml:space="preserve"><value>Mijn stem volledig vervangen terwijl een geluid speelt (in plaats van mengen)</value></data>
+  <data name="VoiceActivation" xml:space="preserve"><value>Stemactiveringsgeluid</value></data>
+  <data name="VoiceActivationCheck" xml:space="preserve"><value>Een korte luide pre-roll op de microfoon afspelen zodat stemgeactiveerde apps hun gate openen</value></data>
+  <data name="CustomFile" xml:space="preserve"><value>Eigen bestand (leeg = toon van 250 ms):</value></data>
+  <data name="Default" xml:space="preserve"><value>Standaard</value></data>
+  <data name="VoiceActivationHeadphones" xml:space="preserve"><value>De pre-roll ook op mijn luidsprekers/koptelefoon afspelen</value></data>
+  <data name="Playback" xml:space="preserve"><value>Afspelen</value></data>
+  <data name="AllowResumeOtherMode" xml:space="preserve"><value>Hervatten in een andere afspeelmodus toestaan (opnieuw starten op de gepauzeerde positie met de nieuwe modus)</value></data>
+  <data name="General" xml:space="preserve"><value>Algemeen</value></data>
+  <data name="HotkeysEnabledCheck" xml:space="preserve"><value>Sneltoetsen ingeschakeld</value></data>
+  <data name="PassHotkeysCheck" xml:space="preserve"><value>Sneltoetsen doorgeven aan de actieve toepassing (standaard uit: de toets wordt onderschept)</value></data>
+  <data name="AutoStopCheck" xml:space="preserve"><value>Automatisch stoppen: geluiden gestart via sneltoets negeren Herhalen en Doorgaan (standaard aan)</value></data>
+  <data name="HotkeysGeneralHint" xml:space="preserve"><value>Stel de sneltoets van een geluid in door erop te rechtsklikken of te dubbelklikken op de cel Sneltoets. Losse toetsen, elke combinatie met Ctrl/Alt/Shift/Win en muisknoppen Mid/4/5 werken systeembreed.</value></data>
+  <data name="SpecialHint" xml:space="preserve"><value>Speciale sneltoetsen zijn gereserveerd: een geluid kan niet dezelfde toets gebruiken.</value></data>
+  <data name="NumpadHotkeys" xml:space="preserve"><value>Numpad-sneltoetsen</value></data>
+  <data name="NumpadEnabledCheck" xml:space="preserve"><value>Ingeschakeld: houd de modificatietoets vast, typ het nummer van het geluid op het numerieke toetsenblok, laat los</value></data>
+  <data name="Modifier" xml:space="preserve"><value>Modificatietoets:</value></data>
+  <data name="NumpadHint" xml:space="preserve"><value>Het nummer is de kolom # van de huidige categorie.</value></data>
+  <data name="IndexHotkeys" xml:space="preserve"><value>Index-sneltoetsen</value></data>
+  <data name="IndexEnabledCheck" xml:space="preserve"><value>Ingeschakeld: houd de modificatietoets vast, typ de rij-index met de cijferrij, laat los</value></data>
+  <data name="IndexHint" xml:space="preserve"><value>De index is de rij in de verborgen categorie 'Alle geluiden', bijv. Alt+1,2,3 speelt rij 123 af.</value></data>
+  <data name="Advanced" xml:space="preserve"><value>Geavanceerd</value></data>
+  <data name="AllowLeftRight" xml:space="preserve"><value>Linker/rechter modificatietoetsen toestaan (LCtrl en RCtrl zijn verschillende toetsen)</value></data>
+  <data name="SameHotkeysAllCategories" xml:space="preserve"><value>Dezelfde sneltoetsen in alle categorieën (op rij: de sneltoets van rij N speelt rij N van de geselecteerde categorie af)</value></data>
+  <data name="JumpSeconds" xml:space="preserve"><value>Springen ±N seconden:</value></data>
+  <data name="VolumeStep" xml:space="preserve"><value>Stap volume omhoog/omlaag (%):</value></data>
+  <data name="VolumeSet" xml:space="preserve"><value>Niveau sneltoets 'Volume instellen' (%):</value></data>
+  <data name="AutoKeysEnabledCheck" xml:space="preserve"><value>Auto Keys ingeschakeld</value></data>
+  <data name="AutoKeysHint" xml:space="preserve"><value>Automatische push-to-talk: wanneer een geluid op de microfoon start, wordt de toets ingedrukt (vastgehouden voor de duur van het geluid, of kort ingedrukt ervoor en erna). Werkt alleen in microfoon-afspeelmodi.</value></data>
+  <data name="NoKey" xml:space="preserve"><value>(geen toets)</value></data>
+  <data name="AutoKey" xml:space="preserve"><value>Auto Key</value></data>
+  <data name="OnlyIfHotkey" xml:space="preserve"><value>Alleen bij afspelen via sneltoets</value></data>
+  <data name="PressHold" xml:space="preserve"><value>Ingedrukt houden voor de duur van het geluid</value></data>
+  <data name="PressBeforeAfter" xml:space="preserve"><value>Indrukken ervoor en erna</value></data>
+  <data name="PressMode" xml:space="preserve"><value>Drukmodus:</value></data>
+  <data name="Cond_Always" xml:space="preserve"><value>Altijd</value></data>
+  <data name="Cond_Fullscreen" xml:space="preserve"><value>Voorgrond-app is volledig scherm (incl. randloos)</value></data>
+  <data name="Cond_Running" xml:space="preserve"><value>Een vermelde app wordt uitgevoerd</value></data>
+  <data name="Cond_Foreground" xml:space="preserve"><value>Een vermelde app staat op de voorgrond</value></data>
+  <data name="Condition" xml:space="preserve"><value>Voorwaarde:</value></data>
+  <data name="AppsTip" xml:space="preserve"><value>Procesnamen, één per regel, bijv. discord.exe</value></data>
+  <data name="Apps" xml:space="preserve"><value>App-lijst:</value></data>
+  <data name="AddAutoKey" xml:space="preserve"><value>Auto Key toevoegen</value></data>
+  <data name="RecorderFormatHint" xml:space="preserve"><value>Alles wordt omgezet naar stereo 48 kHz. De editor slaat ook in dit formaat op.</value></data>
+  <data name="TargetDb" xml:space="preserve"><value>Doel (dB, standaard 89 ≈ −23 LU; &gt;99 clipt):</value></data>
+  <data name="NotificationSound" xml:space="preserve"><value>Een meldingsgeluid afspelen voordat de opname begint</value></data>
+  <data name="RecorderHotkeyHint" xml:space="preserve"><value>Sneltoetsen voor opname starten/stoppen staan op het tabblad Sneltoetsen &gt; Speciaal.</value></data>
+  <data name="Language" xml:space="preserve"><value>Taal:</value></data>
+  <data name="Style" xml:space="preserve"><value>Stijl:</value></data>
+  <data name="Theme_Light" xml:space="preserve"><value>Licht</value></data>
+  <data name="Theme_Dark" xml:space="preserve"><value>Donker</value></data>
+  <data name="Theme_Native" xml:space="preserve"><value>Systeemeigen (Windows)</value></data>
+  <data name="NativeForced" xml:space="preserve"><value>Hoog contrast of een schermlezer is actief: de systeemeigen stijl wordt gebruikt.</value></data>
+  <data name="ToolbarItems" xml:space="preserve"><value>Werkbalkitems</value></data>
+  <data name="Timer" xml:space="preserve"><value>Tracktimer</value></data>
+  <data name="SeekSlider" xml:space="preserve"><value>Zoekschuif</value></data>
+  <data name="SpeakerVolume" xml:space="preserve"><value>Luidsprekervolume</value></data>
+  <data name="MicLevelMeter" xml:space="preserve"><value>Microfoonniveaumeter</value></data>
+  <data name="Behaviour" xml:space="preserve"><value>Gedrag</value></data>
+  <data name="StartMinimized" xml:space="preserve"><value>Geminimaliseerd starten</value></data>
+  <data name="MinimizeToTrayCheck" xml:space="preserve"><value>Minimaliseren naar het systeemvak</value></data>
+  <data name="CloseToTray" xml:space="preserve"><value>Het venster sluiten minimaliseert naar het systeemvak in plaats van af te sluiten</value></data>
+  <data name="DisableSorting" xml:space="preserve"><value>Sorteren uitschakelen (kolomkoppen sorteren nooit; alleen handmatige volgorde)</value></data>
+  <data name="Confirmations" xml:space="preserve"><value>Bevestigingen</value></data>
+  <data name="ConfirmRemoveCheck" xml:space="preserve"><value>Bevestigen voordat geluiden worden verwijderd</value></data>
+  <data name="ConfirmResetCheck" xml:space="preserve"><value>Bevestigen voordat afspeeltellers worden gereset</value></data>
+  <data name="ConfirmQuitCheck" xml:space="preserve"><value>Afsluiten bevestigen terwijl een geluid speelt</value></data>
+  <data name="NotifyMissing" xml:space="preserve"><value>Waarschuwen voor ontbrekende bestanden bij het laden van een lijst</value></data>
+  <data name="NotifyDevices" xml:space="preserve"><value>Wijzigingen van audioapparaten melden in de statusbalk</value></data>
+  <data name="NotifyTray" xml:space="preserve"><value>Een ballon weergeven bij minimaliseren naar het systeemvak</value></data>
+  <data name="NotifyRecording" xml:space="preserve"><value>Statusbericht wanneer een opname start</value></data>
+  <data name="NotifyTrial" xml:space="preserve"><value>Een dialoogvenster weergeven wanneer een proeflimiet wordt bereikt</value></data>
+  <data name="NotifyUpdates" xml:space="preserve"><value>Beschikbare updates weergeven</value></data>
+  <data name="CheckInterval" xml:space="preserve"><value>Controleren op updates:</value></data>
+  <data name="Never" xml:space="preserve"><value>Nooit (standaard)</value></data>
+  <data name="Daily" xml:space="preserve"><value>Dagelijks</value></data>
+  <data name="Weekly" xml:space="preserve"><value>Wekelijks</value></data>
+  <data name="ManifestUrl" xml:space="preserve"><value>Manifest-URL:</value></data>
+  <data name="UpdateHint" xml:space="preserve"><value>Updatepakketten worden alleen geïnstalleerd wanneer de handtekening van het manifest en de pakkethash overeenkomen met de sleutel die in VoxPad is ingebouwd.</value></data>
+  <data name="LastCheck" xml:space="preserve"><value>Laatste controle</value></data>
+  <data name="CheckNow" xml:space="preserve"><value>Nu controleren</value></data>
+
+  <!-- Special hotkey names -->
+  <data name="Special_Stop" xml:space="preserve"><value>Stoppen</value></data>
+  <data name="Special_Start" xml:space="preserve"><value>Starten (geselecteerde afspelen / hervatten)</value></data>
+  <data name="Special_Pause" xml:space="preserve"><value>Pauzeren / hervatten</value></data>
+  <data name="Special_PlayPrevious" xml:space="preserve"><value>Vorig bestand afspelen</value></data>
+  <data name="Special_PlayNext" xml:space="preserve"><value>Volgend bestand afspelen</value></data>
+  <data name="Special_PlaySelected" xml:space="preserve"><value>Geselecteerd bestand afspelen</value></data>
+  <data name="Special_PlayRandomInCategory" xml:space="preserve"><value>Willekeurig bestand afspelen (huidige categorie)</value></data>
+  <data name="Special_PlayRandomFromAll" xml:space="preserve"><value>Willekeurig bestand afspelen (alle geluiden)</value></data>
+  <data name="Special_SelectPreviousFile" xml:space="preserve"><value>Vorig bestand selecteren</value></data>
+  <data name="Special_SelectNextFile" xml:space="preserve"><value>Volgend bestand selecteren</value></data>
+  <data name="Special_SelectPreviousCategory" xml:space="preserve"><value>Vorige categorie selecteren</value></data>
+  <data name="Special_SelectNextCategory" xml:space="preserve"><value>Volgende categorie selecteren</value></data>
+  <data name="Special_StartRecording" xml:space="preserve"><value>Opname starten</value></data>
+  <data name="Special_StopRecording" xml:space="preserve"><value>Opname stoppen</value></data>
+  <data name="Special_JumpBackward" xml:space="preserve"><value>N seconden terugspringen</value></data>
+  <data name="Special_JumpForward" xml:space="preserve"><value>N seconden vooruitspringen</value></data>
+  <data name="Special_SpeakerVolumeUp" xml:space="preserve"><value>Luidsprekervolume omhoog</value></data>
+  <data name="Special_SpeakerVolumeDown" xml:space="preserve"><value>Luidsprekervolume omlaag</value></data>
+  <data name="Special_SpeakerVolumeSet" xml:space="preserve"><value>Luidsprekervolume instellen</value></data>
+  <data name="Special_SpeakerVolumeMute" xml:space="preserve"><value>Luidsprekers dempen / dempen opheffen</value></data>
+  <data name="Special_SetPlayModeBoth" xml:space="preserve"><value>Afspeelmodus: luidsprekers + microfoon</value></data>
+  <data name="Special_SetPlayModeMic" xml:space="preserve"><value>Afspeelmodus: alleen microfoon</value></data>
+  <data name="Special_SetPlayModeSpeakers" xml:space="preserve"><value>Afspeelmodus: alleen luidsprekers</value></data>
+  <data name="Special_CyclePlayMode" xml:space="preserve"><value>Afspeelmodus wisselen</value></data>
+  <data name="Special_EnableHotkeys" xml:space="preserve"><value>Sneltoetsen inschakelen</value></data>
+  <data name="Special_DisableHotkeys" xml:space="preserve"><value>Sneltoetsen uitschakelen</value></data>
+  <data name="Special_ToggleHotkeys" xml:space="preserve"><value>Sneltoetsen in-/uitschakelen</value></data>
+  <data name="Special_EnableAutoKeys" xml:space="preserve"><value>Auto Keys inschakelen</value></data>
+  <data name="Special_DisableAutoKeys" xml:space="preserve"><value>Auto Keys uitschakelen</value></data>
+  <data name="Special_ToggleAutoKeys" xml:space="preserve"><value>Auto Keys in-/uitschakelen</value></data>
+  <data name="Special_PlayTts" xml:space="preserve"><value>Tekst-naar-spraak-tekst afspelen</value></data>
+</root>

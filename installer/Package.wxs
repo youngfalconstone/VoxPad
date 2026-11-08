@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs"
+     xmlns:ui="http://wixtoolset.org/schemas/v4/wxs/ui"
+     xmlns:util="http://wixtoolset.org/schemas/v4/wxs/util">
+  <?ifndef Version?><?define Version = 1.0.0?><?endif?>
+
+  <!-- Per-machine install: requires UAC. The app runs as the invoking user (asInvoker manifest). -->
+  <Package Name="VoxPad" Manufacturer="VoxPad contributors" Version="$(Version)" UpgradeCode="7D0A1F6A-2C3B-4E0D-9C44-5B1D1F0B1A21"
+           Language="1033" Codepage="1252" Scope="perMachine" InstallerVersion="500" Compressed="yes">
+    <MajorUpgrade DowngradeErrorMessage="A newer version of VoxPad is already installed." Schedule="afterInstallInitialize" />
+    <MediaTemplate EmbedCab="yes" CompressionLevel="high" />
+    <Icon Id="VoxPadIcon" SourceFile="..\src\VoxPad.App\Assets\voxpad.ico" />
+    <Property Id="ARPPRODUCTICON" Value="VoxPadIcon" />
+    <Property Id="ARPURLINFOABOUT" Value="https://github.com/youngfalconstone/VoxPad" />
+    <Property Id="ARPNOREPAIR" Value="1" />
+    <Property Id="LAUNCHAPP" Value="1" Secure="yes" />
+
+    <!-- .NET 8 Desktop Runtime check (framework-dependent build). The self-contained publish does not need it. -->
+    <Property Id="NETDESKTOP8">
+      <RegistrySearch Id="NetDesktop8Search" Root="HKLM" Key="SOFTWARE\dotnet\Setup\InstalledVersions\x64\sharedfx\Microsoft.WindowsDesktop.App" Name="8.0.0" Type="raw" />
+    </Property>
+    <?ifndef SELFCONTAINED?>
+    <Launch Condition="Installed OR NETDESKTOP8" Message="VoxPad needs the .NET 8 Desktop Runtime (x64). Download it from https://dotnet.microsoft.com/download/dotnet/8.0 and run this installer again." />
+    <?endif?>
+
+    <!-- Folders -->
+    <StandardDirectory Id="ProgramFiles64Folder">
+      <Directory Id="INSTALLFOLDER" Name="VoxPad" />
+    </StandardDirectory>
+    <StandardDirectory Id="ProgramMenuFolder">
+      <Directory Id="ShortcutFolder" Name="VoxPad" />
+    </StandardDirectory>
+    <StandardDirectory Id="CommonAppDataFolder">
+      <Directory Id="ProgramDataVoxPad" Name="VoxPad">
+        <Directory Id="ProgramDataLogs" Name="logs" />
+        <Directory Id="ProgramDataDumps" Name="crashdumps" />
+      </Directory>
+    </StandardDirectory>
+
+    <Feature Id="Main" Title="VoxPad" Level="1" ConfigurableDirectory="INSTALLFOLDER">
+      <ComponentGroupRef Id="PublishedFiles" />
+      <ComponentGroupRef Id="ExtraComponents" />
+    </Feature>
+
+    <ComponentGroup Id="ExtraComponents">
+      <!-- Start menu + desktop shortcuts -->
+      <Component Id="StartMenuShortcut" Directory="ShortcutFolder" Guid="3F0E5C4C-1B5B-4B7E-9C1B-7C0F6A2D1E01">
+        <Shortcut Id="StartMenuVoxPad" Name="VoxPad" Target="[INSTALLFOLDER]VoxPad.exe" WorkingDirectory="INSTALLFOLDER" Icon="VoxPadIcon" />
+        <Shortcut Id="StartMenuRemote" Name="VoxPad Remote Console" Target="[INSTALLFOLDER]voxpad-remote.exe" WorkingDirectory="INSTALLFOLDER" />
+        <RemoveFolder Id="RemoveShortcutFolder" On="uninstall" />
+        <RegistryValue Root="HKCU" Key="Software\VoxPad" Name="installed" Type="integer" Value="1" KeyPath="yes" />
+      </Component>
+      <!-- %ProgramData%\VoxPad\logs and crashdumps, writable by all users (the app runs unelevated) -->
+      <Component Id="ProgramDataFolders" Directory="ProgramDataVoxPad" Guid="9A1B2C3D-4E5F-4A6B-8C7D-0E1F2A3B4C02">
+        <CreateFolder>
+          <util:PermissionEx User="Users" GenericAll="yes" />
+        </CreateFolder>
+        <RegistryValue Root="HKLM" Key="Software\VoxPad" Name="dataFolders" Type="integer" Value="1" KeyPath="yes" />
+      </Component>
+      <Component Id="ProgramDataLogsFolder" Directory="ProgramDataLogs" Guid="9A1B2C3D-4E5F-4A6B-8C7D-0E1F2A3B4C03">
+        <CreateFolder><util:PermissionEx User="Users" GenericAll="yes" /></CreateFolder>
+        <RegistryValue Root="HKLM" Key="Software\VoxPad" Name="logs" Type="integer" Value="1" KeyPath="yes" />
+      </Component>
+      <Component Id="ProgramDataDumpsFolder" Directory="ProgramDataDumps" Guid="9A1B2C3D-4E5F-4A6B-8C7D-0E1F2A3B4C04">
+        <CreateFolder><util:PermissionEx User="Users" GenericAll="yes" /></CreateFolder>
+        <RegistryValue Root="HKLM" Key="Software\VoxPad" Name="dumps" Type="integer" Value="1" KeyPath="yes" />
+      </Component>
+      <!-- .vpl file association -->
+      <Component Id="FileAssociation" Directory="INSTALLFOLDER" Guid="9A1B2C3D-4E5F-4A6B-8C7D-0E1F2A3B4C05">
+        <RegistryValue Root="HKLM" Key="Software\Classes\.vpl" Value="VoxPad.SoundList" Type="string" KeyPath="yes" />
+        <RegistryValue Root="HKLM" Key="Software\Classes\VoxPad.SoundList" Value="VoxPad sound list" Type="string" />
+        <RegistryValue Root="HKLM" Key="Software\Classes\VoxPad.SoundList\DefaultIcon" Value="[INSTALLFOLDER]VoxPad.exe,0" Type="string" />
+        <RegistryValue Root="HKLM" Key="Software\Classes\VoxPad.SoundList\shell\open\command" Value="&quot;[INSTALLFOLDER]VoxPad.exe&quot; &quot;%1&quot;" Type="string" />
+      </Component>
+    </ComponentGroup>
+
+    <!-- UI: install-dir dialog + licence, optional launch at the end -->
+    <ui:WixUI Id="WixUI_InstallDir" InstallDirectory="INSTALLFOLDER" />
+    <WixVariable Id="WixUILicenseRtf" Value="License.rtf" />
+    <UI>
+      <Publish Dialog="ExitDialog" Control="Finish" Event="DoAction" Value="SetLaunchTarget" Order="1" Condition="WIXUI_EXITDIALOGOPTIONALCHECKBOX = 1 AND NOT Installed" />
+      <Publish Dialog="ExitDialog" Control="Finish" Event="DoAction" Value="LaunchApplication" Order="2" Condition="WIXUI_EXITDIALOGOPTIONALCHECKBOX = 1 AND NOT Installed" />
+    </UI>
+    <Property Id="WIXUI_EXITDIALOGOPTIONALCHECKBOXTEXT" Value="Launch VoxPad" />
+    <Property Id="WIXUI_EXITDIALOGOPTIONALCHECKBOX" Value="1" />
+    <CustomAction Id="SetLaunchTarget" Property="WixShellExecTarget" Value="[INSTALLFOLDER]VoxPad.exe" />
+    <CustomAction Id="LaunchApplication" DllEntry="WixShellExec" Impersonate="yes" BinaryRef="Wix4UtilCA_X86" />
+    <!-- VB-CABLE is a third-party driver; its installer asks for a reboot on first install. We only point to it. -->
+    <Property Id="WIXUI_EXITDIALOGOPTIONALTEXT" Value="For the virtual microphone install VB-CABLE (https://vb-audio.com/Cable) and reboot once, then pick 'CABLE Output' as the microphone in your voice app." />
+  </Package>
+</Wix>

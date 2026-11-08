@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VoxPad Manual</title>
+<style>
+  :root { --bg:#ffffff; --fg:#1b1b1b; --muted:#666; --accent:#5848c8; --border:#d8d8d8; --code:#f3f3f7; --warn:#fff4d6; --note:#ebe8ff; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#202020; --fg:#ededed; --muted:#a0a0a0; --accent:#8c7cff; --border:#454545; --code:#2b2b2b; --warn:#4a3d14; --note:#2f2a55; } }
+  html,body { background:var(--bg); color:var(--fg); font-family:"Segoe UI",system-ui,sans-serif; font-size:15px; line-height:1.5; margin:0; }
+  .wrap { display:flex; max-width:1200px; margin:0 auto; }
+  nav { width:240px; flex:none; padding:24px 16px; border-right:1px solid var(--border); position:sticky; top:0; height:100vh; overflow:auto; font-size:13px; }
+  nav a { display:block; color:var(--fg); text-decoration:none; padding:2px 0; }
+  nav a:hover { color:var(--accent); }
+  main { flex:1; padding:24px 40px 80px; min-width:0; }
+  h1 { font-size:28px; margin-top:0; }
+  h2 { font-size:22px; border-bottom:1px solid var(--border); padding-bottom:4px; margin-top:40px; }
+  h3 { font-size:17px; margin-top:28px; }
+  code, kbd { background:var(--code); padding:1px 5px; border-radius:3px; font-family:Consolas,"Cascadia Mono",monospace; font-size:13px; }
+  kbd { border:1px solid var(--border); border-bottom-width:2px; }
+  pre { background:var(--code); padding:10px 12px; border-radius:4px; overflow:auto; font-size:13px; }
+  table { border-collapse:collapse; width:100%; margin:10px 0; font-size:14px; }
+  th, td { border:1px solid var(--border); padding:5px 8px; text-align:left; vertical-align:top; }
+  th { background:var(--code); }
+  .note { background:var(--note); border-left:4px solid var(--accent); padding:8px 12px; margin:12px 0; }
+  .warn { background:var(--warn); border-left:4px solid #c58a00; padding:8px 12px; margin:12px 0; }
+  .muted { color:var(--muted); }
+  @media (max-width:800px) { .wrap { flex-direction:column; } nav { position:static; height:auto; width:auto; border-right:0; border-bottom:1px solid var(--border); } main { padding:16px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav>
+  <strong>VoxPad manual</strong>
+  <a href="#overview">1. Overview &amp; audio routing</a>
+  <a href="#setup">2. First-time setup</a>
+  <a href="#mainwindow">3. Main window</a>
+  <a href="#hotkeys">4. Hotkeys</a>
+  <a href="#autokeys">5. Auto Keys</a>
+  <a href="#lists">6. Sound lists, backups, storage</a>
+  <a href="#recorder">7. Recorder</a>
+  <a href="#editor">8. Editor</a>
+  <a href="#tts">9. Text to speech</a>
+  <a href="#normalisation">10. Normalisation &amp; voice measurement</a>
+  <a href="#preferences">11. Preferences</a>
+  <a href="#trial">12. Trial, registration, streamer mode</a>
+  <a href="#remote">13. Remote Control API</a>
+  <a href="#troubleshooting">14. Troubleshooting</a>
+  <a href="#shortcuts">15. Keyboard shortcuts</a>
+</nav>
+<main>
+
+<h1>VoxPad manual</h1>
+<p class="muted">VoxPad 1.0 · Windows 10/11 · x64 and ARM64</p>
+
+<p>VoxPad is a soundboard that plays sounds into your microphone, so everybody in your voice chat or game hears them, while you hear your own copy on your speakers. It is modelled on Soundpad: one sound at a time, global hotkeys, categories, a hotbar, a recorder, an editor, text-to-speech, automatic push-to-talk ("Auto Keys") and a remote-control API for Stream Deck-style tools.</p>
+
+<!-- ============================================================ -->
+<h2 id="overview">1. Overview and audio routing (read this first)</h2>
+
+<div class="note"><strong>Honest note on how the microphone part works.</strong> Soundpad ships a kernel audio driver extension that injects sound into your real microphone device, so every app hears it without any device switching. VoxPad does <em>not</em> ship a kernel driver. Instead it renders <em>your voice + the sound</em> into the playback side of a <strong>virtual audio cable</strong>, and your voice apps record from the cable's recording side. In practice this means one extra step: <strong>in Discord, Teams, OBS or the game you must select the cable's recording endpoint (for VB-CABLE that is "CABLE Output") as the microphone.</strong></div>
+
+<h3>Signal path</h3>
+<pre>Physical microphone(s)  ──► voice gate ──┐
+                                         ├──► mixer ──► virtual cable playback endpoint ("CABLE Input")
+Sound file ──► normalisation ──► slot ────┘                        │
+                                                                   └──► apps recording from "CABLE Output"
+Sound file ──► slot ──► your speakers (own copy, through the Windows volume mixer)</pre>
+<ul>
+  <li><strong>Mix</strong> (default): others hear your voice and the sound together.</li>
+  <li><strong>Block voice</strong> (Preferences &gt; Audio): while a sound plays, your voice is muted with a 5&nbsp;ms ramp, so the sound replaces your voice entirely.</li>
+  <li><strong>One sound at a time.</strong> Starting a new sound stops the current one on every output. There is no overlapping playback, queue or fade.</li>
+  <li>The speaker copy is a separate output on the playback device you choose. Its volume slider is bound to the Windows volume mixer (VoxPad's session on that device).</li>
+</ul>
+
+<h3>Setup modes (Preferences &gt; Devices)</h3>
+<table>
+<tr><th>Mode</th><th>What VoxPad uses</th><th>Apps must select</th></tr>
+<tr><td>Auto-select (default)</td><td>Tries the modes below in order and uses the first one that reports <em>Good</em>.</td><td>depends</td></tr>
+<tr><td>VB-CABLE virtual microphone</td><td>Playback endpoint "CABLE Input" (free VB-Audio Virtual Cable).</td><td>"CABLE Output"</td></tr>
+<tr><td>VB-CABLE A/B</td><td>"CABLE-A Input" or "CABLE-B Input" (paid extra cables).</td><td>"CABLE-A Output" / "CABLE-B Output"</td></tr>
+<tr><td>Voicemeeter virtual input</td><td>"VoiceMeeter Input", "Aux Input" or "VAIO3 Input".</td><td>matching "VoiceMeeter … Output"</td></tr>
+<tr><td>Other virtual cable (manual)</td><td>Any playback endpoint you pick that reappears as a recording endpoint.</td><td>the cable's recording endpoint</td></tr>
+<tr><td>Stereo Mix / What U Hear</td><td>Renders the mix to your default speakers and relies on the sound card's "Stereo Mix" recording device. <strong>Everything</strong> playing on the speakers (game, music) is then heard by others too.</td><td>"Stereo Mix"</td></tr>
+<tr><td>Speakers only</td><td>No microphone injection at all.</td><td>—</td></tr>
+</table>
+
+<h3>Status and Refresh</h3>
+<p>Preferences &gt; Devices shows a <strong>Status</strong> line: green <em>Good</em> with the name apps must select, amber for warnings (no microphone ticked, Stereo Mix caveat), or red with the reason (no cable installed, endpoint disabled, Windows microphone privacy blocks desktop apps, cannot open the cable). <strong>Refresh</strong> re-enumerates devices and restarts the routing. The same state is shown as a green/red dot in the main window's status bar; hover it for the message. Hot-plugging devices triggers an automatic refresh.</p>
+
+<!-- ============================================================ -->
+<h2 id="setup">2. First-time setup</h2>
+<ol>
+  <li><strong>Install a virtual cable.</strong> Download VB-CABLE from <code>https://vb-audio.com/Cable</code>, run the installer as administrator and <strong>reboot once</strong> (the driver needs it the first time). Voicemeeter works as well.</li>
+  <li><strong>Start VoxPad</strong> and open <em>File &gt; Preferences &gt; Devices</em>. Leave <em>Setup mode</em> on Auto-select. Status should read <em>Good. Apps must select 'CABLE Output' as their microphone.</em> If it is red, press Refresh and read the message.</li>
+  <li><strong>Tick "Use"</strong> next to your real microphone in the Microphones list so your voice is mixed into the cable. Nothing ticked = the default communications microphone is used. Do not tick the cable itself.</li>
+  <li><strong>Pick your speakers</strong> (the device for your own copy). Default = the Windows default playback device.</li>
+  <li><strong>Discord:</strong> User Settings &gt; Voice &amp; Video &gt; Input device = <em>CABLE Output</em>. Turn <em>off</em> Noise Suppression (Krisp), Echo Cancellation, Automatic Gain Control and Advanced Voice Activity; set Input Sensitivity manually. Discord's filters treat soundboard audio as noise and remove it.</li>
+  <li><strong>Teams / Zoom / games:</strong> select CABLE Output as the microphone and disable noise suppression where offered.</li>
+  <li><strong>Measure your voice</strong> once (click the microphone icon in the toolbar, or Preferences &gt; Audio &gt; Measure voice…). The result becomes the normalisation target so sounds come out at your speaking level.</li>
+  <li>Drag a folder of sounds into the window and press a key. Done.</li>
+</ol>
+<div class="warn">If Windows' microphone privacy is set to deny desktop apps, VoxPad shows an <em>Access denied</em> dialog at start. See <a href="#troubleshooting">Troubleshooting</a>.</div>
+
+<!-- ============================================================ -->
+<h2 id="mainwindow">3. Main window</h2>
+
+<h3>Menu bar</h3>
+<table>
+<tr><th>Menu</th><th>Items</th></tr>
+<tr><td>File</td><td>New sound list (<kbd>Ctrl</kbd>+<kbd>N</kbd>) · Load sound list… (<kbd>Ctrl</kbd>+<kbd>O</kbd>, .vpl or Soundpad .spl) · Save sound list (<kbd>Ctrl</kbd>+<kbd>S</kbd>) · Save sound list as… · Recent sound lists · Restore sound list… · Add sound files… · Add folder… · Import from web… · Export ▸ Sound files… / Preferences… / Import preferences… · Statistics… · Preferences… (<kbd>Ctrl</kbd>+<kbd>P</kbd>) · Exit</td></tr>
+<tr><td>Edit</td><td>Select all · Remove (<kbd>Del</kbd>) · Copy / Cut / Paste · Move up / Move down (<kbd>Alt</kbd>+<kbd>↑</kbd>/<kbd>↓</kbd>) · Undo (<kbd>Ctrl</kbd>+<kbd>Z</kbd>) / Redo (<kbd>Ctrl</kbd>+<kbd>Y</kbd>) · Edit file… · Set hotkey… · Remove hotkey · Colour… · Play random · Reset play count · Reset all play counts · Select in Explorer</td></tr>
+<tr><td>Play</td><td>Play (<kbd>Enter</kbd>) · Play on speakers · Play on microphone (<kbd>Ctrl</kbd>+<kbd>Enter</kbd>) · Pause / resume (<kbd>Space</kbd>) · Stop · Previous · Next · Repeat · Continue · Auto stop · Play mode ▸ Speakers + Microphone / Microphone only / Speakers only · Recorder… (<kbd>Ctrl</kbd>+<kbd>R</kbd>) · Text to speech… (<kbd>Ctrl</kbd>+<kbd>T</kbd>)</td></tr>
+<tr><td>Window</td><td>Categories panel · Hotbar · Playback toolbar · Status bar · Show hidden categories · Category icon size ▸ Small/Medium/Large/Extra large · Columns ▸ (toggle each column) · Hotbar size… · Hotkey overview… · Minimize to tray</td></tr>
+<tr><td>Help</td><td>Manual (<kbd>F1</kbd>) · Troubleshooting… · Auto Keys troubleshooting… · Check for updates… · Register… · About VoxPad</td></tr>
+</table>
+
+<h3>Playback toolbar</h3>
+<p>Left to right (each item can be hidden in Preferences &gt; Interface &gt; Toolbar items):</p>
+<ul>
+  <li><strong>▶ Play</strong> – plays the selected sound according to the current play mode. <strong>▶🔊 Play on speakers</strong> and <strong>▶🎤 Play on microphone</strong> force one output.</li>
+  <li><strong>⏸ Pause/resume</strong>, <strong>⏹ Stop</strong>, <strong>⏮ Previous</strong>, <strong>⏭ Next</strong> (previous/next relative to the playing row in the current, sorted and filtered, view).</li>
+  <li><strong>Track timer</strong> "elapsed / total". Double-click it to select and scroll to the playing sound.</li>
+  <li><strong>Seek slider.</strong> Click or drag to seek. The fill is <span style="color:#d9342b"><strong>red</strong></span> while others can hear the sound (it is on the microphone path) and <span style="color:#2b6dd9"><strong>blue</strong></span> when it only plays on your speakers (speakers-only mode, or the virtual cable is not available).</li>
+  <li><strong>Speaker volume</strong> icon (click = mute/unmute) and slider. Speakers only; it is the same slider Windows shows for VoxPad in the volume mixer, so changes made there are mirrored.</li>
+  <li><strong>Microphone level meter.</strong> Shows your microphone peak. Click the 🎤 icon to open the voice measurement.</li>
+</ul>
+
+<h3>Categories panel (left)</h3>
+<ul>
+  <li><strong>All sounds</strong> is always the first entry. It cannot be renamed, removed or hidden. Its order defines each sound's <strong>index</strong> (the number used by index hotkeys and the remote API).</li>
+  <li>Right-click an empty area or a category for: Add category…, Add subcategory…, Rename…, Remove category, Play random, Set 'play random' hotkey…, Colour…, Hide category.</li>
+  <li>Drag a category onto another to nest it (drop on the lower half) or before it (drop on the upper half). Drag sounds from the list onto a category to add them; hold <kbd>Shift</kbd> while dropping to move instead of copy. Drop files or folders from Explorer onto a category to import straight into it.</li>
+  <li>A sound can be in several categories. Removing it from a category (right-click &gt; Remove from this category) keeps it in All sounds; Remove (<kbd>Del</kbd>) deletes it from the list everywhere.</li>
+  <li>The <strong>info panel</strong> below the tree shows the selected category's name, count and total duration, and has a <strong>Hide category</strong> checkbox. Hidden categories disappear from the tree unless Window &gt; Show hidden categories is on; their hotkeys keep working.</li>
+  <li>Four icon sizes: Window &gt; Category icon size. The icon takes the category's colour.</li>
+</ul>
+
+<h3>Sound list</h3>
+<ul>
+  <li>Columns: <strong>#</strong> (position in the current category), <strong>Tag</strong> (<em>Artist – Title</em> from the file's metadata, otherwise the file name without extension), <strong>Duration</strong>, <strong>Hotkey</strong>, <strong>Play count</strong>, <strong>Last played on</strong>. Columns can be resized and reordered by dragging the headers; right-click a header (or use Window &gt; Columns) to hide/show columns.</li>
+  <li>Click a header to sort (natural order: <em>sound2</em> before <em>sound10</em>); click again for descending, a third time to return to manual order. Manual reordering by drag-and-drop or <kbd>Alt</kbd>+<kbd>↑</kbd>/<kbd>↓</kbd> only works while no sort is active. Preferences &gt; Interface &gt; <em>Disable sorting</em> turns header sorting off completely.</li>
+  <li>Multi-select with <kbd>Ctrl</kbd>/<kbd>Shift</kbd>+click. Right-click for the context menu (Play, Play on speakers, Play on microphone, Edit file…, Set hotkey…, Remove hotkey, Colour…, Move to category ▸, Remove from this category, Copy/Cut/Paste, Remove, Reset play count, Select in Explorer).</li>
+  <li>Double-click a row to play it; double-click the <strong>Hotkey</strong> cell to set the hotkey. <kbd>F2</kbd> also opens the hotkey dialog.</li>
+  <li>Drop files or folders from Explorer anywhere on the window; folders are scanned recursively for AAC, FLAC, M4A, MP3, MP4 audio, OGG, Opus, WAV and WMA. Dropping onto a row inserts at that position. Files already in the list are not duplicated.</li>
+  <li>Each sound can have a <strong>colour</strong> (swatch before the tag; also used by hotbar tiles). Missing files are shown grey and struck through; the status bar reports how many are missing when a list loads.</li>
+  <li><strong>Instant search:</strong> just start typing while the list has focus; the text goes to the search box above the list and filters by tag. <kbd>Enter</kbd> cycles through matches, <kbd>Ctrl</kbd>+<kbd>Enter</kbd> plays the selected match, <kbd>Esc</kbd> clears the filter.</li>
+</ul>
+
+<h3>Hotbar (bottom)</h3>
+<ul>
+  <li>A paged grid of colour-coded tiles (default 8 columns × 2 rows × 4 pages; change under Window &gt; Hotbar size…). Pages are switched with the ▲/▼ buttons or <kbd>Ctrl</kbd>+<kbd>PgUp</kbd>/<kbd>PgDn</kbd>.</li>
+  <li>Drag one or more sounds from the list onto a tile; several sounds fill consecutive tiles. Left-click a tile plays it. Right-click: Set hotkey…, Remove hotkey, Colour…, Remove from hotbar.</li>
+  <li>Drag a tile to another tile (same or other page) to move it. Hold <kbd>Ctrl</kbd> while dragging to keep the tile's own colour; without Ctrl the tile falls back to the sound's colour. Hotkeys live on the sound, so they always follow the tile and are the same on every page.</li>
+  <li>Hotbar layout and tile colours are stored in the sound list file.</li>
+</ul>
+
+<h3>Status bar</h3>
+<ul>
+  <li>Left: the result of the last operation; warnings are shown in red.</li>
+  <li>Trial text (when not registered) and the routing dot (green = Good, red otherwise; hover for the reason).</li>
+  <li><strong>Play mode</strong> indicator – click to cycle Speakers + Microphone → Microphone only → Speakers only.</li>
+  <li><strong>Hotkeys</strong> – double-click to enable/disable (struck through when off). Right-click: Pass hotkeys to the active application, Hotkey overview….</li>
+  <li><strong>Auto Keys</strong> – double-click to toggle. Right-click: Troubleshooting….</li>
+  <li><strong>Repeat</strong> and <strong>Continue</strong> – click to toggle (bold when on).</li>
+</ul>
+
+<h3>Themes, languages, tray</h3>
+<p>Preferences &gt; Interface: Light, Dark or Native style (Native is forced automatically when Windows high contrast or a screen reader is active); 21 UI languages (applied after a restart); Start minimized; Minimize to the system tray; Closing the window minimizes to the tray. The tray icon's menu offers Show VoxPad, Stop and Exit; double-click restores the window. Launching VoxPad a second time just shows the running instance.</p>
+
+<!-- ============================================================ -->
+<h2 id="hotkeys">4. Hotkeys</h2>
+<p>Hotkeys are global: they work when VoxPad is not focused, including in fullscreen games (see Troubleshooting for elevated games). Anything goes: a single key, any combination with <kbd>Ctrl</kbd>/<kbd>Alt</kbd>/<kbd>Shift</kbd>/<kbd>Win</kbd>, a bare modifier key, and mouse buttons Middle, 4 and 5 (left and right only together with a modifier).</p>
+
+<h3>Setting and clearing</h3>
+<p>Right-click a sound &gt; Set hotkey…, double-click its Hotkey cell, or press <kbd>F2</kbd>. In the dialog press the combination; <kbd>Enter</kbd> saves, <kbd>Del</kbd> or <kbd>Backspace</kbd> clears, <kbd>Esc</kbd> cancels. Assigning a hotkey that is already used by another sound or category <strong>moves</strong> it (the old binding is removed). Special hotkeys are reserved and cannot be given to a sound.</p>
+
+<h3>Special hotkeys (Preferences &gt; Hotkeys &gt; Special)</h3>
+<p>Stop · Start (play selected / resume) · Pause/resume · Play previous file · Play next file · Play selected file · Play random file (current category) · Play random file (all sounds) · Select previous/next file · Select previous/next category · Start recording · Stop recording · Jump backward/forward N seconds (N in Advanced, default 5) · Speaker volume up/down (step in Advanced, default 10 %) · Set speaker volume (level in Advanced, default 50 %) · Mute/unmute speakers · Play mode: speakers + mic / mic only / speakers only · Cycle play mode · Enable/Disable/Toggle hotkeys · Enable/Disable/Toggle Auto Keys · Play text-to-speech text. <em>Enable hotkeys</em> and <em>Toggle hotkeys</em> keep working while hotkeys are disabled.</p>
+
+<h3>Numpad hotkeys and index hotkeys</h3>
+<table>
+<tr><th></th><th>Numpad hotkeys</th><th>Index hotkeys</th></tr>
+<tr><td>Gesture</td><td>Hold the modifier (default <kbd>Alt</kbd>), type the number on the <strong>numpad</strong>, release the modifier.</td><td>Hold the modifier (default <kbd>Alt</kbd>), type the number on the <strong>number row</strong>, release the modifier.</td></tr>
+<tr><td>Number means</td><td>The <strong>#</strong> column of the currently selected category.</td><td>The row in the hidden <strong>All sounds</strong> category (the sound's index).</td></tr>
+<tr><td>Example</td><td>Alt + Num 7 → 7th sound of the open category</td><td>Alt + 1, 2, 3 → row 123 of All sounds</td></tr>
+</table>
+<p>Both gestures can be enabled/disabled and given their own modifier under Preferences &gt; Hotkeys &gt; Numpad. If no sound exists at that number the status bar says <em>No sound at number N</em>. While the modifier is held the typed digits are swallowed (unless Pass hotkeys is on), so games do not receive stray input.</p>
+
+<h3>Advanced options</h3>
+<ul>
+  <li><strong>Pass hotkeys</strong> (default off): when off, a matched key is swallowed before the foreground app sees it (key-down and key-up). Turn on if the game must also receive the key.</li>
+  <li><strong>Auto stop</strong> (default on): sounds started by a hotkey ignore Repeat and Continue and simply stop at the end. Sounds started from the UI or the remote API follow Repeat/Continue.</li>
+  <li><strong>Allow left/right modifiers</strong>: LCtrl+A and RCtrl+A become different hotkeys.</li>
+  <li><strong>Same hotkeys in all categories</strong> (row-based): the hotkey assigned to row N plays row N of whichever category is selected.</li>
+</ul>
+<p><strong>Hotkey overview</strong> (Window menu or the Hotkeys indicator) lists every binding: sounds, category random hotkeys, special hotkeys and the numpad/index gestures.</p>
+
+<!-- ============================================================ -->
+<h2 id="autokeys">5. Auto Keys (automatic push-to-talk)</h2>
+<p>When a sound starts on the microphone, VoxPad can press your game's or Discord's push-to-talk key for you. Configure entries under Preferences &gt; Hotkeys &gt; Auto Keys.</p>
+<table>
+<tr><th>Field</th><th>Meaning</th></tr>
+<tr><td>Key</td><td>The key (or mouse button) to press. Sent with scan codes, which is what games expect.</td></tr>
+<tr><td>Enabled</td><td>Per-entry switch; the status-bar indicator / special hotkeys switch all entries.</td></tr>
+<tr><td>Press mode</td><td><em>Press and hold for the sound's duration</em>: key goes down when the sound starts and up when it stops, finishes, is paused or replaced. <em>Press before and after</em>: a short tap at start and another tap at the end.</td></tr>
+<tr><td>Only if played by hotkey (default on)</td><td>Fires only for sounds started by a hotkey, not by clicking in the UI or via the remote API.</td></tr>
+<tr><td>Condition</td><td><em>Always</em> · <em>Foreground app is fullscreen</em> (window covers its whole monitor; borderless windows count, the desktop/taskbar do not) · <em>A listed app is running</em> · <em>A listed app is in the foreground</em>. The app list is process names, one per line (e.g. <code>discord.exe</code>).</td></tr>
+</table>
+<p>Auto Keys fire <strong>only in microphone play modes</strong> (Speakers + Microphone or Microphone only) and only when the microphone path is actually running. VoxPad ignores its own injected key events, so an Auto Key can never trigger a VoxPad hotkey.</p>
+<p><strong>Troubleshooting dialog</strong> (Help menu, or right-click the Auto Keys indicator): shows the global state, the play mode, the routing status, the foreground app and whether it is fullscreen, and for the <em>last played sound</em> the result for every entry with the exact reason it did or did not fire ("Entry is disabled", "Sound was not started by a hotkey…", "Foreground window is not fullscreen: 'Notepad' 1200x800 on monitor 1920x1080", …).</p>
+
+<!-- ============================================================ -->
+<h2 id="lists">6. Sound lists, backups, import/export, storage</h2>
+<h3>Sound list files</h3>
+<ul>
+  <li>VoxPad lists are <code>.vpl</code> (JSON). They store references to the audio files, categories, order, hotkeys, colours, hotbar tiles and play statistics — <strong>never the audio itself</strong>. Soundpad <code>.spl</code> lists can be opened (File &gt; Load); they are imported best-effort and must be saved as .vpl.</li>
+  <li>VoxPad edits a <strong>working copy</strong> (<code>working.vpl</code> in the data folder) that is autosaved every 5 minutes when something changed, and on exit. The title bar shows the list path and an asterisk while there are unsaved changes; File &gt; Save writes your file.</li>
+  <li>At every start a <strong>dated backup</strong> of the list is written to <code>backups\&lt;name&gt;-YYYY-MM-DD.vpl</code> (one per day, kept 30 days). <strong>File &gt; Restore sound list…</strong> lists them and replaces the current list with the chosen backup.</li>
+  <li>Recent lists are kept in File &gt; Recent sound lists (10 entries).</li>
+</ul>
+<h3>Import</h3>
+<ul>
+  <li>Add sound files…, Add folder… (recursive) or drag-and-drop. Formats: AAC, FLAC, M4A, MP3, MP4 (audio), OGG, Opus, WAV, WMA. Title/artist/duration are read from the file's tags on a background thread.</li>
+  <li><strong>Import from web…</strong>: paste a direct URL to an audio file and optionally a file name; the file is downloaded to your Music\VoxPad folder and added to the list.</li>
+</ul>
+<h3>Export</h3>
+<ul>
+  <li><strong>Export &gt; Sound files…</strong> copies every audio file of the list into a folder you choose and writes a new .vpl there that points at the copies with <em>relative</em> paths, so the whole folder can be moved to another PC and loaded there.</li>
+  <li><strong>Export &gt; Preferences…</strong> writes a <code>.vpprefs</code> file (device ids and window placement are stripped). <strong>Import preferences…</strong> loads one; restart VoxPad afterwards.</li>
+</ul>
+<h3>Statistics</h3>
+<p>Per-sound play count and last-played date count <strong>microphone plays only</strong> (speakers-only plays are not counted). File &gt; Statistics… shows the all-time total (kept across lists), the list total, launches and the most played sounds; both per-sound and global counters can be reset there or from the Edit menu.</p>
+<h3>Command-line flags and portable mode</h3>
+<ul>
+  <li><code>VoxPad.exe --clean</code> resets the preferences to defaults but keeps the sound list.</li>
+  <li><code>VoxPad.exe &lt;file.vpl&gt;</code> – installed VoxPad registers .vpl, so double-clicking a list opens it.</li>
+  <li><strong>Portable mode:</strong> place an empty file named <code>portable.txt</code> next to <code>VoxPad.exe</code>. Everything is then stored in a <code>Data</code> folder beside the executable.</li>
+</ul>
+<h3>Where things are stored</h3>
+<table>
+<tr><th>What</th><th>Installed</th><th>Portable</th></tr>
+<tr><td>Preferences, working list, backups, cache, license.dat, stats</td><td><code>%APPDATA%\VoxPad</code></td><td><code>&lt;exe&gt;\Data</code></td></tr>
+<tr><td>Logs (14 days)</td><td><code>%ProgramData%\VoxPad\logs</code></td><td><code>&lt;exe&gt;\Data\logs</code></td></tr>
+<tr><td>Crash dumps (.dmp + .txt, last 10)</td><td><code>%ProgramData%\VoxPad\crashdumps</code></td><td><code>&lt;exe&gt;\Data\crashdumps</code></td></tr>
+<tr><td>Recordings, TTS files, web imports (default)</td><td colspan="2"><code>%USERPROFILE%\Music\VoxPad</code> (changeable in Preferences &gt; Recorder)</td></tr>
+<tr><td>Recorder buffer, update downloads</td><td colspan="2"><code>%TEMP%\VoxPad</code></td></tr>
+</table>
+
+<!-- ============================================================ -->
+<h2 id="recorder">7. Recorder (<kbd>Ctrl</kbd>+<kbd>R</kbd>)</h2>
+<ul>
+  <li><strong>Source:</strong> Speakers (what you hear — a loopback of the playback device chosen in Preferences &gt; Devices) or Microphone (the device under "Microphone for the recorder").</li>
+  <li><strong>Format:</strong> M4A (AAC, default), WAV (16-bit) or MP3. Everything is captured and saved as stereo 48 kHz.</li>
+  <li><strong>Insert:</strong> the new file is added at the end of the list or at the beginning (into the selected category, or All sounds).</li>
+  <li><strong>Auto-normalize</strong> to a target (default 89 dB ≈ −23 LUFS; you are warned above 99 dB because that clips) and <strong>Trim silence</strong> (below −50 dBFS at start and end, 50 ms padding) are applied on stop.</li>
+  <li><strong>Max recording time</strong> (default 300 s, 0 = unlimited). While recording, audio is buffered uncompressed in <code>%TEMP%\VoxPad</code>, so RAM stays flat for long takes; the file is deleted after encoding.</li>
+  <li>The peak meter and the timer show the live level and length. <em>Play last take</em> previews the processed take on the speakers.</li>
+  <li>Special hotkeys <em>Start recording</em> / <em>Stop recording</em> work with the window open or closed (the window opens on start). A short notification beep plays on the speakers <em>before</em> capture starts so it never ends up in a microphone recording (disable in Preferences &gt; Recorder).</li>
+</ul>
+
+<!-- ============================================================ -->
+<h2 id="editor">8. Editor (right-click &gt; Edit file…)</h2>
+<p>The editor loads the file completely into memory as 48 kHz stereo float. Files longer than 10 minutes trigger a warning because undo snapshots multiply the memory use.</p>
+<table>
+<tr><th>Action</th><th>How</th></tr>
+<tr><td>Select</td><td>Drag with the mouse; <kbd>Shift</kbd>+click extends. Keyboard: <kbd>←</kbd>/<kbd>→</kbd> move the cursor, <kbd>Shift</kbd>+<kbd>←</kbd>/<kbd>→</kbd> extend, <kbd>Home</kbd>/<kbd>End</kbd> jump (with <kbd>Shift</kbd> extend to start/end), <kbd>Ctrl</kbd>+<kbd>A</kbd> select all, <kbd>Ctrl</kbd>+<kbd>D</kbd> deselect.</td></tr>
+<tr><td>Cut</td><td><kbd>Del</kbd> or the Cut button – deletes the selection.</td></tr>
+<tr><td>Crop</td><td>Keeps only the selection.</td></tr>
+<tr><td>Volume</td><td>Vol +3 dB / Vol −3 dB buttons, Volume… (any dB value) and Normalize… (to a dB target). With no selection the whole file is affected. Peaks are soft-clipped so the result never exceeds 0 dBFS.</td></tr>
+<tr><td>Undo / Redo</td><td><kbd>Ctrl</kbd>+<kbd>Z</kbd> / <kbd>Ctrl</kbd>+<kbd>Y</kbd> (20 steps).</td></tr>
+<tr><td>Zoom</td><td>🔍+ / 🔍− buttons, <kbd>Ctrl</kbd>+mouse wheel, Fit, Zoom selection; plain mouse wheel scrolls.</td></tr>
+<tr><td>Play selection on speakers</td><td><kbd>Space</kbd> or the ▶ button; the orange cursor follows playback. ⏹ stops.</td></tr>
+<tr><td>Attributes (read-only)</td><td>File size, format, sample rate, duration, channels and the original volume (integrated loudness in dB).</td></tr>
+<tr><td>Save</td><td><kbd>Ctrl</kbd>+<kbd>S</kbd>. Saves <strong>in the recorder's format</strong> (Preferences &gt; Recorder) next to the original file, e.g. <code>clip.mp3</code> → <code>clip.m4a</code>; the list entry is updated to the new file. The original file is not deleted.</td></tr>
+<tr><td>Close</td><td><kbd>Esc</kbd>; you are asked to save pending edits.</td></tr>
+</table>
+
+<!-- ============================================================ -->
+<h2 id="tts">9. Text to speech (<kbd>Ctrl</kbd>+<kbd>T</kbd>)</h2>
+<ul>
+  <li>Uses the Windows SAPI voices installed on the PC; pick one in the Voice box and adjust the rate slider.</li>
+  <li><kbd>Enter</kbd> previews the text on the speakers. <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (or <em>Send to mic</em>) plays it according to the current play mode, i.e. into the microphone.</li>
+  <li><em>Save to list</em> synthesises the line to a file in the recorder format/directory and adds it to the list (at the end or beginning per the recorder's Insert setting).</li>
+  <li>The special hotkey <em>Play text-to-speech text</em> speaks the current text of the TTS window to the microphone from anywhere.</li>
+  <li>TTS audio goes through the same normalisation as files and counts as a microphone play (trial plays, Auto Keys).</li>
+</ul>
+
+<!-- ============================================================ -->
+<h2 id="normalisation">10. Normalisation and voice measurement</h2>
+<p>VoxPad measures loudness per EBU R128 / ITU-R BS.1770 (K-weighted, gated). Like Soundpad it shows loudness on a positive "dB" scale: <strong>dB = LUFS + 112</strong>, so 89 dB is −23 LUFS and the voice target of 74 dB is −38 LUFS.</p>
+<ul>
+  <li><strong>Voice measurement</strong> (toolbar 🎤 icon or Preferences &gt; Audio &gt; Measure voice…): talk normally for about 8 seconds. The integrated loudness becomes the normalisation target. A good microphone level gives more than 74 dB; if the result is lower, raise the microphone level in Windows and measure again.</li>
+  <li><strong>Dynamic</strong> (default): before a sound starts, its first 6 seconds are analysed and a gain is applied; while it plays the measurement continues and the gain is refined once a second (half-way towards the new value, so the level settles without pumping).</li>
+  <li><strong>Full file</strong>: the whole file is analysed before playback and the result is cached (by path, size and modification time), so long files start instantly the second time.</li>
+  <li>Gains are computed <strong>per channel</strong> (left and right separately); a silent channel borrows the other's gain. Boosts and cuts are limited to ±30 dB, and a soft limiter prevents clipping on the cable.</li>
+  <li>Normalisation is applied to the <strong>microphone path only</strong>. Your speaker copy is unchanged — use the speaker volume slider for yourself.</li>
+</ul>
+
+<!-- ============================================================ -->
+<h2 id="preferences">11. Preferences (<kbd>Ctrl</kbd>+<kbd>P</kbd>)</h2>
+<table>
+<tr><th>Tab</th><th>Settings (defaults in bold)</th></tr>
+<tr><td>Devices</td><td>Setup mode (<strong>Auto-select</strong>) · Status + Refresh · Microphones with "Use" ticks (<strong>none = default communications mic</strong>) · Virtual cable playback endpoint for the manual mode · Speakers (<strong>Windows default</strong>) · Microphone for the recorder · Microphone latency (<strong>30 ms</strong>)</td></tr>
+<tr><td>Audio</td><td>Normalisation <strong>Dynamic</strong> / Full file / Off · Target (<strong>74 dB</strong>) + Measure voice… · Block voice (<strong>off</strong>) · Voice activation sound (<strong>off</strong>; custom file, default = 250 ms 1 kHz tone; "also on my speakers" <strong>off</strong>) · Allow resume in another play mode (<strong>off</strong>)</td></tr>
+<tr><td>Hotkeys · General</td><td>Hotkeys enabled (<strong>on</strong>) · Pass hotkeys (<strong>off</strong>) · Auto stop (<strong>on</strong>)</td></tr>
+<tr><td>Hotkeys · Special</td><td>One button per special action (click to capture)</td></tr>
+<tr><td>Hotkeys · Numpad</td><td>Numpad hotkeys <strong>on</strong>, modifier <strong>Alt</strong> · Index hotkeys <strong>on</strong>, modifier <strong>Alt</strong></td></tr>
+<tr><td>Hotkeys · Auto Keys</td><td>Auto Keys enabled (<strong>on</strong>) · entries (key, enabled, press mode <strong>Press and hold</strong>, only if played by hotkey <strong>on</strong>, condition <strong>Always</strong>, app list) · Troubleshooting…</td></tr>
+<tr><td>Hotkeys · Advanced</td><td>Allow left/right modifiers (<strong>off</strong>) · Same hotkeys in all categories (<strong>off</strong>) · Jump seconds (<strong>5</strong>) · Volume step (<strong>10 %</strong>) · Set-volume level (<strong>50 %</strong>)</td></tr>
+<tr><td>Recorder</td><td>Source (<strong>Speakers</strong>) · Format (<strong>M4A</strong>) · Insert (<strong>end</strong>) · Auto-normalize (<strong>on</strong>, <strong>89 dB</strong>) · Trim silence (<strong>on</strong>) · Max time (<strong>300 s</strong>) · Target directory (<strong>Music\VoxPad</strong>) · Notification sound (<strong>on</strong>)</td></tr>
+<tr><td>Interface</td><td>Language (<strong>system</strong>) · Style (<strong>Light</strong>/Dark/Native) · Toolbar items · Start minimized (<strong>off</strong>) · Minimize to tray (<strong>off</strong>) · Close to tray (<strong>off</strong>) · Disable sorting (<strong>off</strong>) · Confirmations: remove (<strong>on</strong>), reset play count (<strong>on</strong>), quit while playing (<strong>off</strong>) · Hide licensee name (<strong>off</strong>)</td></tr>
+<tr><td>Notifications</td><td>Missing files, device changes, tray balloon, recording start, trial limit, updates (<strong>all on</strong>)</td></tr>
+<tr><td>Updates</td><td>Check <strong>Never</strong> / Daily / Weekly · Manifest URL · Check now. Packages are installed only when the manifest signature and the package hash verify against the key built into VoxPad.</td></tr>
+</table>
+<p>OK and Apply save <code>preferences.json</code> immediately; device changes restart the audio routing. Language changes take effect after a restart.</p>
+
+<!-- ============================================================ -->
+<h2 id="trial">12. Trial, registration, streamer mode</h2>
+<ul>
+  <li><strong>Trial limits:</strong> at most <strong>10 sounds</strong> in the list (imports beyond that are refused with a status message) and <strong>10 microphone plays per launch</strong>; after that microphone plays are refused until VoxPad is restarted. Speakers-only plays are not limited. The status bar shows the remaining plays, and the title bar carries "[Trial]".</li>
+  <li><strong>Register</strong> (Help &gt; Register…): enter the licensee name and the serial. The serial is verified offline (an ECDSA signature over the name) and stored in <code>license.dat</code> in the data folder. I/1 and O/0 are interchangeable, dashes and spaces are ignored.</li>
+  <li><strong>Hide my name (streamer mode)</strong> – in the Register dialog or Preferences &gt; Interface – masks the licensee name in About and Register, so it is not visible on stream.</li>
+  <li><em>Remove license</em> in the Register dialog deletes license.dat.</li>
+</ul>
+
+<!-- ============================================================ -->
+<h2 id="remote">13. Remote Control API</h2>
+<p>VoxPad listens on the local named pipe <code>\\.\pipe\VoxPadRemote</code> (current user only). A client writes one request per line and reads one JSON response line. Requests can be JSON objects or plain-text shorthand.</p>
+<table>
+<tr><th>Shorthand</th><th>JSON</th><th>Effect</th></tr>
+<tr><td><code>version</code></td><td><code>{"cmd":"version"}</code></td><td>App version</td></tr>
+<tr><td><code>status</code></td><td><code>{"cmd":"status"}</code></td><td>Play mode, playing/paused, index, tag, position, duration, speaker level</td></tr>
+<tr><td><code>list</code></td><td><code>{"cmd":"list"}</code></td><td>All sounds in index order: index, id, tag, colour (#RRGGBB), duration, hotkey, play count, missing</td></tr>
+<tr><td><code>categories</code></td><td><code>{"cmd":"categories"}</code></td><td>Category tree (id, name, parent, count)</td></tr>
+<tr><td><code>play 3 [mic|speakers|both]</code><br><code>play air horn</code></td><td><code>{"cmd":"play","index":3,"target":"mic"}</code><br><code>{"cmd":"play","name":"air horn"}</code><br><code>{"cmd":"play","id":"&lt;guid&gt;"}</code></td><td>Play by index (All sounds row), by name (exact, then substring) or by id; target defaults to the current play mode</td></tr>
+<tr><td><code>stop</code> / <code>pause</code> / <code>random</code></td><td><code>{"cmd":"stop"}</code> …</td><td>Stop; toggle pause; random sound (optional <code>"category":"&lt;guid&gt;"</code>)</td></tr>
+<tr><td><code>playmode [both|mic|speakers]</code></td><td><code>{"cmd":"playMode","mode":"mic"}</code></td><td>Set or (without argument) query the play mode</td></tr>
+<tr><td><code>volume [0..1]</code></td><td><code>{"cmd":"volume","level":0.5}</code></td><td>Set or query the speaker volume</td></tr>
+</table>
+<p>Every response has <code>"ok":true</code> or <code>"ok":false</code> with an <code>"error"</code> text. Remote plays never trigger Repeat/Continue; they do count as microphone plays. The reference client <code>voxpad-remote.exe</code> (installed next to VoxPad) accepts the same commands as arguments (<code>voxpad-remote play 3 mic</code>, <code>voxpad-remote raw '{"cmd":"list"}'</code>) or runs an interactive shell when started without arguments; its source is a small example for Stream Deck / Touch Portal plugins.</p>
+
+<!-- ============================================================ -->
+<h2 id="troubleshooting">14. Troubleshooting</h2>
+<h3>"Access denied" – Windows microphone privacy</h3>
+<p>If Windows blocks desktop apps from the microphone, VoxPad cannot read your voice and shows a red status "Access denied". Fix: <em>Settings &gt; Privacy &amp; security &gt; Microphone</em> → turn on <em>Microphone access</em> and <em>Let desktop apps access your microphone</em>, then press Refresh in Preferences &gt; Devices. VoxPad offers to open that settings page for you.</p>
+<h3>Nobody hears the sound</h3>
+<ol>
+  <li>Preferences &gt; Devices must say <em>Good</em>. If it says no virtual microphone was found, install VB-CABLE and reboot.</li>
+  <li>The voice app must record from <em>CABLE Output</em>, not from your real microphone.</li>
+  <li>Disable noise suppression / echo cancellation / AGC in the voice app — they remove soundboard audio.</li>
+  <li>The seek bar must be red while playing. Blue means the sound only reaches your speakers (speakers-only mode or no cable).</li>
+  <li>Trial: after 10 microphone plays per launch, plays are refused (status bar message).</li>
+</ol>
+<h3>Hotkeys do nothing in a game</h3>
+<p>Windows does not deliver keyboard hooks from a normal process into a window that runs elevated (as administrator). Run VoxPad with the same elevation as the game, or run the game unelevated. Also check that the Hotkeys indicator is not struck through.</p>
+<h3>Drag-and-drop from Explorer does not work</h3>
+<p>Windows blocks drops from an unelevated Explorer into an elevated window. VoxPad warns in the status bar when it runs as administrator; start it normally (the installer never needs the app to run elevated) or use File &gt; Add sound files….</p>
+<h3>Voice sounds delayed or chopped</h3>
+<p>Raise Microphone latency in Preferences &gt; Devices (30 → 50 ms) on slow machines. The capture and the cable run on different clocks; VoxPad compensates drift automatically (±0.5 % rate trim).</p>
+<h3>Diagnostic report</h3>
+<p>Help &gt; Troubleshooting… &gt; <em>Create report</em> writes a zip to <code>%TEMP%\VoxPad</code> with the log, the device list, the routing status, the last Auto Keys evaluation and your preferences (device ids only — no license data). Attach it to bug reports. Crash dumps are in <code>%ProgramData%\VoxPad\crashdumps</code>.</p>
+
+<!-- ============================================================ -->
+<h2 id="shortcuts">15. Keyboard shortcuts</h2>
+<table>
+<tr><th>Where</th><th>Shortcut</th><th>Action</th></tr>
+<tr><td rowspan="18">Main window</td><td><kbd>Enter</kbd></td><td>Play selected (current play mode)</td></tr>
+<tr><td><kbd>Ctrl</kbd>+<kbd>Enter</kbd></td><td>Play selected on the microphone</td></tr>
+<tr><td><kbd>Space</kbd></td><td>Pause / resume</td></tr>
+<tr><td><kbd>Del</kbd></td><td>Remove selected sounds from the list</td></tr>
+<tr><td><kbd>F2</kbd></td><td>Set hotkey of the selected sound</td></tr>
+<tr><td><kbd>Ctrl</kbd>+<kbd>A</kbd> / <kbd>C</kbd> / <kbd>X</kbd> / <kbd>V</kbd></td><td>Select all / copy / cut / paste sounds</td></tr>
+<tr><td><kbd>Alt</kbd>+<kbd>↑</kbd> / <kbd>↓</kbd></td><td>Move selected rows (manual order)</td></tr>
+<tr><td><kbd>Ctrl</kbd>+<kbd>Z</kbd> / <kbd>Y</kbd></td><td>Undo / redo list edits</td></tr>
+<tr><td><kbd>Ctrl</kbd>+<kbd>N</kbd> / <kbd>O</kbd> / <kbd>S</kbd></td><td>New / load / save sound list</td></tr>
+<tr><td><kbd>Ctrl</kbd>+<kbd>P</kbd></td><td>Preferences</td></tr>
+<tr><td><kbd>Ctrl</kbd>+<kbd>R</kbd></td><td>Recorder</td></tr>
+<tr><td><kbd>Ctrl</kbd>+<kbd>T</kbd></td><td>Text to speech</td></tr>
+<tr><td><kbd>Ctrl</kbd>+<kbd>PgUp</kbd> / <kbd>PgDn</kbd></td><td>Previous / next hotbar page</td></tr>
+<tr><td><kbd>F1</kbd></td><td>Manual</td></tr>
+<tr><td>type letters</td><td>Instant search</td></tr>
+<tr><td><kbd>Enter</kbd> (in search)</td><td>Next match</td></tr>
+<tr><td><kbd>Esc</kbd></td><td>Clear search</td></tr>
+<tr><td><kbd>Alt</kbd>+digits (hold/release)</td><td>Numpad hotkey (numpad) / index hotkey (number row)</td></tr>
+<tr><td rowspan="3">Hotkey dialog</td><td><kbd>Enter</kbd></td><td>Save</td></tr>
+<tr><td><kbd>Del</kbd> / <kbd>Backspace</kbd></td><td>Clear</td></tr>
+<tr><td><kbd>Esc</kbd></td><td>Cancel</td></tr>
+<tr><td rowspan="8">Editor</td><td><kbd>Space</kbd></td><td>Play selection on speakers</td></tr>
+<tr><td><kbd>Del</kbd></td><td>Cut selection</td></tr>
+<tr><td><kbd>Shift</kbd>+<kbd>←</kbd>/<kbd>→</kbd>/<kbd>Home</kbd>/<kbd>End</kbd></td><td>Extend selection</td></tr>
+<tr><td><kbd>Ctrl</kbd>+<kbd>A</kbd> / <kbd>D</kbd></td><td>Select all / deselect</td></tr>
+<tr><td><kbd>Ctrl</kbd>+<kbd>Z</kbd> / <kbd>Y</kbd></td><td>Undo / redo</td></tr>
+<tr><td><kbd>Ctrl</kbd>+wheel</td><td>Zoom</td></tr>
+<tr><td><kbd>Ctrl</kbd>+<kbd>S</kbd></td><td>Save in recorder format</td></tr>
+<tr><td><kbd>Esc</kbd></td><td>Close</td></tr>
+<tr><td rowspan="2">TTS</td><td><kbd>Enter</kbd></td><td>Preview on speakers</td></tr>
+<tr><td><kbd>Ctrl</kbd>+<kbd>Enter</kbd></td><td>Send to microphone</td></tr>
+</table>
+
+<p class="muted">VoxPad is not affiliated with Leppsoft or Soundpad. VB-CABLE and Voicemeeter are products of VB-Audio Software.</p>
+</main>
+</div>
+</body>
+</html>

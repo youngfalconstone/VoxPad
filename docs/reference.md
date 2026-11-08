@@ -98,7 +98,7 @@ Verified on a Windows 11 PC with VB-CABLE: Status *Good*, 440 Hz and 330 Hz test
 
 ## Releasing
 
-Tag a commit `vX.Y.Z` and push the tag: the *Release* workflow builds the standalone exes, installers and portable zips on a Windows runner and attaches them to the GitHub release; the website's download button then points at them automatically. GitHub Pages is served from the `docs/` folder of `master` (Settings → Pages → Deploy from a branch → `master` / `/docs`).
+Tag a commit `vX.Y.Z` and push the tag: the *Release* workflow builds the standalone exes, installers and portable zips on a Windows runner and attaches them to the GitHub release; the website's download button then points at them automatically. GitHub Pages is served from the `docs/` folder of `main` (Settings → Pages → Deploy from a branch → `main` / `/docs`).
 
 ## Building
 

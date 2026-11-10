@@ -63,12 +63,15 @@ public sealed class SoundboardEngine : IDisposable
         Speakers.Failed += _ => ThreadPool.QueueUserWorkItem(_ => { Warning?.Invoke("Speaker output stopped; re-applying devices."); ApplyDevices(); });
     }
 
-    /// <summary>Resolves routing from preferences and (re)starts both outputs. Safe to call any time (device changes, preference edits).</summary>
+    /// <summary>
+    /// Resolves routing from preferences and (re)starts both outputs. Safe to call any time (device changes, preference edits).
+    /// The current sound is kept: the playback slots outlive the device restart, so it carries on where it was instead of
+    /// being cut off. An output that cannot be reopened drops its copy of the sound.
+    /// </summary>
     public void ApplyDevices()
     {
         lock (_gate)
         {
-            Stop();
             Routing = _devices.Resolve(_prefs);
             Mic.BlockVoice = _prefs.BlockVoice;
             Normalizer.TargetLufs = EbuR128Meter.DbToLufs(_prefs.NormalizationTargetDb);
@@ -80,9 +83,24 @@ public sealed class SoundboardEngine : IDisposable
             Speakers.Start(_prefs.SpeakerDeviceId, 40);
             Speakers.Volume = (float)_prefs.SpeakerVolume;
             Speakers.Muted = _prefs.SpeakerMuted;
+            KeepCurrentAfterRestart();
             Log.Info($"Routing: {Routing.Level} – {Routing.Message}");
         }
         StateChanged?.Invoke();
+    }
+
+    /// <summary>After a device restart: unload slots whose output did not come back and keep <see cref="Current"/> consistent.</summary>
+    private void KeepCurrentAfterRestart()
+    {
+        if (!Mic.IsRunning) Mic.Slot.Stop();
+        if (!Speakers.IsRunning) Speakers.Slot.Stop();
+        var cur = _current;
+        if (cur == null) return;
+        bool onMic = cur.OnMic && Mic.Slot.IsLoaded, onSpk = cur.OnSpeakers && Speakers.Slot.IsLoaded;
+        if (!onMic && !onSpk) { StopRefine(); _current = null; _generation++; return; }
+        if (!onMic && _refineTimer != null) StopRefine();
+        if (onMic != cur.OnMic || onSpk != cur.OnSpeakers)
+            _current = new PlaybackInfo { Sound = cur.Sound, Label = cur.Label, Target = cur.Target, Trigger = cur.Trigger, Duration = cur.Duration, OnMic = onMic, OnSpeakers = onSpk, Generation = cur.Generation };
     }
 
     public PlaybackInfo? Current { get { lock (_gate) return _current; } }
@@ -167,8 +185,9 @@ public sealed class SoundboardEngine : IDisposable
                 if (onSpk && _prefs.VoiceActivationOnHeadphones) preSpk = new FloatArraySampleProvider(pre);
             }
 
-            // Normalisation on the microphone path.
+            // Normalisation on the microphone path. The target is fixed for this sound (see Normalizer.Refine).
             EbuR128Meter? meter = null;
+            double targetLufs = Normalizer.TargetLufs;
             if (onMic)
             {
                 Mic.Slot.Gain.Reset();
@@ -202,7 +221,7 @@ public sealed class SoundboardEngine : IDisposable
             if (spkSrc != null) Speakers.Slot.Load(spkSrc, preSpk, preSpk?.Duration ?? TimeSpan.Zero, null);
 
             _current = new PlaybackInfo { Sound = sound, Label = label, Target = target, Trigger = trigger, Duration = duration, OnMic = onMic, OnSpeakers = onSpk, Generation = gen };
-            if (meter != null) _refineTimer = new Timer(_ => { try { Normalizer.Refine(Mic.Slot.Gain, meter); } catch { } }, null, 1000, 1000);
+            if (meter != null) _refineTimer = new Timer(_ => { try { Normalizer.Refine(Mic.Slot.Gain, meter, targetLufs); } catch { } }, null, 1000, 1000);
             Log.Info($"Play '{label}' mic={onMic} spk={onSpk} trigger={trigger} dur={duration.TotalSeconds:F1}s");
         }
         StateChanged?.Invoke();

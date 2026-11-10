@@ -44,7 +44,7 @@ public sealed class MicInjector : IDisposable
     /// <summary>(Re)starts the path for the resolved routing. Returns false and sets <see cref="LastError"/> on failure.</summary>
     public bool Start(RoutingStatus routing, Preferences prefs)
     {
-        Stop();
+        StopOutput();
         LastError = null;
         if (routing.VirtualRenderId == null || routing.ResolvedMode == MicSetupMode.SpeakersOnly) return false;
         var render = _devices.GetDevice(routing.VirtualRenderId);
@@ -94,14 +94,21 @@ public sealed class MicInjector : IDisposable
         {
             LastError = ex.Message;
             Log.Error("Mic injection start failed", ex);
-            Stop();
+            StopOutput();
             return false;
         }
     }
 
+    /// <summary>Stops the device and unloads the current sound.</summary>
     public void Stop()
     {
         Slot.Stop();
+        StopOutput();
+    }
+
+    /// <summary>Stops only the device side; the slot keeps its sound so a restart (preference/device change) continues it.</summary>
+    private void StopOutput()
+    {
         try { _out?.Stop(); } catch { }
         _out?.Dispose(); _out = null;
         foreach (var m in _mics) { _voiceGate.VoiceMixer.RemoveMixerInput(m); m.Dispose(); }

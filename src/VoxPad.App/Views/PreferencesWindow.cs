@@ -18,7 +18,7 @@ public sealed class PreferencesWindow : Window
     private readonly Preferences _p;
     private readonly TabControl _tabs = new();
     private readonly List<Action> _apply = new();
-    private bool _devicesChanged, _themeChanged, _languageChanged;
+    private bool _themeChanged, _languageChanged;
 
     public PreferencesWindow(MainViewModel vm, string? tab)
     {
@@ -56,12 +56,17 @@ public sealed class PreferencesWindow : Window
     private void AddTab(string tag, string header, UIElement content)
         => _tabs.Items.Add(new TabItem { Header = header, Tag = tag, Content = new ScrollViewer { Content = content, VerticalScrollBarVisibility = ScrollBarVisibility.Auto, Padding = new Thickness(10) } });
 
+    /// <summary>Everything that needs the audio outputs reopened. Compared before/after Apply so only a real device change restarts them.</summary>
+    private string DeviceSignature()
+        => string.Join("|", _p.SetupMode, _p.VirtualCableRenderId, _p.SpeakerDeviceId, _p.MicLatencyMs, string.Join(",", _p.MicrophoneDeviceIds.OrderBy(x => x, StringComparer.Ordinal)));
+
     private void Apply()
     {
+        var devicesBefore = DeviceSignature();
         foreach (var a in _apply) a();
         _p.Save();
         _vm.RebuildBindings();
-        if (_devicesChanged) { _vm.ApplyDevices(); _devicesChanged = false; RefreshDeviceStatus(); }
+        if (DeviceSignature() != devicesBefore) { _vm.ApplyDevices(); RefreshDeviceStatus(); }
         else { _vm.Engine.Mic.BlockVoice = _p.BlockVoice; _vm.Engine.Normalizer.TargetLufs = Core.Loudness.EbuR128Meter.DbToLufs(_p.NormalizationTargetDb); }
         if (_themeChanged) { ThemeService.Apply(_p.Theme); _themeChanged = false; }
         if (_languageChanged) { _vm.Dialogs.Info("VoxPad", Strings.Get("LanguageRestart", "The language changes after VoxPad is restarted.")); _languageChanged = false; }
@@ -93,8 +98,15 @@ public sealed class PreferencesWindow : Window
     }
     private ComboBox Combo<T>(IList<(T value, string text)> items, T current, Action<T> set, double width = 260)
     {
-        var c = new ComboBox { ItemsSource = items.Select(i => i.text).ToList(), Width = width, HorizontalAlignment = HorizontalAlignment.Left };
         int idx = items.ToList().FindIndex(i => Equals(i.value, current));
+        if (idx < 0 && current is string saved && saved.Length > 0)
+        {
+            // The saved device is unplugged/disabled: keep it selected (and saved) instead of falling back to the first entry.
+            var name = _vm.Devices.RenderDevices.Concat(_vm.Devices.CaptureDevices).FirstOrDefault(d => d.Id == saved)?.Name ?? saved;
+            items = items.Append((current, name + " " + Strings.Get("NotAvailable", "[not available]"))).ToList();
+            idx = items.Count - 1;
+        }
+        var c = new ComboBox { ItemsSource = items.Select(i => i.text).ToList(), Width = width, HorizontalAlignment = HorizontalAlignment.Left };
         c.SelectedIndex = idx < 0 ? 0 : idx;
         _apply.Add(() => { if (c.SelectedIndex >= 0 && c.SelectedIndex < items.Count) set(items[c.SelectedIndex].value); });
         return c;
@@ -126,13 +138,13 @@ public sealed class PreferencesWindow : Window
         _useMics.UnionWith(_p.MicrophoneDeviceIds);
         col.Children.Add(Heading(Strings.Get("SetupMode", "Setup mode")));
         var modes = Enum.GetValues<MicSetupMode>().Select(m => (m, DeviceManager.ModeName(m))).ToList();
-        var modeCombo = Combo(modes, _p.SetupMode, m => { if (_p.SetupMode != m) { _p.SetupMode = m; _devicesChanged = true; } }, 320);
+        var modeCombo = Combo(modes, _p.SetupMode, m => { if (_p.SetupMode != m) { _p.SetupMode = m; } }, 320);
         col.Children.Add(modeCombo);
         col.Children.Add(Hint(Strings.Get("SetupModeHint", "VoxPad has no kernel audio driver of its own. It renders voice + sound into a virtual cable's playback endpoint; apps then record from the cable's recording endpoint (e.g. 'CABLE Output'). Auto-select tries VB-CABLE, VB-CABLE A/B, Voicemeeter, a manually chosen cable and Stereo Mix in that order.")));
 
         var statusRow = new DockPanel { Margin = new Thickness(0, 4, 0, 8) };
         var refresh = new Button { Content = Strings.Get("Refresh", "Refresh"), MinWidth = 80 };
-        refresh.Click += (_, _) => { foreach (var a in _apply) a(); _vm.ApplyDevices(); _devicesChanged = false; RebuildMicList(); RefreshDeviceStatus(); };
+        refresh.Click += (_, _) => { foreach (var a in _apply) a(); _vm.ApplyDevices(); RebuildMicList(); RefreshDeviceStatus(); };
         DockPanel.SetDock(refresh, Dock.Right);
         statusRow.Children.Add(refresh);
         statusRow.Children.Add(new TextBlock { Text = Strings.Get("Status", "Status: "), VerticalAlignment = VerticalAlignment.Center, FontWeight = FontWeights.SemiBold });
@@ -148,25 +160,25 @@ public sealed class PreferencesWindow : Window
         _apply.Add(() =>
         {
             var ids = _useMics.ToList();
-            if (!ids.OrderBy(x => x).SequenceEqual(_p.MicrophoneDeviceIds.OrderBy(x => x))) { _p.MicrophoneDeviceIds = ids; _devicesChanged = true; }
+            if (!ids.OrderBy(x => x).SequenceEqual(_p.MicrophoneDeviceIds.OrderBy(x => x))) { _p.MicrophoneDeviceIds = ids; }
         });
 
         col.Children.Add(Heading(Strings.Get("VirtualCableEndpoint", "Virtual cable playback endpoint (for 'Other virtual cable')")));
         var renders = new List<(string, string)> { ("", Strings.Get("AutoDetect", "(auto-detect)")) };
         renders.AddRange(_vm.Devices.RenderDevices.Where(d => d.IsActive).Select(d => (d.Id, d.Name)));
-        col.Children.Add(Combo(renders, _p.VirtualCableRenderId, id => { if (_p.VirtualCableRenderId != id) { _p.VirtualCableRenderId = id; _devicesChanged = true; } }, 400));
+        col.Children.Add(Combo(renders, _p.VirtualCableRenderId, id => { if (_p.VirtualCableRenderId != id) { _p.VirtualCableRenderId = id; } }, 400));
 
         col.Children.Add(Heading(Strings.Get("SpeakerDevice", "Speakers (your own copy of the sound)")));
         var spk = new List<(string, string)> { ("", Strings.Get("DefaultDevice", "(Windows default)")) };
         spk.AddRange(_vm.Devices.RenderDevices.Where(d => d.IsActive && !DeviceManager.LooksLikeVirtualCable(d.Name)).Select(d => (d.Id, d.Name)));
-        col.Children.Add(Combo(spk, _p.SpeakerDeviceId, id => { if (_p.SpeakerDeviceId != id) { _p.SpeakerDeviceId = id; _devicesChanged = true; } }, 400));
+        col.Children.Add(Combo(spk, _p.SpeakerDeviceId, id => { if (_p.SpeakerDeviceId != id) { _p.SpeakerDeviceId = id; } }, 400));
 
         col.Children.Add(Heading(Strings.Get("RecorderMic", "Microphone for the recorder")));
         var caps = new List<(string, string)> { ("", Strings.Get("DefaultDevice", "(Windows default)")) };
         caps.AddRange(_vm.Devices.CaptureDevices.Where(d => d.IsActive).Select(d => (d.Id, d.Name)));
         col.Children.Add(Combo(caps, _p.RecorderMicDeviceId, id => _p.RecorderMicDeviceId = id, 400));
 
-        col.Children.Add(Labeled(Strings.Get("MicLatency", "Microphone latency (ms):"), Num(_p.MicLatencyMs, v => { var n = (int)Math.Clamp(v, 10, 200); if (n != _p.MicLatencyMs) { _p.MicLatencyMs = n; _devicesChanged = true; } })));
+        col.Children.Add(Labeled(Strings.Get("MicLatency", "Microphone latency (ms):"), Num(_p.MicLatencyMs, v => { var n = (int)Math.Clamp(v, 10, 200); if (n != _p.MicLatencyMs) { _p.MicLatencyMs = n; } })));
         col.Children.Add(Hint(Strings.Get("LatencyHint", "Lower = less delay on your voice, higher = fewer dropouts on slow machines. 30 ms is a good default.")));
         var privacy = DeviceManager.CheckMicrophonePrivacy();
         if (privacy != DeviceManager.MicPrivacy.Allowed && privacy != DeviceManager.MicPrivacy.Unknown)

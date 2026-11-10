@@ -30,7 +30,7 @@ public sealed class SpeakerOutput : IDisposable
 
     public bool Start(string? deviceId, int latencyMs = 40)
     {
-        Stop();
+        StopOutput();
         LastError = null;
         var device = _devices.GetRenderOrDefault(deviceId);
         if (device == null) { LastError = "No playback device"; return false; }
@@ -49,7 +49,7 @@ public sealed class SpeakerOutput : IDisposable
         {
             LastError = ex.Message;
             Log.Error("Speaker output start failed", ex);
-            Stop();
+            StopOutput();
             return false;
         }
     }
@@ -99,9 +99,16 @@ public sealed class SpeakerOutput : IDisposable
         }
     }
 
+    /// <summary>Stops the device and unloads the current sound.</summary>
     public void Stop()
     {
         Slot.Stop();
+        StopOutput();
+    }
+
+    /// <summary>Stops only the device side; the slot keeps its sound so a restart (preference/device change) continues it.</summary>
+    private void StopOutput()
+    {
         try { _out?.Stop(); } catch { }
         _out?.Dispose(); _out = null;
         _session = null;

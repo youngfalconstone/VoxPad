@@ -77,21 +77,27 @@ public sealed class Normalizer
         catch (Exception ex) { Log.Warn("loudness cache save: " + ex.Message); }
     }
 
-    public (float left, float right) GainsFor((double left, double right) lufs)
+    public (float left, float right) GainsFor((double left, double right) lufs) => GainsFor(lufs, TargetLufs);
+
+    public static (float left, float right) GainsFor((double left, double right) lufs, double targetLufs)
     {
         // A channel with no measurable loudness (NaN, e.g. silent right channel) borrows the other's gain.
         double l = lufs.left, r = lufs.right;
         if (double.IsNaN(l) && !double.IsNaN(r)) l = r;
         if (double.IsNaN(r) && !double.IsNaN(l)) r = l;
-        return (EbuR128Meter.GainFor(l, TargetLufs), EbuR128Meter.GainFor(r, TargetLufs));
+        return (EbuR128Meter.GainFor(l, targetLufs), EbuR128Meter.GainFor(r, targetLufs));
     }
 
-    /// <summary>Dynamic mode refinement: blends the live measurement into the controller (called ~once per second during playback).</summary>
-    public void Refine(GainController gain, EbuR128Meter liveMeter)
+    /// <summary>
+    /// Dynamic mode refinement: blends the live measurement into the controller (called ~once per second during playback).
+    /// <paramref name="targetLufs"/> is the target the sound started with, so editing the target in Preferences
+    /// mid-sound cannot suddenly boost the sound that is already playing (it applies from the next sound).
+    /// </summary>
+    public void Refine(GainController gain, EbuR128Meter liveMeter, double targetLufs)
     {
         var live = (liveMeter.IntegratedLufs(0), liveMeter.IntegratedLufs(1));
         if (double.IsNaN(live.Item1) && double.IsNaN(live.Item2)) return; // not enough audio yet: keep the initial estimate
-        var (l, r) = GainsFor(live);
+        var (l, r) = GainsFor(live, targetLufs);
         // Move 50 % of the way each refinement so the level settles without pumping.
         gain.Set(gain.TargetLeft + (l - gain.TargetLeft) * 0.5f, gain.TargetRight + (r - gain.TargetRight) * 0.5f);
         Log.Debug($"Normalise refine: live {live.Item1:F1}/{live.Item2:F1} LUFS → gain {gain.TargetLeft:F3}/{gain.TargetRight:F3}");

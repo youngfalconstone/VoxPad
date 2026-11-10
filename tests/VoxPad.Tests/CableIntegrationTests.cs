@@ -131,4 +131,57 @@ public class CableIntegrationTests
         var lufs = m.IntegratedLufs(0);
         Assert.InRange(lufs, -41, -35);
     }
+
+    private static float PeakBetween(float[] pcm, double fromS, double toS)
+    {
+        int a = (int)(fromS * EngineFormat.SampleRate) * 2, b = Math.Min(pcm.Length, (int)(toS * EngineFormat.SampleRate) * 2);
+        float p = 0;
+        for (int i = a; i < b; i++) p = Math.Max(p, Math.Abs(pcm[i]));
+        return p;
+    }
+
+    /// <summary>Regression: applying device preferences mid-sound used to cut the sound off on the microphone.</summary>
+    [Fact]
+    public void ApplyingDevicesMidSoundKeepsItPlaying()
+    {
+        var (dm, cap) = Cable();
+        using var _ = dm;
+        if (cap == null) return;
+        var prefs = new Preferences { SetupMode = MicSetupMode.VbCable, Normalization = NormalizationMode.Off, VoiceActivationSound = false, MicrophoneDeviceIds = { "no-such-device" } };
+        using var engine = new SoundboardEngine(dm, prefs);
+        engine.ApplyDevices();
+        Assert.True(engine.Mic.IsRunning, engine.Routing.Message);
+        var tone = ToneGenerator.Burst(6.0, 440, 0.3f);
+        var heard = RecordCable(dm, cap, 3.5, () =>
+        {
+            engine.PlayBuffer(tone, "long tone", PlayTarget.Microphone);
+            new Thread(() => { Thread.Sleep(1000); engine.ApplyDevices(); }).Start();
+        });
+        Assert.NotNull(engine.Current);
+        engine.Stop();
+        Assert.InRange(PeakBetween(heard, 2.5, 3.5), 0.2f, 0.4f); // still the same tone after the restart
+    }
+
+    /// <summary>Regression: raising the normalisation target mid-sound used to blast the playing sound to full scale within a second.</summary>
+    [Fact]
+    public void ChangingTargetMidSoundDoesNotBoostIt()
+    {
+        var (dm, cap) = Cable();
+        using var _ = dm;
+        if (cap == null) return;
+        var prefs = new Preferences { SetupMode = MicSetupMode.VbCable, Normalization = NormalizationMode.Dynamic, NormalizationTargetDb = 74, VoiceActivationSound = false, MicrophoneDeviceIds = { "no-such-device" } };
+        using var engine = new SoundboardEngine(dm, prefs);
+        engine.ApplyDevices();
+        Assert.True(engine.Mic.IsRunning, engine.Routing.Message);
+        var tone = ToneGenerator.Burst(6.0, 440, 0.05f);
+        var heard = RecordCable(dm, cap, 3.5, () =>
+        {
+            engine.PlayBuffer(tone, "tone", PlayTarget.Microphone);
+            new Thread(() => { Thread.Sleep(500); engine.Normalizer.TargetLufs = Core.Loudness.EbuR128Meter.DbToLufs(110); }).Start();
+        });
+        engine.Stop();
+        float before = PeakBetween(heard, 0.3, 0.6), after = PeakBetween(heard, 2.0, 3.5);
+        Assert.True(before > 0.005f, $"no signal before the change ({before})");
+        Assert.True(after < before * 1.5f, $"level jumped from {before:F3} to {after:F3}");
+    }
 }

@@ -2,7 +2,7 @@
 <Wix xmlns="http://wixtoolset.org/schemas/v4/wxs"
      xmlns:ui="http://wixtoolset.org/schemas/v4/wxs/ui"
      xmlns:util="http://wixtoolset.org/schemas/v4/wxs/util">
-  <?ifndef Version?><?define Version = 1.0.0?><?endif?>
+  <?ifndef Version?><?define Version = 1.0.1?><?endif?>
 
   <!-- Per-machine install: requires UAC. The app runs as the invoking user (asInvoker manifest). -->
   <Package Name="VoxPad" Manufacturer="VoxPad contributors" Version="$(Version)" UpgradeCode="7D0A1F6A-2C3B-4E0D-9C44-5B1D1F0B1A21"
